@@ -1,0 +1,8 @@
+{
+    "applicationName" : "AVOSTesting",
+    "applicationId": "6pzfpf5wkg4m52owuwixt5vggrpjincr8xon3pd966fhgj3c",
+    "applicationKey": "4wrzupru1m4m7gpafo4llinv7iepyapnycvxygup7uiui77x",
+    "global": {
+        "avVersion": "0.2.0"
+    }
+}
