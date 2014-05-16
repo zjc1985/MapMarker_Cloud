@@ -1,3 +1,3 @@
-function sayHi(){
-	return "Hello , This is mapmarker cloud";
+exports.sayHi = function() {
+  return 'Hello, This is mapMarker_cloud';
 }
