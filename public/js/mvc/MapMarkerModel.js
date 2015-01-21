@@ -1,1 +1,1099 @@
-function MapMarkerModel(){function f(c,f){var i,j,k,l,m,n,h=new Array;if(0!=a.length){for(i in a)h.push(a[i].toJSONObject());if(j=new Array,0==b.length)k=d.genUUID(),l=new MapMarker(k),l.content.setIsAvergeOverViewMarker(!0),m=g(),l.content.updateContent(m),j.push(l.toJSONObject());else for(i in b)n=b[i],n.content.isAvergeOverViewMarker()&&n.content.updateContent(g()),j.push(n.toJSONObject());e.saveRoutine(c,JSON.stringify(h),JSON.stringify(j),function(){f()})}else f()}function g(){var e,f,g,b=0,c=0,d=0;for(e=0;e<a.length;e++)a[e].isSubMarker()||(c+=a[e].getContent().getLat(),d+=a[e].getContent().getLng(),b++);return f=c/b,g=d/b,{lat:f,lng:g}}function h(b){var d,c=a.length;for(d=0;c>d;d++)if(a[d].id==b)return a[d];return null}function i(a){null!=a.connectedMainMarker&&(null!=a.connectedMainLine&&view.removeById(a.connectedMainLine.id),a.connectedMainLine=new MainLine(view.drawMainLine(a.id,a.connectedMainMarker.id)))}function j(a){for(var b in a.subMarkersArray)view.removeById(a.subMarkersArray[b].line.id),a.subMarkersArray[b].line=new SubLine(view.drawSubLine(a.id,a.subMarkersArray[b].entity.id))}var a=new Array,b=new Array,c=new Array,d=this,e=new BackendManager;this.isOvMarker=function(a){for(var b in c)if(c[b].id==a)return!0;return!1},this.findAverageOvMarkerByOvId=function(a){var e,b=d.getMapMarkerById(a);for(e in c)if(b.routineId==c[e].routineId&&c[e].content.isAvergeOverViewMarker())return c[e];return null},this.getCurrentOverviewMarkers=function(){return b},this.setCurrenOverviewMarkersByOverviewId=function(a){var d,e;b=new Array,d=this.getMapMarkerById(a).routineId;for(e in c)c[e].routineId==d&&b.push(c[e])},this.getAllOverviewMarkers=function(){return c},this.genUUID=function(){return uuid.v4()},this.deleteRoutineByOverviewId=function(a,b){e.deleteRoutineByOverviewMarkerId(a,function(){b()})},this.saveImage=function(a,b,c){e.saveFile(a,function(a){b(a)},function(a){c(a)})},this.saveImageByBase64=function(a,b,c,d){e.saveBase64File(a,b,function(a){c(a)},function(a){d(a)})},this.resetModels=function(){a=new Array,b=new Array,c=new Array},this.getModelMarkers=function(){return a},this.fetchMaxIdinMarks=function(){return a.sort(function(a,b){return a.id>b.id?1:a.id==b.id?0:-1}),a[a.length-1].id},this.createOneMarker=function(b,c){var d=new MapMarker(b);return $.publish("createOneMarker",[d]),null!=c&&(d.content.updateContent(c),d.updateOffset(c.offsetX,c.offsetY)),a.push(d),d},this.createOverviewMarker=function(a,b,d){var e=new MapMarker(a);return e.routineId=d,$.publish("createOverViewMarker",[e,b]),null!=b&&(e.content.updateContent(b),e.updateOffset(b.offsetX,b.offsetY)),c.push(e),e},this.deleteOvMarker=function(a){var e,d=this.getMapMarkerById(a);if(d.content.isAvergeOverViewMarker())return alert("this marker can not be deleted"),void 0;for(e in c)c[e].id==a&&c.splice(e,1);if(0!=b.length)for(e in b)b[e].id==a&&b.splice(e,1);$.publish("deleteOvMarker",[a]),$.publish("updateOvLines")},this.deleteOneMarker=function(b,c){var f,g,h,d=this.getMapMarkerById(b);if(null!=d){null!=d.prevMainMarker&&d.prevMainMarker.disconnectNextMarker(),null!=d.connectedMainMarker&&d.disconnectNextMarker(),null!=d.parentSubMarker&&d.parentSubMarker.disconnectTreeChildMarker(d),d.disconnectAllTreeChildMarker();for(f in a)a[f].id==b&&a.splice(f,1);if(c&&(g=d.content.getImgUrls(),null!=g&&g.length>0))for(f in g)h=g[f],e.deleteFileByUrl(h,function(){console.log("success deleted img ")},function(){console.log("fail delete img")});$.publish("deleteOneMarker",[d])}},this.isUserOwnRoutine=function(a,b){var c=e.getCurrentUser();e.isUserOwnRoutines(c,a,b)},this.loadAllOverviewRoutine=function(a){c=new Array;var b=e.getCurrentUser();e.fetchOverviewRoutinesByUser(b,function(b){var c,e,f,g;for(c in b){e=b[c].overviewJSONString,f=b[c].routineId,g=JSON.parse(e);for(c in g)d.createOverviewMarker(g[c].id,g[c],f)}a()})},this.loadRoutineByOverviewMarkerId=function(b,c){a=new Array,e.fetchRoutineJSONStringByOverviewMarkerId(b,function(a,b){var e,f,g,h;if(null!=a){e=JSON.parse(a);for(f in e)d.createOneMarker(e[f].id,e[f]);for(f in e){g=e[f];for(h in g.subMarkerIds)d.addSubLine(g.id,g.subMarkerIds[h],0,0)}}c(b)})},this.loadRoutine=function(b,c){a=new Array,e.fetchRoutineJSONStringById(b,function(a,b,e){var f,g,h,i,j;if(null!=e){f=JSON.parse(e);for(g in f)d.createOverviewMarker(f[g].id,f[g])}if(null!=a){h=JSON.parse(a);for(g in h)d.createOneMarker(h[g].id,h[g]);for(g in h){i=h[g];for(j in i.subMarkerIds)d.addSubLine(i.id,i.subMarkerIds[j],0,0)}}console.log("model.loadRoutine:fetch routine success"),c({routineName:b})})},this.save2Backend=function(a,b){var d,g,h,i,j;if(console.log("prepare to save routine "+a),d=e.getCurrentUser(),null==d)return alert("no find user abort saving routine"),void 0;g={};for(h in c)i=c[h],i.routineId in g?g[i.routineId].push(i.toJSONObject()):(g[i.routineId]=new Array,g[i.routineId].push(i.toJSONObject()));for(j in g)g[j]=JSON.stringify(g[j]);e.updateAllOverviews(g,function(){f(a,function(){b()})})},this.getMapMarkerById=function(a){var d,e,b=h(a);if(null==b){for(d=c.length,e=0;d>e;e++)if(c[e].id==a)return c[e];return alert("can not find model marker :"+a),null}return b},this.getMarkerContentById=function(a){var b=this.getMapMarkerById(a);return null!=b.getContent()?b.getContent():null},this.addMainLine=function(a,b){var c=h(a),d=h(b);c.addNextMarker(d)},this.addSubLine=function(a,b){var c,d;console.log("model.addSubLine: fromId: "+a+" toId "+b),c=h(a),d=h(b),c.addTreeChildMarker(d)},this.findHeadMarker=function(){var d,b=new Array,c=a.length;for(d=0;c>d;d++)a[d]instanceof MapMarker&&(null!=a[d].prevMainMarker||a[d].isSubMarker()||b.push(a[d]));return b},this.belongWhichHeadIds=function(a){var c,d,b=this.getMapMarkerById(a);if(null==b.prevMainMarker){c=[],d=b;do c.push(d.id),d=d.connectedMainMarker;while(null!=d);return console.log("model.belongwhichHeadIds: return "+c),c}return this.belongWhichHeadIds(b.prevMainMarker.id)},this.redrawConnectedLine=function(a){var b=h(a);null!=b.prevMainMarker&&i(b.prevMainMarker),i(b),null!=b.parentSubMarker&&j(b.parentSubMarker),j(b)}}function BackendManager(){var a=AV.Object.extend("Routine"),b=null,c=null,d=null;AV.initialize("6pzfpf5wkg4m52owuwixt5vggrpjincr8xon3pd966fhgj3c","4wrzupru1m4m7gpafo4llinv7iepyapnycvxygup7uiui77x"),this.login=function(a,b,c){AV.User.logIn(a,b,{success:function(a){c(a)},error:function(){alert("login failed")}})},this.getCurrentUser=function(){return(c=AV.User.current())?(console.log("welcomse session user:"+c.get("username")),c):(AV.User.logIn("guest","guest",{success:function(a){return console.log("login for user:"+a.get("username")),c=a},error:function(a,b){return alert("Error: "+b.code+" "+b.message),alert("log failed. abort save routines"),null}}),void 0)},this.fetchRoutinesByUser=function(b,c){var d=new AV.Query(a);d.equalTo("user",b),d.find({success:function(a){console.log("backendManager:fetch routine success"),c(a)}})},this.fetchOverviewRoutinesByUser=function(b,c){var e=new AV.Query(a);e.equalTo("user",b),e.select("title","overViewJSONString"),e.find({success:function(a){var b,e;console.log("backendManager:fetchOverviewRoutinesByUser success"),d=a,b=[];for(e in a)b.push({routineId:a[e].id,overviewJSONString:a[e].get("overViewJSONString")});c(b)}})},this.deleteRoutineByOverviewMarkerId=function(a,b){var c,e;for(c in d)e=d[c].get("overViewJSONString"),-1!=e.indexOf(a)&&d[c].destroy({success:function(){b()}})},this.fetchRoutineJSONStringByOverviewMarkerId=function(a,c){var e,f,g,h;if(null==d)return c(null);for(e in d)if(f=d[e].get("overViewJSONString"),-1!=f.indexOf(a)){if(b=d[e],g=d[e].get("RoutineJSONString"),h=d[e].get("title"),null!=g)return c(g,h);d[e].fetch().then(function(a){var b=a.get("RoutineJSONString");c(b,h)})}},this.isUserOwnRoutines=function(b,c,d){var e=new AV.Query(a);e.equalTo("user",b),e.get(c,{success:function(){console.log("BackManager.isUserOwnRoutines: user own this routine"),d(!0)},error:function(){console.log("BackManager.isUserOwnRoutines: user not own this routine"),d(!1)}})},this.fetchRoutineJSONStringById=function(c,d){console.log("BackendManager.FetchRoutineJSONStringById-fetch routine id=:"+c);var e=new AV.Query(a);e.get(c,{success:function(a){b=a,d(b.get("RoutineJSONString"),b.get("title"),b.get("overViewJSONString"))},error:function(a,b){alert("The object was not retrieved successfully."),console.log(b)}})},this.updateAllOverviews=function(a,b){var c,e,f;for(c in a)if(e=c,null!=e)for(f in d)d[f].id==e&&d[f].set("overViewJSONString",a[c]);AV.Object.saveAll(d,{success:function(){console.log("update all overviews success"),b()},error:function(a){console.log("error happenned when update all overview"+a)}})},this.saveRoutine=function(c,d,e,f){null==b&&(b=new a),b.set("title",c),b.set("RoutineJSONString",d),b.set("user",this.getCurrentUser()),b.set("overViewJSONString",e),b.save(null,{success:function(a){b=a,f()},error:function(){alert("save routine failed"),b=null}})},this.saveFile=function(a,b,c){var d=a.name,e=new AV.File(d,a);e.save().then(function(){b(e.url())},function(a){c(a)})},this.saveBase64File=function(a,b,c,d){var e=new AV.File(b,{base64:a});e.save().then(function(){c(e.url())},function(a){d(a)})},this.deleteFileByUrl=function(a,b,c){console.log("BManager.deleteFileByUrl:"+a);var d=new AV.Query(AV.Object.extend("_File"));d.equalTo("url",a),d.find({success:function(d){if(d.length>0){console.log("find url:"+a);var e=d[0];e.destroy({success:function(){b()},error:function(a){console.log("Error: "+a.code+" "+a.message),c()}})}else console.log("url "+a+" not found")},error:function(a){console.log("Error: "+a.code+" "+a.message),c()}})}}function MarkerContent(a){var b,c,d,e,f,g,h,i,j,k,l,m,n;this.id=a,b="Unknown Location",c="Unknown Address",d=0,e=0,f="...",g="marker",h=new Array,i=!0,j=1,k=!1,l="resource/icons/pic/pic_default.png",m="resource/icons/pic/pic_no_position.png",n="resource/icons/default/default_default.png",this.isAvergeOverViewMarker=function(){return k},this.setIsAvergeOverViewMarker=function(a){k=a},this.getSlideNum=function(){return j},this.setSlideNum=function(a){j=a},this.setImgPositionDecided=function(a){i=a,i?this.setIconUrl(l):this.setIconUrl(m)},this.isImgPositionDecided=function(){return i},this.updateContent=function(a){null!=a.slideNum&&this.setSlideNum(a.slideNum),null!=a.title&&this.setTitle(a.title),null!=a.address&&this.setAddress(a.address),null!=a.mycomment&&this.setMycomment(a.mycomment),null!=a.category&&this.setCategory(a.category),null!=a.lat&&null!=a.lng&&this.setlatlng(a.lat,a.lng),null!=a.imgUrls&&0!=a.imgUrls.length&&this.setImgUrls(a.imgUrls),null!=a.iconUrl&&this.setIconUrl(a.iconUrl),null!=a.isAverage&&this.setIsAvergeOverViewMarker(a.isAverage),$.publish("updateInfoWindow",[this])},this.addImgUrl=function(a){h.push(a),$.publish("updateInfoWindow",[this])},this.getIconUrl=function(){return n},this.setIconUrl=function(a){n=a,$.publish("iconUrlUpdated",[this])},this.getImgUrls=function(){return h},this.setImgUrls=function(a){h=a},this.getCategory=function(){return g},this.setCategory=function(a){g=a},this.getLat=function(){return d},this.setlatlng=function(a,b){d=a,e=b,$.publish("latlngChanged",[this]),$.publish("updateUI",[])},this.getLng=function(){return e},this.getAddress=function(){return c},this.setAddress=function(a){c=a},this.getTitle=function(){return b},this.setTitle=function(a){b=a},this.setMycomment=function(a){f=a},this.getMycomment=function(a){return a?f.substring(0,150)+"...":f}}function MapMarker(a){this.id=a,this.content=new MarkerContent(a),this.needMainLine=!1,this.needSubLine=!1,this.connectedMainMarker=null,this.connectedMainLine=null,this.mainPaths=new Array,this.prevMainMarker=null,this.subMarkersArray=new Array,this.parentSubMarker=null,this.isHideAllSubMarkers=!1,this.offsetX=0,this.offsetY=0,this.isSubMarker=function(){return null!=this.parentSubMarker?!0:!1},this.updateOffset=function(a,b){console.log("id "+this.id+" modelMarker.updateOffset: "+a+" "+b),this.offsetX=a,this.offsetY=b},this.canAddSubMarker=function(a){var b=!0;return b=null!=a.parentSubMarker||null!=a.connectedMainMarker||null!=a.prevMainMarker||this.isSubMarker()?!1:!0},this.addNextMarker=function(a){a.isSubMarker()||(null!=this.connectedMainMarker&&(this.connectedMainMarker.prevMainMarker=null),this.connectedMainMarker=a,a.prevMainMarker=this,$.publish("updateUI",[]))},this.disconnectNextMarker=function(){null!=this.connectedMainMarker&&(this.connectedMainMarker.prevMainMarker=null,this.connectedMainMarker=null)},this.addTreeChildMarker=function(a){this.canAddSubMarker(a)&&(this.subMarkersArray.push(a),a.parentSubMarker=this,$.publish("updateUI",[]))},this.disconnectTreeChildMarker=function(a){if(0!=this.subMarkersArray.length){for(var b in this.subMarkersArray)this.subMarkersArray[b].id==a.id&&(this.subMarkersArray[b].parentSubMarker=null,this.subMarkersArray.splice(b,1));console.log(this.subMarkersArray)}},this.disconnectAllTreeChildMarker=function(){if(0!=this.subMarkersArray.length){for(var a in this.subMarkersArray)this.subMarkersArray[a].parentSubMarker=null;this.subMarkersArray=new Array}},this.toJSONObject=function(){var b,c,a=new Array;for(b in this.subMarkersArray)a.push(this.subMarkersArray[b].id);return c={id:this.id,lat:this.getContent().getLat(),lng:this.getContent().getLng(),title:this.getContent().getTitle(),address:this.getContent().getAddress(),mycomment:this.getContent().getMycomment(!1),category:this.getContent().getCategory(),imgUrls:this.getContent().getImgUrls(),iconUrl:this.getContent().getIconUrl(),slideNum:this.getContent().getSlideNum(),nextMainMarkerId:null==this.connectedMainMarker?null:this.connectedMainMarker.id,subMarkerIds:a,mainPaths:this.mainPaths,offsetX:this.offsetX,offsetY:this.offsetY,isAverage:this.getContent().isAvergeOverViewMarker()}},this.getContent=function(){return this.content}}function MainLine(a){this.id=a}function SubLine(a){this.id=a}
+function MapMarkerModel() {
+	var marks = new Array();
+	var currentOverviewMarkers = new Array();
+	var allOverviewMarkers = new Array();
+	
+	var self=this;
+
+	var backendManager = new BackendManager();
+	
+	this.isOvMarker=function(id){
+		for(var i in allOverviewMarkers){
+			if(allOverviewMarkers[i].id==id){
+				return true;
+			}
+		}
+		return false;
+	};
+	
+	this.findAverageOvMarkerByOvId=function(id){
+		var ovMarker=self.getMapMarkerById(id);
+		for(var i in allOverviewMarkers){
+			if(ovMarker.routineId==allOverviewMarkers[i].routineId && 
+					allOverviewMarkers[i].content.isAvergeOverViewMarker()){
+				return allOverviewMarkers[i];
+			}else{
+				continue;
+			}
+		}
+		return null;
+	};
+
+	this.getCurrentOverviewMarkers = function() {
+		return currentOverviewMarkers;
+	};
+	
+	this.setCurrenOverviewMarkersByOverviewId=function(id){
+		currentOverviewMarkers=new Array();
+		var routineId=this.getMapMarkerById(id).routineId;
+		for(var i in allOverviewMarkers){
+			if(allOverviewMarkers[i].routineId==routineId){
+				currentOverviewMarkers.push(allOverviewMarkers[i]);
+			}
+		}
+	};
+
+	this.getAllOverviewMarkers = function() {
+		return allOverviewMarkers;
+	}
+
+	this.genUUID = function() {
+		return uuid.v4();
+	};
+
+	this.deleteRoutineByOverviewId = function(overviewMarkerId, successCallback) {
+		backendManager.deleteRoutineByOverviewMarkerId(overviewMarkerId,
+				function() {
+					successCallback();
+				});
+	};
+
+	this.saveImage = function(imageFile, successCallback, failCallback) {
+		backendManager.saveFile(imageFile, function(url) {
+			successCallback(url);
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.saveImageByBase64 = function(base64String, fileName, successCallback,
+			failCallback) {
+		backendManager.saveBase64File(base64String, fileName, function(url) {
+			successCallback(url);
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.resetModels = function() {
+		marks = new Array();
+		currentOverviewMarkers = new Array();
+		allOverviewMarkers = new Array();
+	};
+
+	this.getModelMarkers = function() {
+		return marks;
+	};
+
+	this.fetchMaxIdinMarks = function() {
+		marks.sort(function(mark1, mark2) {
+			if (mark1.id > mark2.id) {
+				return 1;
+			} else if (mark1.id == mark2.id) {
+				return 0;
+			} else {
+				return -1;
+			}
+		});
+
+		return marks[marks.length - 1].id;
+	};
+
+	this.createOneMarker = function(id, content) {
+		var marker = new MapMarker(id);
+		$.publish('createOneMarker', [ marker ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		marks.push(marker);
+		return marker;
+	};
+
+	this.createOverviewMarker = function(id, content,routineId) {
+		var marker = new MapMarker(id);
+		marker.routineId=routineId;
+		$.publish('createOverViewMarker', [ marker,content ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		allOverviewMarkers.push(marker);
+		return marker;
+	};
+	
+	this.deleteOvMarker=function(id){
+		var ovMarker=this.getMapMarkerById(id);
+		if(ovMarker.content.isAvergeOverViewMarker()){
+			alert("this marker can not be deleted");
+			return;
+		}else{
+			for ( var i in allOverviewMarkers) {
+				if (allOverviewMarkers[i].id == id) {
+					allOverviewMarkers.splice(i, 1);
+				}
+			}
+			
+			if(currentOverviewMarkers.length!=0){
+				for ( var i in currentOverviewMarkers) {
+					if (currentOverviewMarkers[i].id == id) {
+						currentOverviewMarkers.splice(i, 1);
+					}
+				}
+			}
+			
+			$.publish('deleteOvMarker', [ id ]);
+			$.publish('updateOvLines');
+		}
+	};
+
+	this.deleteOneMarker = function(id, needDeleteAttackedImg) {
+		var modelMarker = this.getMapMarkerById(id);
+		if (modelMarker != null) {
+
+			// unconnect pre main model marker
+			if (modelMarker.prevMainMarker != null) {
+				modelMarker.prevMainMarker.disconnectNextMarker();
+			}
+
+			// unconnect next main model marker
+			if (modelMarker.connectedMainMarker != null) {
+				modelMarker.disconnectNextMarker();
+			}
+
+			// unconnect parentSubMarker
+			if (modelMarker.parentSubMarker != null) {
+				modelMarker.parentSubMarker
+						.disconnectTreeChildMarker(modelMarker);
+			}
+
+			// unconnect all sub marker
+			modelMarker.disconnectAllTreeChildMarker();
+
+			for ( var i in marks) {
+				if (marks[i].id == id) {
+					marks.splice(i, 1);
+				}
+			}
+
+			if (needDeleteAttackedImg) {
+				var imgUrls = modelMarker.content.getImgUrls();
+				if (imgUrls != null && imgUrls.length > 0) {
+					for ( var i in imgUrls) {
+						var url = imgUrls[i];
+						backendManager.deleteFileByUrl(url, function() {
+							console.log('success deleted img ');
+						}, function() {
+							console.log('fail delete img');
+						});
+					}
+					;
+				}
+			}
+			$.publish('deleteOneMarker', [ modelMarker ]);
+		}
+	};
+
+	this.isUserOwnRoutine = function(routineId, successCallback) {
+		var currentUser = backendManager.getCurrentUser();
+
+		backendManager.isUserOwnRoutines(currentUser, routineId,
+				successCallback);
+	};
+
+	this.loadAllOverviewRoutine = function(successCallback) {
+		allOverviewMarkers = new Array();
+
+		var currentUser = backendManager.getCurrentUser();
+
+		backendManager.fetchOverviewRoutinesByUser(currentUser, function(
+				overviewJSONStringArray) {
+			for ( var i in overviewJSONStringArray) {
+				var overviewJSONString = overviewJSONStringArray[i].overviewJSONString;
+				var routineId=overviewJSONStringArray[i].routineId;
+				var overviewMarkerArray = JSON.parse(overviewJSONString);
+				for ( var i in overviewMarkerArray) {
+					self.createOverviewMarker(overviewMarkerArray[i].id,
+							overviewMarkerArray[i],routineId);
+				}
+			}
+			successCallback();
+		});
+	};
+
+	this.loadRoutineByOverviewMarkerId = function(overviewId, successCallback) {
+		marks = new Array();
+
+		backendManager.fetchRoutineJSONStringByOverviewMarkerId(overviewId,
+				function(marksJSONString, routineName) {
+					if (marksJSONString != null) {
+						// parse markers
+						var marksJSONArray = JSON.parse(marksJSONString);
+						for ( var i in marksJSONArray) {
+
+							self.createOneMarker(marksJSONArray[i].id,
+									marksJSONArray[i]);
+
+						}
+
+						for ( var i in marksJSONArray) {
+							var eachJSONObject = marksJSONArray[i];
+
+							for ( var j in eachJSONObject.subMarkerIds) {
+								self.addSubLine(eachJSONObject.id,
+										eachJSONObject.subMarkerIds[j], 0, 0);
+							}
+						}
+
+					}
+
+					successCallback(routineName);
+				});
+
+	};
+
+	this.loadRoutine = function(routineId, successCallback) {
+		marks = new Array();
+
+		backendManager.fetchRoutineJSONStringById(routineId, function(
+				marksJSONString, title, overViewJSONString) {
+			if (overViewJSONString != null) {
+				// parse overview markers
+				var overviewJSONArray = JSON.parse(overViewJSONString);
+				for ( var i in overviewJSONArray) {
+					self.createOverviewMarker(overviewJSONArray[i].id,
+							overviewJSONArray[i]);
+				}
+			}
+
+			if (marksJSONString != null) {
+				// parse markers
+				var marksJSONArray = JSON.parse(marksJSONString);
+				for ( var i in marksJSONArray) {
+
+					self.createOneMarker(marksJSONArray[i].id,
+							marksJSONArray[i]);
+
+				}
+
+				for ( var i in marksJSONArray) {
+					var eachJSONObject = marksJSONArray[i];
+					/*
+					 * if (eachJSONObject.nextMainMarkerId != null) {
+					 * self.addMainLine(eachJSONObject.id,
+					 * eachJSONObject.nextMainMarkerId); }
+					 */
+
+					for ( var j in eachJSONObject.subMarkerIds) {
+						self.addSubLine(eachJSONObject.id,
+								eachJSONObject.subMarkerIds[j], 0, 0);
+					}
+				}
+
+			}
+			console.log('model.loadRoutine:fetch routine success');
+			successCallback({
+				routineName : title,
+			});
+		});
+
+	};
+
+	this.save2Backend = function(routineName, callback) {
+		console.log('prepare to save routine ' + routineName);
+		var currentUser = backendManager.getCurrentUser();
+		
+		if (currentUser == null) {
+			alert('no find user abort saving routine');
+			return;
+		}
+
+		//save all overview markers
+		//to do...
+		var overviewMap={};
+		for(var i in allOverviewMarkers){
+			var ovMarker=allOverviewMarkers[i];
+			if(ovMarker.routineId in overviewMap){
+				overviewMap[ovMarker.routineId].push(ovMarker.toJSONObject());
+			}else{
+				overviewMap[ovMarker.routineId]=new Array();
+				overviewMap[ovMarker.routineId].push(ovMarker.toJSONObject());
+			}
+		}
+		
+		for(var key in overviewMap){
+			overviewMap[key]=JSON.stringify(overviewMap[key]);
+		}
+		
+		backendManager.updateAllOverviews(overviewMap,function(){	
+			saveCurrentRoutine(routineName,function(){
+				callback();
+			});
+		});
+		
+	};
+	
+	function saveCurrentRoutine(routineName,callback){
+		//save Routine Markers
+		// gen marksJSONArray
+		var marksJSONArray = new Array();
+		if(marks.length!=0){
+			for ( var i in marks) {
+				marksJSONArray.push(marks[i].toJSONObject());
+			}
+
+			// gen overViewMarksJSONArray
+			var overviewMarkersJSONArray = new Array();
+			if (currentOverviewMarkers.length == 0) {
+				var uuid = self.genUUID();
+				var centreOverViewMarker = new MapMarker(uuid);
+				centreOverViewMarker.content.setIsAvergeOverViewMarker(true);
+				var location = genCentreLocation();
+				centreOverViewMarker.content.updateContent(location);
+				overviewMarkersJSONArray.push(centreOverViewMarker.toJSONObject());
+			} else {
+				// find average Marker and update its lat lng
+				for ( var i in currentOverviewMarkers) {
+					var overviewMarker = currentOverviewMarkers[i];
+					if (overviewMarker.content.isAvergeOverViewMarker()) {
+						overviewMarker.content.updateContent(genCentreLocation());
+					}
+					overviewMarkersJSONArray.push(overviewMarker.toJSONObject());
+				}
+			}
+			
+			backendManager.saveRoutine(routineName, JSON.stringify(marksJSONArray),
+					JSON.stringify(overviewMarkersJSONArray), function() {
+						callback();
+					});
+		}else{
+			callback();
+		}
+	}
+
+	function genCentreLocation() {
+		var numWithNoSubMarkers = 0;
+		var allLat = 0.000000;
+		var allLng = 0.000000;
+		for ( var i = 0; i < marks.length; i++) {
+			if (!marks[i].isSubMarker()) {
+				allLat = allLat + marks[i].getContent().getLat();
+				allLng = allLng + marks[i].getContent().getLng();
+				numWithNoSubMarkers++;
+			}
+		}
+		var averageLat = allLat / numWithNoSubMarkers;
+		var averageLng = allLng / numWithNoSubMarkers;
+		return {
+			lat : averageLat,
+			lng : averageLng
+		};
+	}
+
+	function getOverlayById(id) {
+		var length = marks.length;
+		for ( var i = 0; i < length; i++) {
+			if (marks[i].id == id) {
+				return marks[i];
+			}
+		}
+		return null;
+	}
+
+	this.getMapMarkerById = function(id) {
+		var marker = getOverlayById(id);
+		if (marker == null) {
+			var length = allOverviewMarkers.length;
+			for ( var i = 0; i < length; i++) {
+				if (allOverviewMarkers[i].id == id) {
+					return allOverviewMarkers[i];
+				}
+			}
+			alert('can not find model marker :' + id);
+			return null;
+		} else {
+			return marker;
+		}
+
+	};
+
+	this.getMarkerContentById = function(id) {
+		var marker = this.getMapMarkerById(id);
+		if (marker.getContent() != null) {
+			return marker.getContent();
+		} else {
+			return null;
+		}
+	};
+
+	this.addMainLine = function(fromId, toId) {
+		var fromMarker = getOverlayById(fromId);
+		var toMarker = getOverlayById(toId);
+		fromMarker.addNextMarker(toMarker);
+
+	};
+
+	this.addSubLine = function(fromId, toId) {
+		console.log("model.addSubLine: fromId: " + fromId + " toId " + toId);
+		var fromMarker = getOverlayById(fromId);
+		var toMarker = getOverlayById(toId);
+		fromMarker.addTreeChildMarker(toMarker);
+	};
+
+	this.findHeadMarker = function() {
+		var heads = new Array();
+		var length = marks.length;
+		for ( var i = 0; i < length; i++) {
+			if (marks[i] instanceof MapMarker) {
+				if (marks[i].prevMainMarker == null && !marks[i].isSubMarker()) {
+					heads.push(marks[i]);
+				}
+			}
+		}
+		return heads;
+	};
+
+	this.belongWhichHeadIds = function(markerId) {
+		var modelMarker = this.getMapMarkerById(markerId);
+
+		if (modelMarker.prevMainMarker == null) {
+			var routineIds = [];
+			var headMarker = modelMarker;
+			do {
+				routineIds.push(headMarker.id);
+				headMarker = headMarker.connectedMainMarker;
+			} while (headMarker != null);
+			console.log("model.belongwhichHeadIds: return " + routineIds);
+			return routineIds;
+		} else {
+			return this.belongWhichHeadIds(modelMarker.prevMainMarker.id);
+		}
+	};
+
+	this.redrawConnectedLine = function(id) {
+		var marker = getOverlayById(id);
+		// redraw curveLine
+		if (marker.prevMainMarker != null) {
+			redrawOneMarker(marker.prevMainMarker);
+		}
+		redrawOneMarker(marker);
+
+		if (marker.parentSubMarker != null) {
+			redrawTreeNode(marker.parentSubMarker);
+		}
+		redrawTreeNode(marker);
+	};
+
+	function redrawOneMarker(marker) {
+		if (marker.connectedMainMarker == null) {
+			return;
+		} else {
+			// redraw Curve Line
+			if (marker.connectedMainLine != null) {
+				// marker.connectedMainLine.remove(map);
+				view.removeById(marker.connectedMainLine.id);
+			}
+			// addCurveLine(map,marker.getPosition(),marker.connectedMainMarker.getPosition());
+			marker.connectedMainLine = new MainLine(view.drawMainLine(
+					marker.id, marker.connectedMainMarker.id));
+
+		}
+	}
+
+	function redrawTreeNode(marker) {
+		for ( var j in marker.subMarkersArray) {
+			// map.removeOverlay(marker.subMarkersArray[j].line);
+			view.removeById(marker.subMarkersArray[j].line.id);
+			marker.subMarkersArray[j].line = new SubLine(view.drawSubLine(
+					marker.id, marker.subMarkersArray[j].entity.id));
+			/*
+			 * if(marker.areSubMarkersHide()){
+			 * marker.subMarkersArray[j].line.hide(); }
+			 */
+		}
+	}
+}
+
+function BackendManager() {
+	var Routine = AV.Object.extend("Routine");
+
+	var routine = null;
+	var currentUser = null;
+	var userRoutines = null;
+
+	AV.initialize("6pzfpf5wkg4m52owuwixt5vggrpjincr8xon3pd966fhgj3c",
+			"4wrzupru1m4m7gpafo4llinv7iepyapnycvxygup7uiui77x");
+
+	this.login = function(userName, pwd, successCallback) {
+		AV.User.logIn(userName, pwd, {
+			success : function(user) {
+				successCallback(user);
+			},
+			error : function(user, error) {
+				alert('login failed');
+			}
+		});
+	};
+
+	this.getCurrentUser = function() {
+		currentUser = AV.User.current();
+		if (currentUser) {
+			console.log("welcomse session user:" + currentUser.get('username'));
+
+			return currentUser;
+
+		} else {
+			AV.User.logIn("guest", "guest", {
+				success : function(user) {
+					console.log("login for user:" + user.get('username'));
+					currentUser = user;
+					return currentUser;
+				},
+				error : function(user, error) {
+					alert("Error: " + error.code + " " + error.message);
+					alert("log failed. abort save routines");
+					return null;
+				}
+			});
+		}
+	};
+
+	this.fetchRoutinesByUser = function(user, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.find({
+			success : function(routines) {
+				console.log("backendManager:fetch routine success");
+				successCallback(routines);
+			}
+		});
+	};
+
+	this.fetchOverviewRoutinesByUser = function(user, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.select('title', 'overViewJSONString');
+		query
+				.find({
+					success : function(routines) {
+						console
+								.log("backendManager:fetchOverviewRoutinesByUser success");
+						userRoutines = routines;
+						var overviewMarkersJSONStringArray = [];
+						for ( var i in routines) {
+							overviewMarkersJSONStringArray.push(
+										{
+											routineId:routines[i].id,
+											overviewJSONString:routines[i].get('overViewJSONString')
+										}
+									);
+						}
+						successCallback(overviewMarkersJSONStringArray);
+					}
+				});
+	};
+
+	this.deleteRoutineByOverviewMarkerId = function(overviewMarkerId,
+			successCallback) {
+		for ( var i in userRoutines) {
+			var overviewJSONString = userRoutines[i].get('overViewJSONString');
+			if (overviewJSONString.indexOf(overviewMarkerId) != -1) {
+				userRoutines[i].destroy({
+					success : function() {
+						successCallback();
+					}
+				});
+			}
+		}
+	};
+
+	this.fetchRoutineJSONStringByOverviewMarkerId = function(overviewMarkerId,
+			successCallback) {
+		if (userRoutines == null) {
+			return successCallback(null);
+		} else {
+			for ( var i in userRoutines) {
+				var overviewJSONString = userRoutines[i]
+						.get('overViewJSONString');
+				if (overviewJSONString.indexOf(overviewMarkerId) != -1) {
+					routine = userRoutines[i];
+					var result = userRoutines[i].get('RoutineJSONString');
+					var routineName = userRoutines[i].get('title');
+					if (result != null) {
+						return successCallback(result, routineName);
+					} else {
+						userRoutines[i].fetch().then(function(result) {
+							var r = result.get('RoutineJSONString');
+							successCallback(r, routineName);
+						});
+					}
+				} else {
+					continue;
+				}
+			}
+		}
+	};
+
+	this.isUserOwnRoutines = function(user, routineId, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query
+				.get(
+						routineId,
+						{
+							success : function() {
+								console
+										.log('BackManager.isUserOwnRoutines: user own this routine');
+								successCallback(true);
+							},
+							error : function(object, error) {
+								console
+										.log('BackManager.isUserOwnRoutines: user not own this routine');
+								successCallback(false);
+							}
+						});
+	};
+
+	this.fetchRoutineJSONStringById = function(objectId, successCallback) {
+		console
+				.log('BackendManager.FetchRoutineJSONStringById-fetch routine id=:'
+						+ objectId);
+
+		var query = new AV.Query(Routine);
+		query.get(objectId, {
+			success : function(fetchedRoutine) {
+				routine = fetchedRoutine;
+				successCallback(routine.get('RoutineJSONString'), routine
+						.get('title'), routine.get('overViewJSONString'));
+			},
+			error : function(object, error) {
+				alert("The object was not retrieved successfully.");
+				console.log(error);
+			}
+		});
+	};
+	
+	this.updateAllOverviews=function(ovMarkerJSONMap,successCallback){
+		for(var key in ovMarkerJSONMap){
+			var routineId=key;
+			if(routineId!=null){
+				for(var j in userRoutines){
+					if(userRoutines[j].id==routineId){
+						userRoutines[j].set("overViewJSONString",ovMarkerJSONMap[key]);
+					}
+				}
+			}
+		}
+		
+		AV.Object.saveAll(userRoutines, {
+			    success: function(list) {
+			      console.log("update all overviews success");
+			      successCallback();
+			    },
+			    error: function(error) {
+			      console.log("error happenned when update all overview"+error);
+			    },
+		 });
+	};
+
+	this.saveRoutine = function(routineName, routineJSONString,
+			overViewJSONString, callback) {
+		if (routine == null) {
+			routine = new Routine();
+		}
+		routine.set('title', routineName);
+		routine.set('RoutineJSONString', routineJSONString);
+		routine.set('user', this.getCurrentUser());
+		routine.set('overViewJSONString', overViewJSONString);
+		routine.save(null, {
+			success : function(routineFoo) {
+				routine = routineFoo;
+				callback();
+			},
+			error : function(object, error) {
+				alert('save routine failed');
+				routine = null;
+			}
+
+		});
+	};
+
+	this.saveFile = function(file, successCallBack, failCallback) {
+
+		var name = file.name;
+		var avFile = new AV.File(name, file);
+		avFile.save().then(function() {
+			successCallBack(avFile.url());
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.saveBase64File = function(base64String, fileName, successCallBack,
+			failCallback) {
+		var avFile = new AV.File(fileName, {
+			base64 : base64String
+		});
+		avFile.save().then(function() {
+			successCallBack(avFile.url());
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.deleteFileByUrl = function(url, successCallBack, failCallback) {
+		console.log('BManager.deleteFileByUrl:' + url);
+		var query = new AV.Query(AV.Object.extend("_File"));
+		query.equalTo("url", url);
+		query.find({
+			success : function(results) {
+				if (results.length > 0) {
+					console.log('find url:' + url);
+
+					var file = results[0];
+					file.destroy({
+						success : function(file) {
+							successCallBack();
+						},
+						error : function(error) {
+							console.log("Error: " + error.code + " "
+									+ error.message);
+							failCallback();
+						}
+					});
+
+				} else {
+					console.log('url ' + url + ' not found');
+				}
+			},
+			error : function(error) {
+				console.log("Error: " + error.code + " " + error.message);
+				failCallback();
+			}
+		});
+	};
+
+	// getters and setters
+
+}
+
+function MarkerContent(id) {
+	this.id = id;
+
+	var title = "Unknown Location";
+	var address = "Unknown Address";
+	var lat = 0;
+	var lng = 0;
+	var mycomment = "...";
+	var category = "marker";
+	var imgUrls = new Array();
+	var isImgPositionDecided = true;
+	var slideNum = 1;
+
+	var isAvergeOverViewMarker = false;
+
+	var defaultImgIcon = "resource/icons/pic/pic_default.png";
+	var picNoPositionIconUrl = "resource/icons/pic/pic_no_position.png";
+	var iconUrl = "resource/icons/default/default_default.png";
+
+	this.isAvergeOverViewMarker = function() {
+		return isAvergeOverViewMarker;
+	};
+
+	this.setIsAvergeOverViewMarker = function(isAverage) {
+		isAvergeOverViewMarker = isAverage;
+	};
+
+	this.getSlideNum = function() {
+		return slideNum;
+	};
+	this.setSlideNum = function(num) {
+		slideNum = num;
+	};
+
+	this.setImgPositionDecided = function(arg) {
+		isImgPositionDecided = arg;
+		if (isImgPositionDecided) {
+			this.setIconUrl(defaultImgIcon);
+		} else {
+			this.setIconUrl(picNoPositionIconUrl);
+		}
+	};
+
+	this.isImgPositionDecided = function() {
+		return isImgPositionDecided;
+	};
+
+	this.updateContent = function(args) {
+		if (args.slideNum != null) {
+			this.setSlideNum(args.slideNum);
+		}
+
+		if (args.title != null) {
+			this.setTitle(args.title);
+		}
+
+		if (args.address != null) {
+			this.setAddress(args.address);
+		}
+
+		if (args.mycomment != null) {
+			this.setMycomment(args.mycomment);
+		}
+
+		if (args.category != null) {
+			this.setCategory(args.category);
+		}
+
+		if (args.lat != null && args.lng != null) {
+			this.setlatlng(args.lat, args.lng);
+
+		}
+
+		if (args.imgUrls != null && args.imgUrls.length != 0) {
+			this.setImgUrls(args.imgUrls);
+		}
+
+		if (args.iconUrl != null) {
+			this.setIconUrl(args.iconUrl);
+		}
+
+		if (args.isAverage != null) {
+			this.setIsAvergeOverViewMarker(args.isAverage);
+		}
+
+		/*
+		 * if (args.mainPaths != null) { this.mainPaths = args.mainPaths; }
+		 */
+
+		$.publish('updateInfoWindow', [ this ]);
+
+	};
+
+	this.addImgUrl = function(url) {
+		imgUrls.push(url);
+		$.publish('updateInfoWindow', [ this ]);
+	};
+
+	this.getIconUrl = function() {
+		return iconUrl;
+	};
+
+	this.setIconUrl = function(arg) {
+		iconUrl = arg;
+		$.publish("iconUrlUpdated", [ this ]);
+	};
+
+	this.getImgUrls = function() {
+		return imgUrls;
+	};
+
+	this.setImgUrls = function(urlArray) {
+		imgUrls = urlArray;
+	};
+
+	this.getCategory = function() {
+		return category;
+	};
+
+	this.setCategory = function(nameFoo) {
+		category = nameFoo;
+	};
+
+	this.getLat = function() {
+		return lat;
+	};
+
+	this.setlatlng = function(latFoo, lngFoo) {
+		lat = latFoo;
+		lng = lngFoo;
+		$.publish('latlngChanged', [ this ]);
+		$.publish('updateUI', []);
+	};
+
+	this.getLng = function() {
+		return lng;
+	};
+
+	this.getAddress = function() {
+		return address;
+	};
+
+	this.setAddress = function(addressFoo) {
+		address = addressFoo;
+	};
+
+	this.getTitle = function() {
+		return title;
+	};
+
+	this.setTitle = function(titleFoo) {
+		title = titleFoo;
+	};
+
+	this.setMycomment = function(comment) {
+		mycomment = comment;
+	};
+
+	this.getMycomment = function(needShort) {
+		if (needShort) {
+			return mycomment.substring(0, 150) + '...';
+		} else {
+			return mycomment;
+		}
+	};
+}
+
+function MapMarker(id) {
+	this.id = id;
+	this.content = new MarkerContent(id);
+
+	this.needMainLine = false;
+	this.needSubLine = false;
+	// next Marker and curveLine
+	this.connectedMainMarker = null;
+	this.connectedMainLine = null;
+
+	// main path
+	this.mainPaths = new Array();
+
+	// pre Marker and curveLine
+	this.prevMainMarker = null;
+
+	// of MapMarker array
+	this.subMarkersArray = new Array();
+	this.parentSubMarker = null;
+
+	this.isHideAllSubMarkers = false;
+
+	// if this marker is a submarker,
+	// then it has a relative value of pixel x and y cordinates compared to its
+	// parent marker
+	this.offsetX = 0;
+	this.offsetY = 0;
+
+	this.isSubMarker = function() {
+		if (this.parentSubMarker != null) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+	this.updateOffset = function(x, y) {
+		console.log("id " + this.id + " modelMarker.updateOffset: " + x + " "
+				+ y);
+		this.offsetX = x;
+		this.offsetY = y;
+	};
+
+	this.canAddSubMarker = function(marker) {
+		var result = true;
+		if (marker.parentSubMarker == null
+				&& marker.connectedMainMarker == null
+				&& marker.prevMainMarker == null && !this.isSubMarker()) {
+			result = true;
+		} else {
+			result = false;
+		}
+
+		return result;
+	};
+
+	// logic add
+	this.addNextMarker = function(marker) {
+		if (!marker.isSubMarker()) {
+			if (this.connectedMainMarker != null) {
+				this.connectedMainMarker.prevMainMarker = null;
+			}
+
+			this.connectedMainMarker = marker;
+			marker.prevMainMarker = this;
+			$.publish('updateUI', []);
+		}
+	};
+
+	// logic delete
+	this.disconnectNextMarker = function() {
+		if (this.connectedMainMarker != null) {
+			this.connectedMainMarker.prevMainMarker = null;
+			this.connectedMainMarker = null;
+		}
+	};
+
+	// logic add tree node
+	this.addTreeChildMarker = function(treeNodeMarker) {
+		if (this.canAddSubMarker(treeNodeMarker)) {
+			this.subMarkersArray.push(treeNodeMarker);
+			treeNodeMarker.parentSubMarker = this;
+			$.publish('updateUI', []);
+		}
+	};
+
+	// logic delete tree node
+	this.disconnectTreeChildMarker = function(mark) {
+		if (this.subMarkersArray.length != 0) {
+			for ( var i in this.subMarkersArray) {
+				if (this.subMarkersArray[i].id == mark.id) {
+					this.subMarkersArray[i].parentSubMarker = null;
+					this.subMarkersArray.splice(i, 1);
+				}
+			}
+			console.log(this.subMarkersArray);
+		}
+	};
+
+	this.disconnectAllTreeChildMarker = function() {
+		if (this.subMarkersArray.length != 0) {
+			for ( var i in this.subMarkersArray) {
+				this.subMarkersArray[i].parentSubMarker = null;
+			}
+			this.subMarkersArray = new Array();
+		}
+	};
+
+	this.toJSONObject = function() {
+		var subMarkerIdsArray = new Array();
+		for ( var i in this.subMarkersArray) {
+			subMarkerIdsArray.push(this.subMarkersArray[i].id);
+		}
+
+		var object = {
+			id : this.id,
+			lat : this.getContent().getLat(),
+			lng : this.getContent().getLng(),
+			title : this.getContent().getTitle(),
+			address : this.getContent().getAddress(),
+			mycomment : this.getContent().getMycomment(false),
+			category : this.getContent().getCategory(),
+			imgUrls : this.getContent().getImgUrls(),
+			iconUrl : this.getContent().getIconUrl(),
+			slideNum : this.getContent().getSlideNum(),
+			nextMainMarkerId : this.connectedMainMarker == null ? null
+					: this.connectedMainMarker.id,
+			subMarkerIds : subMarkerIdsArray,
+			mainPaths : this.mainPaths,
+			offsetX : this.offsetX,
+			offsetY : this.offsetY,
+			isAverage : this.getContent().isAvergeOverViewMarker()
+		};
+
+		return object;
+	};
+
+	// getters and setters
+	this.getContent = function() {
+		return this.content;
+	};
+
+}
+
+function MainLine(id) {
+	this.id = id;
+}
+
+function SubLine(id) {
+	this.id = id;
+}
