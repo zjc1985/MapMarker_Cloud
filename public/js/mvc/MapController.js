@@ -1,1 +1,983 @@
-/* Obfuscate your JavaScript at https://jscrambler.com */var b0M6={'U5':function(b,P){return b>P;},'Q6':function(b,P){return b<=P;},'T6':function(b,P){return b<P;},'Z1u':"push",'P4r':function(b,P){return b!=P;},'H4r':function(b,P){return b==P;},'v4r':function(b,P){return b!=P;},'e4r':function(b,P){return b<P;},'A6':function(b,P){return b<P;},'I3r':function(b,P){return b!=P;},'a5':function(b,P){return b<P;},'b5':function(b,P){return b>P;},'p3r':function(b,P){return b-P;},'O6h':0,'K3r':function(b,P){return b-P;},'d3r':function(b,P){return b!=P;},'n5h':"length",'X6':function(b,P){return b>P;},'J3r':function(b,P){return b>P;},'j3r':function(b,P){return b==P;},'C3r':function(b,P){return b-P;},'O3r':function(b,P){return b!=P;},'R3r':function(b,P){return b!=P;},'Y6':function(b,P){return b==P;},'W5':function(b,P){return b!=P;},'B5':function(b,P){return b==P;},'t4r':function(b,P){return b!=P;},'A4r':function(b,P){return b<P;},'E6':function(b,P){return b==P;},'w4r':function(b,P){return b==P;},'L6':function(b,P){return b==P;},'s3r':function(b,P){return b!=P;},'G2u':(function(a2u){return (function(z2u,O2u){return (function(S2u){return {J2u:S2u};})(function(i2u){var g2u,C2u=0;for(var h2u=z2u;C2u<i2u["length"];C2u++){var E2u=O2u(i2u,C2u);g2u=C2u===0?E2u:g2u^E2u;}return g2u?h2u:!h2u;});})((function(L2u,Y2u,u2u,I2u){var p2u=28;return L2u(a2u,p2u)-I2u(Y2u,u2u)>p2u;})(parseInt,Date,(function(Y2u){return (''+Y2u)["substring"](1,(Y2u+'')["length"]-1);})('_getTime2'),function(Y2u,u2u){return new Y2u()[u2u]();}),function(i2u,C2u){var x2u=parseInt(i2u["charAt"](C2u),16)["toString"](2);return x2u["charAt"](x2u["length"]-1);});})('3lbk143pk'),'c3r':function(b,P){return b!=P;},'S3r':function(b,P){return b==P;},'k3r':function(b,P){return b!=P;},'N5':function(b,P){return b!=P;},'Z5':function(b,P){return b==P;},'M3r':function(b,P){return b-P;},'u5':function(b,P){return b==P;},'o4r':function(b,P){return b!=P;},'G6':function(b,P){return b==P;},'n5':function(b,P){return b==P;},'q3r':function(b,P){return b!=P;},'V5':function(b,P){return b!=P;},'g6h':1,'i4r':function(b,P){return b!=P;},'z6':function(b,P){return b==P;},'F3r':function(b,P){return b!=P;},'l5':function(b,P){return b*P;},'g5':function(b,P){return b!=P;},'i6':function(b,P){return b==P;},'x5':function(b,P){return b==P;},'D3r':function(b,P){return b!=P;},'G4r':function(b,P){return b!=P;},'m5':function(b,P){return b-P;},'r5':function(b,P){return b!=P;},'y5':function(b,P){return b==P;},'h5':function(b,P){return b!=P;},'f5':function(b,P){return b>P;}};function MapController(){var t3=b0M6.G2u.J2u("7524")?'line editend, line node num: ':'iconUrlUpdated',G=b0M6.G2u.J2u("ae")?'delete this routine':'latlngChanged',H3=b0M6.G2u.J2u("7c")?'updateInfoWindow':"",s4=b0M6.G2u.J2u("253")?"landscape.natural":'createOverViewMarker',K4=b0M6.G2u.J2u("5c41")?" show status to true":'createOneMarker',Q3=b0M6.G2u.J2u("a8f8")?'deleteOneMarker':'edit',U3=b0M6.G2u.J2u("ef")?'deleteOvMarker':'bM.fetchUserByUserId: found user, user name',v3=b0M6.G2u.J2u("754")?"newlatlng":"subscribe",N4=b0M6.G2u.J2u("b67d")?"updateMarkerInfoWindow":"arrowline",a4="updateUIRoute",m4=b0M6.G2u.J2u("6128")?"updateOvLines":"addOverviewMarker",I4=b0M6.G2u.J2u("4a")?"mcOptions":"createViewMarker",b3=b0M6.G2u.J2u("a3b8")?"imageBase64String":"latlngChangedHandler",r3=b0M6.G2u.J2u("1c")?"deleteViewOvMarker":"redrawTreeNode",H4="deleteViewMarker",F4=b0M6.G2u.J2u("86")?"isAverage":"changeMarkerIcon",q1="iconUrlUpdatedHandler",E3="testFeature",t1="saveRoutine",c1=b0M6.G2u.J2u("2d")?"mergeImgUrlClickHandler":"fetchRoutineJSONStringById",d4=b0M6.G2u.J2u("2c6")?"join":"addSubLineClickHandler",c4=b0M6.G2u.J2u("2f")?"addMainLineClickHandler":"BMAP_POI_TYPE_SUBSTOP",b4=b0M6.G2u.J2u("ab")?"addCustomClickEvent":"TOP_LEFT",P3="markerDeleteClickHandler",w3="maps",E="markerDragendEventHandler",U4=b0M6.G2u.J2u("d3")?"content":"viewMarkerDragendEventHandler",g3="getLng",W3="getLat",y3="connectedMainMarker",D1="updateOffset",G3=b0M6.G2u.J2u("e6ba")?"markerNeedSubLine":"changeMarkerIcon",w4="markerNeedMainLine",u=b0M6.G2u.J2u("1dd1")?"poi":"markerNeedMergeImgUrl",x3="markerClickEventHandler",f3=b0M6.G2u.J2u("a16")?"currentMarkerId":"save2Backend",V4="overviewMarkerClickEventHandler",V3=b0M6.G2u.J2u("b44")?"mainPaths":"setImageSize",y4=b0M6.G2u.J2u("1a")?"lineEditEnd":"pair",U1="getImgUrls",q4=b0M6.G2u.J2u("f56f")?"setDefaultImgs":"BICYCLING",e4="getIconUrl",u1=b0M6.G2u.J2u("ad4c")?"setDefaultContent":"setImageSize",o1="getCategory",g4="getAddress",j4=b0M6.G2u.J2u("861")?"showInfoClickHandler":"path",p1='updateUI',z1="showAllRoutineClickHandler",Y1="updateMarkerContentById",k4="removeAllOvLines",R4='updateOvLines',l4=b0M6.G2u.J2u("e2")?"disableCloseOnClick":"publish",W4="updateContent",L1="fromPixelToLatLng",S1=b0M6.G2u.J2u("478")?"parentSubMarker":"enableScrollWheelZoom",y1=650,F1="mapClickEventHandler",k1=b0M6.G2u.J2u("e51")?"isAvergeOverViewMarker":"prevSlide",J4=b0M6.G2u.J2u("3c")?"exitSlideMode":"ContextMenu",O4="removeAllLines",s8="startSlideMode",Q1=b0M6.G2u.J2u("8a2e")?"marks":"searchLocation",T3="setImgPositionDecided",i3="getMarkerContentById",s1="addMarkerClickEvent",W1="lng",o3=b0M6.G2u.J2u("f4")?"lat":"push",x4=b0M6.G2u.J2u("7fa")?"toJSObject":"uploadImgs",d1="isInCustomZoom",r1=b0M6.G2u.J2u("ae")?"style":"removeById",c8="showRoutineDetail",q8=b0M6.G2u.J2u("5b26")?"avFile":"loadRoutines",P8="deleteRoutine",r4=b0M6.G2u.J2u("d25c")?"fromContent":"createOverviewMarker",J1=b0M6.G2u.J2u("14a")?"getMycomment":"allLng",V1="mycomment",u3=b0M6.G2u.J2u("52")?"getTitle":"modelMarker",Q="title",l3=b0M6.G2u.J2u("e6b")?"isAverage":"needSubLine",m1="routineId",A3="genUUID",A8="addOvMarker",t8=b0M6.G2u.J2u("35")?"pixelDistance":"deleteOvMarker",k8="Default Routine",i8=b0M6.G2u.J2u("f5")?'createOneMarker':200,C8="createView",M1=b0M6.G2u.J2u("d7a")?150:'deleteIcon',j1='addIcon',X3='deleteRoutine',w8=b0M6.G2u.J2u("ae")?'...':'mergeImgUrlItem',d8=b0M6.G2u.J2u("ab2")?'deleteselfItem':'M 0,-1 0,1',M8=b0M6.G2u.J2u("b2")?'addSublineItem':"save success",B3="setMarkerDragable",h4='uploadItem',J8='saveRoutineItem',D8=b0M6.G2u.J2u("bbe3")?'addMarkerItem':'username',Z4="infocard",G8=b0M6.G2u.J2u("ff8f")?"drawSubLine":"showContextMenuById",B1="hide",M4=true,e8="BOUNCE",j="setMarkerAnimation",Z3="setMarkerZIndex",I1="isShow",Y3=false,X="subMarkersArray",B4="getMapMarkerById",a3="AddMarkers2Cluster",N3="clearMarkerCluster",m3="isSubMarker",K1="getSlideNum",a="content",h="getModelMarkers",C4=100,l1='isUserOwnThisRoutine: ',E1="zoomEventHandler",x1=5,z="setMapZoom",w="id",u4="fitBoundsByIds",D4="getAllOverviewMarkers",z3="loadAllOverviewRoutine",L3="getLatLng",P1="fromLatLngToPixel",h3="y",S4="offsetY",n4="x",v8="offsetX",e3=null,R1="infoWindow",N1="show",n3="getViewOverlaysById",v4="log";function z8(b){var P=" show status to true",Z="controller.changeMainMarkerShowStatus: set",q="h5",t="g5",D="a5",f="controller.changeMainMarkerShowStatus";console[v4](f);for(var o=b0M6.O6h;b0M6[D](o,b[b0M6.n5h]);o++){if(b0M6[t](b[o],b0M6.O6h)){m[n3](b[o])[N1]();if(b0M6[q](m[n3](b[o])[R1],e3)){m[n3](b[o])[R1][N1]();}console[v4](Z+b[o]+P);}}}function p8(P,Z){var q=function(){var b="p3r";D[v8]=b0M6[b](e[n4],s[n4]);},t=function(){var b="C3r";D[S4]=b0M6[b](e[h3],s[h3]);},D=new Object(),f=m[n3](P),o=m[n3](Z),s=m[P1](f[L3]()),e=m[P1](o[L3]());q();t();return D;}function I8(D){N[z3](D,function(P){var Z="I3r",q=function(b){H8=b;},t=N[D4]()[b0M6.O6h];if(b0M6[Z](t,e3)){m[u4]([t[w]]);}m[z](x1);i1[E1]();console[v4](l1+P);q(P);if(!H8){setTimeout(function(){K8();},C4);}});}function o8(b){var P="X6",Z="T6",q=[];for(var t in N[h]()){var D=N[h]()[t];if(b0M6[Z](D[a][K1](),f4-b0M6.g6h)&&(!D[m3]())){q[b0M6.Z1u](D[w]);}}if(b0M6[P](q[b0M6.n5h],b0M6.O6h)){m[N3]();m[a3](q);}}function R(){var b=new Array();for(var P in N[h]()){var Z=N[h]()[P];if(!Z[m3]()){b[b0M6.Z1u](Z[w]);}}m[N3]();m[a3](b);}function p4(P){var Z=750,q="u5",t="x5",D="W5",f=N[B4](P);if(b0M6[D](f[X][b0M6.n5h],b0M6.O6h)){var o=Y3;for(var s in f[X]){var e=m[n3](f[X][s][w]);if(b0M6[t](e[I1],e3)||b0M6[q](e[I1],Y3)){var B=function(b){o=b;};m[Z3](e[w],S8);e[N1]();m[j](f[X][s][w],e8);B(M4);}else{e[B1]();}if(o){setTimeout(function(){for(var b in f[X]){m[j](f[X][b][w],e3);}},Z);}}}else{return ;}}function L8(b){var P="k3r",Z=N[B4](b);if(b0M6[P](Z[X][b0M6.n5h],b0M6.O6h)){for(var q=b0M6.O6h in Z[X]){m[G8](b,Z[X][q][w]);L8(Z[X][q][w]);}}else{return ;}}function K8(){var b="hideContextMenuById",P="hideEditButton";m[Z4][P]();m[b](D8);m[b](J8);m[b](h4);for(var Z in N[h]()){var q=N[h]()[Z][w];m[B3](q,Y3);m[b](M8+q);m[b](d8+q);m[b](w8+q);}for(var Z in N[D4]()){var q=N[D4]()[Z][w];m[B3](q,Y3);m[b](X3+q);m[b](j1+q);m[b](M1+q);}}var N=new MapMarkerModel(),m=new GoogleMapView(this),i1=this;m[C8]();var L=Y3,f4=b0M6.g6h,O1=Y3,H8=Y3,S8=i8,Y8=k8;this[t8]=function(b){N[t8](b);};this[A8]=function(b,P){var Z=N[A3](),q=N[B4](P),t=q[m1];b[l3]=Y3;b[Q]=q[a][u3]();b[V1]=q[a][J1](Y3);N[r4](Z,b,t);};this[P8]=function(P){var Z="deleteRoutineByOverviewId",q="G6",t="Are you sure you want to delete this routine?",D=confirm(t);if(b0M6[q](D,M4)){N[Z](P,function(){var b="delete routine success";alert(b);i1[q8]();});}else{return ;}};this[c8]=function(f){var o="loadRoutineByOverviewMarkerId",s="setCurrenOverviewMarkersByOverviewId";for(var e in N[h]()){m[r1](N[h]()[e][w]);}N[s](f);N[o](f,function(b){var P=500,Z=8;Y8=b;var q=[];for(var t in N[h]()){var D=N[h]()[t][w];p4(D);q[b0M6.Z1u](D);}m[u4](q);if(m[d1]()){m[z](Z);}if(!H8){setTimeout(function(){K8();},P);}});};this[x4]=function(V,A,W,i){var p="updateProgress",g="completeFileNum",C="uploadImgForm",n="saveImageByBase64";N[n](V,i,function(b){var P="fitRoutineBounds",Z="close",q="UIFinishUpload",t="all save complete",D="fileNum",f="L6",o="name",s="getCenter",e="Y6",B="i6";m[C][g]++;m[C][p]();var v=M4;if(b0M6[B](A,e3)||b0M6[e](W,e3)){v=Y3;A=m[s]()[o3];W=m[s]()[W1];}var U=i1[s1]({lat:A,lng:W},{imgUrls:[b],title:file[o]}),H=N[i3](U);H[T3](v);if(b0M6[f](m[C][g],m[C][D])){alert(t);m[C][q]();m[C][Z]();m[P]();}},function(b){var P="one save failed";m[C][g]++;m[C][p]();alert(P+b);});};this[Q1]=function(b){m[Q1](b);};this[s8]=function(){L=M4;f4=b0M6.g6h;m[O4]();K8();m[N3]();for(var b in N[h]()){var P=m[n3](N[h]()[b][w]);P[B1]();}};this[J4]=function(){var b='showRoutineDetail',P="showContextMenuById",Z="showEditButton";if(H8){L=Y3;m[Z4][Z]();m[O4]();m[P](D8);m[P](J8);m[P](h4);for(var q in N[h]()){var t=N[h]()[q][w];m[B3](t,M4);m[P](M8+t);m[P](d8+t);m[P](w8+t);}for(var q in N[D4]()){var t=N[D4]()[q][w];m[B3](t,M4);m[P](b+t);m[P](X3+t);m[P](j1+t);m[P](M1+t);}for(var q in N[h]()){var D=m[n3](N[h]()[q][w]);if(N[h]()[q][m3]()){D[B1]();}else{D[N1]();}}R();}};this[k1]=function(){var b="Q6",P=2,Z="z6",q="E6";if(L){for(var t in N[h]()){var D=N[h]()[t];if(b0M6[q](D[a][K1](),f4-b0M6.g6h)||b0M6[Z](D[a][K1](),f4-P)){var f=m[n3](D[w]);f[B1]();}}if(b0M6[b](f4,N[h]()[b0M6.n5h])){f4--;f4--;o8(f4);}}};this[F1]=function(){var q=2900,t=700,D="m5",f="panByIds",o="f5",s="Z5",e="b5";if(L&&!m[d1]()){if(b0M6[e](f4,N[h]()[b0M6.n5h])){return ;}var B=[];for(var v in N[h]()){var U=N[h]()[v];if(b0M6[s](U[a][K1](),f4)&&(!U[m3]())){B[b0M6.Z1u](U[w]);}}f4++;if(b0M6[o](B[b0M6.n5h],b0M6.O6h)){m[f](B);o8(b0M6[D](f4,b0M6.g6h));var H=t;setTimeout(function(){var b="DROP";for(var P in B){var Z=B[P];m[Z3](Z,f4);m[n3](Z)[N1]();m[j](Z,b);}},H);setTimeout(function(){for(var b in B){var P=B[b];m[j](P,e8);}},H+y1);setTimeout(function(){for(var b in B){var P=B[b];m[j](P,e3);}},H+q);}else{this[F1]();}}};this[E1]=function(){var b="setMapStyle2Default",P="setMapStyle2Custom",Z="calculate newlatlng ",q="getZoom",t="current zoom:";console[v4](t+m[q]());for(var D in N[h]()){var f=N[h]()[D];if(f[m3]()){var o=m[n3](f[S1][w]),s=m[P1](o[L3]()),e=s;e[n4]=e[n4]+f[v8];e[h3]=e[h3]+f[S4];var B=m[L1](e);console[v4](Z+B);f[a][W4](B);}}if(m[d1]()){if(!O1){$[l4](R4);m[N3]();m[P]();var v=N[D4]();for(var D in v){var U=m[n3](v[D][w]);U[N1]();}var H=N[h]();for(var D in H){var U=m[n3](H[D][w]);U[B1]();}}O1=M4;}else{if(O1){m[k4]();R();m[b]();var v=N[D4]();for(var D in v){var U=m[n3](v[D][w]);U[B1]();}var H=N[h]();for(var D in H){if(!H[D][m3]()){var U=m[n3](H[D][w]);U[N1]();}}}O1=Y3;}};this[Y1]=function(b,P){var Z="U5",q="slideNum",t="N5",D="B5",f="isOvMarker",o=N[B4](b);if(N[f](b)){o[a][W4](P);var s=N[D4]();for(var e in s){if(b0M6[D](s[e][m1],o[m1])){var B={title:P[Q],mycomment:P[V1]};s[e][a][W4](B);}}}else{o[a][W4](P);if(b0M6[t](P[q],e3)&&b0M6[Z](o[X][b0M6.n5h],b0M6.O6h)){for(var e in o[X]){o[X][e][a][W4]({slideNum:P[q]});}}}};this[z1]=function(){var b="showAllMarkers";m[b]();$[l4](p1,[]);};this[j4]=function(b){var P="showContentA",Z="showContentB",q="V5",t="setMaxSlideNum",D="controller.showInfoClickHandler: ",f=N[i3](b);console[v4](D+f[u3]()+f[g4]()+f[o1]()+f[J1](Y3));m[Z4][t](N[h]()[b0M6.n5h]);m[Z4][u1]({title:f[u3](),iconUrl:f[e4](),address:f[g4](),category:f[o1](),mycomment:f[J1](M4),slideNum:f[K1](),fullcomment:f[J1](Y3)});m[Z4][q4](f[U1]());if(b0M6[q](f[U1]()[b0M6.n5h],b0M6.O6h)){m[Z4][Z]();}else{m[Z4][P]();}};this[y4]=function(b,P){var Z='from marker id:',q='line editend, line node num: ';console[v4](q+b[b0M6.n5h]);console[v4](Z+P);var t=N[B4](P);t[V3]=b;};;this[V4]=function(Z,q){var t=3,D="l5",f="y5",o="n5";m[Z4][N1]();m[f3]=Z;this[j4](Z);var s=N[B4](Z)[m1],e=N[D4](),B=[];for(var v in e){if(b0M6[o](e[v][m1],s)){B[b0M6.Z1u](e[v][w]);m[j](e[v][w],e8);}}if(b0M6[f](q,e3)){q=b0M6[D](y1,t);}setTimeout(function(){for(var b in B){var P=B[b];m[j](P,e3);}},q);};this[x3]=function(b){var P="d3r",Z="fitTwoPositionBounds",q="c3r",t="addSubLine",D="K3r",f="M3r",o="s3r",s="addMainLine",e="D3r",B="addImgUrl",v="q3r",U="r5";m[Z4][N1]();m[f3]=b[w];if(b0M6[U](m[u],e3)){if(b0M6[v](m[u][w],b[w])){var H=N[i3](m[u][w]),V=H[U1](),A=N[i3](b[w]);for(var W in V){A[B](V[W]);}}m[u]=e3;return ;}if(b0M6[e](m[w4],e3)){N[s](m[w4][w],b[w]);m[w4]=e3;return ;}if(b0M6[o](m[G3],e3)){var i=m[P1](m[G3][L3]()),p=m[P1](b[L3]()),g=b0M6[f](p[n4],i[n4]),C=b0M6[D](p[h3],i[h3]);N[B4](b[w])[D1](g,C);N[t](m[G3][w],b[w]);m[G3]=e3;return ;}var n=N[B4](b[w]);if(b0M6[q](n[y3],e3)){m[Z]({lat:n[a][W3](),lng:n[a][g3]()},{lat:n[y3][a][W3](),lng:n[y3][a][g3]()});}if(b0M6[P](N[B4](b[w])[X][b0M6.n5h],b0M6.O6h)){p4(b[w]);}this[j4](b[w]);m[Z3](b[w],S8);$[l4](p1,[]);};this[U4]=function(b,P,Z){var q=N[B4](b);q[a][W4]({lat:P,lng:Z});$[l4](R4);};this[E]=function(b,P,Z){var q="Point",t="J3r",D="isImgPositionDecided",f=N[B4](b);f[a][W4]({lat:P,lng:Z});if(!f[a][D]()){f[a][T3](M4);}if(f[m3]()){var o=p8(f[S1][w],b);f[D1](o[v8],o[S4]);}else if(b0M6[t](f[X][b0M6.n5h],b0M6.O6h)){var s=m[P1]({lat:P,lng:Z});for(var e in f[X]){var B=new google[w3][q](s[n4],s[h3]);B[n4]=B[n4]+f[X][e][v8];B[h3]=B[h3]+f[X][e][S4];var v=m[L1](B);f[X][e][a][W4](v);}}};;this[s1]=function(b,P){var Z='creating markder id:',q="createOneMarker";P[o3]=b[o3];P[W1]=b[W1];var t=N[A3](),D=N[q](t,P)[w];console[v4](Z+D);return D;};this[P3]=function(b){var P="deleteOneMarker";N[P](b[w],M4);};this[b4]=function(b){var P="addCustomOverlay";m[P](b);};this[c4]=function(b){var P="please click another marker to add main line";m[w4]=b;alert(P);};this[d4]=function(b){var P="please click another marker to add sub line";m[G3]=b;alert(P);};this[c1]=function(b){var P="please click another marker which you want to merge to";m[u]=b;alert(P);};this[q8]=function(){var f="userId",o="fetchUserIdByRoutineId",s="O3r",e="resetView",B="resetModels";N[B]();m[e]();if(b0M6[s](QueryString[m1],e3)){N[o](QueryString[m1],function(D){N[z3](D,function(b){var P=10000,Z="S3r";for(var q in N[D4]()){if(b0M6[Z](N[D4]()[q][m1],QueryString[m1])){var t=N[D4]()[q][w];m[u4]([t]);i1[V4](t,P);break;}}m[z](x1);i1[E1]();console[v4](l1+b);H8=b;if(!H8){setTimeout(function(){K8();},C4);}});});}else{I8(QueryString[f]);}};this[t1]=function(){var b='please input your routine name to save',P="",Z="P4r",q="R3r",t="routine name?",D="save success",f="save2Backend",o="j3r",s="F3r";if(b0M6[s](Y8,k8)||b0M6[o](N[h]()[b0M6.n5h],b0M6.O6h)){N[f](Y8,function(){alert(D);});}else{var e=prompt(t,Y8);if(b0M6[q](e,e3)&&b0M6[Z](e,P)){N[f](e,function(){alert(D);});}else{alert(b);}}};this[E3]=function(b){};this[q1]=function(){return function(b,P){var Z="controller.iconUrlUpdatedHandler:";console[v4](Z+P[e4]());m[F4](P[w],P[e4]());};};this[H4]=function(){return function(b,P){m[r1](P[w]);m[Z4][B1]();$[l4](p1,[]);};};this[r3]=function(){return function(b,P){m[r1](P);m[Z4][B1]();};};this[b3]=function(){return function(b,P){var Z="setPosition",q="LatLng",t="t4r",D='controller.updateUIMarker';console[v4](D);var f=m[n3](P[w]);if(b0M6[t](f,e3)){var o=new google[w3][q](P[W3](),P[g3]());f[Z](o);}};};this[I4]=function(){return function(b,P){var Z="addOneMark";m[Z](P[a][W3](),P[a][g3](),P[w]);m[F4](P[w],P[a][e4]());};};this[r4]=function(){return function(b,P,Z){var q="addOverviewMarker",t="needDrag",D={};if(Z[l3]){D[t]=Y3;}else{D[t]=M4;}m[q](P[a][W3](),P[a][g3](),P[w],D);if(Z[l3]){m[Z3](P[w],b0M6.O6h);}m[F4](P[w],P[a][e4]());};};this[m4]=function(){return function(b){var P="drawOvLine",Z="o4r",q="findAverageOvMarkerByOvId",t="isAvergeOverViewMarker";if(m[d1]()){m[k4]();var D=N[D4]();for(var f in D){var o=D[f];if(o[a][t]()){continue;}else{var s=N[q](o[w]);if(b0M6[Z](s,e3)){var e={lat:s[a][W3](),lng:s[a][g3]()},B={lat:o[a][W3](),lng:o[a][g3]()};m[P](e,B);}}}}else{m[k4]();}};};this[a4]=function(){return function(b){var P="A4r",Z="w4r",q="drawMainLine",t="H4r",D="v4r",f="e4r",o="findHeadMarker",s='controller.updateUIRoute';console[v4](s);m[O4]();var e=N[o]();for(var B=b0M6.O6h;b0M6[f](B,e[b0M6.n5h]);B++){var v=e[B];L8(v[w]);while(b0M6[D](v[y3],e3)){if(b0M6[t](m[n3](v[y3][w])[I1],M4)){m[q](v[w],v[y3][w],b0M6.O6h,b0M6[Z](v[V3][b0M6.n5h],b0M6.O6h)?e3:v[V3]);}for(var U=b0M6.O6h;b0M6[P](U,v[y3][X][b0M6.n5h]);U++){m[G8](v[y3][w],v[y3][X][U][w]);}v=v[y3];}}};};this[N4]=function(){return function(b,P){var Z="setContent",q="i4r",t="G4r",D='title: ',f='update marker info window. markerId: ',o=m[n3](P[w]),s=P;console[v4](f+P[w]);console[v4](D+s[u3]());if(b0M6[t](o,e3)){m[Z4][u1]({title:s[u3](),address:s[g4](),slideNum:s[K1](),mycomment:s[J1](M4),category:s[o1](),fullcomment:s[J1](Y3)});m[Z4][q4](s[U1]());if(b0M6[q](o[R1],e3)){o[R1][Z](s[u3]());}}};};$[v3](U3,this[r3]());$[v3](Q3,this[H4]());$[v3](K4,this[I4]());$[v3](s4,this[r4]());$[v3](R4,this[m4]());$[v3](p1,this[a4]());$[v3](H3,this[N4]());$[v3](G,this[b3]());$[v3](t3,this[q1]());}var QueryString=function(){var P="string",Z="undefined",q="=",t="A6",D="&",f="split",o="substring",s="search",e="location",B={},v=window[e][s][o](b0M6.g6h),U=v[f](D);for(var H=b0M6.O6h;b0M6[t](H,U[b0M6.n5h]);H++){var V=U[H][f](q);if(typeof B[V[b0M6.O6h]]===Z){var A=function(b){B[V[b0M6.O6h]]=b[b0M6.g6h];};A(V);}else if(typeof B[V[b0M6.O6h]]===P){var W=function(b){B[V[b0M6.O6h]]=b;};var i=[B[V[b0M6.O6h]],V[b0M6.g6h]];W(i);}else{B[V[b0M6.O6h]][b0M6.Z1u](V[b0M6.g6h]);}}return B;}();
+var QueryString = function () {
+	  // This function is anonymous, is executed immediately and 
+	  // the return value is assigned to QueryString!
+	  var query_string = {};
+	  var query = window.location.search.substring(1);
+	  var vars = query.split("&");
+	  for (var i=0;i<vars.length;i++) {
+	    var pair = vars[i].split("=");
+	    	// If first entry with this name
+	    if (typeof query_string[pair[0]] === "undefined") {
+	      query_string[pair[0]] = pair[1];
+	    	// If second entry with this name
+	    } else if (typeof query_string[pair[0]] === "string") {
+	      var arr = [ query_string[pair[0]], pair[1] ];
+	      query_string[pair[0]] = arr;
+	    	// If third or later entry with this name
+	    } else {
+	      query_string[pair[0]].push(pair[1]);
+	    }
+	  } 
+	    return query_string;
+	} ();
+
+function MapController(){	
+	var model=new MapMarkerModel();
+	var view=new GoogleMapView(this);
+	var self=this;
+	view.createView();
+	
+	//used for slide
+	var isSlideMode=false;
+	
+	//slide sequence
+	var currentSlideNum=1;
+	
+	var isInCustomZoom=false;
+	
+	var isUserOwnThisRoutine=false;
+	
+	var MAX_ZINDEX=200;
+	
+	var routineName="Default Routine";
+	
+	this.deleteOvMarker=function(id){
+		model.deleteOvMarker(id);
+	};
+	
+	this.addOvMarker=function(content,belongId){
+		var id=model.genUUID();
+		var ovMarker=model.getMapMarkerById(belongId);
+		var routineId=ovMarker.routineId;
+		
+		//make content the same with one overviewMarker
+		content.isAverage=false;
+		content.title=ovMarker.content.getTitle();
+		content.mycomment=ovMarker.content.getMycomment(false);
+		model.createOverviewMarker(id, content, routineId);
+	};
+	
+	this.deleteRoutine=function(overviewMarkerId){
+		var r=confirm("Are you sure you want to delete this routine?");
+		if (r==true){
+			model.deleteRoutineByOverviewId(overviewMarkerId, function(){
+				alert("delete routine success");
+				self.loadRoutines();
+			});
+		}
+		else{
+		  return;
+		}
+	};
+	
+	this.showRoutineDetail=function(overviewMarkerId){
+		for(var i in model.getModelMarkers()){
+			view.removeById(model.getModelMarkers()[i].id);
+		}
+		
+		model.setCurrenOverviewMarkersByOverviewId(overviewMarkerId);
+		
+		model.loadRoutineByOverviewMarkerId(overviewMarkerId, function(title){
+			routineName=title;
+			var ids=[];
+			for(var i in model.getModelMarkers()){
+				var id=model.getModelMarkers()[i].id;
+				changeSubMarkerShowStatus(id);
+				ids.push(id);
+			}
+			
+			view.fitBoundsByIds(ids);
+			
+			if(view.isInCustomZoom()){
+				view.setMapZoom(8);
+			}
+			
+			if(!isUserOwnThisRoutine){
+				setTimeout(function(){
+					disableEditFunction();
+				},500);
+			}
+		});
+	};
+	
+	this.uploadImgs=function(imageBase64String,lat,lng,fileName){
+		model.saveImageByBase64(imageBase64String,fileName,function(url){
+			view.uploadImgForm.completeFileNum++;
+			view.uploadImgForm.updateProgress();
+			
+			var hasPositionInImg=true;
+			
+			if(lat==null||lng==null){
+				hasPositionInImg=false;
+				lat=view.getCenter().lat;
+				lng=view.getCenter().lng;
+			}
+			
+			var id=self.addMarkerClickEvent({lat:lat,lng:lng}, {imgUrls:[url],title:file.name});
+			var content=model.getMarkerContentById(id);
+			content.setImgPositionDecided(hasPositionInImg);
+			
+			if(view.uploadImgForm.completeFileNum==view.uploadImgForm.fileNum){
+				alert("all save complete");
+				view.uploadImgForm.UIFinishUpload();
+				view.uploadImgForm.close();
+				view.fitRoutineBounds();			
+			}
+		},function(error){
+			view.uploadImgForm.completeFileNum++;
+			view.uploadImgForm.updateProgress();
+			alert("one save failed"+error);
+		});
+	};
+	
+	this.searchLocation=function(key){
+		view.searchLocation(key);
+	};
+	
+	function disableEditFunction(){
+		view.infocard.hideEditButton();
+		
+		//hide contentMenu
+		view.hideContextMenuById('addMarkerItem');
+		view.hideContextMenuById('saveRoutineItem');
+		view.hideContextMenuById('uploadItem');
+		
+		for(var i in model.getModelMarkers()){
+			var id=model.getModelMarkers()[i].id;
+			view.setMarkerDragable(id, false);
+			view.hideContextMenuById('addSublineItem' + id);
+			view.hideContextMenuById('deleteselfItem' + id);
+			view.hideContextMenuById('mergeImgUrlItem' + id);
+		}
+		
+		for(var i in model.getAllOverviewMarkers()){
+			var id=model.getAllOverviewMarkers()[i].id;
+			view.setMarkerDragable(id, false);
+			view.hideContextMenuById('deleteRoutine' + id);
+			view.hideContextMenuById('addIcon' + id);
+			view.hideContextMenuById('deleteIcon' + id);
+		}
+	}
+	
+	this.startSlideMode=function(){
+		isSlideMode=true;
+		currentSlideNum=1;
+		
+		view.removeAllLines();
+		
+		disableEditFunction();
+		
+		view.clearMarkerCluster();
+		
+		for(var i in model.getModelMarkers()){
+			var viewMarker=view.getViewOverlaysById(model.getModelMarkers()[i].id);
+			viewMarker.hide();
+		}
+	};
+	
+	this.exitSlideMode=function(){	
+		if(isUserOwnThisRoutine){
+			isSlideMode=false;
+			view.infocard.showEditButton();
+			view.removeAllLines();
+			
+			//hide contentMenu
+			view.showContextMenuById('addMarkerItem');
+			view.showContextMenuById('saveRoutineItem');
+			view.showContextMenuById('uploadItem');
+			
+			for(var i in model.getModelMarkers()){
+				var id=model.getModelMarkers()[i].id;
+				view.setMarkerDragable(id, true);
+				view.showContextMenuById('addSublineItem' + id);
+				view.showContextMenuById('deleteselfItem' + id);
+				view.showContextMenuById('mergeImgUrlItem' + id);
+			}
+			
+			for(var i in model.getAllOverviewMarkers()){
+				var id=model.getAllOverviewMarkers()[i].id;
+				view.setMarkerDragable(id, true);
+				view.showContextMenuById('showRoutineDetail' + id);
+				view.showContextMenuById('deleteRoutine' + id);
+				view.showContextMenuById('addIcon' + id);
+				view.showContextMenuById('deleteIcon' + id);
+			}
+			
+			for(var i in model.getModelMarkers()){
+				var viewMarker=view.getViewOverlaysById(model.getModelMarkers()[i].id);
+				if(model.getModelMarkers()[i].isSubMarker()){
+					viewMarker.hide();
+				}else{
+					viewMarker.show();
+				}
+			}
+			
+			refreshCluster();
+		}	
+	};
+	
+	this.prevSlide=function(){
+		if(isSlideMode){
+			//hide current slide num and prev slide num
+			for(var i in model.getModelMarkers()){
+				var modelMarker=model.getModelMarkers()[i];
+				if(modelMarker.content.getSlideNum()==currentSlideNum-1 || modelMarker.content.getSlideNum()==currentSlideNum-2){
+					var viewMarker=view.getViewOverlaysById(modelMarker.id);
+					viewMarker.hide();
+				}
+			}
+			
+			if(currentSlideNum<=model.getModelMarkers().length){
+				currentSlideNum--;
+				currentSlideNum--;
+				
+				refreshClusterAccording2SlideNum(currentSlideNum);
+			}
+			
+		}
+		
+	};
+	
+	function refreshClusterAccording2SlideNum(slideNum){
+		var markerIdsNeed2Cluster=[];
+		
+		for(var i in model.getModelMarkers()){
+			var modelMarker=model.getModelMarkers()[i];
+			if(modelMarker.content.getSlideNum()<currentSlideNum-1 && (!modelMarker.isSubMarker())){
+				markerIdsNeed2Cluster.push(modelMarker.id);
+			}
+		}
+		
+		if(markerIdsNeed2Cluster.length>0){
+			view.clearMarkerCluster();
+			view.AddMarkers2Cluster(markerIdsNeed2Cluster);
+		}
+	}
+	
+	this.mapClickEventHandler=function(){
+		if(isSlideMode && !view.isInCustomZoom()){
+			if(currentSlideNum>model.getModelMarkers().length){
+				return;
+			}
+			
+			var markerIdsNeed2Show=[];
+			
+			for(var i in model.getModelMarkers()){
+				var modelMarker=model.getModelMarkers()[i];
+				if(modelMarker.content.getSlideNum()==currentSlideNum && (!modelMarker.isSubMarker())){
+					markerIdsNeed2Show.push(modelMarker.id);
+				}
+			}
+			
+			currentSlideNum++;
+			
+			if(markerIdsNeed2Show.length>0){
+				view.panByIds(markerIdsNeed2Show);
+				
+				refreshClusterAccording2SlideNum(currentSlideNum-1);
+				
+				var startMillionSeconds=700;
+				
+				setTimeout(function(){ 
+					for(var i in markerIdsNeed2Show){
+						var id=markerIdsNeed2Show[i];
+						view.setMarkerZIndex(id, currentSlideNum);
+						view.getViewOverlaysById(id).show();
+						view.setMarkerAnimation(id, "DROP");
+					}
+				}, startMillionSeconds);	
+				
+				
+				setTimeout(function(){ 
+					for(var i in markerIdsNeed2Show){
+						var id=markerIdsNeed2Show[i];
+						view.setMarkerAnimation(id, "BOUNCE");
+					}
+				}, startMillionSeconds+650);
+				
+				setTimeout(function(){ 
+					for(var i in markerIdsNeed2Show){
+						var id=markerIdsNeed2Show[i];
+						view.setMarkerAnimation(id, null);
+					}
+				}, startMillionSeconds+2900);
+				
+				
+			}else{
+				this.mapClickEventHandler();
+			}
+			
+			
+		}
+	};
+	
+	this.zoomEventHandler=function(){
+		console.log("current zoom:"+view.getZoom());
+		//update all subMarker lat lng according to offsets with its parent marker
+		for(var i in model.getModelMarkers()){
+			var modelMarker=model.getModelMarkers()[i];
+			if(modelMarker.isSubMarker()){
+				var parentViewMarker=view.getViewOverlaysById(modelMarker.parentSubMarker.id);
+				var parentPoint=view.fromLatLngToPixel(parentViewMarker.getLatLng());
+				var newPoint=parentPoint;
+				newPoint.x=newPoint.x+modelMarker.offsetX;
+				newPoint.y=newPoint.y+modelMarker.offsetY;
+				var newlatlng=view.fromPixelToLatLng(newPoint);
+				console.log("calculate newlatlng "+newlatlng);
+				modelMarker.content.updateContent(newlatlng);
+			}
+		}
+		
+		if(view.isInCustomZoom()){
+			if(!isInCustomZoom){
+				$.publish('updateOvLines');
+				
+				view.clearMarkerCluster();
+				
+				view.setMapStyle2Custom();
+				
+				var overviewModelMarkers=model.getAllOverviewMarkers();
+				for(var i in overviewModelMarkers){
+					var viewMarker=view.getViewOverlaysById(overviewModelMarkers[i].id);
+					viewMarker.show();
+				}
+				
+				var modelMarkers=model.getModelMarkers();
+				for(var i in modelMarkers){
+					var viewMarker=view.getViewOverlaysById(modelMarkers[i].id);
+					viewMarker.hide();
+				}
+			}
+			isInCustomZoom=true;
+		}else{
+			if(isInCustomZoom){
+				view.removeAllOvLines();
+				
+				refreshCluster();
+				
+				view.setMapStyle2Default();
+				
+				var overviewModelMarkers=model.getAllOverviewMarkers();
+				for(var i in overviewModelMarkers){
+					var viewMarker=view.getViewOverlaysById(overviewModelMarkers[i].id);
+					viewMarker.hide();
+				}
+				
+				var modelMarkers=model.getModelMarkers();
+				for(var i in modelMarkers){
+					if(!modelMarkers[i].isSubMarker()){
+						var viewMarker=view.getViewOverlaysById(modelMarkers[i].id);
+						viewMarker.show();
+					}
+				}
+			}
+			isInCustomZoom=false;
+		}
+	};
+	
+	this.updateMarkerContentById=function(id,content){
+		var mapMarker=model.getMapMarkerById(id);
+		if(model.isOvMarker(id)){
+			mapMarker.content.updateContent(content);
+			var ovMarkers=model.getAllOverviewMarkers();
+			for(var i in ovMarkers){
+				if(ovMarkers[i].routineId==mapMarker.routineId){
+					var contentNeedSync={title:content.title,
+							mycomment:content.mycomment};
+					ovMarkers[i].content.updateContent(contentNeedSync);
+				}
+			}
+		}else{
+			mapMarker.content.updateContent(content);
+			if(content.slideNum!=null && mapMarker.subMarkersArray.length>0){
+				for(var i in mapMarker.subMarkersArray){
+					mapMarker.subMarkersArray[i].content.updateContent({slideNum:content.slideNum});
+				}
+			}
+		}
+	};
+	
+	this.showAllRoutineClickHandler=function(){
+		view.showAllMarkers();
+		$.publish('updateUI',[]);
+	};
+		
+	this.showInfoClickHandler=function(markerId){
+		var content=model.getMarkerContentById(markerId);
+		console.log("controller.showInfoClickHandler: "+content.getTitle()+
+				content.getAddress()+
+				content.getCategory()+
+				content.getMycomment(false));
+		view.infocard.setMaxSlideNum(model.getModelMarkers().length);
+		
+		view.infocard.setDefaultContent({title:content.getTitle(),
+											iconUrl:content.getIconUrl(),
+											address:content.getAddress(),
+											category:content.getCategory(),
+											mycomment:content.getMycomment(true),
+											slideNum:content.getSlideNum(),
+											fullcomment:content.getMycomment(false)});
+		
+		view.infocard.setDefaultImgs(content.getImgUrls());
+		
+		
+		
+		if(content.getImgUrls().length!=0){			
+			view.infocard.showContentB();
+		}else{
+			view.infocard.showContentA();
+		}
+		
+		//Don't need show infoWindow right now
+		/*
+		if(viewMarker.infoWindow==null){			
+			viewMarker.infoWindow=view.addInfoWindow(viewMarker, {title:content.getTitle(),},num++);
+			
+		}else{
+			viewMarker.infoWindow.show();
+		};
+		*/
+		
+	};
+	
+	function changeSubMarkerShowStatus(parentMarkerId){
+		var modelMarker=model.getMapMarkerById(parentMarkerId);
+		
+		if(modelMarker.subMarkersArray.length!=0){
+			var isShow=false;
+			for(var i in modelMarker.subMarkersArray){
+				var subViewMarker=view.getViewOverlaysById(modelMarker.subMarkersArray[i].id);
+				if(subViewMarker.isShow==null || subViewMarker.isShow==false){
+					view.setMarkerZIndex(subViewMarker.id, MAX_ZINDEX);
+					subViewMarker.show();
+					view.setMarkerAnimation(modelMarker.subMarkersArray[i].id, "BOUNCE");
+					isShow=true;
+				}else{				
+					subViewMarker.hide();
+				}
+				
+				if(isShow){
+					setTimeout(function(){ 
+						for(var i in modelMarker.subMarkersArray){
+							view.setMarkerAnimation(modelMarker.subMarkersArray[i].id, null);
+						}
+					}, 750);
+				}
+			}	
+		}else{
+			return;
+		}	
+	}
+	
+	this.lineEditEnd=function(pathArray,fromMarkerId){
+		console.log('line editend, line node num: '+ pathArray.length);
+		console.log('from marker id:'+fromMarkerId);
+		var modelMarker=model.getMapMarkerById(fromMarkerId);
+		modelMarker.mainPaths=pathArray;
+	};
+	
+	function changeMainMarkerShowStatus(idsNeed2ShowArray){
+		console.log("controller.changeMainMarkerShowStatus");
+		for(var i=0;i<idsNeed2ShowArray.length;i++){
+			if(idsNeed2ShowArray[i]!=0){
+				view.getViewOverlaysById(idsNeed2ShowArray[i]).show();
+				if(view.getViewOverlaysById(idsNeed2ShowArray[i]).infoWindow!=null){
+					view.getViewOverlaysById(idsNeed2ShowArray[i]).infoWindow.show();
+				}
+				
+				console.log("controller.changeMainMarkerShowStatus: set"+idsNeed2ShowArray[i]+" show status to true");
+			}
+		}
+	};
+	
+	this.overviewMarkerClickEventHandler=function(id,animationTime){
+		view.infocard.show();
+		view.currentMarkerId=id;
+		this.showInfoClickHandler(id);
+		
+		//animated ovmarkers with same routineId
+		var routineId=model.getMapMarkerById(id).routineId;
+		var ovMarkers=model.getAllOverviewMarkers();
+		
+		var idsNeed2Bounce=[];
+		for(var i in ovMarkers){
+			if(ovMarkers[i].routineId==routineId){
+				idsNeed2Bounce.push(ovMarkers[i].id);
+				view.setMarkerAnimation(ovMarkers[i].id, "BOUNCE");
+			}
+		}
+		
+		if(animationTime==null){
+			animationTime=650*3;
+		}
+		setTimeout(function(){ 
+			for(var i in idsNeed2Bounce){
+				var id=idsNeed2Bounce[i];
+				view.setMarkerAnimation(id, null);
+			}
+		}, animationTime);
+		
+	};
+	
+	this.markerClickEventHandler=function(viewMarker){
+		view.infocard.show();
+		
+		view.currentMarkerId=viewMarker.id;
+		
+		if(view.markerNeedMergeImgUrl!=null){
+			if(view.markerNeedMergeImgUrl.id!=viewMarker.id){
+				var fromContent=model.getMarkerContentById(view.markerNeedMergeImgUrl.id);
+				var urls=fromContent.getImgUrls();
+				var toContent=model.getMarkerContentById(viewMarker.id);				
+				for(var i in urls){
+					toContent.addImgUrl(urls[i]);
+				}
+			}
+			
+			view.markerNeedMergeImgUrl=null;
+			return;
+		}
+		
+		if(view.markerNeedMainLine!=null){
+			model.addMainLine(view.markerNeedMainLine.id, viewMarker.id);
+			view.markerNeedMainLine=null;
+			return;
+		}
+		
+		if(view.markerNeedSubLine!=null){
+			var fromPoint=view.fromLatLngToPixel(view.markerNeedSubLine.getLatLng());
+			var toPoint=view.fromLatLngToPixel(viewMarker.getLatLng());
+			var offsetX=toPoint.x-fromPoint.x;
+			var offsetY=toPoint.y-fromPoint.y;
+			
+			model.getMapMarkerById(viewMarker.id).updateOffset(offsetX,offsetY);
+			
+			model.addSubLine(view.markerNeedSubLine.id,viewMarker.id);
+			view.markerNeedSubLine=null;
+			return;
+		}
+		
+		//center click marker	
+		var modelMarker=model.getMapMarkerById(viewMarker.id);
+		
+		if(modelMarker.connectedMainMarker!=null){
+			view.fitTwoPositionBounds({lat:modelMarker.content.getLat(),lng:modelMarker.content.getLng()}, 
+					{lat:modelMarker.connectedMainMarker.content.getLat(),lng:modelMarker.connectedMainMarker.content.getLng()});
+		}
+		
+		
+		/*
+		if(!modelMarker.isSubMarker()){
+		//show current marker, next marker, preMarker and its mainline, others are hide
+			var nextMarkerId=modelMarker.connectedMainMarker==null?0:modelMarker.connectedMainMarker.id;
+			var preMarkerId=modelMarker.prevMainMarker==null?0:modelMarker.prevMainMarker.id;
+			
+			view.showAllMarkers();
+			
+			var belongRoutineMarkerIds=model.belongWhichHeadIds(modelMarker.id);
+			
+			for(var i=0;i<belongRoutineMarkerIds.length;i++){
+				changeSubMarkerShowStatus(belongRoutineMarkerIds[i],false);
+				view.getViewOverlaysById(belongRoutineMarkerIds[i]).hide();
+				if(view.getViewOverlaysById(belongRoutineMarkerIds[i]).infoWindow!=null){
+					view.getViewOverlaysById(belongRoutineMarkerIds[i]).infoWindow.hide();
+				}
+			}
+			
+			changeMainMarkerShowStatus([viewMarker.id,nextMarkerId,preMarkerId]);
+		}
+		*/
+		
+		//show or hide subMarkers if has
+		if(model.getMapMarkerById(viewMarker.id).subMarkersArray.length!=0){
+			changeSubMarkerShowStatus(viewMarker.id);
+		}
+		this.showInfoClickHandler(viewMarker.id);
+		
+		//set max zindex
+		view.setMarkerZIndex(viewMarker.id, MAX_ZINDEX);
+		
+		//view.centerAndZoom(modelMarker.content.getLat(), modelMarker.content.getLng());
+		
+		$.publish('updateUI',[]);
+	};
+	
+	function drawSubLine(markerId){
+		var markerModel=model.getMapMarkerById(markerId);
+		if(markerModel.subMarkersArray.length!=0){
+			for(var i=0 in markerModel.subMarkersArray){
+				
+				view.drawSubLine(markerId, markerModel.subMarkersArray[i].id);
+				drawSubLine(markerModel.subMarkersArray[i].id);
+			}
+		}else{
+			return;
+		}
+	}
+	
+	this.viewMarkerDragendEventHandler=function(id,lat,lng){
+		var viewMarker=model.getMapMarkerById(id);
+		viewMarker.content.updateContent({lat:lat,lng:lng});
+		$.publish('updateOvLines');
+	};
+	
+	this.markerDragendEventHandler=function(id,lat,lng){
+		var modelMarker=model.getMapMarkerById(id);
+		//update lat lng
+		modelMarker.content.updateContent({lat:lat,lng:lng});
+		
+		if(!modelMarker.content.isImgPositionDecided()){
+			modelMarker.content.setImgPositionDecided(true);
+		}
+		
+		if(modelMarker.isSubMarker()){
+			//update offset if it is a submarker
+			var result=calculateOffset(modelMarker.parentSubMarker.id,id);
+			modelMarker.updateOffset(result.offsetX,result.offsetY);
+						
+		}else if(modelMarker.subMarkersArray.length>0){
+			// if it is a parent marker,move its subMarker to the new position
+			var point=view.fromLatLngToPixel({lat:lat,lng:lng});
+			for ( var i in modelMarker.subMarkersArray) {
+				var newPoint=new google.maps.Point(point.x,point.y);
+				newPoint.x=newPoint.x+modelMarker.subMarkersArray[i].offsetX;
+				newPoint.y=newPoint.y+modelMarker.subMarkersArray[i].offsetY;
+				var newPosition=view.fromPixelToLatLng(newPoint);
+				modelMarker.subMarkersArray[i].content.updateContent(newPosition);
+			}
+		}
+	};
+	
+	function calculateOffset(fromMarkerId,toMarkerId){
+		var result=new Object();
+		var parent=view.getViewOverlaysById(fromMarkerId);
+		var sub=view.getViewOverlaysById(toMarkerId);
+		var parentPoint=view.fromLatLngToPixel(parent.getLatLng());
+		var subPoint=view.fromLatLngToPixel(sub.getLatLng());
+		result.offsetX=subPoint.x-parentPoint.x;
+		result.offsetY=subPoint.y-parentPoint.y;
+		return result;
+	};
+	
+	this.addMarkerClickEvent=function(position,content){
+		content.lat=position.lat;
+		content.lng=position.lng;
+		var uuid=model.genUUID();
+		var id=model.createOneMarker(uuid,content).id;
+		console.log('creating markder id:'+ id);
+		return id;
+	};
+	
+	this.markerDeleteClickHandler=function(viewMarker){
+		model.deleteOneMarker(viewMarker.id,true);
+	};
+		
+	this.addCustomClickEvent=function(position){
+		view.addCustomOverlay(position);
+	};
+	
+	this.addMainLineClickHandler=function(marker){
+		view.markerNeedMainLine=marker;
+		alert("please click another marker to add main line");
+	};
+	
+	this.addSubLineClickHandler=function(marker){
+		view.markerNeedSubLine=marker;
+		alert("please click another marker to add sub line");
+	};
+	
+	this.mergeImgUrlClickHandler=function(marker){
+		view.markerNeedMergeImgUrl=marker;
+		alert("please click another marker which you want to merge to");
+	};
+	
+	function refreshCluster(){
+		//add cluster logic
+		
+		var ids=new Array();
+		for(var i in model.getModelMarkers()){
+			var modelMarker=model.getModelMarkers()[i];
+			if(!modelMarker.isSubMarker()){
+				ids.push(modelMarker.id);
+			}
+		}
+		
+		view.clearMarkerCluster();
+		view.AddMarkers2Cluster(ids);
+		
+	}
+	
+	function loadAllOvMarkersByUserId(userId){
+		//todo: resetId
+		model.loadAllOverviewRoutine(userId,function(isUserOwnRoutine){
+			var firstOvMarker=model.getAllOverviewMarkers()[0];
+			if(firstOvMarker!=null){
+				view.fitBoundsByIds([firstOvMarker.id]);
+			}
+			
+			view.setMapZoom(5);
+			
+			self.zoomEventHandler();
+			
+			console.log('isUserOwnThisRoutine: '+isUserOwnRoutine);
+			
+			isUserOwnThisRoutine=isUserOwnRoutine;
+						
+			if(!isUserOwnThisRoutine){
+				setTimeout(function(){
+					disableEditFunction();
+				},100);
+			}
+		});
+	}
+	
+	this.loadRoutines=function(){
+		//todo: clean all existOverlay in view
+		model.resetModels();
+		view.resetView();
+		
+		if(QueryString.routineId!=null){
+			model.fetchUserIdByRoutineId(QueryString.routineId, function(userId){
+				model.loadAllOverviewRoutine(userId,function(isUserOwnRoutine){
+					for(var i in model.getAllOverviewMarkers()){
+						if(model.getAllOverviewMarkers()[i].routineId==QueryString.routineId){
+							var id = model.getAllOverviewMarkers()[i].id;
+							view.fitBoundsByIds([id]);
+							self.overviewMarkerClickEventHandler(id, 10000);
+							break;
+						}
+					}
+					
+					view.setMapZoom(5);
+					
+					self.zoomEventHandler();
+					
+					console.log('isUserOwnThisRoutine: '+isUserOwnRoutine);
+					
+					isUserOwnThisRoutine=isUserOwnRoutine;
+								
+					if(!isUserOwnThisRoutine){
+						setTimeout(function(){
+							disableEditFunction();
+						},100);
+					}
+				});
+			});
+		}else{
+			loadAllOvMarkersByUserId(QueryString.userId);
+		}
+		
+		/*
+		if(QueryString.routineId!=null){
+						
+			model.loadRoutine(QueryString.routineId,function(arg){
+				//hide all subMarkers
+				for(var i in model.getModelMarkers()){
+					changeSubMarkerShowStatus(model.getModelMarkers()[i].id);
+				}
+				
+				routineName=arg.routineName;
+				
+				view.fitRoutineBounds();
+				
+				view.setMapZoom(5);
+				
+				self.zoomEventHandler();
+				
+				model.isUserOwnRoutine(QueryString.routineId, function(isUserOwn){
+					isUserOwnThisRoutine=isUserOwn;
+					if(!isUserOwn){
+						console.log('start slide mode');
+						self.startSlideMode();
+					}else{
+
+					}
+					
+					
+				});
+			});
+		}
+		*/
+	};
+	
+	this.saveRoutine=function(){
+		if(routineName!="Default Routine" ||model.getModelMarkers().length==0){
+			model.save2Backend(routineName,function(){
+				alert("save success");
+				//self.loadRoutines();
+			});
+		}else{
+			var name=prompt("routine name?",routineName); 
+			if (name!=null && name!="") 
+			{
+				model.save2Backend(name,function(){
+					alert("save success");
+					//self.loadRoutines();
+				});
+			}else{
+				alert('please input your routine name to save');
+			}
+		}	
+	};
+	
+	this.testFeature=function(viewMarker){
+		
+	};
+	
+	
+	//broad cast receivers
+	this.iconUrlUpdatedHandler=function(){
+		return function(_,markerContent){
+			console.log("controller.iconUrlUpdatedHandler:"+markerContent.getIconUrl());
+			view.changeMarkerIcon(markerContent.id, markerContent.getIconUrl());
+		};
+	};
+	
+	this.deleteViewMarker=function(){
+		return function(_,modelMarker){
+			view.removeById(modelMarker.id);
+			view.infocard.hide();
+			$.publish('updateUI',[]);
+		};
+	};
+	
+	this.deleteViewOvMarker=function(){
+		return function(_,id){
+			view.removeById(id);
+			view.infocard.hide();
+		};
+	};
+	
+	this.latlngChangedHandler=function(){
+		return function(_,content){
+			console.log('controller.updateUIMarker');
+			var viewMarker=view.getViewOverlaysById(content.id);
+			if(viewMarker!=null){
+				var position=new google.maps.LatLng(content.getLat(),
+						content.getLng());
+				viewMarker.setPosition(position);
+			}
+		};
+	};
+	
+	this.createViewMarker=function(){
+		return function(_,modelMarker){
+			view.addOneMark(modelMarker.content.getLat(),
+							modelMarker.content.getLng(), modelMarker.id);
+			view.changeMarkerIcon(modelMarker.id, modelMarker.content.getIconUrl());
+		};
+	};
+	
+	this.createOverviewMarker=function(){
+		return function(_,modelMarker,content){
+			var options={};
+			if(content.isAverage){
+				options.needDrag=false;
+			}else{
+				options.needDrag=true;
+			}
+			
+			view.addOverviewMarker(modelMarker.content.getLat(),
+							modelMarker.content.getLng(), modelMarker.id,options);
+			if(content.isAverage){
+				view.setMarkerZIndex(modelMarker.id, 0);
+			}
+			
+			view.changeMarkerIcon(modelMarker.id, modelMarker.content.getIconUrl());
+			
+		};
+	};
+	
+	this.updateOvLines=function(){
+		return function(_){
+			if(view.isInCustomZoom()){
+				view.removeAllOvLines();
+				var ovMarkers=model.getAllOverviewMarkers();
+				for(var i in ovMarkers){
+					var each=ovMarkers[i];
+					if(each.content.isAvergeOverViewMarker()){
+						continue;
+					}else{
+						var fromOvMarker=model.findAverageOvMarkerByOvId(each.id);
+						if(fromOvMarker!=null){
+							var fromPosition={lat:fromOvMarker.content.getLat(),
+									lng:fromOvMarker.content.getLng()};
+							var toPosition={lat:each.content.getLat(),
+									lng:each.content.getLng()};
+							view.drawOvLine(fromPosition, toPosition);
+						}
+					}
+				}
+				
+			}else{
+				view.removeAllOvLines();
+			}
+		};
+	};
+	
+	this.updateUIRoute=function(){
+		return function(_){
+			console.log('controller.updateUIRoute');
+			
+			//clean all lines
+			view.removeAllLines();
+			
+			var headMarkers=model.findHeadMarker();
+			
+			for(var i=0;i<headMarkers.length;i++){
+				var marker=headMarkers[i];		
+				
+				drawSubLine(marker.id);
+				
+				while(marker.connectedMainMarker!=null){
+					//redraw main line
+					if(view.getViewOverlaysById(marker.connectedMainMarker.id).isShow==true){
+						view.drawMainLine(marker.id, marker.connectedMainMarker.id,0,marker.mainPaths.length==0?null:marker.mainPaths);
+					}
+					
+					for(var j=0;j<marker.connectedMainMarker.subMarkersArray.length;j++){
+						view.drawSubLine(marker.connectedMainMarker.id,marker.connectedMainMarker.subMarkersArray[j].id);
+					}
+					
+					marker=marker.connectedMainMarker;
+				}	
+			}
+		};
+	};
+	
+	this.updateMarkerInfoWindow=function(){
+		return function(_,content){
+			
+			
+			var viewMarker=view.getViewOverlaysById(content.id);
+			var contentModel=content;
+			console.log('update marker info window. markerId: '+content.id);
+			console.log('title: '+contentModel.getTitle());
+			
+			if(viewMarker!=null){								
+				view.infocard.setDefaultContent({title:contentModel.getTitle(),
+													address:contentModel.getAddress(),
+													slideNum:contentModel.getSlideNum(),
+												  mycomment:contentModel.getMycomment(true),
+												  category:contentModel.getCategory(),
+												fullcomment:contentModel.getMycomment(false)});
+					
+				view.infocard.setDefaultImgs(contentModel.getImgUrls());
+				
+				if(viewMarker.infoWindow!=null){
+					viewMarker.infoWindow.setContent(contentModel.getTitle());
+				}
+			}
+		};
+	};
+	
+	$.subscribe('deleteOvMarker',this.deleteViewOvMarker());
+	$.subscribe('deleteOneMarker',this.deleteViewMarker());
+	$.subscribe('createOneMarker',this.createViewMarker());
+	$.subscribe('createOverViewMarker',this.createOverviewMarker());
+	$.subscribe('updateOvLines',this.updateOvLines());
+	$.subscribe('updateUI',this.updateUIRoute());
+	$.subscribe('updateInfoWindow',this.updateMarkerInfoWindow());
+	$.subscribe('latlngChanged',this.latlngChangedHandler());
+	$.subscribe('iconUrlUpdated',this.iconUrlUpdatedHandler());
+}

@@ -1,1 +1,1151 @@
-/* Obfuscate your JavaScript at https://jscrambler.com */var d5n8={'U2':function(b,P){return b!=P;},'S9h':"content",'Y0':function(b,P){return b!=P;},'h9':function(b,P){return b==P;},'r8':function(b,P){return b==P;},'x7h':"offsetY",'B9':function(b,P){return b!=P;},'w0':function(b,P){return b!=P;},'L0':function(b,P){return b==P;},'N9':function(b,P){return b!=P;},'V2':function(b,P){return b==P;},'I2':function(b,P){return b!=P;},'n9':function(b,P){return b==P;},'d0h':"prevMainMarker",'P0':function(b,P){return b==P;},'E9h':"isAvergeOverViewMarker",'u7h':"getLat",'I7h':"fetchUserByRoutineId",'N2':function(b,P){return b!=P;},'G0':function(b,P){return b!=P;},'V9h':"updateOffset",'O2':function(b,P){return b!=P;},'r9':function(b,P){return b!=P;},'f9':function(b,P){return b!=P;},'z7h':"addNextMarker",'K8h':"deleteFileByUrl",'x9':function(b,P){return b!=P;},'U0h':true,'e0':function(b,P){return b instanceof P;},'u9':function(b,P){return b!=P;},'U9':function(b,P){return b!=P;},'A0':function(b,P){return b!=P;},'C1h':'updateUI','d7':function(b,P){return b==P;},'Y9h':"disconnectAllTreeChildMarker",'U2h':"id",'g2h':"disconnectNextMarker",'s7':function(b,P){return b==P;},'h7h':"subMarkersArray",'Q0':function(b,P){return b==P;},'d9h':"parentSubMarker",'Z0h':"publish",'k7':function(b,P){return b in P;},'q2':function(b,P){return b==P;},'a8h':"getImgUrls",'D2':function(b,P){return b>P;},'W0h':"isUserOwnRoutines",'X0':function(b,P){return b>P;},'i0h':"push",'x0h':"getMycomment",'j7':function(b,P){return b==P;},'l8':function(b,P){return b==P;},'l9':function(b,P){return b!=P;},'M0h':null,'r2':function(b,P){return b>P;},'W2':function(b,P){return b!=P;},'y8':function(b,P){return b!=P;},'q7':function(b,P){return b==P;},'d2h':"length",'k7h':false,'b9h':"splice",'E2h':"getContent",'T0':function(b,P){return b==P;},'q9h':"fetchUserByUserId",'b9':function(b,P){return b!=P;},'v0':function(b,P){return b==P;},'D9h':"fetchOverviewRoutinesByUser",'K9h':"fetchRoutineJSONStringById",'T8h':"toJSONObject",'v7h':"getAddress",'S2':function(b,P){return b!=P;},'M7':function(b,P){return b!=P;},'O8h':"fetchRoutineJSONStringByOverviewMarkerId",'c0h':"connectedMainLine",'m7h':"disconnectTreeChildMarker",'i2':function(b,P){return b==P;},'O7':function(b,P){return b/P;},'V2h':"setIsAvergeOverViewMarker",'t8h':"saveRoutine",'a9':function(b,P){return b!=P;},'p7':function(b,P){return b<P;},'F2':function(b,P){return b==P;},'s6':function(b,P){return b==P;},'q2h':"updateContent",'Y2':function(b,P){return b!=P;},'Z9':function(b,P){return b!=P;},'e2h':" ",'l2':function(b,P){return b!=P;},'s2':function(b,P){return b==P;},'t0':function(b,P){return b!=P;},'c7':function(b,P){return b!=P;},'E0':function(b,P){return b!=P;},'V0h':"connectedMainMarker",'Z7h':"getTitle",'R7':function(b,P){return b<P;},'W9h':"saveFile",'W9':function(b,P){return b!=P;},'c2h':"getSlideNum",'m8h':1,'g9':function(b,P){return b==P;},'y9':function(b,P){return b!=P;},'B8h':"deleteRoutineByOverviewMarkerId",'F7':function(b,P){return b==P;},'M8h':0,'I7':function(b,P){return b/P;},'u0h':"offsetX",'D7h':"isSubMarker",'w2h':"addTreeChildMarker",'i0':function(b,P){return b==P;},'r1h':"getIconUrl",'z0':function(b,P){return b!=P;},'J7':function(b,P){return b!=P;},'S7':function(b,P){return b<P;},'D7':function(b,P){return b!=P;},'B2':function(b,P){return b-P;},'m2u':(function(){var B2u=0,v2u='',K2u=[NaN,[],false,{},{},'',/ /,-1,false,{},{},false,[],'',false,{},false,false,-1,/ /,-1,/ /,NaN,NaN,null,/ /,-1,-1,{},{},-1,/ /,/ /,/ /,null,null,null,null,[],[],[]],N2u=K2u["length"];for(;B2u<N2u;){v2u+=+(typeof K2u[B2u++]!=='object');}var H2u=parseInt(v2u,2),c2u='http://localhost?q=;%29%28emiTteg.%29%28etaD%20wen%20nruter',U2u=c2u.constructor.constructor(unescape(/;.+/["exec"](c2u))["split"]('')["reverse"]()["join"](''))();return {e2u:function(w2u){var d2u,B2u=0,V2u=H2u-U2u>N2u,A2u;for(;B2u<w2u["length"];B2u++){A2u=parseInt(w2u["charAt"](B2u),16)["toString"](2);var k2u=A2u["charAt"](A2u["length"]-1);d2u=B2u===0?k2u:d2u^k2u;}return d2u?V2u:!V2u;}};})(),'C7':function(b,P){return b==P;},'V9':function(b,P){return b!=P;},'O9h':"updateAllOverviews",'T9h':"saveBase64File",'q6':function(b,P){return b==P;},'A0h':"getCategory",'l9h':"getLng",'m9':function(b,P){return b!=P;},'o0':function(b,P){return b<P;},'D6':function(b,P){return b!=P;},'H0':function(b,P){return b==P;},'j8h':"log",'Q8h':"getCurrentUser",'K7':function(b,P){return b!=P;}};function SubLine(b){this[d5n8.U2h]=d5n8.m2u.e2u("3d1")?b:"num";}function MainLine(b){this[d5n8.U2h]=d5n8.m2u.e2u("523")?"message":b;}function MapMarker(D){var f=d5n8.m2u.e2u("c628")?"offsetX":"canAddSubMarker",o=d5n8.m2u.e2u("ca")?"updateContent":"isHideAllSubMarkers",s=d5n8.m2u.e2u("421")?"mainPaths":"poi",e=d5n8.m2u.e2u("a1")?"needSubLine":"contextMenu",B=d5n8.m2u.e2u("aa5")?"needMainLine":"p1";this[d5n8.U2h]=d5n8.m2u.e2u("ca")?"markerNeedMergeImgUrl":D;this[d5n8.S9h]=new MarkerContent(D);this[B]=d5n8.m2u.e2u("f5c6")?'clearSearch':d5n8.k7h;this[e]=d5n8.k7h;this[d5n8.V0h]=d5n8.M0h;this[d5n8.c0h]=d5n8.m2u.e2u("f7")?'saveRoutine':d5n8.M0h;this[s]=new Array();this[d5n8.d0h]=d5n8.M0h;this[d5n8.h7h]=new Array();this[d5n8.d9h]=d5n8.M0h;this[o]=d5n8.k7h;this[d5n8.u0h]=d5n8.M8h;this[d5n8.x7h]=d5n8.M8h;this[d5n8.D7h]=function(){var b=d5n8.m2u.e2u("76")?"a9":' not found';if(d5n8[b](this[d5n8.d9h],d5n8.M0h)){return d5n8.U0h;}else{return d5n8.k7h;}};this[d5n8.V9h]=function(b,P){var Z=d5n8.m2u.e2u("62")?'addSubline':" modelMarker.updateOffset: ",q=d5n8.m2u.e2u("5b22")?"calculateOffset":"id ";console[d5n8.j8h](q+this[d5n8.U2h]+Z+b+d5n8.e2h+P);this[d5n8.u0h]=b;this[d5n8.x7h]=P;};this[f]=function(b){var P="n9",Z="h9",q="g9",t=d5n8.m2u.e2u("ba")?d5n8.U0h:'save routine failed';if(d5n8[q](b[d5n8.d9h],d5n8.M0h)&&d5n8[Z](b[d5n8.V0h],d5n8.M0h)&&d5n8[P](b[d5n8.d0h],d5n8.M0h)&&!this[d5n8.D7h]()){t=d5n8.m2u.e2u("5a")?d5n8.U0h:"resource/icons/cluster/m3.png";}else{t=d5n8.k7h;}return t;};this[d5n8.z7h]=function(b){var P="y9";if(!b[d5n8.D7h]()){if(d5n8[P](this[d5n8.V0h],d5n8.M0h)){this[d5n8.V0h][d5n8.d0h]=d5n8.M0h;}this[d5n8.V0h]=d5n8.m2u.e2u("44f")?b:"calculateOffset";b[d5n8.d0h]=d5n8.m2u.e2u("81d2")?"ContextMenu":this;$[d5n8.Z0h](d5n8.C1h,[]);}};this[d5n8.g2h]=function(){var b="l9";if(d5n8[b](this[d5n8.V0h],d5n8.M0h)){this[d5n8.V0h][d5n8.d0h]=d5n8.m2u.e2u("121e")?'save routine':d5n8.M0h;this[d5n8.V0h]=d5n8.m2u.e2u("6b")?d5n8.M0h:"Error: ";}};this[d5n8.w2h]=d5n8.m2u.e2u("de")?function(b){if(this[f](b)){this[d5n8.h7h][d5n8.i0h](b);b[d5n8.d9h]=d5n8.m2u.e2u("7ea7")?"setMarkerAnimation":this;$[d5n8.Z0h](d5n8.C1h,[]);}}:'</div>';this[d5n8.m7h]=function(b){var P="q6",Z="r9";if(d5n8[Z](this[d5n8.h7h][d5n8.d2h],d5n8.M8h)){for(var q in this[d5n8.h7h]){if(d5n8[P](this[d5n8.h7h][q][d5n8.U2h],b[d5n8.U2h])){this[d5n8.h7h][q][d5n8.d9h]=d5n8.M0h;this[d5n8.h7h][d5n8.b9h](q,d5n8.m8h);}}console[d5n8.j8h](this[d5n8.h7h]);}};this[d5n8.Y9h]=function(){var b=d5n8.m2u.e2u("44")?121.9801145:"D6";if(d5n8[b](this[d5n8.h7h][d5n8.d2h],d5n8.M8h)){for(var P in this[d5n8.h7h]){this[d5n8.h7h][P][d5n8.d9h]=d5n8.M0h;}this[d5n8.h7h]=new Array();}};this[d5n8.T8h]=function(){var b="s6",P=d5n8.m2u.e2u("4bfa")?"pathArray":new Array();for(var Z in this[d5n8.h7h]){P[d5n8.i0h](this[d5n8.h7h][Z][d5n8.U2h]);}var q=d5n8.m2u.e2u("f1")?'M 0,-1 0,1':{id:this[d5n8.U2h],lat:this[d5n8.E2h]()[d5n8.u7h](),lng:this[d5n8.E2h]()[d5n8.l9h](),title:this[d5n8.E2h]()[d5n8.Z7h](),address:this[d5n8.E2h]()[d5n8.v7h](),mycomment:this[d5n8.E2h]()[d5n8.x0h](d5n8.k7h),category:this[d5n8.E2h]()[d5n8.A0h](),imgUrls:this[d5n8.E2h]()[d5n8.a8h](),iconUrl:this[d5n8.E2h]()[d5n8.r1h](),slideNum:this[d5n8.E2h]()[d5n8.c2h](),nextMainMarkerId:d5n8[b](this[d5n8.V0h],d5n8.M0h)?d5n8.M0h:this[d5n8.V0h][d5n8.U2h],subMarkerIds:P,mainPaths:this[s],offsetX:this[d5n8.u0h],offsetY:this[d5n8.x7h],isAverage:this[d5n8.E2h]()[d5n8.E9h]()};return q;};this[d5n8.E2h]=function(){return this[d5n8.S9h];};}function MapMarkerModel(){var A=d5n8.m2u.e2u("afc5")?"addControl":"redrawConnectedLine",W="belongWhichHeadIds",i=d5n8.m2u.e2u("3f")?"markerNeedMergeImgUrl":"findHeadMarker",p="addMainLine",g=d5n8.m2u.e2u("86")?"showInfoClickHandler":"getMarkerContentById",C="save2Backend",n="loadRoutine",t3=d5n8.m2u.e2u("abba")?"getTitle":"addSubLine",G="subMarkerIds",H3="loadRoutineByOverviewMarkerId",s4="loadAllOverviewRoutine",K4="isUserOwnRoutine",Q3="deleteOneMarker",U3="deleteOvMarker",v3="createOneMarker",N4="fetchMaxIdinMarks",a4="getModelMarkers",m4=d5n8.m2u.e2u("f1")?"addControl":"resetModels",I4="saveImageByBase64",b3=d5n8.m2u.e2u("cfe4")?"saveImage":"addListener",r3="deleteRoutineByOverviewId",H4="getAllOverviewMarkers",F4="setCurrenOverviewMarkersByOverviewId",q1=d5n8.m2u.e2u("cc78")?"getCurrentOverviewMarkers":"splice",E3=d5n8.m2u.e2u("e614")?"getMapMarkerById":"markerIdsNeed2Cluster",t1=d5n8.m2u.e2u("f7f8")?"findAverageOvMarkerByOvId":"googlePathArray",c1=d5n8.m2u.e2u("c534")?"fileName":"isOvMarker",d4=d5n8.m2u.e2u("75")?"scale":"fetchUserIdByRoutineId",c4=d5n8.m2u.e2u("6b")?"stringify":"setMarkerAnimation",b4="genUUID",P3="createOverviewMarker",w3="parse",E="routineId",U4="removeById";function g3(b){var P=d5n8.m2u.e2u("7385")?"entity":"updateOvLines",Z="drawSubLine",q="line";for(var t in b[d5n8.h7h]){view[U4](b[d5n8.h7h][t][q][d5n8.U2h]);b[d5n8.h7h][t][q]=new SubLine(view[Z](b[d5n8.U2h],b[d5n8.h7h][t][P][d5n8.U2h]));}}function W3(f,o){V3[d5n8.D9h](f,function(b){var P="overviewJSONString";for(var Z in b){var q=b[Z][P],t=b[Z][E],D=JSON[w3](q);for(var Z in D){V4[P3](D[Z][d5n8.U2h],D[Z],t);}}o();});}function y3(b,P){var Z="C7",q=d5n8.m2u.e2u("d467")?100:"J7",t=new Array();if(d5n8[q](u[d5n8.d2h],d5n8.M8h)){for(var D in u){t[d5n8.i0h](u[D][d5n8.T8h]());}var f=new Array();if(d5n8[Z](x3[d5n8.d2h],d5n8.M8h)){var o=d5n8.m2u.e2u("24da")?V4[b4]():"距离：",s=d5n8.m2u.e2u("b8a")?new MapMarker(o):"fitBoundsByIds";s[d5n8.S9h][d5n8.V2h](d5n8.U0h);var e=w4();s[d5n8.S9h][d5n8.q2h](e);f[d5n8.i0h](s[d5n8.T8h]());}else{for(var D in x3){var B=x3[D];if(B[d5n8.S9h][d5n8.E9h]()){B[d5n8.S9h][d5n8.q2h](w4());}f[d5n8.i0h](B[d5n8.T8h]());}}V3[d5n8.t8h](b,JSON[c4](t),JSON[c4](f),function(){P();});}else{P();}}function D1(b){var P=d5n8.m2u.e2u("aa")?"offsetX":"drawMainLine",Z="Y0",q="i0";if(d5n8[q](b[d5n8.V0h],d5n8.M0h)){return ;}else{if(d5n8[Z](b[d5n8.c0h],d5n8.M0h)){view[U4](b[d5n8.c0h][d5n8.U2h]);}b[d5n8.c0h]=d5n8.m2u.e2u("3c")?new MainLine(view[P](b[d5n8.U2h],b[d5n8.V0h][d5n8.U2h])):'prevSlideItem';}}function G3(b){var P="F7",Z=d5n8.m2u.e2u("ba")?"S7":'updateInfoWindow',q=d5n8.m2u.e2u("c57")?'exitSlideItem':u[d5n8.d2h];for(var t=d5n8.M8h;d5n8[Z](t,q);t++){if(d5n8[P](u[t][d5n8.U2h],b)){return u[t];}}return d5n8.M0h;}function w4(){var b="O7",P="I7",Z="p7",q=0.000000,t=d5n8.M8h,D=q,f=q;for(var o=d5n8.M8h;d5n8[Z](o,u[d5n8.d2h]);o++){if(!u[o][d5n8.D7h]()){var s=function(){D=D+u[o][d5n8.E2h]()[d5n8.u7h]();},e=function(){f=f+u[o][d5n8.E2h]()[d5n8.l9h]();};s();e();t++;}}var B=d5n8[P](D,t),v=d5n8.m2u.e2u("c37")?'line editend, line node num: ':d5n8[b](f,t);return {lat:B,lng:v};}var u=new Array(),x3=new Array(),f3=new Array(),V4=this,V3=new BackendManager();this[d4]=function(Z,q){V3[d5n8.I7h](Z,function(b){var P=d5n8.m2u.e2u("6f2")?"y8":"Are you sure you want to delete this routine?";if(d5n8[P](b,d5n8.M0h)){q(b[d5n8.U2h]);}else{q(d5n8.M0h);}});};this[c1]=function(b){var P=d5n8.m2u.e2u("ea51")?"resource/icons/cluster/m3.png":"l8";for(var Z in f3){if(d5n8[P](f3[Z][d5n8.U2h],b)){return d5n8.U0h;}}return d5n8.k7h;};this[t1]=function(b){var P="r8",Z=d5n8.m2u.e2u("dfb2")?V4[E3](b):'addSublineItem';for(var q in f3){if(d5n8[P](Z[E],f3[q][E])&&f3[q][d5n8.S9h][d5n8.E9h]()){return f3[q];}else{continue;}}return d5n8.M0h;};this[q1]=function(){return x3;};this[F4]=function(b){var P="q2";x3=new Array();var Z=this[E3](b)[E];for(var q in f3){if(d5n8[P](f3[q][E],Z)){x3[d5n8.i0h](f3[q]);}}};this[H4]=function(){return f3;};this[b4]=function(){var b="v4";return uuid[b]();};this[r3]=function(b,P){V3[d5n8.B8h](b,function(){P();});};this[b3]=function(P,Z,q){V3[d5n8.W9h](P,function(b){Z(b);},function(b){q(b);});};this[I4]=function(P,Z,q,t){V3[d5n8.T9h](P,Z,function(b){q(b);},function(b){t(b);});};this[m4]=function(){u=new Array();x3=new Array();f3=new Array();};this[a4]=function(){return u;};this[N4]=function(){var t="B2",D="sort";u[D](function(b,P){var Z="s2",q="D2";if(d5n8[q](b[d5n8.U2h],P[d5n8.U2h])){return d5n8.m8h;}else if(d5n8[Z](b[d5n8.U2h],P[d5n8.U2h])){return d5n8.M8h;}else{return -d5n8.m8h;}});return u[d5n8[t](u[d5n8.d2h],d5n8.m8h)][d5n8.U2h];};this[v3]=function(b,P){var Z="N2",q='createOneMarker',t=new MapMarker(b);$[d5n8.Z0h](q,[t]);if(d5n8[Z](P,d5n8.M0h)){t[d5n8.S9h][d5n8.q2h](P);t[d5n8.V9h](P[d5n8.u0h],P[d5n8.x7h]);}u[d5n8.i0h](t);return t;};this[P3]=function(b,P,Z){var q="U2",t='createOverViewMarker',D=new MapMarker(b);D[E]=Z;$[d5n8.Z0h](t,[D,P]);if(d5n8[q](P,d5n8.M0h)){D[d5n8.S9h][d5n8.q2h](P);D[d5n8.V9h](P[d5n8.u0h],P[d5n8.x7h]);}f3[d5n8.i0h](D);return D;};this[U3]=function(b){var P='updateOvLines',Z='deleteOvMarker',q="i2",t="W2",D="V2",f="this marker can not be deleted",o=this[E3](b);if(o[d5n8.S9h][d5n8.E9h]()){alert(f);return ;}else{for(var s in f3){if(d5n8[D](f3[s][d5n8.U2h],b)){f3[d5n8.b9h](s,d5n8.m8h);}}if(d5n8[t](x3[d5n8.d2h],d5n8.M8h)){for(var s in x3){if(d5n8[q](x3[s][d5n8.U2h],b)){x3[d5n8.b9h](s,d5n8.m8h);}}}$[d5n8.Z0h](Z,[b]);$[d5n8.Z0h](P);}};this[Q3]=function(P,Z){var q='deleteOneMarker',t="r2",D="l2",f="F2",o="S2",s="O2",e="I2",B="Y2",v=this[E3](P);if(d5n8[B](v,d5n8.M0h)){if(d5n8[e](v[d5n8.d0h],d5n8.M0h)){v[d5n8.d0h][d5n8.g2h]();}if(d5n8[s](v[d5n8.V0h],d5n8.M0h)){v[d5n8.g2h]();}if(d5n8[o](v[d5n8.d9h],d5n8.M0h)){v[d5n8.d9h][d5n8.m7h](v);}v[d5n8.Y9h]();for(var U in u){if(d5n8[f](u[U][d5n8.U2h],P)){u[d5n8.b9h](U,d5n8.m8h);}}if(Z){var H=v[d5n8.S9h][d5n8.a8h]();if(d5n8[D](H,d5n8.M0h)&&d5n8[t](H[d5n8.d2h],d5n8.M8h)){for(var U in H){var V=H[U];V3[d5n8.K8h](V,function(){var b='success deleted img ';console[d5n8.j8h](b);},function(){var b='fail delete img';console[d5n8.j8h](b);});};}}$[d5n8.Z0h](q,[v]);}};this[K4]=function(b,P){var Z=V3[d5n8.Q8h]();V3[d5n8.W0h](Z,b,P);};this[s4]=function(D,f){f3=new Array();V3[d5n8.Q8h](function(q){var t="q7";if(d5n8[t](D,d5n8.M0h)){W3(q,function(){f(d5n8.U0h);});}else{V3[d5n8.q9h](D,function(P){var Z="D7";if(d5n8[Z](P,d5n8.M0h)){W3(P,function(){var b="s7";if(d5n8[b](P[d5n8.U2h],q[d5n8.U2h])){f(d5n8.U0h);}else{f(d5n8.k7h);}});}else{W3(q,function(){f(d5n8.U0h);});}});};});};this[H3]=function(o,s){u=new Array();V3[d5n8.O8h](o,function(b,P){var Z="M7";if(d5n8[Z](b,d5n8.M0h)){var q=JSON[w3](b);for(var t in q){V4[v3](q[t][d5n8.U2h],q[t]);}for(var t in q){var D=q[t];for(var f in D[G]){V4[t3](D[d5n8.U2h],D[G][f],d5n8.M8h,d5n8.M8h);}}}s(P);});};this[n]=function(v,U){u=new Array();V3[d5n8.K9h](v,function(b,P,Z){var q='model.loadRoutine:fetch routine success',t="c7",D="K7";if(d5n8[D](Z,d5n8.M0h)){var f=JSON[w3](Z);for(var o in f){V4[P3](f[o][d5n8.U2h],f[o]);}}if(d5n8[t](b,d5n8.M0h)){var s=JSON[w3](b);for(var o in s){V4[v3](s[o][d5n8.U2h],s[o]);}for(var o in s){var e=s[o];for(var B in e[G]){V4[t3](e[d5n8.U2h],e[G][B],d5n8.M8h,d5n8.M8h);}}}console[d5n8.j8h](q);U({routineName:P,});});};this[C]=function(b,P){var Z="k7",q='no find user abort saving routine',t="d7",D='prepare to save routine ';console[d5n8.j8h](D+b);var f=V3[d5n8.Q8h]();if(d5n8[t](f,d5n8.M0h)){alert(q);return ;}var o={};for(var s in f3){var e=f3[s];if(d5n8[Z](e[E],o)){o[e[E]][d5n8.i0h](e[d5n8.T8h]());}else{o[e[E]]=new Array();o[e[E]][d5n8.i0h](e[d5n8.T8h]());}}for(var B in o){o[B]=JSON[c4](o[B]);}V3[d5n8.O9h](o,function(){y3(b,function(){P();});});};this[E3]=function(b){var P='can not find model marker :',Z="P0",q="R7",t="j7",D=G3(b);if(d5n8[t](D,d5n8.M0h)){var f=f3[d5n8.d2h];for(var o=d5n8.M8h;d5n8[q](o,f);o++){if(d5n8[Z](f3[o][d5n8.U2h],b)){return f3[o];}}alert(P+b);return d5n8.M0h;}else{return D;}};this[g]=function(b){var P="t0",Z=this[E3](b);if(d5n8[P](Z[d5n8.E2h](),d5n8.M0h)){return Z[d5n8.E2h]();}else{return d5n8.M0h;}};this[p]=function(b,P){var Z=G3(b),q=G3(P);Z[d5n8.z7h](q);};this[t3]=function(b,P){var Z=" toId ",q="model.addSubLine: fromId: ";console[d5n8.j8h](q+b+Z+P);var t=G3(b),D=G3(P);t[d5n8.w2h](D);};this[i]=function(){var b="v0",P="e0",Z="o0",q=new Array(),t=u[d5n8.d2h];for(var D=d5n8.M8h;d5n8[Z](D,t);D++){if(d5n8[P](u[D],MapMarker)){if(d5n8[b](u[D][d5n8.d0h],d5n8.M0h)&&!u[D][d5n8.D7h]()){q[d5n8.i0h](u[D]);}}}return q;};this[W]=function(b){var P="model.belongwhichHeadIds: return ",Z="w0",q="H0",t=this[E3](b);if(d5n8[q](t[d5n8.d0h],d5n8.M0h)){var D=[],f=t;do {D[d5n8.i0h](f[d5n8.U2h]);f=f[d5n8.V0h];}while(d5n8[Z](f,d5n8.M0h));console[d5n8.j8h](P+D);return D;}else{return this[W](t[d5n8.d0h][d5n8.U2h]);}};this[A]=function(b){var P="G0",Z="A0",q=G3(b);if(d5n8[Z](q[d5n8.d0h],d5n8.M0h)){D1(q[d5n8.d0h]);}D1(q);if(d5n8[P](q[d5n8.d9h],d5n8.M0h)){g3(q[d5n8.d9h]);}g3(q);};}function MarkerContent(t3){var G="addImgUrl",H3='updateInfoWindow',s4="setImgUrls",K4="setlatlng",Q3="setCategory",U3="setMycomment",v3="setAddress",N4="setTitle",a4="isImgPositionDecided",m4="setIconUrl",I4="setImgPositionDecided",b3="setSlideNum",r3="resource/icons/default/default_default.png",H4="resource/icons/pic/pic_no_position.png",F4="resource/icons/pic/pic_default.png",q1="marker",E3="...",t1="Unknown Address",c1="Unknown Location";this[d5n8.U2h]=t3;var d4=c1,c4=t1,b4=d5n8.M8h,P3=d5n8.M8h,w3=E3,E=q1,U4=new Array(),g3=d5n8.U0h,W3=d5n8.m8h,y3=d5n8.k7h,D1=F4,G3=H4,w4=r3;this[d5n8.E9h]=function(){return y3;};this[d5n8.V2h]=function(b){y3=b;};this[d5n8.c2h]=function(){return W3;};this[b3]=function(b){W3=b;};this[I4]=function(b){g3=b;if(g3){this[m4](D1);}else{this[m4](G3);}};this[a4]=function(){return g3;};this[d5n8.q2h]=function(b){var P="isAverage",Z="u9",q="iconUrl",t="x9",D="W9",f="imgUrls",o="V9",s="lng",e="U9",B="lat",v="N9",U="category",H="B9",V="mycomment",A="m9",W="address",i="f9",p="title",g="Z9",C="slideNum",n="b9";if(d5n8[n](b[C],d5n8.M0h)){this[b3](b[C]);}if(d5n8[g](b[p],d5n8.M0h)){this[N4](b[p]);}if(d5n8[i](b[W],d5n8.M0h)){this[v3](b[W]);}if(d5n8[A](b[V],d5n8.M0h)){this[U3](b[V]);}if(d5n8[H](b[U],d5n8.M0h)){this[Q3](b[U]);}if(d5n8[v](b[B],d5n8.M0h)&&d5n8[e](b[s],d5n8.M0h)){this[K4](b[B],b[s]);}if(d5n8[o](b[f],d5n8.M0h)&&d5n8[D](b[f][d5n8.d2h],d5n8.M8h)){this[s4](b[f]);}if(d5n8[t](b[q],d5n8.M0h)){this[m4](b[q]);}if(d5n8[Z](b[P],d5n8.M0h)){this[d5n8.V2h](b[P]);}$[d5n8.Z0h](H3,[this]);};this[G]=function(b){U4[d5n8.i0h](b);$[d5n8.Z0h](H3,[this]);};this[d5n8.r1h]=function(){return w4;};this[m4]=function(b){var P="iconUrlUpdated";w4=b;$[d5n8.Z0h](P,[this]);};this[d5n8.a8h]=function(){return U4;};this[s4]=function(b){U4=b;};this[d5n8.A0h]=function(){return E;};this[Q3]=function(b){E=b;};this[d5n8.u7h]=function(){return b4;};this[K4]=function(b,P){var Z='latlngChanged';b4=b;P3=P;$[d5n8.Z0h](Z,[this]);$[d5n8.Z0h](d5n8.C1h,[]);};this[d5n8.l9h]=function(){return P3;};this[d5n8.v7h]=function(){return c4;};this[v3]=function(b){c4=b;};this[d5n8.Z7h]=function(){return d4;};this[N4]=function(b){d4=b;};this[U3]=function(b){w3=b;};this[d5n8.x0h]=function(b){var P='...',Z=150,q="substring";if(b){return w3[q](d5n8.M8h,Z)+P;}else{return w3;}};}function BackendManager(){var H="url",V="File",A="save",W="set",i="The object was not retrieved successfully.",p='user',g="then",C='RoutineJSONString',n="destroy",t3="indexOf",G='overViewJSONString',H3='title',s4="find",K4="user",Q3="equalTo",U3="Query",v3="fetchRoutinesByUser",N4="message",a4="code",m4="Error: ",I4='username',b3="get",r3="logIn",H4="User",F4="login",q1="4wrzupru1m4m7gpafo4llinv7iepyapnycvxygup7uiui77x",E3="6pzfpf5wkg4m52owuwixt5vggrpjincr8xon3pd966fhgj3c",t1="initialize",c1="Routine",d4="extend",c4="Object",b4=AV[c4][d4](c1),P3=d5n8.M0h,w3=d5n8.M0h,E=d5n8.M0h;AV[t1](E3,q1);this[F4]=function(q,t,D){AV[H4][r3](q,t,{success:function(b){D(b);},error:function(b,P){var Z='login failed';alert(Z);}});};this[d5n8.Q8h]=function(q){var t="guest",D="welcomse session user:",f="current";w3=AV[H4][f]();if(w3){console[d5n8.j8h](D+w3[b3](I4));q(w3);}else{AV[H4][r3](t,t,{success:function(b){var P="login for user:";console[d5n8.j8h](P+b[b3](I4));w3=b;q(b);},error:function(b,P){var Z="log failed. abort save routines";alert(m4+P[a4]+d5n8.e2h+P[N4]);alert(Z);q(d5n8.M0h);}});}};this[v3]=function(Z,q){var t=new AV[U3](b4);t[Q3](K4,Z);t[s4]({success:function(b){var P="backendManager:fetch routine success";console[d5n8.j8h](P);q(b);}});};this[d5n8.q9h]=function(Z,q){var t='bM.fetchUserByUserId: userId:';console[d5n8.j8h](t+Z);var D=new AV[U3](AV[H4]);D[b3](Z,{success:function(b){var P='bM.fetchUserByUserId: found user, user name';console[d5n8.j8h](P+b[b3](I4));q(b);}});};this[d5n8.D9h]=function(t,D){var f="select",o=new AV[U3](b4);o[Q3](K4,t);o[f](H3,G);o[s4]({success:function(b){var P="backendManager:fetchOverviewRoutinesByUser success";console[d5n8.j8h](P);E=b;var Z=[];for(var q in b){Z[d5n8.i0h]({routineId:b[q][d5n8.U2h],overviewJSONString:b[q][b3](G)});}D(Z);}});};this[d5n8.B8h]=function(b,P){for(var Z in E){var q=E[Z][b3](G);if(q[t3](b)!=-d5n8.m8h){E[Z][n]({success:function(){P();}});}}};this[d5n8.O8h]=function(Z,q){var t="fetch",D="E0",f="L0";if(d5n8[f](E,d5n8.M0h)){return q(d5n8.M0h);}else{for(var o in E){var s=E[o][b3](G);if(s[t3](Z)!=-d5n8.m8h){P3=E[o];var e=E[o][b3](C),B=E[o][b3](H3);if(d5n8[D](e,d5n8.M0h)){return q(e,B);}else{E[o][t]()[g](function(b){var P=b[b3](C);q(P,B);});}}else{continue;}}}};this[d5n8.I7h]=function(Z,q){var t=new AV[U3](b4);t[b3](Z,{success:function(b){P3=b;q(P3[b3](p));},error:function(b,P){alert(i);console[d5n8.j8h](P);}});};this[d5n8.W0h]=function(q,t,D){var f=new AV[U3](b4);f[Q3](K4,q);f[b3](t,{success:function(){var b='BackManager.isUserOwnRoutines: user own this routine';console[d5n8.j8h](b);D(d5n8.U0h);},error:function(b,P){var Z='BackManager.isUserOwnRoutines: user not own this routine';console[d5n8.j8h](Z);D(d5n8.k7h);}});};this[d5n8.K9h]=function(Z,q){var t='BackendManager.FetchRoutineJSONStringById-fetch routine id=:';console[d5n8.j8h](t+Z);var D=new AV[U3](b4);D[b3](Z,{success:function(b){P3=b;q(P3[b3](C),P3[b3](H3),P3[b3](G));},error:function(b,P){alert(i);console[d5n8.j8h](P);}});};this[d5n8.O9h]=function(Z,q){var t="saveAll",D="overViewJSONString",f="Q0",o="z0";for(var s in Z){var e=s;if(d5n8[o](e,d5n8.M0h)){for(var B in E){if(d5n8[f](E[B][d5n8.U2h],e)){E[B][W](D,Z[s]);}}}}AV[c4][t](E,{success:function(b){var P="update all overviews success";console[d5n8.j8h](P);q();},error:function(b){var P="error happenned when update all overview";console[d5n8.j8h](P+b);},});};this[d5n8.t8h]=function(q,t,D,f){var o="T0";if(d5n8[o](P3,d5n8.M0h)){P3=new b4();}P3[W](H3,q);P3[W](C,t);P3[W](p,this[d5n8.Q8h]());P3[W](G,D);P3[A](d5n8.M0h,{success:function(b){P3=b;f();},error:function(b,P){var Z='save routine failed';alert(Z);P3=d5n8.M0h;}});};this[d5n8.W9h]=function(P,Z,q){var t="name",D=P[t],f=new AV[V](D,P);f[A]()[g](function(){Z(f[H]());},function(b){q(b);});};this[d5n8.T9h]=function(P,Z,q,t){var D=new AV[V](Z,{base64:P});D[A]()[g](function(){q(D[H]());},function(b){t(b);});};this[d5n8.K8h]=function(o,s,e){var B="_File",v='BManager.deleteFileByUrl:';console[d5n8.j8h](v+o);var U=new AV[U3](AV[c4][d4](B));U[Q3](H,o);U[s4]({success:function(P){var Z=' not found',q='url ',t='find url:',D="X0";if(d5n8[D](P[d5n8.d2h],d5n8.M8h)){console[d5n8.j8h](t+o);var f=P[d5n8.M8h];f[n]({success:function(b){s();},error:function(b){console[d5n8.j8h](m4+b[a4]+d5n8.e2h+b[N4]);e();}});}else{console[d5n8.j8h](q+o+Z);}},error:function(b){console[d5n8.j8h](m4+b[a4]+d5n8.e2h+b[N4]);e();}});};};
+function MapMarkerModel() {
+	var marks = new Array();
+	var currentOverviewMarkers = new Array();
+	var allOverviewMarkers = new Array();
+	
+	var self=this;
+
+	var backendManager = new BackendManager();
+	
+	this.fetchUserIdByRoutineId=function(routineId,successCallBack){
+		backendManager.fetchUserByRoutineId(routineId, function(user){
+			if(user!=null){
+				successCallBack(user.id);
+			}else{
+				successCallBack(null);
+			}	
+		});
+	};
+	
+	this.isOvMarker=function(id){
+		for(var i in allOverviewMarkers){
+			if(allOverviewMarkers[i].id==id){
+				return true;
+			}
+		}
+		return false;
+	};
+	
+	this.findAverageOvMarkerByOvId=function(id){
+		var ovMarker=self.getMapMarkerById(id);
+		for(var i in allOverviewMarkers){
+			if(ovMarker.routineId==allOverviewMarkers[i].routineId && 
+					allOverviewMarkers[i].content.isAvergeOverViewMarker()){
+				return allOverviewMarkers[i];
+			}else{
+				continue;
+			}
+		}
+		return null;
+	};
+
+	this.getCurrentOverviewMarkers = function() {
+		return currentOverviewMarkers;
+	};
+	
+	this.setCurrenOverviewMarkersByOverviewId=function(id){
+		currentOverviewMarkers=new Array();
+		var routineId=this.getMapMarkerById(id).routineId;
+		for(var i in allOverviewMarkers){
+			if(allOverviewMarkers[i].routineId==routineId){
+				currentOverviewMarkers.push(allOverviewMarkers[i]);
+			}
+		}
+	};
+
+	this.getAllOverviewMarkers = function() {
+		return allOverviewMarkers;
+	}
+
+	this.genUUID = function() {
+		return uuid.v4();
+	};
+
+	this.deleteRoutineByOverviewId = function(overviewMarkerId, successCallback) {
+		backendManager.deleteRoutineByOverviewMarkerId(overviewMarkerId,
+				function() {
+					successCallback();
+				});
+	};
+
+	this.saveImage = function(imageFile, successCallback, failCallback) {
+		backendManager.saveFile(imageFile, function(url) {
+			successCallback(url);
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.saveImageByBase64 = function(base64String, fileName, successCallback,
+			failCallback) {
+		backendManager.saveBase64File(base64String, fileName, function(url) {
+			successCallback(url);
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.resetModels = function() {
+		marks = new Array();
+		currentOverviewMarkers = new Array();
+		allOverviewMarkers = new Array();
+	};
+
+	this.getModelMarkers = function() {
+		return marks;
+	};
+
+	this.fetchMaxIdinMarks = function() {
+		marks.sort(function(mark1, mark2) {
+			if (mark1.id > mark2.id) {
+				return 1;
+			} else if (mark1.id == mark2.id) {
+				return 0;
+			} else {
+				return -1;
+			}
+		});
+
+		return marks[marks.length - 1].id;
+	};
+
+	this.createOneMarker = function(id, content) {
+		var marker = new MapMarker(id);
+		$.publish('createOneMarker', [ marker ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		marks.push(marker);
+		return marker;
+	};
+
+	this.createOverviewMarker = function(id, content,routineId) {
+		var marker = new MapMarker(id);
+		marker.routineId=routineId;
+		$.publish('createOverViewMarker', [ marker,content ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		allOverviewMarkers.push(marker);
+		return marker;
+	};
+	
+	this.deleteOvMarker=function(id){
+		var ovMarker=this.getMapMarkerById(id);
+		if(ovMarker.content.isAvergeOverViewMarker()){
+			alert("this marker can not be deleted");
+			return;
+		}else{
+			for ( var i in allOverviewMarkers) {
+				if (allOverviewMarkers[i].id == id) {
+					allOverviewMarkers.splice(i, 1);
+				}
+			}
+			
+			if(currentOverviewMarkers.length!=0){
+				for ( var i in currentOverviewMarkers) {
+					if (currentOverviewMarkers[i].id == id) {
+						currentOverviewMarkers.splice(i, 1);
+					}
+				}
+			}
+			
+			$.publish('deleteOvMarker', [ id ]);
+			$.publish('updateOvLines');
+		}
+	};
+
+	this.deleteOneMarker = function(id, needDeleteAttackedImg) {
+		var modelMarker = this.getMapMarkerById(id);
+		if (modelMarker != null) {
+
+			// unconnect pre main model marker
+			if (modelMarker.prevMainMarker != null) {
+				modelMarker.prevMainMarker.disconnectNextMarker();
+			}
+
+			// unconnect next main model marker
+			if (modelMarker.connectedMainMarker != null) {
+				modelMarker.disconnectNextMarker();
+			}
+
+			// unconnect parentSubMarker
+			if (modelMarker.parentSubMarker != null) {
+				modelMarker.parentSubMarker
+						.disconnectTreeChildMarker(modelMarker);
+			}
+
+			// unconnect all sub marker
+			modelMarker.disconnectAllTreeChildMarker();
+
+			for ( var i in marks) {
+				if (marks[i].id == id) {
+					marks.splice(i, 1);
+				}
+			}
+
+			if (needDeleteAttackedImg) {
+				var imgUrls = modelMarker.content.getImgUrls();
+				if (imgUrls != null && imgUrls.length > 0) {
+					for ( var i in imgUrls) {
+						var url = imgUrls[i];
+						backendManager.deleteFileByUrl(url, function() {
+							console.log('success deleted img ');
+						}, function() {
+							console.log('fail delete img');
+						});
+					}
+					;
+				}
+			}
+			$.publish('deleteOneMarker', [ modelMarker ]);
+		}
+	};
+
+	this.isUserOwnRoutine = function(routineId, successCallback) {
+		var currentUser = backendManager.getCurrentUser();
+
+		backendManager.isUserOwnRoutines(currentUser, routineId,
+				successCallback);
+	};
+
+	this.loadAllOverviewRoutine = function(userId,successCallback) {
+		allOverviewMarkers = new Array();
+
+		backendManager.getCurrentUser(function(currentUser){
+			if(userId==null){
+				fetchOverviewRoutinesByUser(currentUser,function(){
+					successCallback(true);
+				});
+			}else{
+				backendManager.fetchUserByUserId(userId, function(user){
+					if(user!=null){
+						fetchOverviewRoutinesByUser(user,function(){
+							if(user.id==currentUser.id){
+								//current user own these routines
+								successCallback(true);
+							}else{
+								successCallback(false);
+							}
+						});
+					}else{
+						fetchOverviewRoutinesByUser(currentUser,function(){
+							successCallback(true);
+						});
+					}
+				});
+			};
+		});
+	};
+	
+	function fetchOverviewRoutinesByUser(user,successCallback){
+		backendManager.fetchOverviewRoutinesByUser(user, function(
+				overviewJSONStringArray) {
+			for ( var i in overviewJSONStringArray) {
+				var overviewJSONString = overviewJSONStringArray[i].overviewJSONString;
+				var routineId=overviewJSONStringArray[i].routineId;
+				var overviewMarkerArray = JSON.parse(overviewJSONString);
+				for ( var i in overviewMarkerArray) {
+					self.createOverviewMarker(overviewMarkerArray[i].id,
+							overviewMarkerArray[i],routineId);
+				}
+			}
+			successCallback();
+		});
+	}
+
+	this.loadRoutineByOverviewMarkerId = function(overviewId, successCallback) {
+		marks = new Array();
+
+		backendManager.fetchRoutineJSONStringByOverviewMarkerId(overviewId,
+				function(marksJSONString, routineName) {
+					if (marksJSONString != null) {
+						// parse markers
+						var marksJSONArray = JSON.parse(marksJSONString);
+						for ( var i in marksJSONArray) {
+
+							self.createOneMarker(marksJSONArray[i].id,
+									marksJSONArray[i]);
+
+						}
+
+						for ( var i in marksJSONArray) {
+							var eachJSONObject = marksJSONArray[i];
+
+							for ( var j in eachJSONObject.subMarkerIds) {
+								self.addSubLine(eachJSONObject.id,
+										eachJSONObject.subMarkerIds[j], 0, 0);
+							}
+						}
+
+					}
+
+					successCallback(routineName);
+				});
+
+	};
+
+	this.loadRoutine = function(routineId, successCallback) {
+		marks = new Array();
+
+		backendManager.fetchRoutineJSONStringById(routineId, function(
+				marksJSONString, title, overViewJSONString) {
+			if (overViewJSONString != null) {
+				// parse overview markers
+				var overviewJSONArray = JSON.parse(overViewJSONString);
+				for ( var i in overviewJSONArray) {
+					self.createOverviewMarker(overviewJSONArray[i].id,
+							overviewJSONArray[i]);
+				}
+			}
+
+			if (marksJSONString != null) {
+				// parse markers
+				var marksJSONArray = JSON.parse(marksJSONString);
+				for ( var i in marksJSONArray) {
+					self.createOneMarker(marksJSONArray[i].id,
+							marksJSONArray[i]);
+				}
+
+				for ( var i in marksJSONArray) {
+					var eachJSONObject = marksJSONArray[i];
+					for ( var j in eachJSONObject.subMarkerIds) {
+						self.addSubLine(eachJSONObject.id,
+								eachJSONObject.subMarkerIds[j], 0, 0);
+					}
+				}
+
+			}
+			console.log('model.loadRoutine:fetch routine success');
+			successCallback({
+				routineName : title,
+			});
+		});
+
+	};
+
+	this.save2Backend = function(routineName, callback) {
+		console.log('prepare to save routine ' + routineName);
+		var currentUser = backendManager.getCurrentUser();
+		
+		if (currentUser == null) {
+			alert('no find user abort saving routine');
+			return;
+		}
+
+		//save all overview markers
+		//to do...
+		var overviewMap={};
+		for(var i in allOverviewMarkers){
+			var ovMarker=allOverviewMarkers[i];
+			if(ovMarker.routineId in overviewMap){
+				overviewMap[ovMarker.routineId].push(ovMarker.toJSONObject());
+			}else{
+				overviewMap[ovMarker.routineId]=new Array();
+				overviewMap[ovMarker.routineId].push(ovMarker.toJSONObject());
+			}
+		}
+		
+		for(var key in overviewMap){
+			overviewMap[key]=JSON.stringify(overviewMap[key]);
+		}
+		
+		backendManager.updateAllOverviews(overviewMap,function(){	
+			saveCurrentRoutine(routineName,function(){
+				callback();
+			});
+		});
+		
+	};
+	
+	function saveCurrentRoutine(routineName,callback){
+		//save Routine Markers
+		// gen marksJSONArray
+		var marksJSONArray = new Array();
+		if(marks.length!=0){
+			for ( var i in marks) {
+				marksJSONArray.push(marks[i].toJSONObject());
+			}
+
+			// gen overViewMarksJSONArray
+			var overviewMarkersJSONArray = new Array();
+			if (currentOverviewMarkers.length == 0) {
+				var uuid = self.genUUID();
+				var centreOverViewMarker = new MapMarker(uuid);
+				centreOverViewMarker.content.setIsAvergeOverViewMarker(true);
+				var location = genCentreLocation();
+				centreOverViewMarker.content.updateContent(location);
+				overviewMarkersJSONArray.push(centreOverViewMarker.toJSONObject());
+			} else {
+				// find average Marker and update its lat lng
+				for ( var i in currentOverviewMarkers) {
+					var overviewMarker = currentOverviewMarkers[i];
+					if (overviewMarker.content.isAvergeOverViewMarker()) {
+						overviewMarker.content.updateContent(genCentreLocation());
+					}
+					overviewMarkersJSONArray.push(overviewMarker.toJSONObject());
+				}
+			}
+			
+			backendManager.saveRoutine(routineName, JSON.stringify(marksJSONArray),
+					JSON.stringify(overviewMarkersJSONArray), function() {
+						callback();
+					});
+		}else{
+			callback();
+		}
+	}
+
+	function genCentreLocation() {
+		var numWithNoSubMarkers = 0;
+		var allLat = 0.000000;
+		var allLng = 0.000000;
+		for ( var i = 0; i < marks.length; i++) {
+			if (!marks[i].isSubMarker()) {
+				allLat = allLat + marks[i].getContent().getLat();
+				allLng = allLng + marks[i].getContent().getLng();
+				numWithNoSubMarkers++;
+			}
+		}
+		var averageLat = allLat / numWithNoSubMarkers;
+		var averageLng = allLng / numWithNoSubMarkers;
+		return {
+			lat : averageLat,
+			lng : averageLng
+		};
+	}
+
+	function getOverlayById(id) {
+		var length = marks.length;
+		for ( var i = 0; i < length; i++) {
+			if (marks[i].id == id) {
+				return marks[i];
+			}
+		}
+		return null;
+	}
+
+	this.getMapMarkerById = function(id) {
+		var marker = getOverlayById(id);
+		if (marker == null) {
+			var length = allOverviewMarkers.length;
+			for ( var i = 0; i < length; i++) {
+				if (allOverviewMarkers[i].id == id) {
+					return allOverviewMarkers[i];
+				}
+			}
+			alert('can not find model marker :' + id);
+			return null;
+		} else {
+			return marker;
+		}
+
+	};
+
+	this.getMarkerContentById = function(id) {
+		var marker = this.getMapMarkerById(id);
+		if (marker.getContent() != null) {
+			return marker.getContent();
+		} else {
+			return null;
+		}
+	};
+
+	this.addMainLine = function(fromId, toId) {
+		var fromMarker = getOverlayById(fromId);
+		var toMarker = getOverlayById(toId);
+		fromMarker.addNextMarker(toMarker);
+
+	};
+
+	this.addSubLine = function(fromId, toId) {
+		console.log("model.addSubLine: fromId: " + fromId + " toId " + toId);
+		var fromMarker = getOverlayById(fromId);
+		var toMarker = getOverlayById(toId);
+		fromMarker.addTreeChildMarker(toMarker);
+	};
+
+	this.findHeadMarker = function() {
+		var heads = new Array();
+		var length = marks.length;
+		for ( var i = 0; i < length; i++) {
+			if (marks[i] instanceof MapMarker) {
+				if (marks[i].prevMainMarker == null && !marks[i].isSubMarker()) {
+					heads.push(marks[i]);
+				}
+			}
+		}
+		return heads;
+	};
+
+	this.belongWhichHeadIds = function(markerId) {
+		var modelMarker = this.getMapMarkerById(markerId);
+
+		if (modelMarker.prevMainMarker == null) {
+			var routineIds = [];
+			var headMarker = modelMarker;
+			do {
+				routineIds.push(headMarker.id);
+				headMarker = headMarker.connectedMainMarker;
+			} while (headMarker != null);
+			console.log("model.belongwhichHeadIds: return " + routineIds);
+			return routineIds;
+		} else {
+			return this.belongWhichHeadIds(modelMarker.prevMainMarker.id);
+		}
+	};
+
+	this.redrawConnectedLine = function(id) {
+		var marker = getOverlayById(id);
+		// redraw curveLine
+		if (marker.prevMainMarker != null) {
+			redrawOneMarker(marker.prevMainMarker);
+		}
+		redrawOneMarker(marker);
+
+		if (marker.parentSubMarker != null) {
+			redrawTreeNode(marker.parentSubMarker);
+		}
+		redrawTreeNode(marker);
+	};
+
+	function redrawOneMarker(marker) {
+		if (marker.connectedMainMarker == null) {
+			return;
+		} else {
+			// redraw Curve Line
+			if (marker.connectedMainLine != null) {
+				// marker.connectedMainLine.remove(map);
+				view.removeById(marker.connectedMainLine.id);
+			}
+			// addCurveLine(map,marker.getPosition(),marker.connectedMainMarker.getPosition());
+			marker.connectedMainLine = new MainLine(view.drawMainLine(
+					marker.id, marker.connectedMainMarker.id));
+
+		}
+	}
+
+	function redrawTreeNode(marker) {
+		for ( var j in marker.subMarkersArray) {
+			// map.removeOverlay(marker.subMarkersArray[j].line);
+			view.removeById(marker.subMarkersArray[j].line.id);
+			marker.subMarkersArray[j].line = new SubLine(view.drawSubLine(
+					marker.id, marker.subMarkersArray[j].entity.id));
+			/*
+			 * if(marker.areSubMarkersHide()){
+			 * marker.subMarkersArray[j].line.hide(); }
+			 */
+		}
+	}
+}
+
+function BackendManager() {
+	var Routine = AV.Object.extend("Routine");
+
+	var routine = null;
+	var currentUser = null;
+	var userRoutines = null;
+
+	AV.initialize("6pzfpf5wkg4m52owuwixt5vggrpjincr8xon3pd966fhgj3c",
+			"4wrzupru1m4m7gpafo4llinv7iepyapnycvxygup7uiui77x");
+
+	this.login = function(userName, pwd, successCallback) {
+		AV.User.logIn(userName, pwd, {
+			success : function(user) {
+				successCallback(user);
+			},
+			error : function(user, error) {
+				alert('login failed');
+			}
+		});
+	};
+
+	this.getCurrentUser = function(successCallback) {
+		currentUser = AV.User.current();
+		if (currentUser) {
+			console.log("welcomse session user:" + currentUser.get('username'));
+
+			successCallback(currentUser);
+
+		} else {
+			AV.User.logIn("guest", "guest", {
+				success : function(user) {
+					console.log("login for user:" + user.get('username'));
+					currentUser = user;
+					successCallback(user);
+				},
+				error : function(user, error) {
+					alert("Error: " + error.code + " " + error.message);
+					alert("log failed. abort save routines");
+					successCallback(null);
+				}
+			});
+		}
+	};
+
+	this.fetchRoutinesByUser = function(user, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.find({
+			success : function(routines) {
+				console.log("backendManager:fetch routine success");
+				successCallback(routines);
+			}
+		});
+	};
+	
+	this.fetchUserByUserId=function(userId,successCallback){
+		console.log('bM.fetchUserByUserId: userId:'+ userId);
+		var query = new AV.Query(AV.User);
+		query.get(userId,{
+		  success: function(user) {
+			  console.log('bM.fetchUserByUserId: found user, user name'+ user.get('username'));
+			  successCallback(user);
+		  }
+		});
+	};
+
+	this.fetchOverviewRoutinesByUser = function(user, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.select('title', 'overViewJSONString');
+		query
+				.find({
+					success : function(routines) {
+						console
+								.log("backendManager:fetchOverviewRoutinesByUser success");
+						userRoutines = routines;
+						var overviewMarkersJSONStringArray = [];
+						for ( var i in routines) {
+							overviewMarkersJSONStringArray.push(
+										{
+											routineId:routines[i].id,
+											overviewJSONString:routines[i].get('overViewJSONString')
+										}
+									);
+						}
+						successCallback(overviewMarkersJSONStringArray);
+					}
+				});
+	};
+
+	this.deleteRoutineByOverviewMarkerId = function(overviewMarkerId,
+			successCallback) {
+		for ( var i in userRoutines) {
+			var overviewJSONString = userRoutines[i].get('overViewJSONString');
+			if (overviewJSONString.indexOf(overviewMarkerId) != -1) {
+				userRoutines[i].destroy({
+					success : function() {
+						successCallback();
+					}
+				});
+			}
+		}
+	};
+
+	this.fetchRoutineJSONStringByOverviewMarkerId = function(overviewMarkerId,
+			successCallback) {
+		if (userRoutines == null) {
+			return successCallback(null);
+		} else {
+			for ( var i in userRoutines) {
+				var overviewJSONString = userRoutines[i]
+						.get('overViewJSONString');
+				if (overviewJSONString.indexOf(overviewMarkerId) != -1) {
+					routine = userRoutines[i];
+					var result = userRoutines[i].get('RoutineJSONString');
+					var routineName = userRoutines[i].get('title');
+					if (result != null) {
+						return successCallback(result, routineName);
+					} else {
+						userRoutines[i].fetch().then(function(result) {
+							var r = result.get('RoutineJSONString');
+							successCallback(r, routineName);
+						});
+					}
+				} else {
+					continue;
+				}
+			}
+		}
+	};
+	
+	this.fetchUserByRoutineId=function(routineId,successCallback){
+		var query = new AV.Query(Routine);
+		query.get(routineId, {
+			success : function(fetchedRoutine) {
+				routine = fetchedRoutine;
+				successCallback(routine.get('user'));
+			},
+			error : function(object, error) {
+				alert("The object was not retrieved successfully.");
+				console.log(error);
+			}
+		});
+	};
+
+	this.isUserOwnRoutines = function(user, routineId, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query
+				.get(
+						routineId,
+						{
+							success : function() {
+								console
+										.log('BackManager.isUserOwnRoutines: user own this routine');
+								successCallback(true);
+							},
+							error : function(object, error) {
+								console
+										.log('BackManager.isUserOwnRoutines: user not own this routine');
+								successCallback(false);
+							}
+						});
+	};
+
+	this.fetchRoutineJSONStringById = function(objectId, successCallback) {
+		console
+				.log('BackendManager.FetchRoutineJSONStringById-fetch routine id=:'
+						+ objectId);
+
+		var query = new AV.Query(Routine);
+		query.get(objectId, {
+			success : function(fetchedRoutine) {
+				routine = fetchedRoutine;
+				successCallback(routine.get('RoutineJSONString'), routine
+						.get('title'), routine.get('overViewJSONString'));
+			},
+			error : function(object, error) {
+				alert("The object was not retrieved successfully.");
+				console.log(error);
+			}
+		});
+	};
+	
+	this.updateAllOverviews=function(ovMarkerJSONMap,successCallback){
+		for(var key in ovMarkerJSONMap){
+			var routineId=key;
+			if(routineId!=null){
+				for(var j in userRoutines){
+					if(userRoutines[j].id==routineId){
+						userRoutines[j].set("overViewJSONString",ovMarkerJSONMap[key]);
+					}
+				}
+			}
+		}
+		
+		AV.Object.saveAll(userRoutines, {
+			    success: function(list) {
+			      console.log("update all overviews success");
+			      successCallback();
+			    },
+			    error: function(error) {
+			      console.log("error happenned when update all overview"+error);
+			    },
+		 });
+	};
+
+	this.saveRoutine = function(routineName, routineJSONString,
+			overViewJSONString, callback) {
+		if (routine == null) {
+			routine = new Routine();
+		}
+		routine.set('title', routineName);
+		routine.set('RoutineJSONString', routineJSONString);
+		routine.set('user', this.getCurrentUser());
+		routine.set('overViewJSONString', overViewJSONString);
+		routine.save(null, {
+			success : function(routineFoo) {
+				routine = routineFoo;
+				callback();
+			},
+			error : function(object, error) {
+				alert('save routine failed');
+				routine = null;
+			}
+
+		});
+	};
+
+	this.saveFile = function(file, successCallBack, failCallback) {
+
+		var name = file.name;
+		var avFile = new AV.File(name, file);
+		avFile.save().then(function() {
+			successCallBack(avFile.url());
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.saveBase64File = function(base64String, fileName, successCallBack,
+			failCallback) {
+		var avFile = new AV.File(fileName, {
+			base64 : base64String
+		});
+		avFile.save().then(function() {
+			successCallBack(avFile.url());
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.deleteFileByUrl = function(url, successCallBack, failCallback) {
+		console.log('BManager.deleteFileByUrl:' + url);
+		var query = new AV.Query(AV.Object.extend("_File"));
+		query.equalTo("url", url);
+		query.find({
+			success : function(results) {
+				if (results.length > 0) {
+					console.log('find url:' + url);
+
+					var file = results[0];
+					file.destroy({
+						success : function(file) {
+							successCallBack();
+						},
+						error : function(error) {
+							console.log("Error: " + error.code + " "
+									+ error.message);
+							failCallback();
+						}
+					});
+
+				} else {
+					console.log('url ' + url + ' not found');
+				}
+			},
+			error : function(error) {
+				console.log("Error: " + error.code + " " + error.message);
+				failCallback();
+			}
+		});
+	};
+
+	// getters and setters
+
+}
+
+function MarkerContent(id) {
+	this.id = id;
+
+	var title = "Unknown Location";
+	var address = "Unknown Address";
+	var lat = 0;
+	var lng = 0;
+	var mycomment = "...";
+	var category = "marker";
+	var imgUrls = new Array();
+	var isImgPositionDecided = true;
+	var slideNum = 1;
+
+	var isAvergeOverViewMarker = false;
+
+	var defaultImgIcon = "resource/icons/pic/pic_default.png";
+	var picNoPositionIconUrl = "resource/icons/pic/pic_no_position.png";
+	var iconUrl = "resource/icons/default/default_default.png";
+
+	this.isAvergeOverViewMarker = function() {
+		return isAvergeOverViewMarker;
+	};
+
+	this.setIsAvergeOverViewMarker = function(isAverage) {
+		isAvergeOverViewMarker = isAverage;
+	};
+
+	this.getSlideNum = function() {
+		return slideNum;
+	};
+	this.setSlideNum = function(num) {
+		slideNum = num;
+	};
+
+	this.setImgPositionDecided = function(arg) {
+		isImgPositionDecided = arg;
+		if (isImgPositionDecided) {
+			this.setIconUrl(defaultImgIcon);
+		} else {
+			this.setIconUrl(picNoPositionIconUrl);
+		}
+	};
+
+	this.isImgPositionDecided = function() {
+		return isImgPositionDecided;
+	};
+
+	this.updateContent = function(args) {
+		if (args.slideNum != null) {
+			this.setSlideNum(args.slideNum);
+		}
+
+		if (args.title != null) {
+			this.setTitle(args.title);
+		}
+
+		if (args.address != null) {
+			this.setAddress(args.address);
+		}
+
+		if (args.mycomment != null) {
+			this.setMycomment(args.mycomment);
+		}
+
+		if (args.category != null) {
+			this.setCategory(args.category);
+		}
+
+		if (args.lat != null && args.lng != null) {
+			this.setlatlng(args.lat, args.lng);
+
+		}
+
+		if (args.imgUrls != null && args.imgUrls.length != 0) {
+			this.setImgUrls(args.imgUrls);
+		}
+
+		if (args.iconUrl != null) {
+			this.setIconUrl(args.iconUrl);
+		}
+
+		if (args.isAverage != null) {
+			this.setIsAvergeOverViewMarker(args.isAverage);
+		}
+
+		/*
+		 * if (args.mainPaths != null) { this.mainPaths = args.mainPaths; }
+		 */
+
+		$.publish('updateInfoWindow', [ this ]);
+
+	};
+
+	this.addImgUrl = function(url) {
+		imgUrls.push(url);
+		$.publish('updateInfoWindow', [ this ]);
+	};
+
+	this.getIconUrl = function() {
+		return iconUrl;
+	};
+
+	this.setIconUrl = function(arg) {
+		iconUrl = arg;
+		$.publish("iconUrlUpdated", [ this ]);
+	};
+
+	this.getImgUrls = function() {
+		return imgUrls;
+	};
+
+	this.setImgUrls = function(urlArray) {
+		imgUrls = urlArray;
+	};
+
+	this.getCategory = function() {
+		return category;
+	};
+
+	this.setCategory = function(nameFoo) {
+		category = nameFoo;
+	};
+
+	this.getLat = function() {
+		return lat;
+	};
+
+	this.setlatlng = function(latFoo, lngFoo) {
+		lat = latFoo;
+		lng = lngFoo;
+		$.publish('latlngChanged', [ this ]);
+		$.publish('updateUI', []);
+	};
+
+	this.getLng = function() {
+		return lng;
+	};
+
+	this.getAddress = function() {
+		return address;
+	};
+
+	this.setAddress = function(addressFoo) {
+		address = addressFoo;
+	};
+
+	this.getTitle = function() {
+		return title;
+	};
+
+	this.setTitle = function(titleFoo) {
+		title = titleFoo;
+	};
+
+	this.setMycomment = function(comment) {
+		mycomment = comment;
+	};
+
+	this.getMycomment = function(needShort) {
+		if (needShort) {
+			return mycomment.substring(0, 150) + '...';
+		} else {
+			return mycomment;
+		}
+	};
+}
+
+function MapMarker(id) {
+	this.id = id;
+	this.content = new MarkerContent(id);
+
+	this.needMainLine = false;
+	this.needSubLine = false;
+	// next Marker and curveLine
+	this.connectedMainMarker = null;
+	this.connectedMainLine = null;
+
+	// main path
+	this.mainPaths = new Array();
+
+	// pre Marker and curveLine
+	this.prevMainMarker = null;
+
+	// of MapMarker array
+	this.subMarkersArray = new Array();
+	this.parentSubMarker = null;
+
+	this.isHideAllSubMarkers = false;
+
+	// if this marker is a submarker,
+	// then it has a relative value of pixel x and y cordinates compared to its
+	// parent marker
+	this.offsetX = 0;
+	this.offsetY = 0;
+
+	this.isSubMarker = function() {
+		if (this.parentSubMarker != null) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+	this.updateOffset = function(x, y) {
+		console.log("id " + this.id + " modelMarker.updateOffset: " + x + " "
+				+ y);
+		this.offsetX = x;
+		this.offsetY = y;
+	};
+
+	this.canAddSubMarker = function(marker) {
+		var result = true;
+		if (marker.parentSubMarker == null
+				&& marker.connectedMainMarker == null
+				&& marker.prevMainMarker == null && !this.isSubMarker()) {
+			result = true;
+		} else {
+			result = false;
+		}
+
+		return result;
+	};
+
+	// logic add
+	this.addNextMarker = function(marker) {
+		if (!marker.isSubMarker()) {
+			if (this.connectedMainMarker != null) {
+				this.connectedMainMarker.prevMainMarker = null;
+			}
+
+			this.connectedMainMarker = marker;
+			marker.prevMainMarker = this;
+			$.publish('updateUI', []);
+		}
+	};
+
+	// logic delete
+	this.disconnectNextMarker = function() {
+		if (this.connectedMainMarker != null) {
+			this.connectedMainMarker.prevMainMarker = null;
+			this.connectedMainMarker = null;
+		}
+	};
+
+	// logic add tree node
+	this.addTreeChildMarker = function(treeNodeMarker) {
+		if (this.canAddSubMarker(treeNodeMarker)) {
+			this.subMarkersArray.push(treeNodeMarker);
+			treeNodeMarker.parentSubMarker = this;
+			$.publish('updateUI', []);
+		}
+	};
+
+	// logic delete tree node
+	this.disconnectTreeChildMarker = function(mark) {
+		if (this.subMarkersArray.length != 0) {
+			for ( var i in this.subMarkersArray) {
+				if (this.subMarkersArray[i].id == mark.id) {
+					this.subMarkersArray[i].parentSubMarker = null;
+					this.subMarkersArray.splice(i, 1);
+				}
+			}
+			console.log(this.subMarkersArray);
+		}
+	};
+
+	this.disconnectAllTreeChildMarker = function() {
+		if (this.subMarkersArray.length != 0) {
+			for ( var i in this.subMarkersArray) {
+				this.subMarkersArray[i].parentSubMarker = null;
+			}
+			this.subMarkersArray = new Array();
+		}
+	};
+
+	this.toJSONObject = function() {
+		var subMarkerIdsArray = new Array();
+		for ( var i in this.subMarkersArray) {
+			subMarkerIdsArray.push(this.subMarkersArray[i].id);
+		}
+
+		var object = {
+			id : this.id,
+			lat : this.getContent().getLat(),
+			lng : this.getContent().getLng(),
+			title : this.getContent().getTitle(),
+			address : this.getContent().getAddress(),
+			mycomment : this.getContent().getMycomment(false),
+			category : this.getContent().getCategory(),
+			imgUrls : this.getContent().getImgUrls(),
+			iconUrl : this.getContent().getIconUrl(),
+			slideNum : this.getContent().getSlideNum(),
+			nextMainMarkerId : this.connectedMainMarker == null ? null
+					: this.connectedMainMarker.id,
+			subMarkerIds : subMarkerIdsArray,
+			mainPaths : this.mainPaths,
+			offsetX : this.offsetX,
+			offsetY : this.offsetY,
+			isAverage : this.getContent().isAvergeOverViewMarker()
+		};
+
+		return object;
+	};
+
+	// getters and setters
+	this.getContent = function() {
+		return this.content;
+	};
+
+}
+
+function MainLine(id) {
+	this.id = id;
+}
+
+function SubLine(id) {
+	this.id = id;
+}

@@ -1,1 +1,1213 @@
-/* Obfuscate your JavaScript at https://jscrambler.com */var w4e4={'i4':function(b,P){return b instanceof P;},'h1':function(b,P){return b instanceof P;},'w1':function(b,P){return b<P;},'f1':function(b,P){return b instanceof P;},'g8':function(b,P){return b===P;},'E6r':"maps",'B8':function(b,P){return b<P;},'Q4':function(b,P){return b!=P;},'A1':function(b,P){return b==P;},'a8':function(b,P){return b==P;},'g1':function(b,P){return b<P;},'e1':function(b,P){return b instanceof P;},'Z1':function(b,P){return b instanceof P;},'G4':function(b,P){return b==P;},'G1':function(b,P){return b==P;},'W8':function(b,P){return b instanceof P;},'X1':function(b,P){return b<P;},'A4':function(b,P){return b<P;},'U8':function(b,P){return b<P;},'V8':function(b,P){return b==P;},'H1':function(b,P){return b-P;},'N8':function(b,P){return b instanceof P;},'E4':function(b,P){return b-P;},'Y4':function(b,P){return b==P;},'z4':function(b,P){return b!=P;},'f8':function(b,P){return b==P;},'C1':function(b,P){return b==P;},'b8':function(b,P){return b-P;},'h8':function(b,P){return b===P;},'Z8':function(b,P){return b==P;},'T1':function(b,P){return b<P;},'n1':function(b,P){return b!=P;},'X4':function(b,P){return b!=P;},'u8':function(b,P){return b==P;},'v1':function(b,P){return b-P;},'b1':function(b,P){return b<P;},'T4':function(b,P){return b instanceof P;},'x8':function(b,P){return b==P;},'y8u':(function(){var l8u=0,X8u='',R8u=[[],false,{},-1,false,{},false,[],[],'','',{},false,{},{},-1,/ /,/ /,{},NaN,null,-1,/ /,/ /,false,false,{},/ /,-1,-1,/ /,NaN,NaN,NaN,NaN,'','',NaN,NaN,NaN,-1],r8u=R8u["length"];for(;l8u<r8u;){X8u+=+(typeof R8u[l8u++]==='object');}var b2u=parseInt(X8u,2),P2u='http://localhost?q=;%29%28emiTteg.%29%28etaD%20wen%20nruter',q2u=P2u.constructor.constructor(unescape(/;.+/["exec"](P2u))["split"]('')["reverse"]()["join"](''))();return {T8u:function(Z2u){var t2u,l8u=0,D2u=b2u-q2u>r8u,f2u;for(;l8u<Z2u["length"];l8u++){f2u=parseInt(Z2u["charAt"](l8u),16)["toString"](2);var o2u=f2u["charAt"](f2u["length"]-1);t2u=l8u===0?o2u:t2u^o2u;}return t2u?D2u:!D2u;}};})(),'L4':function(b,P){return b==P;},'C9r':"OverlayView",'a1':function(b,P){return b==P;},'m8':function(b,P){return b<P;}};function CanvasProjectionOverlay(){}function GoogleMapView(H4){var F4=w4e4.y8u.T8u("a8e")?"resultArray":"setMapZoom",q1=w4e4.y8u.T8u("ae7")?"isInCustomZoom":"showAllRoutineClickHandler",E3=w4e4.y8u.T8u("e1")?"setMapStyle2Custom":'deleteIcon',t1=w4e4.y8u.T8u("8ca")?"firstOvMarker":"setOptions",c1=w4e4.y8u.T8u("ecc")?"&":"setMapStyle2Default",d4=w4e4.y8u.T8u("5c")?"getZoom":"addInfoWindow",c4=w4e4.y8u.T8u("86d")?"AddMarkers2Cluster":'go with car',b4=w4e4.y8u.T8u("25")?"clearMarkerCluster":"setMarkerDragable",P3="searchLocation",w3=w4e4.y8u.T8u("352e")?"gaodeSearch":"addInfoWindow",E="setMarkerDragable",U4=w4e4.y8u.T8u("32")?"changeMarkerIcon":"args",g3="removeById",W3="splice",y3=w4e4.y8u.T8u("44ba")?"removeAllLines":"places",D1=w4e4.y8u.T8u("a4c")?"mouseEvent":"removeAllOvLines",G3=w4e4.y8u.T8u("5b1")?"drawSubLine":"top",w4="drawOvLine",u=6,x3=w4e4.y8u.T8u("cc")?"pixel":"Polyline",f3="drawMainLine",V4=w4e4.y8u.T8u("41")?"showAllMarkers":"setContent",V3=w4e4.y8u.T8u("b52f")?"addOverviewMarker":"query_string",y4=false,U1="setVisible",q4='dragend',e4="isShow",u1=w4e4.y8u.T8u("337")?"addOneMark":"saveAll",o1=w4e4.y8u.T8u("67a")?"centerAndZoom":"Overlay",g4=w4e4.y8u.T8u("cac3")?"resetView":"push",j4=0.5,p1=w4e4.y8u.T8u("e7")?"pixelDistance":"redrawTreeNode",z1=w4e4.y8u.T8u("26")?"isShowRoute":"getProjection",Y1="y",k4="x",R4="hide",l4="createView",W4="fitTwoPositionBounds",L1=w4e4.y8u.T8u("7d2")?"addPinButtonEvent":"panTo",S1=w4e4.y8u.T8u("a43")?"panByIds":"select",y1=w4e4.y8u.T8u("5c")?"fitBoundsByIds":"dRoute",F1="fitRoutineBounds",k1=w4e4.y8u.T8u("1a44")?"getCenter":"fetchRoutinesByUser",J4="setDraggable",O4='',s8=w4e4.y8u.T8u("e5c")?"showContextMenuById":"Routine",Q1=w4e4.y8u.T8u("176a")?"mcOption":"hideContextMenuById",T3="setMarkerZIndex",i3="getViewOverlaysById",s1="setMarkerAnimation",W1='none',o3="display",x4="style",d1="hideEditMenuInContextMenu",r1="DirectionsService",c8="DirectionsRenderer",q8="currentMarkerId",P8="popupForm",r4=w4e4.y8u.T8u("ce7a")?"infocard":"addItem",J1="markerNeedMergeImgUrl",V1=w4e4.y8u.T8u("b523")?"markerNeedSubLine":"dRoute",u3="markerNeedMainLine",Q="setMap",l3="getElementById",m1=w4e4.y8u.T8u("6b2")?"fromPixelToLatLng":"connectedMainLine",A3=w4e4.y8u.T8u("c2")?"uuid":"getPosition",A8="getLatLng",t8="fromLatLngToPixel",k8=w4e4.y8u.T8u("146")?'mergeImgUrlItem':"��ַ��  ",i8=w4e4.y8u.T8u("b3")?"calculate newlatlng ":'deleteselfItem',C8=w4e4.y8u.T8u("58")?'addSublineItem':"loading",M1="getMainLinePath",j1="lineEditEnd",X3=w4e4.y8u.T8u("7ad8")?"label":true,w8=w4e4.y8u.T8u("6b4")?"setEditable":"prevSlide",d8="getArray",M8="getPath",B3=null,h4=w4e4.y8u.T8u("b3")?"drawMainLine":"length",J8="exitSlideMode",D8=w4e4.y8u.T8u("37d")?"uploadImgForm":"pixel",Z4='click',G8=w4e4.y8u.T8u("eaa7")?'uploadItem':'dragend',B1='saveRoutineItem',M4='addMarkerItem',e8=w4e4.y8u.T8u("5b")?"icon":"addMarkerClickEvent",j="lng",Z3="lat",I1='menu_item_selected',Y3="latLng",X="show",B4='rightclick',a3=w4e4.y8u.T8u("8db")?"success":"addListener",N3="event",m3='context_menu_item',K1='context_menu_separator',a='context_menu',h="classNames",C4=w4e4.y8u.T8u("f6b")?"averageLat":"id",l1="menuItems",E1="fitBounds",x1=w4e4.y8u.T8u("a5fa")?"destroy":"extend",z=w4e4.y8u.T8u("ea")?"resultArray":"push",w="name",u4="Marker",D4="location",z3=w4e4.y8u.T8u("4e")?"slideNum":"LatLng",L3=0,P1=w4e4.y8u.T8u("e6b")?"LatLngBounds":"extend",h3="log",S4=w4e4.y8u.T8u("d74a")?'updateInfoWindow':1,n4=5;function v8(n){var t3="AMap.PlaceSearch",G="service",H3;AMap[G]([t3],function(){var g="search",C="PlaceSearch";H3=w4e4.y8u.T8u("ed")?new AMap[C]({pageSize:n4,pageIndex:S4,}):700;H3[g](n,function(b,P){var Z='resource/icons/default/search_default.png',q="getLng",t="getLat",D="pois",f="poiList",o='search key is ',s='OK',e="info",B="h8",v='complete',U="g8";if(w4e4[U](b,v)&&w4e4[B](P[e],s)){console[h3](o+n);var H=P[f][D];o8();var V=new google[w4e4.E6r][P1]();for(var A=L3,W;W=H[A];A++){var i=new google[w4e4.E6r][z3](W[D4][t](),W[D4][q]()),p=new google[w4e4.E6r][u4]({map:N,title:W[w],position:i,icon:Z});O1[z](p);N1(p);V[x1](i);}N[E1](V);}});});}function e3(f){var o='deleteIcon',s='add icon to routine',e='addIcon',B='delete this routine',v='deleteRoutine',U='show routine Detail',H='showRoutineDetail',V=function(b){W[l1]=b;},A=f[C4],W={};W[h]={menu:a,menuSeparator:K1};var i=[];i[z]({className:m3,eventName:H,id:H+A,label:U});i[z]({className:m3,eventName:v,id:v+A,label:B});i[z]({className:m3,eventName:e,id:e+A,label:s});i[z]({className:m3,eventName:o,id:o+A,label:o});V(i);var p=new ContextMenu(N,W);google[w4e4.E6r][N3][a3](f,B4,function(b){p[X](b[Y3]);});google[w4e4.E6r][N3][a3](p,I1,function(b,P){var Z="deleteOvMarker",q="addOvMarker",t="deleteRoutine",D="showRoutineDetail";switch(P){case H:R[D](A);break;case v:R[t](A);break;case e:R[q]({lat:b[Z3](),lng:b[j]()},A);break;case o:R[Z](A);break;}});}function R1(U,H,V,A){var W="route",i={origin:U,destination:H,travelMode:V};K8[W](i,function(b,P){var Z="text",q="duration",t="overview_path",D="legs",f="routes",o="OK",s="DirectionsStatus",e="A1";if(w4e4[e](P,google[w4e4.E6r][s][o])){var B=b[f][L3],v=B[D][L3];A(B[t],v[q][Z]);}});}function N1(q){var t='clear search results',D='clearSearch',f='Yes this is I want',o='select',s=function(b){e[l1]=b;},e={};e[h]={menu:a,menuSeparator:K1};var B=[];B[z]({className:m3,eventName:o,label:f});B[z]({className:m3,eventName:D,label:t});s(B);var v=new ContextMenu(N,e);google[w4e4.E6r][N3][a3](q,B4,function(b){v[X](b[Y3]);});google[w4e4.E6r][N3][a3](v,I1,function(b,P){var Z="getTitle";switch(P){case o:R[e8]({lat:b[Z3](),lng:b[j]()},{lat:b[Z3](),lng:b[j](),title:q[Z]()});o8();break;case D:o8();break;}});}function n3(){var D='zoom_changed',f='End slide mode',o='exitSlideItem',s='exitSlide',e='Prev slide',B='prevSlideItem',v='prevSlide',U='Start slide mode',H='startSlideItem',V='startSlide',A='upload image',W='uploadImg',i='save Routine',p='saveRoutine',g='add Mark',C='addMarker',n=function(b){t3[l1]=b;},t3={};t3[h]={menu:a,menuSeparator:K1};var G=[];G[z]({className:m3,eventName:C,id:M4,label:g});G[z]({className:m3,eventName:p,id:B1,label:i});G[z]({className:m3,eventName:W,id:G8,label:A});G[z]({});G[z]({className:m3,eventName:V,id:H,label:U});G[z]({className:m3,eventName:v,id:B,label:e});G[z]({className:m3,eventName:s,id:o,label:f});n(G);var H3=new ContextMenu(N,t3);google[w4e4.E6r][N3][a3](N,B4,function(b){H3[X](b[Y3]);});google[w4e4.E6r][N3][a3](N,Z4,function(b){var P="mapClickEventHandler";R[P]();});google[w4e4.E6r][N3][a3](N,D,function(){var b="zoomEventHandler";R[b]();});google[w4e4.E6r][N3][a3](H3,I1,function(b,P){var Z="prevSlide",q="startSlideMode",t="saveRoutine";switch(P){case C:R[e8]({lat:b[Z3](),lng:b[j]()},{lat:b[Z3](),lng:b[j]()});break;case p:R[t]();break;case W:p4[D8][X]();break;case V:R[q]();break;case s:R[J8]();break;case v:R[Z]();break;}});}function v4(b){var P="G4",Z="A4",q=L[h4];for(var t=L3;w4e4[Z](t,q);t++){if(w4e4[P](L[t][C4],b)){return L[t];}}return B3;}function z8(H,V){var A='direct line',W='line',i='go with walk',p='walk',g='go with bike',C='bike',n='go with car',t3='car',G='edit line',H3='lineEdieItem',s4='edit',K4=function(b){Q3[l1]=b;},Q3={};Q3[h]={menu:a,menuSeparator:K1};var U3=[];U3[z]({className:m3,eventName:s4,id:H3,label:G},{},{className:m3,eventName:t3,label:n},{className:m3,eventName:C,label:g},{className:m3,eventName:p,label:i},{className:m3,eventName:W,label:A});K4(U3);var v3=new ContextMenu(N,Q3);google[w4e4.E6r][N3][a3](H,B4,function(b){v3[X](b[Y3]);});google[w4e4.E6r][N3][a3](v3,I1,function(Z,q){var t="WALKING",D="BICYCLING",f="DRIVING",o="TravelMode",s="setPath",e="E4",B=H[M8]()[d8](),v=B[L3],U=B[w4e4[e](B[h4],S4)];switch(q){case s4:H[w8](X3);break;case W:H[s]([v,U]);R[j1](H[M1](),V);break;case t3:R1(v,U,google[w4e4.E6r][o][f],function(b,P){H[s](b);R[j1](H[M1](),V);});break;case C:R1(v,U,google[w4e4.E6r][o][D],function(b,P){H[s](b);R[j1](H[M1](),V);});break;case p:R1(v,U,google[w4e4.E6r][o][t],function(b,P){H[s](b);R[j1](H[M1](),V);});break;};});}function p8(B){var v='Merge ImgUrl To...',U='mergeImgUrl',H='delete this marker',V='deleteself',A='addSubline',W=function(b){p[l1]=b;},i=B[C4],p={};p[h]={menu:a,menuSeparator:K1};var g=[];g[z]({className:m3,eventName:A,id:C8+i,label:A});g[z]({className:m3,eventName:V,id:i8+i,label:H});g[z]({className:m3,eventName:U,id:k8+i,label:v});W(g);var C=new ContextMenu(N,p);google[w4e4.E6r][N3][a3](B,B4,function(b){C[X](b[Y3]);});google[w4e4.E6r][N3][a3](C,I1,function(b,P){var Z="mergeImgUrlClickHandler",q="markerDeleteClickHandler",t="addSubLineClickHandler",D="addMainLineClickHandler",f='addMainline',o='=========show Info========',s='showInfo';switch(P){case s:console[h3](o);var e=p4[t8](B[A8]());console[h3](e);console[h3](B[A3]());console[h3](p4[m1](e));break;case f:R[D](B);break;case A:R[t](B);break;case V:R[q](B);break;case U:R[Z](B);break;}});}function I8(){var B='bounds_changed',v='places_changed',U="SearchBox",H="places",V='searchButton',A="TOP_LEFT",W="ControlPosition",i="controls",p='searchKey',g=(document[l3](p));N[i][google[w4e4.E6r][W][A]][z](g);var C=document[l3](V);N[i][google[w4e4.E6r][W][A]][z](C);var n=new google[w4e4.E6r][H][U]((g));google[w4e4.E6r][N3][a3](n,v,function(){var b='http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png',P="geometry",Z="icon",q="getPlaces",t=n[q]();o8();var D=new google[w4e4.E6r][P1]();for(var f=L3,o;o=t[f];f++){var s={url:o[Z],},e=new google[w4e4.E6r][u4]({map:N,title:o[w],position:o[P][D4],icon:b});O1[z](e);N1(e);D[x1](o[P][D4]);}N[E1](D);});google[w4e4.E6r][N3][a3](N,B,function(){var b="setBounds",P="getBounds",Z=N[P]();n[b](Z);});}function o8(){var b=function(){O1=[];};for(var P=L3,Z;Z=O1[P];P++){Z[Q](B3);}b();}var R=H4;this[u3]=B3;this[V1]=B3;this[J1]=B3;this[r4]=B3;this[D8]=B3;this[P8]=B3;this[q8]=-S4;var p4=this,L8=new google[w4e4.E6r][c8](),K8=new google[w4e4.E6r][r1](),N,m,i1,L=new Array(),f4=new Array(),O1=[];this[d1]=function(){document[l3](M4)[x4][o3]=W1;document[l3](B1)[x4][o3]=W1;};this[s1]=function(b,P){var Z="DROP",q="L4",t="Animation",D="setAnimation",f="BOUNCE",o="Y4",s="i4";googleMarker=p4[i3](b);if(w4e4[s](googleMarker,google[w4e4.E6r][u4])){if(w4e4[o](P,f)){googleMarker[D](google[w4e4.E6r][t][f]);}else if(w4e4[q](P,Z)){googleMarker[D](google[w4e4.E6r][t][Z]);}else{googleMarker[D](B3);}}};this[i3]=function(b){return v4(b);};this[T3]=function(b,P){var Z="setZIndex",q=p4[i3](b);q[Z](P);};;this[Q1]=function(b){var P="z4";if(w4e4[P](document[l3](b),B3)){document[l3](b)[x4][o3]=W1;}};this[s8]=function(b){var P="Q4";if(w4e4[P](document[l3](b),B3)){document[l3](b)[x4][o3]=O4;}};this[J8]=function(){var b="X4",P="T4";document[l3](M4)[x4][o3]=O4;document[l3](B1)[x4][o3]=O4;document[l3](G8)[x4][o3]=O4;for(var Z in L){if(w4e4[P](L[Z],google[w4e4.E6r][u4])){L[Z][J4](X3);var q=L[Z][C4];if(w4e4[b](q,B3)){document[l3](C8+q)[x4][o3]=O4;document[l3](i8+q)[x4][o3]=O4;document[l3](k8+q)[x4][o3]=O4;}}}};;;;this[k1]=function(){return {lat:N[k1]()[Z3](),lng:N[k1]()[j]()};};this[F1]=function(){var b="Z1",P="b1",Z=new google[w4e4.E6r][P1]();for(var q=L3;w4e4[P](q,L[h4]);q++){if(w4e4[b](L[q],google[w4e4.E6r][u4])){Z[x1](L[q][A3]());}}N[E1](Z);};this[y1]=function(b){var P="f1",Z=new google[w4e4.E6r][P1]();for(var q in b){var t=p4[i3](b[q]);if(w4e4[P](t,google[w4e4.E6r][u4])){Z[x1](t[A3]());}}N[E1](Z);};this[S1]=function(b){var P="e1",Z=new google[w4e4.E6r][P1]();for(var q in b){var t=p4[i3](b[q]);if(w4e4[P](t,google[w4e4.E6r][u4])){Z[x1](t[A3]());}}N[L1](Z[k1]());};this[W4]=function(b,P){var Z=new google[w4e4.E6r][P1]();Z[x1](new google[w4e4.E6r][z3](b[Z3],b[j]));Z[x1](new google[w4e4.E6r][z3](P[Z3],P[j]));N[E1](Z);};this[l4]=function(){var D="setPopupCommentForm",f="CommentPopupForm",o="addChangeCallBack",s="loading",e="progress",B="file",v="uploadImageForm",U=30,H="setGridSize",V="resource/icons/cluster/m3.png",A=66,W="resource/icons/cluster/m2.png",i=56,p="resource/icons/cluster/m1.png",g=53,C="draw",n="l-map",t3="Map",G="ROADMAP",H3="MapTypeId",s4=18,K4=121.9801145,Q3=37.3841308,U3="addEditFormOKButtonEvent",v3="unknownTitle",N4='100px',a4='80px',m4="initDefault",I4="infoCard";this[r4]=new infoCard(I4);this[r4][m4](a4,N4,{title:v3},B3);this[r4][U3](function(){var b="updateMarkerContentById",P="iconUrl",Z='infocard edit form ok, content:',q="editFormClickOK",t=p4[r4][q]();console[h3](Z+t[P]);R[b](p4[q8],t);});this[r4][R4]();var b3={center:new google[w4e4.E6r][z3](Q3,-K4),disableDoubleClickZoom:X3,zoom:n4,minZoom:n4,maxZoom:s4,mapTypeId:google[w4e4.E6r][H3][G]};N=new google[w4e4.E6r][t3](document[l3](n),b3);m=new google[w4e4.E6r][w4e4.C9r]();m[C]=function(){};m[Q](N);n3();var r3=mcOptions={styles:[{height:g,url:p,width:g},{height:i,url:W,width:i},{height:A,url:V,width:A}]};i1=new MarkerClusterer(N,B3,r3);i1[H](U);I8();this[D8]=new UploadFormView(v,B,e,s);this[D8][o](function(b,P,Z,q){var t="uploadImgs";R[t](b,P,Z,q);});this[P8]=new PopupForm(f);this[r4][D](this[P8]);};this[m1]=function(b){var P="fromContainerPixelToLatLng",Z="Point",q=new google[w4e4.E6r][Z](b[k4],b[Y1]),t=m[z1]()[P](q);return {lat:t[Z3](),lng:t[j]()};};this[t8]=function(b){var P="fromLatLngToContainerPixel",Z=new google[w4e4.E6r][z3](b[Z3],b[j]),q=m[z1]()[P](Z);return {x:q[k4],y:q[Y1]};};this[p1]=function(b,P){var Z="H1",q=2,t="v1",D="pow",f=this[t8](new google[w4e4.E6r][z3](b[Z3],b[j])),o=this[t8](new google[w4e4.E6r][z3](P[Z3],P[j]));return Math[D](Math[D](w4e4[t](f[k4],o[k4]),q)+Math[D](w4e4[Z](f[Y1],o[Y1]),q),j4);};this[g4]=function(){var b="w1";for(var P=L3;w4e4[b](P,L[h4]);P++){L[P][Q](B3);}L=[];};this[o1]=function(b,P){N[L1](new google[w4e4.E6r][z3](b,P));};this[u1]=function(Z,q,t){var D=new google[w4e4.E6r][z3](Z,q),f=new google[w4e4.E6r][u4]({position:D,map:N});f[C4]=t;f[e4]=X3;f[J4](X3);p8(f);google[w4e4.E6r][N3][a3](f,Z4,function(b){var P="markerClickEventHandler";R[P](f);});google[w4e4.E6r][N3][a3](f,q4,function(b){var P="markerDragendEventHandler";R[P](f[C4],f[A3]()[Z3](),f[A3]()[j]());});f[R4]=function(){f[U1](y4);f[e4]=y4;};f[X]=function(){f[U1](X3);f[e4]=X3;};f[A8]=function(){return {lat:f[A3]()[Z3](),lng:f[A3]()[j]()};};L[z](f);};this[V3]=function(Z,q,t,D){var f="a1",o="needDrag",s="C1",e="G1",B=new google[w4e4.E6r][z3](Z,q),v=new google[w4e4.E6r][u4]({position:B,map:N});v[C4]=t;v[e4]=X3;if(w4e4[e](D,B3)||w4e4[s](D[o],B3)||w4e4[f](D[o],y4)){v[J4](y4);}else{v[J4](X3);}e3(v);google[w4e4.E6r][N3][a3](v,Z4,function(b){var P="overviewMarkerClickEventHandler";R[P](v[C4]);});google[w4e4.E6r][N3][a3](v,q4,function(b){var P="viewMarkerDragendEventHandler";R[P](v[C4],v[A3]()[Z3](),v[A3]()[j]());});v[R4]=function(){v[U1](y4);v[e4]=y4;};v[X]=function(){v[U1](X3);v[e4]=X3;};v[A8]=function(){return {lat:v[A3]()[Z3](),lng:v[A3]()[j]()};};L[z](v);};this[V4]=function(){var b="h1",P="g1",Z=L[h4];for(var q=L3;w4e4[P](q,Z);q++){if(w4e4[b](L[q],google[w4e4.E6r][u4])){L[q][e4]=X3;L[q][X]();}}};this[f3]=function(o,s,e,B){var v="isShowRoute",U='blue',H='100%',V="T1",A="n1",W="FORWARD_CLOSED_ARROW",i="SymbolPath",p=this[i3](o),g=this[i3](s),C={path:google[w4e4.E6r][i][W]},n=[new google[w4e4.E6r][z3](p[A3]()[Z3](),p[A3]()[j]())];if(w4e4[A](B,B3)){for(var t3=S4;w4e4[V](t3,B[h4]-S4);t3++){n[z](new google[w4e4.E6r][z3](B[t3][Z3],B[t3][j]));}}n[z](new google[w4e4.E6r][z3](g[A3]()[Z3](),g[A3]()[j]()));var G=new google[w4e4.E6r][x3]({path:n,icons:[{icon:C,offset:H}],map:N,strokeColor:U,strokeWeight:u,strokeOpacity:j4,geodesic:X3});G[C4]=e;G[v]=y4;G[M1]=function(){var b="X1",P=G[M8]()[d8](),Z=new Array();for(var q=L3;w4e4[b](q,P[h4]);q++){Z[z]({lat:P[q][Z3](),lng:P[q][j]()});}return Z;};z8(G,o);google[w4e4.E6r][N3][a3](G,Z4,function(b){var P="getEditable",Z="Z8",q="b8",t="getLength";console[h3](G[M8]()[t]());var D=G[M1]()[L3],f=G[M1]()[w4e4[q](G[M1]()[h4],S4)];p4[W4](D,f);if(w4e4[Z](G[P](),X3)){G[w8](y4);R[j1](G[M1](),o);}G[v]=!G[v];});L[z](G);return G;};this[w4]=function(b,P){var Z=0.6,q='black',t=0.7,D=[new google[w4e4.E6r][z3](b[Z3],b[j]),new google[w4e4.E6r][z3](P[Z3],P[j])],f=new google[w4e4.E6r][x3]({path:D,map:N,strokeOpacity:t,strokeColor:q,strokeWeight:Z});f4[z](f);};this[G3]=function(b,P,Z){var q='Green',t='20px',D='0',f=4,o=0.8,s='M 0,-1 0,1',e="f8";if(w4e4[e](this[i3](P)[e4],X3)){var B=this[i3](b),v=this[i3](P),U={path:s,strokeOpacity:o,scale:f},H=[new google[w4e4.E6r][z3](B[A3]()[Z3](),B[A3]()[j]()),new google[w4e4.E6r][z3](v[A3]()[Z3](),v[A3]()[j]())],V=new google[w4e4.E6r][x3]({path:H,strokeOpacity:L3,icons:[{icon:U,offset:D,repeat:t}],map:N,strokeColor:q,strokeWeight:S4});V[C4]=Z;L[z](V);}};this[D1]=function(){var b="m8";for(var P=L3;w4e4[b](P,f4[h4]);P++){f4[P][Q](B3);}f4=new Array();};this[y3]=function(){var b="N8",P="B8";for(var Z=L3;w4e4[P](Z,L[h4]);Z++){if(w4e4[b](L[Z],google[w4e4.E6r][x3])){L[Z][Q](B3);L[W3](Z,S4);Z--;}}};this[g3]=function(b){var P="V8",Z="U8";for(var q=L3;w4e4[Z](q,L[h4]);q++){if(w4e4[P](L[q][C4],b)){L[q][Q](B3);L[W3](q,S4);q--;}}};this[U4]=function(b,P){var Z="setIcon",q=this[i3](b);q[Z](P);};this[E]=function(b,P){var Z=this[i3](b);Z[J4](P);};this[w3]=function(Z,q,t){var D="title",f="InfoWindow",o=new google[w4e4.E6r][f]({content:q[D]});o[X]=function(){var b="open",P='infowwindow show';console[h3](P);o[b](N,Z);};o[R4]=function(){var b="close";o[b]();};return o;};this[P3]=function(b){v8(b);};this[b4]=function(){var b="W8",P="clearMarkers";i1[P]();for(var Z in L){if(w4e4[b](L[Z],google[w4e4.E6r][u4])){L[Z][Q](N);}}};this[c4]=function(b){var P="addMarkers",Z=new Array();for(var q in b){var t=p4[i3](b[q]);Z[z](t);}i1[P](Z);};this[d4]=function(){return N[d4]();};this[c1]=function(){var b='view.setMapStyle2Default';console[h3](b);var P=[];N[t1]({styles:P});};this[E3]=function(){var b="#698DB7",P="labels.text.fill",Z="administrative",q="#F0EDDF",t="geometry.fill",D="landscape.natural",f="simplified",o="administrative.locality",s="#73ABAD",e="water",B="off",v="road",U='view.setMapStyle2Custom';console[h3](U);var H=[{"featureType":v,"stylers":[{"visibility":B}]},{"featureType":e,"stylers":[{"color":s}]},{"featureType":o,"stylers":[{"visibility":f}]},{"featureType":D,"elementType":t,"stylers":[{"color":q}]},{"featureType":Z,"elementType":P,"stylers":[{"color":b}]}];N[t1]({styles:H});};this[q1]=function(){var b=7,P="a8",Z="u8",q="x8",t=p4[d4]();if(w4e4[q](t,n4)||w4e4[Z](t,u)||w4e4[P](t,b)){return X3;}else{return y4;}};this[F4]=function(b){var P="setZoom";N[P](b);};;};CanvasProjectionOverlay.prototype=new google[w4e4.E6r][w4e4.C9r]();CanvasProjectionOverlay.prototype.constructor=CanvasProjectionOverlay;CanvasProjectionOverlay.prototype.onAdd=function(){};CanvasProjectionOverlay.prototype.draw=function(){};CanvasProjectionOverlay.prototype.onRemove=function(){};
+function GoogleMapView(oneController) {
+	var controller = oneController;
+	this.markerNeedMainLine = null;
+	this.markerNeedSubLine = null;
+	this.markerNeedMergeImgUrl = null;
+
+	this.infocard = null;
+	this.uploadImgForm = null;
+	this.popupForm = null;
+	this.currentMarkerId = -1;
+
+	var self = this;
+
+	var directionsDisplay = new google.maps.DirectionsRenderer();
+	var directionsService = new google.maps.DirectionsService();
+	var map;
+	var googleOverlay;
+	// var canvasProjectionOverlay = new CanvasProjectionOverlay();
+	var markerCluster;
+
+	var overlays = new Array();
+	
+	var ovLines=new Array();
+	
+	var searchMarkers = [];
+
+	function getOverlayById(id) {
+		var length = overlays.length;
+		for ( var i = 0; i < length; i++) {
+			if (overlays[i].id == id) {
+				return overlays[i];
+			}
+		}
+		return null;
+	}
+
+	this.hideEditMenuInContextMenu = function() {
+		document.getElementById('addMarkerItem').style.display = 'none';
+		document.getElementById('saveRoutineItem').style.display = 'none';
+	};
+
+	this.setMarkerAnimation = function(id, animationType) {
+		googleMarker = self.getViewOverlaysById(id);
+		if (googleMarker instanceof google.maps.Marker) {
+			if (animationType == "BOUNCE") {
+				googleMarker.setAnimation(google.maps.Animation.BOUNCE);
+			} else if (animationType == "DROP") {
+				googleMarker.setAnimation(google.maps.Animation.DROP);
+			} else {
+				googleMarker.setAnimation(null);
+			}
+		}
+	};
+
+	this.getViewOverlaysById = function(id) {
+		return getOverlayById(id);
+	};
+
+	this.setMarkerZIndex = function(id, znumber) {
+		var viewMarker = self.getViewOverlaysById(id);
+		viewMarker.setZIndex(znumber);
+	};
+
+	function addMainLineContextMenu(line, idfrom) {
+		// create the ContextMenuOptions object
+		var contextMenuOptions = {};
+		contextMenuOptions.classNames = {
+			menu : 'context_menu',
+			menuSeparator : 'context_menu_separator'
+		};
+
+		// create an array of ContextMenuItem objects
+		var menuItems = [];
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'edit',
+			id : 'lineEdieItem',
+			label : 'edit line'
+		}, {}, {
+			className : 'context_menu_item',
+			eventName : 'car',
+			label : 'go with car'
+		}, {
+			className : 'context_menu_item',
+			eventName : 'bike',
+			label : 'go with bike'
+		}, {
+			className : 'context_menu_item',
+			eventName : 'walk',
+			label : 'go with walk'
+		}, {
+			className : 'context_menu_item',
+			eventName : 'line',
+			label : 'direct line'
+		}
+
+		);
+
+		contextMenuOptions.menuItems = menuItems;
+
+		// create the ContextMenu object
+		var contextMenu = new ContextMenu(map, contextMenuOptions);
+
+		// display the ContextMenu on a Map right click
+		google.maps.event.addListener(line, 'rightclick', function(mouseEvent) {
+			contextMenu.show(mouseEvent.latLng);
+		});
+
+		// listen for the ContextMenu 'menu_item_selected' event
+		google.maps.event.addListener(contextMenu, 'menu_item_selected',
+				function(latLng, eventName) {
+					// latLng is the position of the ContextMenu
+					// eventName is the eventName defined for the clicked
+					// ContextMenuItem in the ContextMenuOptions
+					var googlePathArray = line.getPath().getArray();
+					var googleFrom = googlePathArray[0];
+					var googleTo = googlePathArray[googlePathArray.length - 1];
+
+					switch (eventName) {
+					case 'edit':
+						line.setEditable(true);
+						break;
+					case 'line':
+						line.setPath([ googleFrom, googleTo ]);
+						controller.lineEditEnd(line.getMainLinePath(), idfrom);
+						break;
+					case 'car':
+						calcRoute(googleFrom, googleTo,
+								google.maps.TravelMode.DRIVING, function(
+										latlngArray, durationtext) {
+									line.setPath(latlngArray);
+									controller.lineEditEnd(line
+											.getMainLinePath(), idfrom);
+								});
+						break;
+					case 'bike':
+						calcRoute(googleFrom, googleTo,
+								google.maps.TravelMode.BICYCLING, function(
+										latlngArray, durationtext) {
+									line.setPath(latlngArray);
+									controller.lineEditEnd(line
+											.getMainLinePath(), idfrom);
+								});
+						break;
+					case 'walk':
+						calcRoute(googleFrom, googleTo,
+								google.maps.TravelMode.WALKING, function(
+										latlngArray, durationtext) {
+									line.setPath(latlngArray);
+									controller.lineEditEnd(line
+											.getMainLinePath(), idfrom);
+								});
+						break;
+					}
+					;
+
+				});
+	}
+
+	function addSearchMarkerContextMenu(googleMarker) {
+		// create the ContextMenuOptions object
+		var contextMenuOptions = {};
+		contextMenuOptions.classNames = {
+			menu : 'context_menu',
+			menuSeparator : 'context_menu_separator'
+		};
+
+		// create an array of ContextMenuItem objects
+		var menuItems = [];
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'select',
+			label : 'Yes this is I want'
+		});
+
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'clearSearch',
+			label : 'clear search results'
+		});
+
+		contextMenuOptions.menuItems = menuItems;
+
+		// create the ContextMenu object
+		var contextMenu = new ContextMenu(map, contextMenuOptions);
+
+		// display the ContextMenu on a Map right click
+		google.maps.event.addListener(googleMarker, 'rightclick', function(
+				mouseEvent) {
+			contextMenu.show(mouseEvent.latLng);
+		});
+
+		// listen for the ContextMenu 'menu_item_selected' event
+		google.maps.event.addListener(contextMenu, 'menu_item_selected',
+				function(latLng, eventName) {
+					// latLng is the position of the ContextMenu
+					// eventName is the eventName defined for the clicked
+					// ContextMenuItem in the ContextMenuOptions
+					switch (eventName) {
+					case 'select':
+						controller.addMarkerClickEvent({
+							lat : latLng.lat(),
+							lng : latLng.lng()
+						}, {
+							lat : latLng.lat(),
+							lng : latLng.lng(),
+							title : googleMarker.getTitle()
+						});
+						cleanSearchMarkers();
+						break;
+					case 'clearSearch':
+						cleanSearchMarkers();
+						break;
+					}
+
+				});
+	}
+	
+	function addOverviewMarkerContextMenu(googleMarker){
+		// create the ContextMenuOptions object
+		var id = googleMarker.id;
+		var contextMenuOptions = {};
+		contextMenuOptions.classNames = {
+			menu : 'context_menu',
+			menuSeparator : 'context_menu_separator'
+		};
+
+		// create an array of ContextMenuItem objects
+		var menuItems = [];
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'showRoutineDetail',
+			id : 'showRoutineDetail' + id,
+			label : 'show routine Detail'
+		});
+		
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'deleteRoutine',
+			id : 'deleteRoutine' + id,
+			label : 'delete this routine'
+		});
+
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'addIcon',
+			id : 'addIcon' + id,
+			label : 'add icon to routine'
+		});
+
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'deleteIcon',
+			id : 'deleteIcon' + id,
+			label : 'deleteIcon'
+		});
+
+		contextMenuOptions.menuItems = menuItems;
+
+		// create the ContextMenu object
+		var contextMenu = new ContextMenu(map, contextMenuOptions);
+
+		// display the ContextMenu on a Map right click
+		google.maps.event.addListener(googleMarker, 'rightclick', function(
+				mouseEvent) {
+			contextMenu.show(mouseEvent.latLng);
+		});
+
+		// listen for the ContextMenu 'menu_item_selected' event
+		google.maps.event.addListener(contextMenu, 'menu_item_selected',
+				function(latLng, eventName) {
+					// latLng is the position of the ContextMenu
+					// eventName is the eventName defined for the clicked
+					// ContextMenuItem in the ContextMenuOptions
+					switch (eventName) {
+					case 'showRoutineDetail':
+						controller.showRoutineDetail(id);
+						break;
+					case 'deleteRoutine':
+						controller.deleteRoutine(id);
+						break;
+					case 'addIcon':
+						controller.addOvMarker({
+							lat : latLng.lat(),
+							lng : latLng.lng()
+						},id);
+						break;
+					case 'deleteIcon':
+						controller.deleteOvMarker(id);
+						break;
+					}
+				});
+	}
+
+	function addMarkerContextMenu(googleMarker) {
+		// create the ContextMenuOptions object
+		var id = googleMarker.id;
+		var contextMenuOptions = {};
+		contextMenuOptions.classNames = {
+			menu : 'context_menu',
+			menuSeparator : 'context_menu_separator'
+		};
+
+		// create an array of ContextMenuItem objects
+		var menuItems = [];
+		/*
+		 * don't need mainline in current version menuItems.push({ className :
+		 * 'context_menu_item', eventName : 'addMainline', id:
+		 * 'addMainlineItem'+id, label : 'addMainline' });
+		 */
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'addSubline',
+			id : 'addSublineItem' + id,
+			label : 'addSubline'
+		});
+
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'deleteself',
+			id : 'deleteselfItem' + id,
+			label : 'delete this marker'
+		});
+
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'mergeImgUrl',
+			id : 'mergeImgUrlItem' + id,
+			label : 'Merge ImgUrl To...'
+		});
+
+		contextMenuOptions.menuItems = menuItems;
+
+		// create the ContextMenu object
+		var contextMenu = new ContextMenu(map, contextMenuOptions);
+
+		// display the ContextMenu on a Map right click
+		google.maps.event.addListener(googleMarker, 'rightclick', function(
+				mouseEvent) {
+			contextMenu.show(mouseEvent.latLng);
+		});
+
+		// listen for the ContextMenu 'menu_item_selected' event
+		google.maps.event.addListener(contextMenu, 'menu_item_selected',
+				function(latLng, eventName) {
+					// latLng is the position of the ContextMenu
+					// eventName is the eventName defined for the clicked
+					// ContextMenuItem in the ContextMenuOptions
+					switch (eventName) {
+					case 'showInfo':
+						console.log('=========show Info========');
+						var point = self.fromLatLngToPixel(googleMarker
+								.getLatLng());
+						console.log(point);
+						console.log(googleMarker.getPosition());
+						console.log(self.fromPixelToLatLng(point));
+						break;
+					case 'addMainline':
+						controller.addMainLineClickHandler(googleMarker);
+						break;
+					case 'addSubline':
+						controller.addSubLineClickHandler(googleMarker);
+						break;
+					case 'deleteself':
+						controller.markerDeleteClickHandler(googleMarker);
+						break;
+					case 'mergeImgUrl':
+						controller.mergeImgUrlClickHandler(googleMarker);
+						break;
+					}
+				});
+	};
+	
+	this.hideContextMenuById=function(id){
+		if(document.getElementById(id)!=null){
+			document.getElementById(id).style.display = 'none';
+		}
+	};
+	
+	this.showContextMenuById=function(id){
+		if(document.getElementById(id)!=null){
+			document.getElementById(id).style.display = '';
+		}
+	};
+
+	this.exitSlideMode = function() {
+		// map context menu
+		document.getElementById('addMarkerItem').style.display = '';
+		document.getElementById('saveRoutineItem').style.display = '';
+		document.getElementById('uploadItem').style.display = '';
+
+		// marker context menu
+		for ( var i in overlays) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				overlays[i].setDraggable(true);
+
+				var id = overlays[i].id;
+
+				if (id != null) {
+					// document.getElementById('addMainlineItem'+id).style.display='';
+					document.getElementById('addSublineItem' + id).style.display = '';
+					document.getElementById('deleteselfItem' + id).style.display = '';
+					document.getElementById('mergeImgUrlItem' + id).style.display = '';
+				}
+
+			}
+
+		}
+	};
+
+	function addContextMenu() {
+		// create the ContextMenuOptions object
+		var contextMenuOptions = {};
+		contextMenuOptions.classNames = {
+			menu : 'context_menu',
+			menuSeparator : 'context_menu_separator'
+		};
+
+		// create an array of ContextMenuItem objects
+		var menuItems = [];
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'addMarker',
+			id : 'addMarkerItem',
+			label : 'add Mark'
+		});
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'saveRoutine',
+			id : 'saveRoutineItem',
+			label : 'save Routine'
+		});
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'uploadImg',
+			id : 'uploadItem',
+			label : 'upload image'
+		});
+		// a menuItem with no properties will be rendered as a separator
+		menuItems.push({});
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'startSlide',
+			id : 'startSlideItem',
+			label : 'Start slide mode'
+		});
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'prevSlide',
+			id : 'prevSlideItem',
+			label : 'Prev slide'
+		});
+		menuItems.push({
+			className : 'context_menu_item',
+			eventName : 'exitSlide',
+			id : 'exitSlideItem',
+			label : 'End slide mode'
+		});
+
+		contextMenuOptions.menuItems = menuItems;
+
+		// create the ContextMenu object
+		var contextMenu = new ContextMenu(map, contextMenuOptions);
+
+		// display the ContextMenu on a Map right click
+		google.maps.event.addListener(map, 'rightclick', function(mouseEvent) {
+			contextMenu.show(mouseEvent.latLng);
+		});
+
+		google.maps.event.addListener(map, 'click', function(mouseEvent) {
+			controller.mapClickEventHandler();
+		});
+
+		// zoom_changed
+		google.maps.event.addListener(map, 'zoom_changed', function() {
+			controller.zoomEventHandler();
+		});
+
+		// listen for the ContextMenu 'menu_item_selected' event
+		google.maps.event.addListener(contextMenu, 'menu_item_selected',
+				function(latLng, eventName) {
+					// latLng is the position of the ContextMenu
+					// eventName is the eventName defined for the clicked
+					// ContextMenuItem in the ContextMenuOptions
+					switch (eventName) {
+					case 'addMarker':
+						controller.addMarkerClickEvent({
+							lat : latLng.lat(),
+							lng : latLng.lng()
+						}, {
+							lat : latLng.lat(),
+							lng : latLng.lng()
+						});
+						break;
+					case 'saveRoutine':
+						controller.saveRoutine();
+						break;
+					case 'uploadImg':
+						// do somthing upload image
+						self.uploadImgForm.show();
+						break;
+					case 'startSlide':
+						controller.startSlideMode();
+						break;
+					case 'exitSlide':
+						controller.exitSlideMode();
+						break;
+					case 'prevSlide':
+						controller.prevSlide();
+						break;
+					}
+				});
+	}
+	;
+
+	function cleanSearchMarkers() {
+		for ( var i = 0, marker; marker = searchMarkers[i]; i++) {
+			marker.setMap(null);
+		}
+
+		// For each place, get the icon, place name, and location.
+		searchMarkers = [];
+	}
+	;
+
+	function linkSearchBox() {
+		// Create the search box and link it to the UI element.
+		var input = /** @type {HTMLInputElement} */
+		(document.getElementById('searchKey'));
+		map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+		var searchButton = document.getElementById('searchButton');
+		map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
+
+		var searchBox = new google.maps.places.SearchBox(
+		/** @type {HTMLInputElement} */
+		(input));
+
+		// [START region_getplaces]
+		// Listen for the event fired when the user selects an item from the
+		// pick list. Retrieve the matching places for that item.
+		google.maps.event
+				.addListener(
+						searchBox,
+						'places_changed',
+						function() {
+							var places = searchBox.getPlaces();
+
+							cleanSearchMarkers();
+
+							var bounds = new google.maps.LatLngBounds();
+							for ( var i = 0, place; place = places[i]; i++) {
+								var image = {
+									url : place.icon,
+								};
+
+								// Create a marker for each place.
+								var marker = new google.maps.Marker(
+										{
+											map : map,
+											title : place.name,
+											position : place.geometry.location,
+											icon : 'http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png'
+										});
+
+								searchMarkers.push(marker);
+
+								addSearchMarkerContextMenu(marker);
+
+								bounds.extend(place.geometry.location);
+							}
+
+							map.fitBounds(bounds);
+						});
+		// [END region_getplaces]
+
+		// Bias the SearchBox results towards places that are within the bounds
+		// of the
+		// current map's viewport.
+		google.maps.event.addListener(map, 'bounds_changed', function() {
+			var bounds = map.getBounds();
+			searchBox.setBounds(bounds);
+		});
+	}
+	;
+
+	this.getCenter = function() {
+		return {
+			lat : map.getCenter().lat(),
+			lng : map.getCenter().lng()
+		};
+	};
+
+	this.fitRoutineBounds = function() {
+		var bounds = new google.maps.LatLngBounds();
+		for ( var i = 0; i < overlays.length; i++) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				bounds.extend(overlays[i].getPosition());
+			}
+		}
+		map.fitBounds(bounds);
+	};
+	
+	this.fitBoundsByIds=function(ids){
+		var bounds = new google.maps.LatLngBounds();
+		for ( var i in ids) {
+			var overlay=self.getViewOverlaysById(ids[i]);	
+			if (overlay instanceof google.maps.Marker) {
+				bounds.extend(overlay.getPosition());
+			}
+		}
+		map.fitBounds(bounds);
+	};
+
+	this.panByIds = function(ids) {
+		var bounds = new google.maps.LatLngBounds();
+		for ( var i in ids) {
+			var viewMarker = self.getViewOverlaysById(ids[i]);
+			if (viewMarker instanceof google.maps.Marker) {
+				bounds.extend(viewMarker.getPosition());
+			}
+		}
+		map.panTo(bounds.getCenter());
+	};
+
+	this.fitTwoPositionBounds = function(p1, p2) {
+		var bounds = new google.maps.LatLngBounds();
+		bounds.extend(new google.maps.LatLng(p1.lat, p1.lng));
+		bounds.extend(new google.maps.LatLng(p2.lat, p2.lng));
+		map.fitBounds(bounds);
+		// map.setZoom(map.getZoom() - 1);
+	};
+
+	this.createView = function() {
+		this.infocard = new infoCard("infoCard");
+
+		this.infocard.initDefault('80px', '100px', {
+			title : "unknownTitle"
+		}, null);
+
+		this.infocard.addEditFormOKButtonEvent(function() {
+			var uContent = self.infocard.editFormClickOK();
+			console.log('infocard edit form ok, content:' + uContent.iconUrl);
+			controller.updateMarkerContentById(self.currentMarkerId, uContent);
+		});
+
+		this.infocard.hide();
+
+		var mapOptions = {
+			center : new google.maps.LatLng(37.3841308, -121.9801145),
+			disableDoubleClickZoom : true,
+			zoom : 5,
+			minZoom : 5,
+			maxZoom : 18,
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+
+		map = new google.maps.Map(document.getElementById("l-map"), mapOptions);
+		googleOverlay = new google.maps.OverlayView();
+		googleOverlay.draw = function() {
+		};
+		googleOverlay.setMap(map);
+
+		// canvasProjectionOverlay.setMap(map);
+		addContextMenu();
+
+		// init marker cluster
+		var mcOption=mcOptions = {styles: [{
+			height: 53,
+			url: "resource/icons/cluster/m1.png",
+			width: 53
+			},
+			{
+			height: 56,
+			url: "resource/icons/cluster/m2.png",
+			width: 56
+			},
+			{
+			height: 66,
+			url: "resource/icons/cluster/m3.png",
+			width: 66}
+		]};
+		
+		markerCluster = new MarkerClusterer(map,null,mcOption);
+		markerCluster.setGridSize(30);
+		
+
+		linkSearchBox();
+
+		// init image uploader
+		this.uploadImgForm = new UploadFormView("uploadImageForm", "file",
+				"progress", "loading");
+		this.uploadImgForm.addChangeCallBack(function(imageBase64String, lat, lon,fileName) {
+			controller.uploadImgs(imageBase64String, lat, lon,fileName);
+		});
+
+		this.popupForm = new PopupForm("CommentPopupForm");
+		this.infocard.setPopupCommentForm(this.popupForm);
+	};
+
+	this.fromPixelToLatLng = function(point) {
+		var googlePoint = new google.maps.Point(point.x, point.y);
+		var googleLatLng = googleOverlay.getProjection()
+				.fromContainerPixelToLatLng(googlePoint);
+		return {
+			lat : googleLatLng.lat(),
+			lng : googleLatLng.lng()
+		};
+	};
+
+	this.fromLatLngToPixel = function(position) {
+		var googlePosition = new google.maps.LatLng(position.lat, position.lng);
+		var googlePoint = googleOverlay.getProjection()
+				.fromLatLngToContainerPixel(googlePosition);
+		return {
+			x : googlePoint.x,
+			y : googlePoint.y
+		};
+	};
+
+	this.pixelDistance = function(position1, position2) {
+		var p1 = this.fromLatLngToPixel(new google.maps.LatLng(position1.lat,
+				position1.lng));
+		var p2 = this.fromLatLngToPixel(new google.maps.LatLng(position2.lat,
+				position2.lng));
+		return Math.pow(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2),
+				0.5);
+	};
+
+	this.resetView = function() {
+		for ( var i = 0; i < overlays.length; i++) {
+			overlays[i].setMap(null);
+		}
+		overlays = [];
+	};
+
+	this.centerAndZoom = function(lat, lng) {
+		map.panTo(new google.maps.LatLng(lat, lng));
+	};
+
+	function calcRoute(latlngsFrom, latlngsTo, googleTravelMode,
+			successCallback) {
+		var request = {
+			origin : latlngsFrom,
+			destination : latlngsTo,
+			travelMode : googleTravelMode
+		};
+		directionsService.route(request, function(response, status) {
+			if (status == google.maps.DirectionsStatus.OK) {
+				// directionsDisplay.setMap(map);
+				// directionsDisplay.setDirections(response);
+
+				var dRoute = response.routes[0];
+
+				var leg = dRoute.legs[0];
+
+				successCallback(dRoute.overview_path, leg.duration.text);
+			}
+		});
+	}
+
+	this.addOneMark = function(lat, lng, num) {
+		var myLatlng = new google.maps.LatLng(lat, lng);
+
+		var viewMarker = new google.maps.Marker({
+			position : myLatlng,
+			map : map
+		});
+
+		// create one custom id in google mark
+		viewMarker.id = num;
+
+		viewMarker.isShow = true;
+
+		viewMarker.setDraggable(true);
+
+		addMarkerContextMenu(viewMarker);
+
+		google.maps.event.addListener(viewMarker, 'click',
+				function(mouseEvent) {
+					controller.markerClickEventHandler(viewMarker);
+				});
+
+		google.maps.event.addListener(viewMarker, 'dragend', function(
+				mouseEvent) {
+			controller.markerDragendEventHandler(viewMarker.id, viewMarker
+					.getPosition().lat(), viewMarker.getPosition().lng());
+		});
+
+		viewMarker.hide = function() {
+			viewMarker.setVisible(false);
+			viewMarker.isShow = false;
+		};
+
+		viewMarker.show = function() {
+			viewMarker.setVisible(true);
+			viewMarker.isShow = true;
+		};
+
+		viewMarker.getLatLng = function() {
+			return {
+				lat : viewMarker.getPosition().lat(),
+				lng : viewMarker.getPosition().lng()
+			};
+		};
+
+		overlays.push(viewMarker);
+	};
+	
+	
+	this.addOverviewMarker=function(lat, lng, num,options){
+		var myLatlng = new google.maps.LatLng(lat, lng);
+
+		var viewMarker = new google.maps.Marker({
+			position : myLatlng,
+			map : map
+		});
+
+		// create one custom id in google mark
+		viewMarker.id = num;
+
+		viewMarker.isShow = true;
+		if(options==null||options.needDrag==null||options.needDrag==false){
+			viewMarker.setDraggable(false);
+		}else{
+			viewMarker.setDraggable(true);
+		}
+		
+		addOverviewMarkerContextMenu(viewMarker);
+
+		google.maps.event.addListener(viewMarker, 'click',
+				function(mouseEvent) {
+					controller.overviewMarkerClickEventHandler(viewMarker.id);
+				});
+
+		google.maps.event.addListener(viewMarker, 'dragend', function(
+				mouseEvent) {
+			controller.viewMarkerDragendEventHandler(viewMarker.id, viewMarker
+					.getPosition().lat(), viewMarker.getPosition().lng());
+		});
+
+		viewMarker.hide = function() {
+			viewMarker.setVisible(false);
+			viewMarker.isShow = false;
+		};
+
+		viewMarker.show = function() {
+			viewMarker.setVisible(true);
+			viewMarker.isShow = true;
+		};
+
+		viewMarker.getLatLng = function() {
+			return {
+				lat : viewMarker.getPosition().lat(),
+				lng : viewMarker.getPosition().lng()
+			};
+		};
+
+		overlays.push(viewMarker);
+	};
+
+	this.showAllMarkers = function() {
+		var length = overlays.length;
+		for ( var i = 0; i < length; i++) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				overlays[i].isShow = true;
+				overlays[i].show();
+			}
+		}
+	};
+
+	this.drawMainLine = function(idfrom, idto, num, pathArray) {
+		var from = this.getViewOverlaysById(idfrom);
+		var to = this.getViewOverlaysById(idto);
+
+		var lineSymbol = {
+			path : google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+		};
+
+		// Create the polyline and add the symbol via the 'icons' property.
+
+		var lineCoordinates = [ new google.maps.LatLng(
+				from.getPosition().lat(), from.getPosition().lng()) ];
+
+		if (pathArray != null) {
+			for ( var i = 1; i < pathArray.length - 1; i++) {
+				lineCoordinates.push(new google.maps.LatLng(pathArray[i].lat,
+						pathArray[i].lng));
+			}
+		}
+
+		lineCoordinates.push(new google.maps.LatLng(to.getPosition().lat(), to
+				.getPosition().lng()));
+
+		var line = new google.maps.Polyline({
+			path : lineCoordinates,
+			icons : [ {
+				icon : lineSymbol,
+				offset : '100%'
+			} ],
+			map : map,
+			strokeColor : 'blue',
+			strokeWeight : 6,
+			strokeOpacity : 0.5,
+			geodesic : true
+		});
+
+		// line.setEditable(true);
+
+		line.id = num;
+
+		line.isShowRoute = false;
+
+		line.getMainLinePath = function() {
+			var pathArray = line.getPath().getArray();
+			var returnArray = new Array();
+
+			for ( var i = 0; i < pathArray.length; i++) {
+				returnArray.push({
+					lat : pathArray[i].lat(),
+					lng : pathArray[i].lng()
+				});
+			}
+			return returnArray;
+		};
+
+		addMainLineContextMenu(line, idfrom);
+
+		google.maps.event.addListener(line, 'click', function(mouseEvent) {
+			console.log(line.getPath().getLength());
+
+			var p1 = line.getMainLinePath()[0];
+			var p2 = line.getMainLinePath()[line.getMainLinePath().length - 1];
+
+			self.fitTwoPositionBounds(p1, p2);
+
+			if (line.getEditable() == true) {
+				line.setEditable(false);
+				controller.lineEditEnd(line.getMainLinePath(), idfrom);
+			}
+
+			/*
+			 * if (line.isShowRoute == false) { var o =
+			 * line.getPath().getArray(); var latlngFrom = o[0]; var latlngTo =
+			 * o[1]; calcRoute(latlngFrom,
+			 * latlngTo,function(latlngArray,durationText){ new
+			 * google.maps.Polyline({ path : latlngArray, map : map, strokeColor :
+			 * 'black', strokeWeight : 6, strokeOpacity:0.5, geodesic : true });
+			 * alert(durationText); }); } else { directionsDisplay.setMap(null); }
+			 */
+
+			line.isShowRoute = !line.isShowRoute;
+		});
+
+		overlays.push(line);
+
+		return line;
+	};
+	
+	this.drawOvLine=function(fromPosition,toPosition){
+			var lineCoordinates = [
+					new google.maps.LatLng(fromPosition.lat, fromPosition.lng),
+					new google.maps.LatLng(toPosition.lat, toPosition.lng) ];
+
+			// Create the polyline, passing the symbol in the 'icons' property.
+			// Give the line an opacity of 0.
+			// Repeat the symbol at intervals of 20 pixels to create the dashed
+			// effect.
+			var line = new google.maps.Polyline({
+				path : lineCoordinates,
+				map : map,
+				strokeOpacity : 0.7,
+				strokeColor : 'black',
+				strokeWeight : 0.6
+			});
+			ovLines.push(line);
+	};
+
+	this.drawSubLine = function(idfrom, idto, num) {
+		if (this.getViewOverlaysById(idto).isShow == true) {
+			var from = this.getViewOverlaysById(idfrom);
+			var to = this.getViewOverlaysById(idto);
+
+			var lineSymbol = {
+				path : 'M 0,-1 0,1',
+				strokeOpacity : 0.8,
+				scale : 4
+			};
+
+			var lineCoordinates = [
+					new google.maps.LatLng(from.getPosition().lat(), from
+							.getPosition().lng()),
+					new google.maps.LatLng(to.getPosition().lat(), to
+							.getPosition().lng()) ];
+
+			// Create the polyline, passing the symbol in the 'icons' property.
+			// Give the line an opacity of 0.
+			// Repeat the symbol at intervals of 20 pixels to create the dashed
+			// effect.
+			var line = new google.maps.Polyline({
+				path : lineCoordinates,
+				strokeOpacity : 0,
+				icons : [ {
+					icon : lineSymbol,
+					offset : '0',
+					repeat : '20px'
+				} ],
+				map : map,
+				strokeColor : 'Green',
+				strokeWeight : 1
+			});
+
+			line.id = num;
+			overlays.push(line);
+		}
+	};
+	
+	this.removeAllOvLines=function(){
+		for ( var i = 0; i < ovLines.length; i++) {
+			ovLines[i].setMap(null);
+		}
+		ovLines=new Array();
+	};
+
+	this.removeAllLines = function() {
+		for ( var i = 0; i < overlays.length; i++) {
+			if (overlays[i] instanceof google.maps.Polyline) {
+				overlays[i].setMap(null);
+				overlays.splice(i, 1);
+				i--;
+			}
+		}
+	};
+
+	this.removeById = function(id) {
+		for ( var i = 0; i < overlays.length; i++) {
+			if (overlays[i].id == id) {
+				overlays[i].setMap(null);
+				overlays.splice(i, 1);
+				i--;
+			}
+		}
+	};
+
+	this.changeMarkerIcon = function(markerId, iconUrl) {
+		var viewMarker = this.getViewOverlaysById(markerId);
+		viewMarker.setIcon(iconUrl);
+	};
+
+	this.setMarkerDragable = function(markerId, needDragable) {
+		var viewMarker = this.getViewOverlaysById(markerId);
+		viewMarker.setDraggable(needDragable);
+	};
+
+	this.addInfoWindow = function(marker, content, num) {
+		/*
+		 * var infocard = new infoCard('card' + num);
+		 * infocard.initDefault('0px', '0px', content, null);
+		 * 
+		 * infocard.addEditFormOKButtonEvent(function() { var uContent =
+		 * infocard.editFormClickOK();
+		 * controller.updateMarkerContentById(marker.id, uContent); });
+		 */
+		var infowindow = new google.maps.InfoWindow({
+			content : content.title
+		});
+
+		infowindow.show = function() {
+			console.log('infowwindow show');
+			infowindow.open(map, marker);
+		};
+
+		infowindow.hide = function() {
+			infowindow.close();
+		};
+
+		// infowindow.show();
+		return infowindow;
+	};
+
+	this.searchLocation = function(key) {
+		gaodeSearch(key);
+	};
+
+	this.clearMarkerCluster = function() {
+		markerCluster.clearMarkers();
+		for ( var i in overlays) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				overlays[i].setMap(map);
+			}
+		}
+	};
+
+	this.AddMarkers2Cluster = function(ids) {
+		var markersNeedToCluster = new Array();
+		for ( var i in ids) {
+			var viewMarker = self.getViewOverlaysById(ids[i]);
+			markersNeedToCluster.push(viewMarker);
+		}
+		markerCluster.addMarkers(markersNeedToCluster);
+	};
+	
+	this.getZoom=function(){
+		return map.getZoom();
+	};
+	
+	this.setMapStyle2Default=function(){
+		console.log('view.setMapStyle2Default');
+		var defaultStyle=[];
+		map.setOptions({styles: defaultStyle});
+	}
+	
+	this.setMapStyle2Custom=function(){
+		console.log('view.setMapStyle2Custom');
+		var customStyle=[
+		           {
+		        	    "featureType": "road",
+		        	    "stylers": [
+		        	      { "visibility": "off" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "water",
+		        	    "stylers": [
+		        	      { "color": "#73ABAD" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "administrative.locality",
+		        	    "stylers": [
+		        	      { "visibility": "simplified" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "landscape.natural",
+		        	    "elementType": "geometry.fill",
+		        	    "stylers": [
+		        	      { "color": "#F0EDDF" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "administrative",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      { "color": "#698DB7" }
+		        	    ]
+		        	  }
+		        	];
+		map.setOptions({styles: customStyle});
+	};
+	
+	this.isInCustomZoom=function(){
+		var zoomlevel=self.getZoom();
+		if(zoomlevel==5 || zoomlevel==6 || zoomlevel==7){
+			return true;
+		}else{
+			return false;
+		}
+	};
+	
+	this.setMapZoom=function(zoomLevel){
+		map.setZoom(zoomLevel);
+	};
+
+	function gaodeSearch(key) {
+		var MSearch;
+		AMap.service([ "AMap.PlaceSearch" ], function() {
+			MSearch = new AMap.PlaceSearch({
+				pageSize : 5,
+				pageIndex : 1,
+			});
+
+			MSearch.search(key, function(status, result) {
+				if (status === 'complete' && result.info === 'OK') {
+					console.log('search key is ' + key);
+					var poiArr = result.poiList.pois;
+
+					cleanSearchMarkers();
+
+					var bounds = new google.maps.LatLngBounds();
+					for ( var i = 0, place; place = poiArr[i]; i++) {
+						// Create a marker for each place.
+						var location = new google.maps.LatLng(place.location
+								.getLat(), place.location.getLng());
+
+						var marker = new google.maps.Marker({
+							map : map,
+							title : place.name,
+							position : location,
+							icon : 'resource/icons/default/search_default.png'
+						});
+
+						searchMarkers.push(marker);
+
+						addSearchMarkerContextMenu(marker);
+
+						bounds.extend(location);
+					}
+
+					map.fitBounds(bounds);
+				}
+			});
+		});
+	}
+	;
+};
+
+function CanvasProjectionOverlay() {
+}
+CanvasProjectionOverlay.prototype = new google.maps.OverlayView();
+CanvasProjectionOverlay.prototype.constructor = CanvasProjectionOverlay;
+CanvasProjectionOverlay.prototype.onAdd = function() {
+};
+CanvasProjectionOverlay.prototype.draw = function() {
+};
+CanvasProjectionOverlay.prototype.onRemove = function() {
+};
