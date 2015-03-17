@@ -1,5 +1,912 @@
-//////////////////////////////////////////////
-// Obfuscated by Javascript Obfuscator 4.3  //
-// http://javascript-source.com             //
-//////////////////////////////////////////////
-eval((function(x){var d="";var p=0;while(p<x.length){if(x.charAt(p)!="`")d+=x.charAt(p++);else{var l=x.charCodeAt(p+3)-28;if(l>4)d+=d.substr(d.length-x.charCodeAt(p+1)*96-x.charCodeAt(p+2)+3104-l,l);else d+="`";p+=4}}return d})("function GoogleMapView(oneController){var c` '%=` 1);this.markerNeedMainLine=null` -,Sub` #5MergeImgUrl` 5'infocard` ('uploadImgForm` -'popup` %+currentM`!!!Id=-1;var self=this` )!dire`\"a!sDisplay=new g`\"m!.maps.D` 9%Renderer` J+Service` >7` ;#` S!map` #!` D\"Overlay` 3#rkerClust` }#o` 8\"s` v!Arr` B#ovLine` &,search`\"H\"s=[];`$w%get`!!#ById(id`$p\"length=` }$.` *\";for(var i=0;i<` .#i++){if(` E$[i].id==id){return`!d%[i];}}` .#`$)!}`$*!hideEditMenuInContex` (!=`!a$(){document.getElement`!o!\"add`$b#tem\").style.d`$M#\"none\";` E5saveRoutine` D8}`%s\"se`%n#Animation`!Y&id,a` .$Type){`$c\"` K\"=self.getView`#m#s`#m$;if(` A( instanceof`%k)` 8\"`#j!` ~)==\"BOUNCE\"`!'*.set`!a%` {#` d\"` -%.` S\");}else ` g/DROP` EODROP` o#` A7null);}}`#Y#`\"m/`#U(`&)%`'&.`$1-ZIndex`$2)znumb`,R$view`#w@` >&.set` p\"(` b$;}`(b&`&c!`- \"`'8'(line,idfrom`-i&` 6#Op`*`!={};` $..classNames={menu:\"` >#_menu\",menuSeparator` /*_s` 0$\"}`+<\"enuItem`*Z!` $%.push({`! %` V+item\",event` 8\"edit\",id:\"lineEdi`(N\",label` 9\" line\"},{},` NFcar` \\%go with car\"` 8Hbike` T-` 0!` :Hwalk` U-` 0!` :H`\"_!` ^$`0)\"`\"q#)`$u0`$3&`$1%`$P!` @'`/M!`&+(map,` Y.);`)A(`!M!.addListener`&g\"\"rightclick\",`(7%mouseEvent){` n'.show` 2'.latLng);}` l<` Z',\"`\"%_selected`!0'` m\"`#7&`(B\"` x\"Path`2%!=line.getPath().get` 3!()`3*'From=` J+[0]` 7'To` /-` A+`2G#-1];switch(`!N'case`(!\":`!K!setEditable(true);break;` C!`%.!` ?%`!s!`!&#From,`!I$]`%O\"roller.`(s#tEnd`$J!.get`+P$`\"U\"`+F$` (car\":calcRoute`.l#` y)` \"#`$H\"TravelMode.DRIVING`$!)lng`\"f!,dur`/#!text){`!})` <'`!HT}`!v)`)g!`!NRBICYCL`!$~`!c?`+'!`!PRWALK`!\"~`!f:default:;}});}`20(Search`2d\"`+}(`\"'\"` 2\"`1?~`1B{`,7\"`/2%Yes this is I want\"})` DVclear`#B\"` z%` /! s` 0! results`/E~`.|;`$h(`/M~`/m^`.q3`$g#:`()'add`'<#lick`!^!({lat:` o\".lat(),lng` (%ng()},` \">,title:`#/(.getTitle()});clean`(Z(s(`/5*`%S':` 27`)I6Overview`)A@id`2a#`!d#id`%|,`(z~`)-khowRoutineDetail\",id` #0+id`)6$show r` 8\" ` 8#`)fXdelete`!(#`!:\"` %*`!1'` 3\"`+Z\"`!<#`!(0` sXaddIcon`!C\"` %$`!8'add icon to`!'8`\"0K`!)&` %'`\"H-` 1!`!akcopy`#p)` %(`!7'Copy`#s\"` 5$`-P~`-P~`-P~`.0>`(|-`.Q(` --(id`-6)`(>*` O(` -)` G,`'R$`/Z+Ov`#J\"`/<A`!51` e-` 1\"` p%` F+`&B(` J(` -'` H'`/.6`.>~`.>~`+xQSubl`)s%` &&Item`,H+` B$`+l^self`,B(self`!!,`.(m`#k!` \\YmergeImgUr`1]#` &'`!+,Merge ` 6\" To...`+J~`+J~`+J~`,&BInfo`)f!sole.log(\"=========show Info` )$\")`#L!point=self.fromL`!+!ToPixel`\"o).get` 8\"()`$N!` |%` ^!` %*` I,Posi`\"+!` L+`!/%`!+!To` z#` l\"`-F,Main`(B!`-K+MainLineClickHandl`$h+` Y,`)'$` Y+Sub` =F`)$'` [(`(j\"D` 8!` CB`(S(` ])` .&` H=`.O*this.hide`(2'ById=`&-%id){if(document.getElementById(id)!=null){` (7.style.display=\"none\";}};`!;!show` >~`!4(`!7!`1-(`*p(`1!\"`/n~`/tx`%.\"`0f%` )\"`.=!`0`' Mark`.sYsaveRout`1r%` &'`!!)save ` B$` VXuploadImg`!*\"` (#` (` -\" imag` v1`!sYtartSlid`\"G$` '%`!6)Start slide mod`!tZprev`!('` &%`!%)Prev`!+\"` OYexi`\"3(` &%` )End`\"-+`33~`2f7map`3*~`! '` f<`/U%p`.g!` 5!`.i$` \\Dzoom_changed`! '` t)zoom` ML`\"[',\"`%:%_select` ~)`\"n\"`%R&){switch(` ''`3c&`+h!`3Z-rker`\"Z&({lat:` r\".lat(),lng` (%ng()},{` \">`2e)`+u(`!4(` -'(` D)`+6&:self.` '%Form`%T\"` s*`*H&` s)` .%Mod` t+`([&` F(` -%` ?.`*8&` E(` -%` D%`4M*`1v%cleanSearch`#n\"s(){for(var i=0,m` 1!;m` \"!=s` >([i];i++){` 7\".setMap(`3L!;}` >)=[]`!*'link`!.\"Box`3,#input=`3o4\"` h\"Key\");map.`\"E#s[`'((C` /\"Position.TOP_LEFT]`,e\"` ~!)`+E!` i\"Button` u<` @\"` ]W` [(`!2)ox`,b!` _(places.`\"t&`!n#`)=:` g%,\"` [\"`*K1var ` 9\"`$a#Box.getP` /!();`%90`!k!bounds`!\\-L`(v!B` 8!;`%i(`!!!;`!'!=`!,\"`%c%` >!mage={url:` 9!.icon}`!%!`&A#` z,`!I\"({map:map,title` V#name,p`#u#` -#geometry.location,icon:\"http://www.` x#com/intl/en_us/mapfiles/ms/micons/blue-dot.png\"});`'L)`$|\"`!p\");add`#3(`1R*` =\"`#E\".extend(`!W3);}map.fit`#W\"(` P\"`/ZD` H\"`%+5`$g#map.ge` z$`\"0$Box.s` -%`!-'}this.getCenter=` j'return`.Z!` n#` >\"()`.]'` )-`.l!;};` s!fit`.L#`!4\"` s(`&/O;i<overlays.length`&X\"if(` 0$[i]instanceof`&:/){`$=*` M'`(P!`&J#());}`$64`\"3%` 3\"ByI`\".(ids`!jO in ` Q%`!N#=`1J!getViewO`!b#`,_!ids[i]);`\"O& `\"\"P`\"#Kpan`!Znview`!_\"`\"*A` E&`\"$J` N&`\"?2panTo`\"J#`'E(`%#(Two` Q$`'?,p1,p2`\"AF`!N*` 52(p1.lat,p1.lng)`+T,` =42` O\"2` N#`$T9createView`)M(` 6!infocard`\"#!infoCard(\"` \"$\")` \\\"` ?$.initDefault(\"80px\",\"10` #!{`/Q\"\"unknownTitle\"},null` V,addEditFormOK`3U\"Event(`+)+u`._!nt`%m\"` V%e` U#ClickOK();console.log`!w\"card edit form ok, c` f\":\"+` o$`1u!Url` [!troller.update`/x'nt`&x!`!>!current` 8\"Id,` b$`.?!`\"6*hide`3z#mapOptions={c`&L!:`$`337.3841308,-121.9801145),disableDouble`\"S!Zoom:true,zoom:5,min` /!5,max` %!18,mapTypeId:`(N*` /#.ROADMAP};map`4E/p(document.getElem`\"g$\"l-map\"),`\"3&`26$`*-#` ^-` 1#View` <*.dra`&n)}` 1+setMap(map`4A!`4.(`#[#c`!>\"=m` \"#s={styles:[{height:53,url:\"resource/icons/cluster/m1.png\",width:53},` P%6` ;:2` L)6` O&6` :;3` M(66}]};m`&R\"` <\"`#=!`&c#` ,\"er(map`(o!,`\"C$)` G*.setGridSize(30);linkSearchBox(`' #uploadImgForm`!#!U` -!FormView(\"` :$ageForm\",\"file\",\"progress\",\"loading`*~$` h).addChangeCallBack`*4&imageBase64String,lat,lon,fileName){`)F)` q#s` 6@`)B%popup`\"7%P` &$(\"Comment` )%`,u-se` 7\"` B#` Q!` e*`0F&romPixelTo`)~\"`0B'oint`,c\"`'I\"Point`(&-` 1!` G\".x,` \"\"y`'Q\"` A\"` q#`(%*getProje`(L#`!C!Container`!D)(`!2');return{lat`*k#` ?\".lat(),lng` (+ng()}`\"A(` 3\"To` !`\"A(`3,\"`\"B*` .\"`2n3` K%`2%\"` $%ng`\"R(`#/\"`\";>`!P$`\"W*`\"T%`!W#`\"X$x`\"@#` y!.x,y` #)y`\"I%pixelDistance`\"<.1`!n%2`\"S\"p1=`\"t2`4P5` b$`\"X)1`\"a!`\"a\"p2` <S2` f)2` l#`\"[\" Math.pow(Ma` \"#p1.x-p2.x,2)+` *(y-p2.y,2),0.5`'p%resetVie`/,)for(var i=0;i<o`$I\"s.length;i++){` -$[i]`/P$null);}` 2$=[]` }$`3(\"AndZoom` &`*O!ng){map.panTo`\"T4` B$);};` W$ calcRoute(latlngsFrom,` %#To,` b\"TravelMode,successCallback`%%\"request={origin:` `(destinatio` /%To,t` i%`&G#` y&};dir`'J\"sService.r`!^!`! #,`\"T%response,status){if(` %\"=`(@#`\"\\\"D` g&` 9!.OK`!s\"d`\"W!=` `$`!\"\"s[0]`&J!leg=` <\".leg` 2!`\"P+(` 8#overview_path,leg.dur`\"O!.text);}});}`$c!addOneMark`$T-,num`!R\"myL`#&!`*w4`$d$`!b!view`2u\"` >-` 1\"({`'r$:` q$,map:map});` U&.id=num` %)sShow=true` +(setDraggable(true);add`49#ontextMenu(` I&);`!L(event.addListener` ?',\"click\"`$}&mouseEvent`2_)m`!)\"lick` 8!Handl` ^)`2\\!` nFdragend` rDD` I\"`!%3.id,` #'get`.R$()`0|#` %6ng()`!x!` 8'hid`.L'){`$!*Visible(false`$g*`$]\"` 4!;}`$Y)` 3!` R<`$y\"`%=3` c)get`4:#` j'`3['`\"P;lng` (7`3v$`.!%push`$~*`-c\"addO`)H#`(/#`(t0,op`*l!`(.~`(WUif(`!^#==null||` (#.needDrag==nu` \"2`%A\"`$c+`)i&`%_#}else` ,5`%3\"}`#?-`)?~`) #`..$`!0#`*.7.id`)Tt` K&`)N~`)N~`)N~`)N~`*A+showAll` 0\"s`\"3)`4_!ngth=` ]%` *\";for(var i=0;i<` .#i++){if(` E$[i]instanceof`*5/){` ?'`\"z)` ,(show();}}`!i#drawMainLin`$u'idfrom,idto`,:!pathArray`\"!\"from=` Z!getViewO` {#ById` V#`,8\"to` ,8to` @\"lineSymbol={path:`\"2(` 3\"Path.FORWARD_CLOSED_ARROW}` Y%Coordinates=[`-d3from`%*1` %0`(#!];if(`\"W%!`,!){`$H&1;i<` 6%`$j#-1`$X\"`!G+`%o\"`!C3` [%[i].lat`#j&` ,!ng));}}` FHto`\"51` %.`\"C!`$ &`0W-Polyline(`$7\"`!5+,icons:[{icon` 8!`$L\",offset:\"100%\"}]`1-$,strokeColor:\"blue\"` ,#Weight:6` (#Opacity:0.5,geodesic:true});line`1i$` &\"`'k!Route`+f#` 2!get`'V$Path`)@,`#[%=` F$Path().get` 3!(`\"q\"`+A\"` D\"new ` %!`)h+`%5,`%=\"` O'`$G\"`,'!`$},`+y#`%#,()});}` ]\"`!8(;};add`\"1$`2V(line,`)9$`1\":` F!`2=<sole.log` I!`\"r*L`\"A!(`%r#p1`#:%`#e(()[0]` ;\"2` )4` B2`(b%];self.fitTwo`'/$Bounds(p1,p2);if`!W%Editable()=`-8!`)?\".s` /'`1^#`3K'lineEditEnd` `%`!@*`#K%`)=!`&A)!` \",;})`09+line);`$a#line`0F$drawOv`.N*from`\"?$,t`\"I%`0Z#`,]G` R$`+I!` #*ng),`*}5` K)` #(ng)`$f\"`*RP`*P*`*2&7`*`,ack`*b+0.6`#N!Lin`-+$`#L\"`#;'Sub`1f9`3F!`1-:`3,$`%q#`1G~th:\"M 0,-1 0,1`\"M$`\"q&8,scale:4`1D|`%26`06H`%\"V`\"J+`0Q=0\",repeat:\"20px`0d5Green`%~+1`0O+`)V0}`&2#removeAll`)^\"s`0S(`/o*`&u$`/o(` -#[i].setMap(null);}` 2#`0_'`! ,` m=`!m#`!#(if(` 0$[i]instanceof`#t1){` A'`!Q*` t%splice(i,1);i--;}`\"i*ById`)#(`!2O.id==id` pYchangeMarkerIcon`!I&m` .\"d`&*!Url`*-\"view` H\"`)W6` R$);` D&.setIcon(` f$`$M$`!k!rkerDragabl`+y'`!9%need` 7$` e^Drag` f!(` k)`!I$addInfoWindow`!=,,content`-N\"`$I!nfow` F\"`)g,` ]&({` Q#:` Y#.title});` U&.sh`!$(){console.log(\"` C!` C\" show\"` N)open(map,`!`\");}` 2(hid`#K'){` 0'close();}`3W$` 2&`$7&archLocati`%T(key){gaodeS` =!` ,!` M$clear`#m\"Cluster`!5(`!`\"` 2#` @(s();`'~% in `'9$`)9C` `\"`'|1map)`'m&Add`!+#2`!O-ids`$u\"`!a\"sNeedTo` ?$`+l&`!\\)` L%`&o'self`1{3s[i]);` m0`.#\"` \\&);}`#!*a`!r%`&m#` R*`#z%getZoom`#l(`$}#map` 6$`%6!`)>&pStyle2Default`&T5view` =0\"`4A\"d` (\"` 6!=[];map.setOptions({styles:` ;(}`!31Cust`!t*`!):` J\"`!?#c` (!`!>#{featureType:\"road\",`!B!rs:[{visibility:\"off\"}]},` D*water` G(c`2}\"#73ABAD` ?/administrative.locality` 4simplified` Y/landscape.natural\",element` :\"geometry.fill`!R0F0EDDF`!E=` h+labels.text` a5698DB7\"}]}`$o5`#~'`$}&isIn`$I\"`&u,var zoomlevel`([%`'&#if(` 2&=5||` #'6|` \"(7`'f%true;}else` *$false;`*d$`%|\"`!9*zoomLevel){`\"/#`!<!` -&;};` E$ `-5,`!~!M` +\";AM` [!rvice([\"` *!Plac` J#\"],`\"Q'` N#`+_\"` ;+({pageSize:5,pageIndex:1});` P#`/$#(key` k&status,result`.\"!` ,\"===\"complete\"&&` :\".info===\"OK\"`(~+` v\" key is \"+`/i!var poiArr=` Z#poiLis` #!s;clean`!V\"`/V&var bounds`3 -LatLngB` 8!`.5&=0,place;place=`!*\"[i];i++`#f\"l`1U$` [2(` T!`)>!tion.getLat()` q\"` **ng()`!^\"`.7\"` b-`\"#\"({map:map,`4d!:` d\"name,position:` p$,icon:\"resource/icons/`-7#/`#R\"_` (#.png\"});` 0\"`#.#`0-\"`!J\");add`#G(ContextMenu` :%`#Y\".extend(`!@$`0e!p.fit`#\\\"(` A\");}});});}}`'I%CanvasProje` ,!`1w#(){}` $3.prototype`#!-` ;#View;` ==.constructor=` 73` C?onAdd`+J(}` 2?draw` $LonRemove` J*"))
+function GoogleMapView(oneController) {
+	var controller = oneController;
+	this.markerNeedMainLine = null;
+	this.markerNeedSubLine = null;
+	this.markerNeedMergeImgUrl = null;
+
+	this.markerInfoDialog=null;
+	this.ovMarkerDialog=null;
+	this.markerEditDialog=null;
+	this.navBar=null;
+	this.uploadImgModal=null;
+	this.searchPickRoutineBoard=null;
+	this.createRoutineModal=null;
+	this.markerPickRoutineModal=null;
+	
+	this.currentMarkerId = -1;
+
+	var self = this;
+
+	//google map components
+	//var directionsDisplay = new google.maps.DirectionsRenderer();
+	//var directionsService = new google.maps.DirectionsService();
+	// var canvasProjectionOverlay = new CanvasProjectionOverlay();
+	var map;
+	var googleOverlay;
+	
+	var markerCluster;
+
+	var overlays = new Array();
+	
+	var ovLines=new Array();
+	
+	var searchMarkers = [];
+	var currentGoogleSearchMarker=null;
+
+	function getOverlayById(id) {
+		var length = overlays.length;
+		for ( var i = 0; i < length; i++) {
+			if (overlays[i].id == id) {
+				return overlays[i];
+			}
+		}
+		return null;
+	}
+	
+	function cleanSearchMarkers() {
+		for ( var i = 0, marker; marker = searchMarkers[i]; i++) {
+			marker.setMap(null);
+		}
+
+		searchMarkers = [];
+	};
+	
+	this.getMap=function(){
+		return map;
+	};
+
+	this.hideEditMenuInContextMenu = function() {
+		document.getElementById('addMarkerItem').style.display = 'none';
+		document.getElementById('saveRoutineItem').style.display = 'none';
+	};
+
+	this.setMarkerAnimation = function(id, animationType) {
+		googleMarker = self.getViewOverlaysById(id);
+		if (googleMarker instanceof google.maps.Marker) {
+			if (animationType == "BOUNCE") {
+				googleMarker.setAnimation(google.maps.Animation.BOUNCE);
+			} else if (animationType == "DROP") {
+				googleMarker.setAnimation(google.maps.Animation.DROP);
+			} else {
+				googleMarker.setAnimation(null);
+			}
+		}
+	};
+
+	this.getViewOverlaysById = function(id) {
+		return getOverlayById(id);
+	};
+
+	this.setMarkerZIndex = function(id, znumber) {
+		var viewMarker = self.getViewOverlaysById(id);
+		viewMarker.setZIndex(znumber);
+	};
+
+	function addSearchMarkerContextMenu(googleMarker) {
+		
+		google.maps.event.addListener(googleMarker, 'click', function(
+				mouseEvent) {
+			
+			currentGoogleSearchMarker=googleMarker;			
+			controller.searchMarkerClick({title:googleMarker.getTitle()});
+		});
+	}
+
+	function linkSearchBox() {
+		// Create the search box and link it to the UI element.
+		var input = /** @type {HTMLInputElement} */
+		(document.getElementById('searchKey'));
+		map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+		var searchButton = document.getElementById('searchButton');
+		map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
+
+		var searchBox = new google.maps.places.SearchBox(
+		/** @type {HTMLInputElement} */
+		(input));
+
+		// [START region_getplaces]
+		// Listen for the event fired when the user selects an item from the
+		// pick list. Retrieve the matching places for that item.
+		google.maps.event
+				.addListener(
+						searchBox,
+						'places_changed',
+						function() {
+							var places = searchBox.getPlaces();
+
+							cleanSearchMarkers();
+
+							var bounds = new google.maps.LatLngBounds();
+							for ( var i = 0, place; place = places[i]; i++) {
+								var image = {
+									url : place.icon,
+								};
+
+								// Create a marker for each place.
+								var marker = new google.maps.Marker(
+										{
+											map : map,
+											title : place.name,
+											position : place.geometry.location,
+											icon : 'http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png'
+										});
+
+								searchMarkers.push(marker);
+
+								addSearchMarkerContextMenu(marker);
+
+								bounds.extend(place.geometry.location);
+							}
+
+							map.fitBounds(bounds);
+						});
+		// [END region_getplaces]
+
+		// Bias the SearchBox results towards places that are within the bounds
+		// of the
+		// current map's viewport.
+		google.maps.event.addListener(map, 'bounds_changed', function() {
+			var bounds = map.getBounds();
+			searchBox.setBounds(bounds);
+		});
+	}
+	;
+
+	this.getCenter = function() {
+		var wapped=new google.maps.LatLng(map.getCenter().lat(), map.getCenter().lng());
+		
+		return {
+			lat : wapped.lat(),
+			lng : wapped.lng()
+		};
+	};
+
+	this.fitRoutineBounds = function() {
+		var bounds = new google.maps.LatLngBounds();
+		for ( var i = 0; i < overlays.length; i++) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				bounds.extend(overlays[i].getPosition());
+			}
+		}
+		map.fitBounds(bounds);
+	};
+	
+	this.fitBoundsByIds=function(ids){
+		if(ids.length>0){
+			var bounds = new google.maps.LatLngBounds();
+			for ( var i in ids) {
+				var overlay=self.getViewOverlaysById(ids[i]);	
+				if (overlay instanceof google.maps.Marker) {
+					bounds.extend(overlay.getPosition());
+				}
+			}
+			map.fitBounds(bounds);
+		}
+	};
+
+	this.panByIds = function(ids) {
+		var bounds = new google.maps.LatLngBounds();
+		for ( var i in ids) {
+			var viewMarker = self.getViewOverlaysById(ids[i]);
+			if (viewMarker instanceof google.maps.Marker) {
+				bounds.extend(viewMarker.getPosition());
+			}
+		}
+		map.panTo(bounds.getCenter());
+	};
+
+	this.fitTwoPositionBounds = function(p1, p2) {
+		var bounds = new google.maps.LatLngBounds();
+		bounds.extend(new google.maps.LatLng(p1.lat, p1.lng));
+		bounds.extend(new google.maps.LatLng(p2.lat, p2.lng));
+		map.fitBounds(bounds);
+		// map.setZoom(map.getZoom() - 1);
+	};
+
+	this.createView = function() {
+		this.createRoutineModal=new createRoutineModal('createNewRoutineModal');
+		this.createRoutineModal.confirmClick(function(){
+			controller.newRoutineBtnClick({
+				lat:self.getCenter().lat,
+				lng:self.getCenter().lng,
+				title:self.createRoutineModal.getTitle(),
+				mycomment:self.createRoutineModal.getDesc()
+			});
+		});
+		
+		this.markerPickRoutineModal=new PickRoutineModal('markerPickRoutineModal');
+		this.markerPickRoutineModal.confirmClick(function(){	
+			var markerId=self.currentMarkerId;
+			var routineId=self.markerPickRoutineModal.getRoutineNameSelect().value;
+			controller.copyMarker(markerId,routineId);
+		});
+		
+		this.searchPickRoutineBoard=new PickRoutineModal('pickRoutineModal');
+		this.searchPickRoutineBoard.confirmClick(function(){
+			var routineId=self.searchPickRoutineBoard.getRoutineNameSelect().value;
+			var description=self.searchPickRoutineBoard.getDesc();
+			if(routineId==''){
+				alert('please select your routine');
+			}
+			
+			if(routineId!='default'){
+				controller.showRoutineDetail(routineId);
+				controller.addMarkerClickEvent({
+					lat : currentGoogleSearchMarker.getPosition().lat(),
+					lng : currentGoogleSearchMarker.getPosition().lng()
+				}, {
+					lat : currentGoogleSearchMarker.getPosition().lat(),
+					lng : currentGoogleSearchMarker.getPosition().lng(),
+					title : currentGoogleSearchMarker.getTitle(),
+					mycomment : description
+				});
+				cleanSearchMarkers();
+				self.searchMarkerModal.hide();
+			}else{
+				alert('please select your routine');
+			}
+			
+		});
+		
+		this.searchMarkerModal=new SearchMarkerInfo('SearchMarkerInfoModel');
+		this.searchMarkerModal.clearSearchResultsBtnClick(function(){
+			cleanSearchMarkers();
+		});
+		
+		this.searchMarkerModal.copyMarkerBtnClick(function(){
+			controller.searchCopyMarkerBtnClick();
+		});
+		
+		this.uploadImgModal = new UploadImageModal('uploadImageModal');
+		this.uploadImgModal.addChangeCallBack(function(imageBase64String, lat, lon,fileName) {
+			controller.uploadImgs(imageBase64String, lat, lon,fileName);
+		});
+		
+		this.navBar=new NavBar('myNavBar');
+		this.navBar.createRoutineClick(function(){
+			/*
+			controller.createRoutine({
+				lat:self.getCenter().lat,
+				lng:self.getCenter().lng,
+				title:'New Routine',
+				mycomment:'New Routine'
+			});
+			*/
+		});
+		this.navBar.toCustomStyleClick(function(){
+			controller.toCustomStyleBtnClick();
+		});
+		this.navBar.saveLinkClick(function(){
+			controller.sync();
+		});
+		this.navBar.startSlideClick(function(){
+			controller.startSlideMode();
+		});
+		this.navBar.prevSlideClick(function(){
+			controller.prevSlide();
+		});
+		this.navBar.endSlideClick(function(){
+			controller.exitSlideMode();
+		});
+		this.navBar.createMarkerClick(function(){
+			controller.addMarkerClickEvent(self.getCenter(),{});
+		});
+		this.navBar.createMarkerWithImageClick(function(){
+			self.uploadImgModal.show();
+		});
+		this.navBar.createRoutineClick(function(){
+			
+		});
+			
+		this.markerInfoDialog=new MarkerInfo('MarkerInfoModel');
+		this.markerInfoDialog.copyBtnClick(function(){
+			controller.markerCopyBtnClick();
+		});
+		
+		this.ovMarkerDialog=new OvMarkerInfo('ovMarkerInfoModel');
+		this.ovMarkerDialog.showRoutineDetail(function(){
+			controller.showRoutineDetail(self.currentMarkerId);
+		});
+		this.ovMarkerDialog.copyRoutineBtnClick(function(){
+			controller.copyRoutine(self.currentMarkerId);
+		});
+		
+		this.markerEditDialog=new MarkerEditor('EditMarker');
+		this.markerEditDialog.confirmClick(function(){
+			controller.editFormConfirmClick(self.currentMarkerId);
+		});
+		this.markerEditDialog.deleteClick(function(){
+			controller.editFormDeleteClick(self.currentMarkerId);
+		});
+		
+
+		var mapOptions = {
+			center : new google.maps.LatLng(37.3841308, -121.9801145),
+			disableDoubleClickZoom : true,
+			zoom : 5,
+			minZoom : 5,
+			maxZoom : 18,
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+
+		map = new google.maps.Map(document.getElementById("l-map"), mapOptions);
+		googleOverlay = new google.maps.OverlayView();
+		googleOverlay.draw = function() {
+		};
+		googleOverlay.setMap(map);
+
+		google.maps.event.addListener(map, 'click', function(mouseEvent) {
+			controller.mapClickEventHandler();
+		});
+
+		// zoom_changed
+		google.maps.event.addListener(map, 'zoom_changed', function() {
+			controller.zoomEventHandler();
+		});
+
+		// init marker cluster
+		var mcOption=mcOptions = {styles: [{
+			height: 53,
+			url: "resource/icons/cluster/m1.png",
+			width: 53
+			},
+			{
+			height: 56,
+			url: "resource/icons/cluster/m2.png",
+			width: 56
+			},
+			{
+			height: 66,
+			url: "resource/icons/cluster/m3.png",
+			width: 66}
+		]};
+		
+		markerCluster = new MarkerClusterer(map,null,mcOption);
+		markerCluster.setGridSize(30);
+		
+
+		linkSearchBox();
+
+	};
+
+	this.fromPixelToLatLng = function(point) {
+		var googlePoint = new google.maps.Point(point.x, point.y);
+		var googleLatLng = googleOverlay.getProjection()
+				.fromContainerPixelToLatLng(googlePoint);
+		return {
+			lat : googleLatLng.lat(),
+			lng : googleLatLng.lng()
+		};
+	};
+
+	this.fromLatLngToPixel = function(position) {
+		var googlePosition = new google.maps.LatLng(position.lat, position.lng);
+		var googlePoint = googleOverlay.getProjection()
+				.fromLatLngToContainerPixel(googlePosition);
+		return {
+			x : googlePoint.x,
+			y : googlePoint.y
+		};
+	};
+
+	this.pixelDistance = function(position1, position2) {
+		var p1 = this.fromLatLngToPixel(new google.maps.LatLng(position1.lat,
+				position1.lng));
+		var p2 = this.fromLatLngToPixel(new google.maps.LatLng(position2.lat,
+				position2.lng));
+		return Math.pow(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2),
+				0.5);
+	};
+
+	this.resetView = function() {
+		for ( var i = 0; i < overlays.length; i++) {
+			overlays[i].setMap(null);
+		}
+		overlays = [];
+	};
+
+	this.centerAndZoom = function(lat, lng) {
+		map.panTo(new google.maps.LatLng(lat, lng));
+	};
+
+	function calcRoute(latlngsFrom, latlngsTo, googleTravelMode,
+			successCallback) {
+		var request = {
+			origin : latlngsFrom,
+			destination : latlngsTo,
+			travelMode : googleTravelMode
+		};
+		directionsService.route(request, function(response, status) {
+			if (status == google.maps.DirectionsStatus.OK) {
+				// directionsDisplay.setMap(map);
+				// directionsDisplay.setDirections(response);
+
+				var dRoute = response.routes[0];
+
+				var leg = dRoute.legs[0];
+
+				successCallback(dRoute.overview_path, leg.duration.text);
+			}
+		});
+	}
+
+	this.addOneMark = function(lat, lng, num) {
+		var myLatlng = new google.maps.LatLng(lat, lng);
+
+		var viewMarker = new google.maps.Marker({
+			position : myLatlng,
+			map : map
+		});
+
+		// create one custom id in google mark
+		viewMarker.id = num;
+
+		viewMarker.isShow = true;
+
+		viewMarker.setDraggable(true);
+		
+		google.maps.event.addListener(viewMarker, 'mouseover', function(
+				mouseEvent) {
+			controller.markerMouseOver(viewMarker.id);
+		});
+		
+		google.maps.event.addListener(viewMarker, 'mouseout', function(
+				mouseEvent) {
+			controller.markerMouseOut(viewMarker.id);
+		});
+
+		google.maps.event.addListener(viewMarker, 'click',function(mouseEvent) {
+			controller.markerClickEventHandler(viewMarker);
+		});
+
+		google.maps.event.addListener(viewMarker, 'dragend', function(
+				mouseEvent) {
+			controller.markerDragendEventHandler(viewMarker.id, viewMarker
+					.getPosition().lat(), viewMarker.getPosition().lng());
+		});
+
+		viewMarker.hide = function() {
+			viewMarker.setVisible(false);
+			viewMarker.isShow = false;
+		};
+
+		viewMarker.show = function() {
+			viewMarker.setVisible(true);
+			viewMarker.isShow = true;
+		};
+
+		viewMarker.getLatLng = function() {
+			return {
+				lat : viewMarker.getPosition().lat(),
+				lng : viewMarker.getPosition().lng()
+			};
+		};
+
+		overlays.push(viewMarker);
+	};
+	
+	
+	this.addOverviewMarker=function(lat, lng, num,options){
+		var myLatlng = new google.maps.LatLng(lat, lng);
+
+		var viewMarker = new google.maps.Marker({
+			position : myLatlng,
+			map : map
+		});
+
+		// create one custom id in google mark
+		viewMarker.id = num;
+
+		viewMarker.isShow = true;
+		if(options==null||options.needDrag==null||options.needDrag==false){
+			viewMarker.setDraggable(false);
+		}else{
+			viewMarker.setDraggable(true);
+		}
+
+		google.maps.event.addListener(viewMarker, 'click',
+				function(mouseEvent) {
+					controller.overviewMarkerClickEventHandler(viewMarker.id);
+				});
+
+		google.maps.event.addListener(viewMarker, 'dragend', function(
+				mouseEvent) {
+			controller.viewMarkerDragendEventHandler(viewMarker.id, viewMarker
+					.getPosition().lat(), viewMarker.getPosition().lng());
+		});
+
+		viewMarker.hide = function() {
+			viewMarker.setVisible(false);
+			viewMarker.isShow = false;
+		};
+
+		viewMarker.show = function() {
+			viewMarker.setVisible(true);
+			viewMarker.isShow = true;
+		};
+
+		viewMarker.getLatLng = function() {
+			return {
+				lat : viewMarker.getPosition().lat(),
+				lng : viewMarker.getPosition().lng()
+			};
+		};
+
+		overlays.push(viewMarker);
+	};
+
+	this.showAllMarkers = function() {
+		var length = overlays.length;
+		for ( var i = 0; i < length; i++) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				overlays[i].isShow = true;
+				overlays[i].show();
+			}
+		}
+	};
+
+	this.drawMainLine = function(idfrom, idto, num, pathArray) {
+		var from = this.getViewOverlaysById(idfrom);
+		var to = this.getViewOverlaysById(idto);
+
+		var lineSymbol = {
+			path : google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+		};
+
+		// Create the polyline and add the symbol via the 'icons' property.
+
+		var lineCoordinates = [ new google.maps.LatLng(
+				from.getPosition().lat(), from.getPosition().lng()) ];
+
+		if (pathArray != null) {
+			for ( var i = 1; i < pathArray.length - 1; i++) {
+				lineCoordinates.push(new google.maps.LatLng(pathArray[i].lat,
+						pathArray[i].lng));
+			}
+		}
+
+		lineCoordinates.push(new google.maps.LatLng(to.getPosition().lat(), to
+				.getPosition().lng()));
+
+		var line = new google.maps.Polyline({
+			path : lineCoordinates,
+			icons : [ {
+				icon : lineSymbol,
+				offset : '100%'
+			} ],
+			map : map,
+			strokeColor : 'blue',
+			strokeWeight : 6,
+			strokeOpacity : 0.5,
+			geodesic : true
+		});
+
+		// line.setEditable(true);
+
+		line.id = num;
+
+		line.isShowRoute = false;
+
+		line.getMainLinePath = function() {
+			var pathArray = line.getPath().getArray();
+			var returnArray = new Array();
+
+			for ( var i = 0; i < pathArray.length; i++) {
+				returnArray.push({
+					lat : pathArray[i].lat(),
+					lng : pathArray[i].lng()
+				});
+			}
+			return returnArray;
+		};
+
+		addMainLineContextMenu(line, idfrom);
+
+		google.maps.event.addListener(line, 'click', function(mouseEvent) {
+			console.log(line.getPath().getLength());
+
+			var p1 = line.getMainLinePath()[0];
+			var p2 = line.getMainLinePath()[line.getMainLinePath().length - 1];
+
+			self.fitTwoPositionBounds(p1, p2);
+
+			if (line.getEditable() == true) {
+				line.setEditable(false);
+				controller.lineEditEnd(line.getMainLinePath(), idfrom);
+			}
+
+			line.isShowRoute = !line.isShowRoute;
+		});
+
+		overlays.push(line);
+
+		return line;
+	};
+	
+	this.drawOvLine=function(fromPosition,toPosition){
+			var lineCoordinates = [
+					new google.maps.LatLng(fromPosition.lat, fromPosition.lng),
+					new google.maps.LatLng(toPosition.lat, toPosition.lng) ];
+
+			// Create the polyline, passing the symbol in the 'icons' property.
+			// Give the line an opacity of 0.
+			// Repeat the symbol at intervals of 20 pixels to create the dashed
+			// effect.
+			var line = new google.maps.Polyline({
+				path : lineCoordinates,
+				map : map,
+				strokeOpacity : 0.4,
+				strokeColor : 'black',
+				strokeWeight : 0.7
+			});
+			ovLines.push(line);
+	};
+
+	this.drawSubLine = function(idfrom, idto, num) {
+		if (this.getViewOverlaysById(idto).isShow == true) {
+			var from = this.getViewOverlaysById(idfrom);
+			var to = this.getViewOverlaysById(idto);
+
+			var lineSymbol = {
+				path : 'M 0,-1 0,1',
+				strokeOpacity : 0.8,
+				scale : 4
+			};
+
+			var lineCoordinates = [
+					new google.maps.LatLng(from.getPosition().lat(), from
+							.getPosition().lng()),
+					new google.maps.LatLng(to.getPosition().lat(), to
+							.getPosition().lng()) ];
+
+			// Create the polyline, passing the symbol in the 'icons' property.
+			// Give the line an opacity of 0.
+			// Repeat the symbol at intervals of 20 pixels to create the dashed
+			// effect.
+			var line = new google.maps.Polyline({
+				path : lineCoordinates,
+				strokeOpacity : 0,
+				icons : [ {
+					icon : lineSymbol,
+					offset : '0',
+					repeat : '20px'
+				} ],
+				map : map,
+				strokeColor : 'Green',
+				strokeWeight : 1
+			});
+
+			line.id = num;
+			overlays.push(line);
+		}
+	};
+	
+	this.removeAllOvLines=function(){
+		for ( var i = 0; i < ovLines.length; i++) {
+			ovLines[i].setMap(null);
+		}
+		ovLines=new Array();
+	};
+
+	this.removeAllLines = function() {
+		for ( var i = 0; i < overlays.length; i++) {
+			if (overlays[i] instanceof google.maps.Polyline) {
+				overlays[i].setMap(null);
+				overlays.splice(i, 1);
+				i--;
+			}
+		}
+	};
+
+	this.removeById = function(id) {
+		for ( var i = 0; i < overlays.length; i++) {
+			if (overlays[i].id == id) {
+				overlays[i].setMap(null);
+				overlays.splice(i, 1);
+				i--;
+			}
+		}
+	};
+
+	this.changeMarkerIcon = function(markerId, iconUrl) {
+		var viewMarker = this.getViewOverlaysById(markerId);
+		viewMarker.setIcon(iconUrl);
+	};
+
+	this.setMarkerDragable = function(markerId, needDragable) {
+		var viewMarker = this.getViewOverlaysById(markerId);
+		viewMarker.setDraggable(needDragable);
+	};
+
+	this.addInfoWindow = function(marker, content, num) {
+		var infowindow = new google.maps.InfoWindow({
+			content : content.title
+		});
+
+		infowindow.show = function() {
+			console.log('infowwindow show');
+			infowindow.open(map, marker);
+		};
+
+		infowindow.hide = function() {
+			infowindow.close();
+		};
+
+		// infowindow.show();
+		return infowindow;
+	};
+
+	this.searchLocation = function(key) {
+		gaodeSearch(key);
+	};
+
+	this.clearMarkerCluster = function() {
+		markerCluster.clearMarkers();
+		for ( var i in overlays) {
+			if (overlays[i] instanceof google.maps.Marker) {
+				overlays[i].setMap(map);
+			}
+		}
+	};
+
+	this.AddMarkers2Cluster = function(ids) {
+		var markersNeedToCluster = new Array();
+		for ( var i in ids) {
+			var viewMarker = self.getViewOverlaysById(ids[i]);
+			markersNeedToCluster.push(viewMarker);
+		}
+		markerCluster.addMarkers(markersNeedToCluster);
+	};
+	
+	this.getZoom=function(){
+		return map.getZoom();
+	};
+	
+	this.setMapStyle2Default=function(){
+		console.log('view.setMapStyle2Default');
+		var defaultStyle=[];
+		map.setOptions({styles: defaultStyle});
+	};
+	
+	this.setMapStyle2Custom=function(){
+		console.log('view.setMapStyle2Custom');
+		var customStyle=[
+		           {
+		        	    "featureType": "road",
+		        	    "stylers": [
+		        	      { "visibility": "off" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "water",
+		        	    "stylers": [
+		        	      { "color": "#73ABAD" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "administrative.locality",
+		        	    "stylers": [
+		        	      { "visibility": "simplified" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "landscape.natural",
+		        	    "elementType": "geometry.fill",
+		        	    "stylers": [
+		        	      { "color": "#F0EDDF" }
+		        	    ]
+		        	  },{
+		        	    "featureType": "administrative",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      { "color": "#698DB7" }
+		        	    ]
+		        	  }
+		        	];
+		map.setOptions({styles: customStyle});
+	};
+	
+	this.isInCustomZoom=function(){
+		var zoomlevel=self.getZoom();
+		if(zoomlevel==5 || zoomlevel==6 || zoomlevel==7){
+			return true;
+		}else{
+			return false;
+		}
+	};
+	
+	this.setMapZoom=function(zoomLevel){
+		map.setZoom(zoomLevel);
+	};
+
+	function gaodeSearch(key) {
+		var MSearch;
+		AMap.service([ "AMap.PlaceSearch" ], function() {
+			MSearch = new AMap.PlaceSearch({
+				pageSize : 5,
+				pageIndex : 1,
+			});
+
+			MSearch.search(key, function(status, result) {
+				if (status === 'complete' && result.info === 'OK') {
+					console.log('search key is ' + key);
+					var poiArr = result.poiList.pois;
+
+					cleanSearchMarkers();
+
+					var bounds = new google.maps.LatLngBounds();
+					for ( var i = 0, place; place = poiArr[i]; i++) {
+						// Create a marker for each place.
+						var location = new google.maps.LatLng(place.location
+								.getLat(), place.location.getLng());
+
+						var marker = new google.maps.Marker({
+							map : map,
+							title : place.name,
+							position : location,
+							icon : 'resource/icons/default/search_default.png'
+						});
+
+						searchMarkers.push(marker);
+						
+						addSearchMarkerContextMenu(marker);
+
+						bounds.extend(location);
+					}
+
+					map.fitBounds(bounds);
+				}
+			});
+		});
+	};
+};
+
+function ExploreGoogleMapView(oneController){
+	extend(ExploreGoogleMapView,GoogleMapView,this,[oneController]);
+	
+	var self=this;
+	
+	var centerMarker;
+	
+	this.createSearchView=function(){
+		self.createView();
+		
+		google.maps.event.addListener(this.getMap(), 'center_changed', function() {
+			self.refreshCenterMarker();
+		});
+		
+		google.maps.event.addListener(this.getMap(), 'dragend', function() {
+			centerMarker.setVisible(false);
+			controller.dragendEventHandler();
+		});
+	};
+	
+	this.refreshCenterMarker=function(){
+		if(centerMarker==null){
+			centerMarker=new google.maps.Marker({
+				position : this.getMap().getCenter(),
+				map : this.getMap(),
+				icon : 'resource/icons/default/center_default.png'
+			});
+		}else{
+			centerMarker.setVisible(true);
+			centerMarker.setPosition(this.getMap().getCenter());
+		}
+	};
+	
+	this.computeDistanceBetween=function(from,to){
+		var googleFrom=new google.maps.LatLng(from.lat,from.lng);
+		var googleTo=new google.maps.LatLng(to.lat,to.lng);
+		return google.maps.geometry.spherical.computeDistanceBetween(googleFrom,
+				googleTo);
+	};
+	
+	this.drawCircle=function(location,radius,color){
+		var latlng=new google.maps.LatLng(location.lat,location.lng);
+		var circle=new google.maps.Circle({
+			center:latlng,
+			fillColor:color,
+			radius:radius,
+			map:self.getMap()
+		});
+		
+	};
+};
