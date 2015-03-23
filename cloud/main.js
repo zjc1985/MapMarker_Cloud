@@ -5,6 +5,10 @@ AV.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
 
+var Routine = AV.Object.extend("Routine");
+var OvMarker= AV.Object.extend("OvMarker");
+var AVMarker= AV.Object.extend("Marker");
+
 AV.Cloud.define("fetchMarkersByRoutineId", function(request, response) {
 	var routineId= request.params.routineId;
 	
@@ -13,10 +17,10 @@ AV.Cloud.define("fetchMarkersByRoutineId", function(request, response) {
 	
 	query.find({
 	    success: function(avMarkers) {
+	    	var result={};
 	    	var markersJSON=[];
 			for(var i in avMarkers){
 				var avMarker=avMarkers[i];
-				avObjects.push(avMarker);
 				var markerContent={
 					id: avMarker.get('uuid'),
 					title:avMarker.get('title'),
@@ -30,7 +34,9 @@ AV.Cloud.define("fetchMarkersByRoutineId", function(request, response) {
 				};
 				markersJSON.push(markerContent);
 			}
-			response.success(markersJSON);
+			result.returnValue=markersJSON;
+			result.avObjects=avMarkers;
+			response.success(result);
 	    },
 	    error: function() {
 	    	response.error('fetchMarkersByRoutineId failed');
