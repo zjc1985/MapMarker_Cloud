@@ -2,12 +2,340 @@ require("cloud/app.js");
 // Use AV.Cloud.define to define as many cloud functions as you want.
 // For example:
 AV.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!");
+  response.success(returnSomthing());
 });
+
+function returnSomthing(){
+	return "Hello world!";
+}
 
 var Routine = AV.Object.extend("Routine");
 var OvMarker= AV.Object.extend("OvMarker");
 var AVMarker= AV.Object.extend("Marker");
+
+AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
+	var routineId=request.params.routineId;
+	var clientItems=request.params.syncMarkers;
+	
+	var result={};
+	var markersUpdate=[];
+	var markersDelete=[];
+	var markersNew=[];
+	
+	if(routineId==null){
+		response.error("routineId required");
+	}
+	
+	var query=new AV.Query(AVMarker);
+	query.equalTo("routineId", routineId);
+	query.find().then(function(serverAVItems){
+		console.log('start to sync ovMarkers');
+		
+		for(var i in clientItems){
+			var clientItem=clientItems[i];
+			//find related routine in server side
+			var serverItem=popAndDeletAVObjectsInArrayByGivenUUID(clientItem.uuid,serverAVItems);
+			
+			if(serverItem==null){
+				//if can not found
+				if(clientItem.isSynced){
+					//need to client delete
+					markersDelete.push({uuid:clientItem.uuid});
+				}else{
+					//need to server save
+					var newItem=new AVMarker();
+					newItem.set('uuid',clientItem.uuid);
+					newItem.set('iconUrl',clientItem.iconUrl);
+					newItem.set('category',clientItem.category);
+					newItem.set('title',clientItem.title);
+					newItem.set('slideNum',clientItem.slideNum);
+					
+					var point = new AV.GeoPoint({latitude: clientItem.lat, longitude: clientItem.lng});
+					newItem.set('location',point);
+					
+					newItem.set('mycomment',clientItem.mycomment);
+					newItem.set('imageUrls',clientItem.imageUrls);
+					newItem.set('address',clientItem.address);
+					newItem.set('offsetX',clientItem.offsetX);
+					newItem.set('offsetY',clientItem.offsetY);
+					newItem.set('routineId',clientItem.routineId);
+					newItem.save();
+				}
+			}else{
+				//if found
+				var serverTimestamp=toUTCTimeStamp(serverItem.updatedAt);
+				if(serverTimestamp>clientItem.updateTime){
+					//update client
+					markersUpdate.push(toMarkerFromAVObjects(serverItem));
+				}else if(serverTimestamp<clientItem.updateTime){
+					//update server
+					if(clientItem.isDelete){
+						serverItem.destroy();
+						markersDelete.push({uuid:clientItem.uuid});
+					}else{						
+						serverItem.set('iconUrl',clientItem.iconUrl);
+						serverItem.set('category',clientItem.category);
+						serverItem.set('title',clientItem.title);
+						serverItem.set('slideNum',clientItem.slideNum);
+						
+						var point = new AV.GeoPoint({latitude: clientItem.lat, longitude: clientItem.lng});
+						serverItem.set('location',point);
+						
+						serverItem.set('mycomment',clientItem.mycomment);
+						serverItem.set('imageUrls',clientItem.imageUrls);
+						serverItem.set('address',clientItem.address);
+						serverItem.set('offsetX',clientItem.offsetX);
+						serverItem.set('offsetY',clientItem.offsetY);
+						
+						serverItem.save();
+					}
+				}else{
+					//do nothing
+				}
+			}
+		}
+		
+		//if still exist item in server side do client new
+		for(var i in serverAVItems){
+			markersNew.push(toMarkerFromAVObjects(serverAVItems[i]));
+		}
+		
+		
+		result.markersUpdate=markersUpdate;
+		result.markersDelete=markersDelete;
+		result.markersNew=markersNew;
+		console.log('SyncEnd: '+JSON.stringify(result));
+		
+		response.success(result);
+	
+	});
+});
+
+function toMarkerFromAVObjects(serverAVItem){
+	var result={};
+	result.uuid=serverAVItem.get('uuid');
+	result.iconUrl=serverAVItem.get('iconUrl');
+	result.offsetX=serverAVItem.get('offsetX');
+	result.offsetY=serverAVItem.get('offsetY');
+	result.routineId=serverAVItem.get('routineId');
+	result.category=serverAVItem.get('category');
+	result.title=serverAVItem.get("title");
+	result.slideNum=serverAVItem.get('slideNum');
+	result.lat=serverAVItem.get('location').toJSON().latitude;
+	result.lng=serverAVItem.get('location').toJSON().longitude;
+	result.mycomment=serverAVItem.get('mycomment');
+	result.imgUrls=serverAVItem.get('imgUrls');
+	result.address=serverAVItem.get('address');
+	
+	result.isDelete=false;
+	result.isSynced=true;
+	result.updateTime=toUTCTimeStamp(serverAVItem.updatedAt);
+	return result;
+}
+
+AV.Cloud.define("syncRoutines",function(request,response){
+	var syncRoutines=request.params.syncRoutines;
+	var syncOvMarkers=request.params.syncOvMarkers;
+	
+	var result={};
+	
+	var routinesUpdate=[];
+	var routinesDelete=[];
+	var routinesNew=[];
+	
+	var ovMarkersUpdate=[];
+	var ovMarkersDelete=[];
+	var ovMarkersNew=[];
+	
+	if(request.user==null){
+		console.log('syncRoutines:missing user');
+		response.error('user required');
+	}
+	
+	console.log('syncRoutines param:'+JSON.stringify(syncRoutines));	
+	var query=new AV.Query(Routine);
+	query.equalTo("user", request.user);
+	query.find().then(function(avRoutines){
+		console.log('start to sync Routines');
+		for(var i in syncRoutines){
+			var clientRoutine=syncRoutines[i];
+			//find related routine in server side
+			var serverAVRoutine=popAndDeletAVObjectsInArrayByGivenUUID(clientRoutine.uuid,avRoutines);
+			
+			if(serverAVRoutine==null){
+				//if can not found
+				if(clientRoutine.isSynced){
+					//need to client delete
+					routinesDelete.push({uuid:clientRoutine.uuid});
+				}else{
+					//need to server save
+					var newRoutine=new Routine();
+					newRoutine.set('uuid',clientRoutine.uuid);
+					newRoutine.set('title',clientRoutine.title);
+					newRoutine.set('descritpion',clientRoutine.description);
+					newRoutine.set('user',request.user);
+					var point = new AV.GeoPoint({latitude: clientRoutine.lat, longitude: clientRoutine.lng});
+					newRoutine.set('location',point);
+					newRoutine.save();
+				}
+			}else{
+				//if found
+				var serverTimestamp=toUTCTimeStamp(serverAVRoutine.updatedAt);
+				if(serverTimestamp>clientRoutine.updateTime){
+					//update client
+					routinesUpdate.push(toRoutineFromAVObjects(serverAVRoutine));
+				}else if(serverTimestamp<clientRoutine.updateTime){
+					//update server
+					if(clientRoutine.isDelete){
+						serverAVRoutine.destroy();
+						routinesDelete.push({uuid:clientRoutine.uuid});
+					}else{
+						serverAVRoutine.set('title',clientRoutine.title);
+						serverAVRoutine.set('descritpion',clientRoutine.description);
+						var point = new AV.GeoPoint({latitude: clientRoutine.lat, longitude: clientRoutine.lng});
+						serverAVRoutine.set('location',point);
+						serverAVRoutine.save();
+					}
+					
+				}else{
+					//do nothing
+				}
+			}
+		}
+		
+		//if still exist item in server side do client new
+		for(var i in avRoutines){
+			routinesNew.push(toRoutineFromAVObjects(avRoutines[i]));
+		}
+		
+		
+		result.routinesUpdate=routinesUpdate;
+		result.routinesDelete=routinesDelete;
+		result.routinesNew=routinesNew;
+		
+		return fetchOvMarkersInRoutineIds(avRoutines);
+	}).then(function(avOvMarkers){
+		console.log('start to sync ovMarkers');
+		
+		for(var i in syncOvMarkers){
+			var clientOvMarker=syncOvMarkers[i];
+			//find related routine in server side
+			var serverAvOvMarker=popAndDeletAVObjectsInArrayByGivenUUID(clientOvMarker.uuid,avOvMarkers);
+			
+			if(serverAvOvMarker==null){
+				//if can not found
+				if(clientOvMarker.isSynced){
+					//need to client delete
+					ovMarkersDelete.push({uuid:clientRoutine.uuid});
+				}else{
+					//need to server save
+					var newOvMarker=new OvMarker();
+					newOvMarker.set('uuid',clientOvMarker.uuid);
+					newOvMarker.set('iconUrl',clientOvMarker.iconUrl);
+					newOvMarker.set('offsetX',clientOvMarker.offsetX);
+					newOvMarker.set('offsetY',clientOvMarker.offsetY);
+					newOvMarker.set('routineId',clientOvMarker.routineId);
+					newOvMarker.save();
+				}
+			}else{
+				//if found
+				var serverTimestamp=toUTCTimeStamp(serverAvOvMarker.updatedAt);
+				if(serverTimestamp>clientOvMarker.updateTime){
+					//update client
+					ovMarkersUpdate.push(toOvMarkerFromAVObjects(serverAvOvMarker));
+				}else if(serverTimestamp<clientOvMarker.updateTime){
+					//update server
+					if(clientOvMarker.isDelete){
+						serverAvOvMarker.destroy();
+						ovMarkersDelete.push({uuid:clientOvMarker.uuid});
+					}else{
+						serverAvOvMarker.set('iconUrl',clientOvMarker.iconUrl);
+						serverAvOvMarker.set('offsetX',clientOvMarker.offsetX);
+						serverAvOvMarker.set('offsetY',clientOvMarker.offsetY);
+						serverAVRoutine.save();
+					}
+				}else{
+					//do nothing
+				}
+			}
+		}
+		
+		//if still exist item in server side do client new
+		for(var i in avOvMarkers){
+			ovMarkersNew.push(toOvMarkerFromAVObjects(avOvMarkers[i]));
+		}
+		
+		
+		result.ovMarkersUpdate=ovMarkersUpdate;
+		result.ovMarkersDelete=ovMarkersDelete;
+		result.ovMarkersNew=ovMarkersNew;
+		console.log('SyncEnd: '+JSON.stringify(result));
+		
+		response.success(result);
+	});
+});
+
+function fetchOvMarkersInRoutineIds(avRoutines){
+	var promise=new AV.Promise();
+	var query=new AV.Query(OvMarker);
+	var routineIds=[];
+	for(var i in avRoutines){
+		routineIds.push(avRoutines[i].get("uuid"));
+	}
+	query.containedIn("routineId",routineIds);
+	query.find().then(function(avOvMarkers){
+		promise.resolve(avOvMarkers);
+	});
+	return promise;
+};
+
+function toUTCTimeStamp(date){
+	return new Date(
+			date.getUTCFullYear(),
+			date.getUTCMonth(),
+			date.getUTCDate(),
+			date.getUTCHours(),
+			date.getUTCMinutes(), 
+			date.getUTCSeconds()
+		  ).getTime();
+}
+
+function popAndDeletAVObjectsInArrayByGivenUUID(uuid,avObjects){
+	var result=null;
+	for(var i in avObjects){
+		if(uuid==avObjects[i].get('uuid')){
+			result=avObjects[i];
+			avObjects.splice(i, 1);
+		}
+	}
+	return result;
+}
+
+function toOvMarkerFromAVObjects(avOvMarker){
+	var result={};
+	result.uuid=avOvMarker.get('uuid');
+	result.iconUrl=avOvMarker.get('iconUrl');
+	result.offsetX=avOvMarker.get('offsetX');
+	result.offsetY=avOvMarker.get('offsetY');
+	result.routineId=avOvMarker.get('routineId');
+	result.isDelete=false;
+	result.isSynced=true;
+	result.updateTime=toUTCTimeStamp(avOvMarker.updatedAt);
+	return result;
+}
+
+function toRoutineFromAVObjects(avRoutine){
+	var result={};
+	result.uuid=avRoutine.get('uuid');
+	result.title=avRoutine.get('title');
+	result.description=avRoutine.get('descritpion');
+	result.lat=avRoutine.get('location').toJSON().latitude;
+	result.lng=avRoutine.get('location').toJSON().longitude;
+	result.isDelete=false;
+	result.isSynced=true;
+	result.updateTime=toUTCTimeStamp(avRoutine.updatedAt);
+	return result;
+}
 
 AV.Cloud.define("fetchMarkersByRoutineId", function(request, response) {
 	var routineId= request.params.routineId;
