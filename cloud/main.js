@@ -26,6 +26,9 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 		response.error("routineId required");
 	}
 	
+	
+	console.log('sync markers with routine id:'+routineId);
+	console.log('client sync items:'+JSON.stringify(clientItems));
 	var query=new AV.Query(AVMarker);
 	query.equalTo("routineId", routineId);
 	query.find().then(function(serverAVItems){
