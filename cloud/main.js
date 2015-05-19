@@ -172,7 +172,7 @@ AV.Cloud.define("syncRoutines",function(request,response){
 					var newRoutine=new Routine();
 					newRoutine.set('uuid',clientRoutine.uuid);
 					newRoutine.set('title',clientRoutine.title);
-					newRoutine.set('descritpion',clientRoutine.description);
+					newRoutine.set('description',clientRoutine.description);
 					newRoutine.set('user',request.user);
 					var point = new AV.GeoPoint({latitude: clientRoutine.lat, longitude: clientRoutine.lng});
 					newRoutine.set('location',point);
@@ -191,7 +191,7 @@ AV.Cloud.define("syncRoutines",function(request,response){
 						routinesDelete.push({uuid:clientRoutine.uuid});
 					}else{
 						serverAVRoutine.set('title',clientRoutine.title);
-						serverAVRoutine.set('descritpion',clientRoutine.description);
+						serverAVRoutine.set('description',clientRoutine.description);
 						var point = new AV.GeoPoint({latitude: clientRoutine.lat, longitude: clientRoutine.lng});
 						serverAVRoutine.set('location',point);
 						serverAVRoutine.save();
@@ -328,7 +328,7 @@ function toRoutineFromAVObjects(avRoutine){
 	var result={};
 	result.uuid=avRoutine.get('uuid');
 	result.title=avRoutine.get('title');
-	result.description=avRoutine.get('descritpion');
+	result.description=avRoutine.get('description');
 	result.lat=avRoutine.get('location').toJSON().latitude;
 	result.lng=avRoutine.get('location').toJSON().longitude;
 	result.isDelete=false;
