@@ -158,6 +158,12 @@ AV.Cloud.define("syncRoutines",function(request,response){
 	query.equalTo("user", request.user);
 	query.find().then(function(avRoutines){
 		console.log('start to sync Routines');
+		
+		var routineIds=[];
+		for(var i in avRoutines){
+			routineIds.push(avRoutines[i].get("uuid"));
+		}
+		
 		for(var i in syncRoutines){
 			var clientRoutine=syncRoutines[i];
 			//find related routine in server side
@@ -214,7 +220,7 @@ AV.Cloud.define("syncRoutines",function(request,response){
 		result.routinesDelete=routinesDelete;
 		result.routinesNew=routinesNew;
 		
-		return fetchOvMarkersInRoutineIds(avRoutines);
+		return fetchOvMarkersInRoutineIds(routineIds);
 	}).then(function(avOvMarkers){
 		console.log('start to sync ovMarkers');
 		
@@ -276,13 +282,9 @@ AV.Cloud.define("syncRoutines",function(request,response){
 	});
 });
 
-function fetchOvMarkersInRoutineIds(avRoutines){
+function fetchOvMarkersInRoutineIds(routineIds){
 	var promise=new AV.Promise();
 	var query=new AV.Query(OvMarker);
-	var routineIds=[];
-	for(var i in avRoutines){
-		routineIds.push(avRoutines[i].get("uuid"));
-	}
 	console.log('fetchOvMarkersInRoutineIds: routineIds'+JSON.stringify(routineIds));
 	query.containedIn("routineId",routineIds);
 	query.find().then(function(avOvMarkers){
