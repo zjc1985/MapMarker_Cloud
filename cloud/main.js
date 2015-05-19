@@ -283,8 +283,10 @@ function fetchOvMarkersInRoutineIds(avRoutines){
 	for(var i in avRoutines){
 		routineIds.push(avRoutines[i].get("uuid"));
 	}
+	console.log('fetchOvMarkersInRoutineIds: routineIds'+JSON.stringify(routineIds));
 	query.containedIn("routineId",routineIds);
 	query.find().then(function(avOvMarkers){
+		console.log('fetchOvMarkersInRoutineIds: result'+JSON.stringify(avOvMarkers));
 		promise.resolve(avOvMarkers);
 	});
 	return promise;
