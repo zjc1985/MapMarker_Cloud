@@ -152,7 +152,8 @@ AV.Cloud.define("syncRoutines",function(request,response){
 		response.error('user required');
 	}
 	
-	console.log('syncRoutines param:'+JSON.stringify(syncRoutines));	
+	console.log('syncRoutines param:'+JSON.stringify(syncRoutines));
+	console.log('syncOvMarkers param:'+JSON.stringify(syncOvMarkers));
 	var query=new AV.Query(Routine);
 	query.equalTo("user", request.user);
 	query.find().then(function(avRoutines){
@@ -226,7 +227,7 @@ AV.Cloud.define("syncRoutines",function(request,response){
 				//if can not found
 				if(clientOvMarker.isSynced){
 					//need to client delete
-					ovMarkersDelete.push({uuid:clientRoutine.uuid});
+					ovMarkersDelete.push({uuid:clientOvMarker.uuid});
 				}else{
 					//need to server save
 					var newOvMarker=new OvMarker();
