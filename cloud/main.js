@@ -60,7 +60,7 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 					newItem.set('location',point);
 					
 					newItem.set('mycomment',clientItem.mycomment);
-					newItem.set('imageUrls',clientItem.imageUrls);
+					newItem.set('imgUrls',clientItem.imageUrls);
 					newItem.set('address',clientItem.address);
 					newItem.set('offsetX',clientItem.offsetX);
 					newItem.set('offsetY',clientItem.offsetY);
@@ -93,7 +93,7 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 						serverItem.set('location',point);
 						
 						serverItem.set('mycomment',clientItem.mycomment);
-						serverItem.set('imageUrls',clientItem.imageUrls);
+						serverItem.set('imgUrls',clientItem.imageUrls);
 						serverItem.set('address',clientItem.address);
 						serverItem.set('offsetX',clientItem.offsetX);
 						serverItem.set('offsetY',clientItem.offsetY);
