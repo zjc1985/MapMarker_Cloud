@@ -32,10 +32,10 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 	var query=new AV.Query(AVMarker);
 	query.equalTo("routineId", routineId);
 	query.find().then(function(serverAVItems){
-		console.log('start to sync ovMarkers');
 		
 		for(var i in clientItems){
 			var clientItem=clientItems[i];
+			console.log('process client item with uuid:'+clientItem.uuid);
 			//find related routine in server side
 			var serverItem=popAndDeletAVObjectsInArrayByGivenUUID(clientItem.uuid,serverAVItems);
 			
@@ -43,8 +43,11 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 				//if can not found
 				if(clientItem.isSynced){
 					//need to client delete
+					console.log('not found related server item and client item is not sync,will client delete');
 					markersDelete.push({uuid:clientItem.uuid});
 				}else{
+					console.log('not found related server item and client item is sync,will server new');
+					
 					//need to server save
 					var newItem=new AVMarker();
 					newItem.set('uuid',clientItem.uuid);
@@ -67,15 +70,20 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 			}else{
 				//if found
 				var serverTimestamp=toUTCTimeStamp(serverItem.updatedAt);
+				console.log('found related server item');
+				console.log('client timestamp '+clientItem.updateTime+' server timestamp'+serverTimestamp);
 				if(serverTimestamp>clientItem.updateTime){
 					//update client
+					console.log('client update');
 					markersUpdate.push(toMarkerFromAVObjects(serverItem));
 				}else if(serverTimestamp<clientItem.updateTime){
 					//update server
 					if(clientItem.isDelete){
+						console.log('server delete, client delete')
 						serverItem.destroy();
 						markersDelete.push({uuid:clientItem.uuid});
-					}else{						
+					}else{	
+						console.log('server update');
 						serverItem.set('iconUrl',clientItem.iconUrl);
 						serverItem.set('category',clientItem.category);
 						serverItem.set('title',clientItem.title);
