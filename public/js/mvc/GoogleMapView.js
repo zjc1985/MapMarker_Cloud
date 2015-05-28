@@ -111,7 +111,7 @@ function GoogleMapView(oneController) {
 		});
 	}
 	
-	function linkAutoComplete(){
+	this.linkAutoComplete=function(){
 		var input = document.getElementById('searchValue');
 		var autocomplete = new google.maps.places.Autocomplete(input);
 		autocomplete.bindTo('bounds', map);
@@ -141,7 +141,7 @@ function GoogleMapView(oneController) {
 				map : map,
 				title : place.name,
 				position : place.geometry.location,
-				icon : 'resource/icons/default/search_default.png'
+				icon : 'resource/icons/search_default.png'
 			});
 			
 			searchMarkers.push(marker);
@@ -351,7 +351,7 @@ function GoogleMapView(oneController) {
 		markerCluster.setGridSize(30);
 		
 
-		linkAutoComplete();
+		this.linkAutoComplete();
 	};
 
 	this.fromPixelToLatLng = function(point) {
@@ -836,7 +836,7 @@ function GoogleMapView(oneController) {
 							map : map,
 							title : place.name,
 							position : location,
-							icon : 'resource/icons/default/search_default.png'
+							icon : 'resource/icons/search_default.png'
 						});
 
 						searchMarkers.push(marker);
@@ -873,12 +873,40 @@ function ExploreGoogleMapView(oneController){
 		});
 	};
 	
+	this.linkAutoComplete=function(){
+		var input = document.getElementById('searchValue');
+		var autocomplete = new google.maps.places.Autocomplete(input);
+		autocomplete.bindTo('bounds', self.getMap());
+		
+		searchMarker = new google.maps.Marker({
+		    map: self.getMap(),
+		    anchorPoint: new google.maps.Point(0, -29)
+		});
+		
+		google.maps.event.addListener(autocomplete, 'place_changed', function() {
+			var place = autocomplete.getPlace();
+			
+			if (!place.geometry) {
+			      return;
+			}
+			
+			if (place.geometry.viewport) {
+				self.getMap().fitBounds(place.geometry.viewport);
+			} else {
+				self.getMap().setCenter(place.geometry.location);
+				self.getMap().setZoom(17);  // Why 17? Because it looks good.
+			}
+			
+			controller.dragendEventHandler();
+		});
+	}
+	
 	this.refreshCenterMarker=function(){
 		if(centerMarker==null){
 			centerMarker=new google.maps.Marker({
 				position : this.getMap().getCenter(),
 				map : this.getMap(),
-				icon : 'resource/icons/default/center_default.png'
+				icon : 'resource/icons/center_default.png'
 			});
 		}else{
 			centerMarker.setVisible(true);

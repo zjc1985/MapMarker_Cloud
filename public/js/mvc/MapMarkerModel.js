@@ -1,1 +1,1989 @@
-var _0xc7fb=["\x65\x78\x70\x6C\x6F\x72\x65\x52\x61\x6E\x67\x65\x73","\x67\x65\x74\x42\x61\x63\x6B\x65\x6E\x64\x4D\x61\x6E\x61\x67\x65\x72","\x66\x65\x74\x63\x68\x4F\x76\x65\x72\x76\x69\x65\x77\x52\x6F\x75\x74\x69\x6E\x65\x73\x42\x79\x4C\x61\x74\x6C\x6E\x67","\x72\x6F\x75\x74\x69\x6E\x65\x4A\x53\x4F\x4E","\x6F\x76\x4D\x61\x72\x6B\x65\x72\x73\x4A\x53\x4F\x4E","\x63\x72\x65\x61\x74\x65\x4D\x6F\x64\x65\x6C\x52\x6F\x75\x74\x69\x6E\x65\x42\x79\x47\x69\x76\x65\x6E\x49\x64","\x63\x75\x72\x72\x65\x6E\x74\x52\x6F\x75\x74\x69\x6E\x65\x49\x64","\x72\x65\x73\x65\x74\x4D\x6F\x64\x65\x6C\x73","\x72\x65\x73\x65\x74","\x6C\x6F\x61\x64\x4D\x61\x72\x6B\x65\x72\x73\x42\x79\x52\x6F\x75\x74\x69\x6E\x65\x49\x64","\x69\x64","\x63\x72\x65\x61\x74\x65\x4F\x6E\x65\x4D\x61\x72\x6B\x65\x72","\x70\x75\x73\x68","\x66\x65\x74\x63\x68\x4D\x61\x72\x6B\x65\x72\x73\x42\x79\x52\x6F\x75\x74\x69\x6E\x65\x49\x64","\x68\x61\x6E\x64\x6C\x65\x66\x65\x74\x63\x68\x4F\x76\x65\x72\x76\x69\x65\x77\x52\x6F\x75\x74\x69\x6E\x65\x73\x42\x79\x55\x73\x65\x72\x52\x65\x73\x75\x6C\x74\x73","\x66\x65\x74\x63\x68\x41\x6C\x6C\x52\x6F\x75\x74\x69\x6E\x65\x4E\x61\x6D\x65\x41\x6E\x64\x49\x64","\x66\x65\x74\x63\x68\x41\x6C\x6C\x52\x6F\x75\x74\x69\x6E\x65\x4E\x61\x6D\x65\x41\x6E\x64\x49\x64\x42\x79\x55\x73\x65\x72","\x67\x65\x74\x43\x75\x72\x72\x65\x6E\x74\x55\x73\x65\x72","\x6C\x6F\x61\x64\x41\x6C\x6C\x4F\x76\x65\x72\x76\x69\x65\x77\x52\x6F\x75\x74\x69\x6E\x65","\x66\x65\x74\x63\x68\x4F\x76\x65\x72\x76\x69\x65\x77\x52\x6F\x75\x74\x69\x6E\x65\x73\x42\x79\x55\x73\x65\x72","\x66\x65\x74\x63\x68\x55\x73\x65\x72\x42\x79\x55\x73\x65\x72\x49\x64","\x73\x79\x6E\x63\x32\x43\x6C\x6F\x75\x64","\x74\x6F\x4A\x53\x4F\x4E\x4F\x62\x6A\x65\x63\x74","\x74\x6F\x4F\x76\x4D\x61\x72\x6B\x65\x72\x73\x4A\x53\x4F\x4E\x73","\x73\x61\x76\x65\x4F\x76\x4D\x61\x72\x6B\x65\x72\x73","\x74\x6F\x4D\x61\x72\x6B\x65\x72\x73\x4A\x53\x4F\x4E\x73","\x73\x61\x76\x65\x4D\x61\x72\x6B\x65\x72\x73","\x73\x61\x76\x65\x52\x6F\x75\x74\x69\x6E\x65\x73","\x73\x79\x6E\x63","\x6C\x65\x6E\x67\x74\x68","\x69\x73\x44\x65\x6C\x65\x74\x65","\x73\x70\x6C\x69\x63\x65","\x6F\x76\x4D\x61\x72\x6B\x65\x72\x73","\x6D\x61\x72\x6B\x65\x72\x73","\x67\x65\x74\x4D\x6F\x64\x65\x6C\x52\x6F\x75\x74\x69\x6E\x65\x73","\x64\x65\x6C\x65\x74\x65\x52\x6F\x75\x74\x69\x6E\x65\x42\x79\x4F\x76\x65\x72\x76\x69\x65\x77\x49\x64","\x67\x65\x74\x52\x6F\x75\x74\x69\x6E\x65\x42\x79\x49\x64","\x73\x65\x74\x44\x65\x6C\x65\x74\x65","\x64\x65\x6C\x65\x74\x65\x4D\x6F\x64\x65\x6C\x52\x6F\x75\x74\x69\x6E\x65","\x70\x75\x62\x6C\x69\x73\x68","\x75\x70\x64\x61\x74\x65\x4F\x76\x4C\x69\x6E\x65\x73","\x75\x70\x64\x61\x74\x65\x55\x49","\x63\x72\x65\x61\x74\x65\x4D\x6F\x64\x65\x6C\x52\x6F\x75\x74\x69\x6E\x65","\x67\x65\x6E\x55\x55\x49\x44","\x69\x63\x6F\x6E\x55\x72\x6C","\x72\x65\x73\x6F\x75\x72\x63\x65\x2F\x69\x63\x6F\x6E\x73\x2F\x6F\x76\x65\x72\x76\x69\x65\x77\x2F\x6F\x76\x65\x72\x76\x69\x65\x77\x5F\x70\x6F\x69\x6E\x74\x2E\x70\x6E\x67","\x75\x70\x64\x61\x74\x65\x43\x6F\x6E\x74\x65\x6E\x74","\x63\x6F\x6E\x74\x65\x6E\x74","\x6F\x66\x66\x73\x65\x74\x58","\x6F\x66\x66\x73\x65\x74\x59","\x75\x70\x64\x61\x74\x65\x4F\x66\x66\x73\x65\x74","\x72\x65\x73\x6F\x75\x72\x63\x65\x2F\x69\x63\x6F\x6E\x73\x2F\x64\x65\x66\x61\x75\x6C\x74\x2F\x64\x65\x66\x61\x75\x6C\x74\x5F\x64\x65\x66\x61\x75\x6C\x74\x2E\x70\x6E\x67","\x63\x72\x65\x61\x74\x65\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72","\x75\x73\x65\x72\x49\x64","\x75\x73\x65\x72\x4E\x61\x6D\x65","\x72\x6F\x75\x74\x69\x6E\x65\x49\x64","\x73\x65\x74\x43\x61\x74\x65\x67\x6F\x72\x79","\x67\x65\x74\x43\x6F\x6E\x74\x65\x6E\x74","\x63\x72\x65\x61\x74\x65\x4F\x76\x65\x72\x56\x69\x65\x77\x4D\x61\x72\x6B\x65\x72","\x6E\x6F\x20\x62\x65\x6C\x6F\x6E\x67\x20\x72\x6F\x75\x74\x69\x6E\x65\x20\x66\x6F\x75\x6E\x64","\x61\x64\x64\x4D\x61\x72\x6B\x65\x72","\x64\x65\x6C\x65\x74\x65\x4F\x6E\x65\x4D\x61\x72\x6B\x65\x72","\x67\x65\x74\x4D\x61\x70\x4D\x61\x72\x6B\x65\x72\x42\x79\x49\x64","\x70\x72\x65\x76\x4D\x61\x69\x6E\x4D\x61\x72\x6B\x65\x72","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74\x4E\x65\x78\x74\x4D\x61\x72\x6B\x65\x72","\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64\x4D\x61\x69\x6E\x4D\x61\x72\x6B\x65\x72","\x70\x61\x72\x65\x6E\x74\x53\x75\x62\x4D\x61\x72\x6B\x65\x72","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74\x54\x72\x65\x65\x43\x68\x69\x6C\x64\x4D\x61\x72\x6B\x65\x72","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74\x41\x6C\x6C\x54\x72\x65\x65\x43\x68\x69\x6C\x64\x4D\x61\x72\x6B\x65\x72","\x75\x70\x64\x61\x74\x65\x4C\x6F\x63\x61\x74\x69\x6F\x6E","\x67\x65\x74\x49\x6D\x67\x55\x72\x6C\x73","\x73\x75\x63\x63\x65\x73\x73\x20\x64\x65\x6C\x65\x74\x65\x64\x20\x69\x6D\x67\x20","\x6C\x6F\x67","\x66\x61\x69\x6C\x20\x64\x65\x6C\x65\x74\x65\x20\x69\x6D\x67","\x64\x65\x6C\x65\x74\x65\x46\x69\x6C\x65\x42\x79\x55\x72\x6C","\x66\x65\x74\x63\x68\x55\x73\x65\x72\x49\x64\x42\x79\x52\x6F\x75\x74\x69\x6E\x65\x49\x64","\x66\x65\x74\x63\x68\x55\x73\x65\x72\x42\x79\x52\x6F\x75\x74\x69\x6E\x65\x49\x64","\x66\x65\x74\x63\x68\x4E\x6F\x6E\x52\x65\x70\x65\x61\x74\x4F\x76\x4D\x61\x72\x6B\x65\x72\x73","\x63\x6F\x70\x79\x52\x6F\x75\x74\x69\x6E\x65\x32\x43\x75\x72\x72\x65\x6E\x74\x55\x73\x65\x72","\x63\x6F\x70\x79\x52\x6F\x75\x74\x69\x6E\x65","\x63\x6F\x70\x79\x4D\x61\x72\x6B\x65\x72\x32\x43\x75\x72\x72\x65\x6E\x74\x55\x73\x65\x72","\x63\x6F\x70\x79\x4D\x61\x72\x6B\x65\x72","\x69\x73\x4F\x76\x4D\x61\x72\x6B\x65\x72","\x67\x65\x74\x4F\x76\x4D\x61\x72\x6B\x65\x72\x73","\x66\x69\x6E\x64\x41\x76\x65\x72\x61\x67\x65\x4F\x76\x4D\x61\x72\x6B\x65\x72\x42\x79\x4F\x76\x49\x64","\x69\x73\x41\x76\x65\x72\x67\x65\x4F\x76\x65\x72\x56\x69\x65\x77\x4D\x61\x72\x6B\x65\x72","\x67\x65\x74\x43\x75\x72\x72\x65\x6E\x74\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72\x73","\x73\x65\x74\x43\x75\x72\x72\x65\x6E\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72\x73\x42\x79\x4F\x76\x65\x72\x76\x69\x65\x77\x49\x64","\x67\x65\x74\x41\x6C\x6C\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72\x73","\x67\x65\x74\x4D\x61\x72\x6B\x65\x72\x73","\x63\x61\x6E\x20\x6E\x6F\x74\x20\x66\x6F\x75\x6E\x64\x20\x72\x6F\x75\x74\x69\x6E\x65\x49\x64","\x76\x34","\x73\x61\x76\x65\x49\x6D\x61\x67\x65","\x73\x61\x76\x65\x46\x69\x6C\x65","\x73\x61\x76\x65\x49\x6D\x61\x67\x65\x42\x79\x42\x61\x73\x65\x36\x34","\x73\x61\x76\x65\x42\x61\x73\x65\x36\x34\x46\x69\x6C\x65","\x67\x65\x74\x4D\x6F\x64\x65\x6C\x4D\x61\x72\x6B\x65\x72\x73","\x66\x65\x74\x63\x68\x4D\x61\x78\x49\x64\x69\x6E\x4D\x61\x72\x6B\x73","\x73\x6F\x72\x74","\x64\x65\x6C\x65\x74\x65\x4F\x76\x4D\x61\x72\x6B\x65\x72","\x74\x68\x69\x73\x20\x6D\x61\x72\x6B\x65\x72\x20\x63\x61\x6E\x20\x6E\x6F\x74\x20\x62\x65\x20\x64\x65\x6C\x65\x74\x65\x64","\x69\x73\x55\x73\x65\x72\x4F\x77\x6E\x52\x6F\x75\x74\x69\x6E\x65","\x69\x73\x55\x73\x65\x72\x4F\x77\x6E\x52\x6F\x75\x74\x69\x6E\x65\x73","\x6C\x6F\x61\x64\x52\x6F\x75\x74\x69\x6E\x65\x42\x79\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72\x49\x64","\x70\x61\x72\x73\x65","\x73\x75\x62\x4D\x61\x72\x6B\x65\x72\x49\x64\x73","\x61\x64\x64\x53\x75\x62\x4C\x69\x6E\x65","\x66\x65\x74\x63\x68\x52\x6F\x75\x74\x69\x6E\x65\x4A\x53\x4F\x4E\x53\x74\x72\x69\x6E\x67\x42\x79\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72\x49\x64","\x6C\x6F\x61\x64\x52\x6F\x75\x74\x69\x6E\x65","\x6D\x6F\x64\x65\x6C\x2E\x6C\x6F\x61\x64\x52\x6F\x75\x74\x69\x6E\x65\x3A\x66\x65\x74\x63\x68\x20\x72\x6F\x75\x74\x69\x6E\x65\x20\x73\x75\x63\x63\x65\x73\x73","\x66\x65\x74\x63\x68\x52\x6F\x75\x74\x69\x6E\x65\x4A\x53\x4F\x4E\x53\x74\x72\x69\x6E\x67\x42\x79\x49\x64","\x63\x61\x6E\x20\x6E\x6F\x74\x20\x66\x69\x6E\x64\x20\x6D\x6F\x64\x65\x6C\x20\x6D\x61\x72\x6B\x65\x72\x20\x3A","\x67\x65\x74\x4D\x61\x72\x6B\x65\x72\x43\x6F\x6E\x74\x65\x6E\x74\x42\x79\x49\x64","\x61\x64\x64\x4D\x61\x69\x6E\x4C\x69\x6E\x65","\x61\x64\x64\x4E\x65\x78\x74\x4D\x61\x72\x6B\x65\x72","\x6D\x6F\x64\x65\x6C\x2E\x61\x64\x64\x53\x75\x62\x4C\x69\x6E\x65\x3A\x20\x66\x72\x6F\x6D\x49\x64\x3A\x20","\x20\x74\x6F\x49\x64\x20","\x61\x64\x64\x54\x72\x65\x65\x43\x68\x69\x6C\x64\x4D\x61\x72\x6B\x65\x72","\x66\x69\x6E\x64\x48\x65\x61\x64\x4D\x61\x72\x6B\x65\x72","\x69\x73\x53\x75\x62\x4D\x61\x72\x6B\x65\x72","\x62\x65\x6C\x6F\x6E\x67\x57\x68\x69\x63\x68\x48\x65\x61\x64\x49\x64\x73","\x6D\x6F\x64\x65\x6C\x2E\x62\x65\x6C\x6F\x6E\x67\x77\x68\x69\x63\x68\x48\x65\x61\x64\x49\x64\x73\x3A\x20\x72\x65\x74\x75\x72\x6E\x20","\x72\x65\x64\x72\x61\x77\x43\x6F\x6E\x6E\x65\x63\x74\x65\x64\x4C\x69\x6E\x65","\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64\x4D\x61\x69\x6E\x4C\x69\x6E\x65","\x72\x65\x6D\x6F\x76\x65\x42\x79\x49\x64","\x64\x72\x61\x77\x4D\x61\x69\x6E\x4C\x69\x6E\x65","\x73\x75\x62\x4D\x61\x72\x6B\x65\x72\x73\x41\x72\x72\x61\x79","\x6C\x69\x6E\x65","\x65\x6E\x74\x69\x74\x79","\x64\x72\x61\x77\x53\x75\x62\x4C\x69\x6E\x65","\x52\x6F\x75\x74\x69\x6E\x65","\x65\x78\x74\x65\x6E\x64","\x4F\x62\x6A\x65\x63\x74","\x4F\x76\x4D\x61\x72\x6B\x65\x72","\x4D\x61\x72\x6B\x65\x72","\x36\x70\x7A\x66\x70\x66\x35\x77\x6B\x67\x34\x6D\x35\x32\x6F\x77\x75\x77\x69\x78\x74\x35\x76\x67\x67\x72\x70\x6A\x69\x6E\x63\x72\x38\x78\x6F\x6E\x33\x70\x64\x39\x36\x36\x66\x68\x67\x6A\x33\x63","\x34\x77\x72\x7A\x75\x70\x72\x75\x31\x6D\x34\x6D\x37\x67\x70\x61\x66\x6F\x34\x6C\x6C\x69\x6E\x76\x37\x69\x65\x70\x79\x61\x70\x6E\x79\x63\x76\x78\x79\x67\x75\x70\x37\x75\x69\x75\x69\x37\x37\x78","\x69\x6E\x69\x74\x69\x61\x6C\x69\x7A\x65","\x75\x75\x69\x64","\x67\x65\x74","\x65\x71\x75\x61\x6C\x54\x6F","\x72\x65\x73\x6F\x6C\x76\x65","\x74\x68\x65\x6E","\x66\x69\x6E\x64","\x63\x6F\x6E\x74\x61\x69\x6E\x65\x64\x49\x6E","\x6E\x65\x65\x64\x44\x65\x6C\x65\x74\x65","\x73\x65\x74","\x6C\x61\x74","\x6C\x6E\x67","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x74\x69\x74\x6C\x65","\x61\x64\x64\x72\x65\x73\x73","\x6D\x79\x63\x6F\x6D\x6D\x65\x6E\x74","\x63\x61\x74\x65\x67\x6F\x72\x79","\x69\x6D\x67\x55\x72\x6C\x73","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x73\x6C\x69\x64\x65\x4E\x75\x6D","\x75\x73\x65\x72","\x64\x65\x73\x63\x72\x69\x74\x70\x69\x6F\x6E","\x64\x65\x73\x74\x72\x6F\x79","\x73\x79\x6E\x63\x20\x73\x75\x63\x63\x65\x73\x73","\x6D\x65\x73\x73\x61\x67\x65","\x73\x61\x76\x65\x41\x6C\x6C","\x6C\x61\x74\x69\x74\x75\x64\x65","\x74\x6F\x4A\x53\x4F\x4E","\x6C\x6F\x6E\x67\x69\x74\x75\x64\x65","\x69\x6E\x63\x6C\x75\x64\x65","\x6E\x65\x61\x72","\x6C\x69\x6D\x69\x74","\x61\x76\x52\x6F\x75\x74\x69\x6E\x65","\x61\x76\x4F\x76\x4D\x61\x72\x6B\x65\x72\x73","\x75\x73\x65\x72\x6E\x61\x6D\x65","\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6F\x6E","\x67\x75\x65\x73\x74","\x70\x6C\x65\x61\x73\x65\x20\x6C\x6F\x67\x69\x6E\x20\x66\x69\x72\x73\x74","\x63\x6C\x6F\x6E\x65","\x73\x61\x76\x65","\x66\x69\x72\x73\x74","\x73\x61\x79\x48\x65\x6C\x6C\x6F","\x68\x65\x6C\x6C\x6F","\x72\x75\x6E","\x43\x6C\x6F\x75\x64","\x63\x6C\x6F\x75\x64\x46\x65\x74\x63\x68\x4D\x61\x72\x6B\x65\x72\x73\x42\x79\x52\x6F\x75\x74\x69\x6E\x65\x49\x64","\x73\x61\x76\x65\x43\x75\x72\x72\x65\x6E\x74\x52\x6F\x75\x74\x69\x6E\x65\x4D\x61\x72\x6B\x65\x72\x73","\x69\x76\x6F\x6E\x55\x72\x6C","\x6C\x6F\x67\x69\x6E","\x6C\x6F\x67\x69\x6E\x20\x66\x61\x69\x6C\x65\x64","\x6C\x6F\x67\x49\x6E","\x55\x73\x65\x72","\x63\x75\x72\x72\x65\x6E\x74","\x77\x65\x6C\x63\x6F\x6D\x73\x65\x20\x73\x65\x73\x73\x69\x6F\x6E\x20\x75\x73\x65\x72\x3A","\x6C\x6F\x67\x69\x6E\x20\x66\x6F\x72\x20\x75\x73\x65\x72\x3A","\x45\x72\x72\x6F\x72\x3A\x20","\x63\x6F\x64\x65","\x20","\x6C\x6F\x67\x20\x66\x61\x69\x6C\x65\x64\x2E\x20\x61\x62\x6F\x72\x74\x20\x73\x61\x76\x65\x20\x72\x6F\x75\x74\x69\x6E\x65\x73","\x66\x65\x74\x63\x68\x52\x6F\x75\x74\x69\x6E\x65\x73\x42\x79\x55\x73\x65\x72","\x62\x61\x63\x6B\x65\x6E\x64\x4D\x61\x6E\x61\x67\x65\x72\x3A\x66\x65\x74\x63\x68\x20\x72\x6F\x75\x74\x69\x6E\x65\x20\x73\x75\x63\x63\x65\x73\x73","\x62\x4D\x2E\x66\x65\x74\x63\x68\x55\x73\x65\x72\x42\x79\x55\x73\x65\x72\x49\x64\x3A\x20\x75\x73\x65\x72\x49\x64\x3A","\x62\x4D\x2E\x66\x65\x74\x63\x68\x55\x73\x65\x72\x42\x79\x55\x73\x65\x72\x49\x64\x3A\x20\x66\x6F\x75\x6E\x64\x20\x75\x73\x65\x72\x2C\x20\x75\x73\x65\x72\x20\x6E\x61\x6D\x65","\x64\x65\x6C\x65\x74\x65\x52\x6F\x75\x74\x69\x6E\x65\x42\x79\x4F\x76\x65\x72\x76\x69\x65\x77\x4D\x61\x72\x6B\x65\x72\x49\x64","\x6F\x76\x65\x72\x56\x69\x65\x77\x4A\x53\x4F\x4E\x53\x74\x72\x69\x6E\x67","\x69\x6E\x64\x65\x78\x4F\x66","\x52\x6F\x75\x74\x69\x6E\x65\x4A\x53\x4F\x4E\x53\x74\x72\x69\x6E\x67","\x66\x65\x74\x63\x68","\x54\x68\x65\x20\x6F\x62\x6A\x65\x63\x74\x20\x77\x61\x73\x20\x6E\x6F\x74\x20\x72\x65\x74\x72\x69\x65\x76\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x2E","\x42\x61\x63\x6B\x4D\x61\x6E\x61\x67\x65\x72\x2E\x69\x73\x55\x73\x65\x72\x4F\x77\x6E\x52\x6F\x75\x74\x69\x6E\x65\x73\x3A\x20\x75\x73\x65\x72\x20\x6F\x77\x6E\x20\x74\x68\x69\x73\x20\x72\x6F\x75\x74\x69\x6E\x65","\x42\x61\x63\x6B\x4D\x61\x6E\x61\x67\x65\x72\x2E\x69\x73\x55\x73\x65\x72\x4F\x77\x6E\x52\x6F\x75\x74\x69\x6E\x65\x73\x3A\x20\x75\x73\x65\x72\x20\x6E\x6F\x74\x20\x6F\x77\x6E\x20\x74\x68\x69\x73\x20\x72\x6F\x75\x74\x69\x6E\x65","\x42\x61\x63\x6B\x65\x6E\x64\x4D\x61\x6E\x61\x67\x65\x72\x2E\x46\x65\x74\x63\x68\x52\x6F\x75\x74\x69\x6E\x65\x4A\x53\x4F\x4E\x53\x74\x72\x69\x6E\x67\x42\x79\x49\x64\x2D\x66\x65\x74\x63\x68\x20\x72\x6F\x75\x74\x69\x6E\x65\x20\x69\x64\x3D\x3A","\x75\x70\x64\x61\x74\x65\x41\x6C\x6C\x4F\x76\x65\x72\x76\x69\x65\x77\x73","\x75\x70\x64\x61\x74\x65\x20\x61\x6C\x6C\x20\x6F\x76\x65\x72\x76\x69\x65\x77\x73\x20\x73\x75\x63\x63\x65\x73\x73","\x65\x72\x72\x6F\x72\x20\x68\x61\x70\x70\x65\x6E\x6E\x65\x64\x20\x77\x68\x65\x6E\x20\x75\x70\x64\x61\x74\x65\x20\x61\x6C\x6C\x20\x6F\x76\x65\x72\x76\x69\x65\x77","\x73\x61\x76\x65\x41\x73\x4E\x65\x77\x52\x6F\x75\x74\x69\x6E\x65","\x73\x61\x76\x65\x20\x72\x6F\x75\x74\x69\x6E\x65\x20\x66\x61\x69\x6C\x65\x64","\x47\x75\x65\x73\x74\x20\x63\x61\x6E\x20\x6E\x6F\x74\x20\x73\x61\x76\x65\x20\x72\x6F\x75\x74\x69\x6E\x65\x2E\x20\x50\x6C\x65\x61\x73\x65\x20\x6C\x6F\x67\x69\x6E\x20\x66\x69\x72\x73\x74\x2E","\x73\x61\x76\x65\x52\x6F\x75\x74\x69\x6E\x65","\x6E\x61\x6D\x65","\x75\x72\x6C","\x42\x4D\x61\x6E\x61\x67\x65\x72\x2E\x64\x65\x6C\x65\x74\x65\x46\x69\x6C\x65\x42\x79\x55\x72\x6C\x3A","\x5F\x46\x69\x6C\x65","\x66\x69\x6E\x64\x20\x75\x72\x6C\x3A","\x75\x72\x6C\x20","\x20\x6E\x6F\x74\x20\x66\x6F\x75\x6E\x64","\x4F\x6E\x65\x20\x4D\x61\x72\x6B\x65\x72","\x55\x6E\x6B\x6E\x6F\x77\x6E\x20\x41\x64\x64\x72\x65\x73\x73","","\x72\x65\x73\x6F\x75\x72\x63\x65\x2F\x69\x63\x6F\x6E\x73\x2F\x65\x76\x65\x6E\x74\x2F\x65\x76\x65\x6E\x74\x5F\x32\x2E\x70\x6E\x67","\x72\x65\x73\x6F\x75\x72\x63\x65\x2F\x69\x63\x6F\x6E\x73\x2F\x65\x76\x65\x6E\x74\x2F\x70\x69\x63\x5F\x6E\x6F\x5F\x70\x6F\x73\x69\x74\x69\x6F\x6E\x2E\x70\x6E\x67","\x73\x65\x74\x49\x73\x41\x76\x65\x72\x67\x65\x4F\x76\x65\x72\x56\x69\x65\x77\x4D\x61\x72\x6B\x65\x72","\x67\x65\x74\x53\x6C\x69\x64\x65\x4E\x75\x6D","\x73\x65\x74\x53\x6C\x69\x64\x65\x4E\x75\x6D","\x73\x65\x74\x49\x6D\x67\x50\x6F\x73\x69\x74\x69\x6F\x6E\x44\x65\x63\x69\x64\x65\x64","\x73\x65\x74\x49\x63\x6F\x6E\x55\x72\x6C","\x69\x73\x49\x6D\x67\x50\x6F\x73\x69\x74\x69\x6F\x6E\x44\x65\x63\x69\x64\x65\x64","\x73\x65\x74\x54\x69\x74\x6C\x65","\x73\x65\x74\x41\x64\x64\x72\x65\x73\x73","\x73\x65\x74\x4D\x79\x63\x6F\x6D\x6D\x65\x6E\x74","\x73\x65\x74\x6C\x61\x74\x6C\x6E\x67","\x73\x65\x74\x49\x6D\x67\x55\x72\x6C\x73","\x69\x73\x41\x76\x65\x72\x61\x67\x65","\x61\x64\x64\x49\x6D\x67\x55\x72\x6C","\x67\x65\x74\x49\x63\x6F\x6E\x55\x72\x6C","\x69\x63\x6F\x6E\x55\x72\x6C\x55\x70\x64\x61\x74\x65\x64","\x72\x65\x70\x6C\x61\x63\x65","\x67\x65\x74\x43\x61\x74\x65\x67\x6F\x72\x79","\x67\x65\x74\x43\x61\x74\x65\x67\x6F\x72\x79\x4E\x61\x6D\x65","\x73\x69\x67\x68\x74","\x61\x72\x72\x69\x76\x61\x6C\x20\x26\x20\x6C\x65\x61\x76\x65","\x68\x6F\x74\x65\x6C","\x66\x6F\x6F\x64","\x69\x6E\x66\x6F","\x6F\x76\x65\x72\x76\x69\x65\x77","\x67\x65\x74\x4C\x61\x74","\x6C\x61\x74\x6C\x6E\x67\x43\x68\x61\x6E\x67\x65\x64","\x67\x65\x74\x4C\x6E\x67","\x67\x65\x74\x41\x64\x64\x72\x65\x73\x73","\x67\x65\x74\x54\x69\x74\x6C\x65","\x67\x65\x74\x4D\x79\x63\x6F\x6D\x6D\x65\x6E\x74","\x69\x73\x4C\x6F\x61\x64\x4D\x61\x72\x6B\x65\x72\x73","\x61\x62\x73","\x73\x71\x72\x74","\x6E\x65\x65\x64\x4D\x61\x69\x6E\x4C\x69\x6E\x65","\x6E\x65\x65\x64\x53\x75\x62\x4C\x69\x6E\x65","\x6D\x61\x69\x6E\x50\x61\x74\x68\x73","\x69\x73\x48\x69\x64\x65\x41\x6C\x6C\x53\x75\x62\x4D\x61\x72\x6B\x65\x72\x73","\x63\x61\x6E\x41\x64\x64\x53\x75\x62\x4D\x61\x72\x6B\x65\x72","\x7A\x6F\x6F\x6D\x4C\x65\x76\x65\x6C","\x63\x61\x63\x68\x65\x64\x52\x6F\x75\x74\x69\x6E\x65\x52\x65\x73\x75\x6C\x74\x73"];function ExploreMapMarkerModel(){extend(ExploreMapMarkerModel,MapMarkerModel,this);this[_0xc7fb[0]]=[];var _0x855dx2=this;var _0x855dx3=this[_0xc7fb[1]]();this[_0xc7fb[2]]=function(_0x855dx4,_0x855dx5){_0x855dx3[_0xc7fb[2]](_0x855dx4,function(_0x855dx6){for(var _0x855dx7 in _0x855dx6){var _0x855dx8=_0x855dx6[_0x855dx7][_0xc7fb[3]];var _0x855dx9=_0x855dx6[_0x855dx7][_0xc7fb[4]];_0x855dx2[_0xc7fb[5]](_0x855dx8,_0x855dx9);};_0x855dx5(_0x855dx6);})};}function MapMarkerModel(){var _0x855dxb= new Array();var _0x855dxc= new Array();var _0x855dxd= new Array();this[_0xc7fb[6]]=null;var _0x855dxe=[];var _0x855dx2=this;var _0x855dx3= new BackendManager();this[_0xc7fb[7]]=function(){_0x855dxe=[];_0x855dx3[_0xc7fb[8]]();};this[_0xc7fb[9]]=function(_0x855dxf,_0x855dx5){_0x855dx3[_0xc7fb[13]](_0x855dxf,function(_0x855dx10){var _0x855dx11=[];for(var _0x855dx7 in _0x855dx10){var _0x855dx12=_0x855dx2[_0xc7fb[11]](_0x855dx10[_0x855dx7][_0xc7fb[10]],_0x855dx10[_0x855dx7],_0x855dxf);_0x855dx11[_0xc7fb[12]](_0x855dx12);};_0x855dx5(_0x855dx11);})};this[_0xc7fb[14]]=function(_0x855dx6){for(var _0x855dx7 in _0x855dx6){var _0x855dx8=_0x855dx6[_0x855dx7][_0xc7fb[3]];var _0x855dx9=_0x855dx6[_0x855dx7][_0xc7fb[4]];_0x855dx2[_0xc7fb[5]](_0x855dx8,_0x855dx9);}};this[_0xc7fb[15]]=function(_0x855dx5){_0x855dx3[_0xc7fb[17]](function(_0x855dx13){_0x855dx3[_0xc7fb[16]](_0x855dx13,function(_0x855dx14){_0x855dx5(_0x855dx14)})})};this[_0xc7fb[18]]=function(_0x855dx15,_0x855dx5){_0x855dxd= new Array();_0x855dx3[_0xc7fb[17]](function(_0x855dx13){if(_0x855dx15==null){_0x855dx3[_0xc7fb[19]](_0x855dx13,function(_0x855dx6){_0x855dx2[_0xc7fb[14]](_0x855dx6);_0x855dx5(true);})}else {_0x855dx3[_0xc7fb[20]](_0x855dx15,function(_0x855dx16){if(_0x855dx16!=null){_0x855dx3[_0xc7fb[19]](_0x855dx16,function(_0x855dx6){_0x855dx2[_0xc7fb[14]](_0x855dx6);if(_0x855dx16[_0xc7fb[10]]==_0x855dx13[_0xc7fb[10]]){_0x855dx5(true)}else {_0x855dx5(false)};})}else {_0x855dx3[_0xc7fb[19]](_0x855dx13,function(_0x855dx8,_0x855dx9){_0x855dx2[_0xc7fb[14]](results);_0x855dx5(true);})}})}});};this[_0xc7fb[21]]=function(_0x855dx5){_0x855dx3[_0xc7fb[17]](function(_0x855dx16){var _0x855dx17=[];for(var _0x855dx7 in _0x855dxe){_0x855dx17[_0xc7fb[12]](_0x855dxe[_0x855dx7][_0xc7fb[22]]());_0x855dx3[_0xc7fb[24]](_0x855dxe[_0x855dx7][_0xc7fb[23]]());_0x855dx3[_0xc7fb[26]](_0x855dxe[_0x855dx7][_0xc7fb[25]]());};_0x855dx3[_0xc7fb[27]](_0x855dx17,_0x855dx16);_0x855dx3[_0xc7fb[28]](function(){_0x855dx5()});for(var _0x855dx7=0;_0x855dx7<_0x855dxe[_0xc7fb[29]];_0x855dx7++){if(_0x855dxe[_0x855dx7][_0xc7fb[30]]==true){_0x855dxe[_0xc7fb[31]](_0x855dx7,1);_0x855dx7--;continue ;};for(var _0x855dx18=0;_0x855dx18<_0x855dxe[_0x855dx7][_0xc7fb[32]][_0xc7fb[29]];_0x855dx18++){if(_0x855dxe[_0x855dx7][_0xc7fb[32]][_0x855dx18][_0xc7fb[30]]==true){_0x855dxe[_0x855dx7][_0xc7fb[32]][_0xc7fb[31]](_0x855dx18,1);_0x855dx18--;}};for(var _0x855dx19=0;_0x855dx19<_0x855dxe[_0x855dx7][_0xc7fb[33]][_0xc7fb[29]];_0x855dx19++){if(_0x855dxe[_0x855dx7][_0xc7fb[33]][_0x855dx19][_0xc7fb[30]]==true){_0x855dxe[_0x855dx7][_0xc7fb[33]][_0xc7fb[31]](_0x855dx19,1);_0x855dx19--;}};};})};this[_0xc7fb[34]]=function(){var _0x855dx6=[];for(var _0x855dx7 in _0x855dxe){if(!_0x855dxe[_0x855dx7][_0xc7fb[30]]){_0x855dx6[_0xc7fb[12]](_0x855dxe[_0x855dx7])}};return _0x855dx6;};this[_0xc7fb[35]]=function(_0x855dx1a,_0x855dx5){var _0x855dx1b=_0x855dx2[_0xc7fb[36]](_0x855dx1a);_0x855dx1b[_0xc7fb[37]]();if(_0x855dx2[_0xc7fb[6]]==_0x855dx1b[_0xc7fb[10]]){_0x855dx2[_0xc7fb[6]]=null};$[_0xc7fb[39]](_0xc7fb[38],[_0x855dx1b]);$[_0xc7fb[39]](_0xc7fb[40]);$[_0xc7fb[39]](_0xc7fb[41]);};this[_0xc7fb[42]]=function(_0x855dx1c){var _0x855dx1d=_0x855dx2[_0xc7fb[43]]();var _0x855dx12= new ModelRoutine(_0x855dx1d);_0x855dx1c[_0xc7fb[44]]=_0xc7fb[45];$[_0xc7fb[39]](_0xc7fb[42],[_0x855dx12,_0x855dx1c]);if(_0x855dx1c!=null){_0x855dx12[_0xc7fb[47]][_0xc7fb[46]](_0x855dx1c);_0x855dx12[_0xc7fb[50]](_0x855dx1c[_0xc7fb[48]],_0x855dx1c[_0xc7fb[49]]);};_0x855dxe[_0xc7fb[12]](_0x855dx12);var _0x855dx1e=_0x855dx2[_0xc7fb[43]]();_0x855dx1c[_0xc7fb[44]]=_0xc7fb[51];var _0x855dx1f=_0x855dx2[_0xc7fb[52]](_0x855dx1e,_0x855dx1c,_0x855dx1d);_0x855dx12[_0xc7fb[32]][_0xc7fb[12]](_0x855dx1f);return _0x855dx1d;};this[_0xc7fb[5]]=function(_0x855dx20,_0x855dx21){var _0x855dx1d=_0x855dx20[_0xc7fb[10]];var _0x855dx12= new ModelRoutine(_0x855dx1d);_0x855dx12[_0xc7fb[53]]=_0x855dx20[_0xc7fb[53]];_0x855dx12[_0xc7fb[54]]=_0x855dx20[_0xc7fb[54]];_0x855dx20[_0xc7fb[44]]=_0xc7fb[45];$[_0xc7fb[39]](_0xc7fb[42],[_0x855dx12,_0x855dx20]);if(_0x855dx20!=null){_0x855dx12[_0xc7fb[47]][_0xc7fb[46]](_0x855dx20);_0x855dx12[_0xc7fb[50]](_0x855dx20[_0xc7fb[48]],_0x855dx20[_0xc7fb[49]]);};_0x855dxe[_0xc7fb[12]](_0x855dx12);for(var _0x855dx7 in _0x855dx21){var _0x855dx1e=_0x855dx21[_0x855dx7][_0xc7fb[10]];var _0x855dx1f=_0x855dx2[_0xc7fb[52]](_0x855dx1e,_0x855dx21[_0x855dx7],_0x855dx1d);_0x855dx12[_0xc7fb[32]][_0xc7fb[12]](_0x855dx1f);};};this[_0xc7fb[52]]=function(_0x855dx22,_0x855dx1c,_0x855dxf){var _0x855dx12= new MapMarker(_0x855dx22);_0x855dx12[_0xc7fb[55]]=_0x855dxf;_0x855dx12[_0xc7fb[57]]()[_0xc7fb[56]](6);$[_0xc7fb[39]](_0xc7fb[58],[_0x855dx12,_0x855dx1c]);if(_0x855dx1c!=null){_0x855dx12[_0xc7fb[47]][_0xc7fb[46]](_0x855dx1c);_0x855dx12[_0xc7fb[50]](_0x855dx1c[_0xc7fb[48]],_0x855dx1c[_0xc7fb[49]]);};return _0x855dx12;};this[_0xc7fb[11]]=function(_0x855dx22,_0x855dx1c,_0x855dxf){var _0x855dx23=_0x855dx2[_0xc7fb[36]](_0x855dxf);if(_0x855dx23==null){alert(_0xc7fb[59]);return ;};var _0x855dx12= new MapMarker(_0x855dx22);$[_0xc7fb[39]](_0xc7fb[11],[_0x855dx12]);if(_0x855dx1c!=null){_0x855dx12[_0xc7fb[47]][_0xc7fb[46]](_0x855dx1c);_0x855dx12[_0xc7fb[50]](_0x855dx1c[_0xc7fb[48]],_0x855dx1c[_0xc7fb[49]]);};_0x855dx23[_0xc7fb[60]](_0x855dx12);return _0x855dx12;};this[_0xc7fb[61]]=function(_0x855dx22,_0x855dx24){var _0x855dx25=this[_0xc7fb[62]](_0x855dx22);if(_0x855dx25!=null){if(_0x855dx25[_0xc7fb[63]]!=null){_0x855dx25[_0xc7fb[63]][_0xc7fb[64]]()};if(_0x855dx25[_0xc7fb[65]]!=null){_0x855dx25[_0xc7fb[64]]()};if(_0x855dx25[_0xc7fb[66]]!=null){_0x855dx25[_0xc7fb[66]][_0xc7fb[67]](_0x855dx25)};_0x855dx25[_0xc7fb[68]]();var _0x855dx23=_0x855dx2[_0xc7fb[36]](_0x855dx22);_0x855dx25[_0xc7fb[30]]=true;_0x855dx23[_0xc7fb[69]]();if(_0x855dx24){var _0x855dx26=_0x855dx25[_0xc7fb[47]][_0xc7fb[70]]();if(_0x855dx26!=null&&_0x855dx26[_0xc7fb[29]]>0){for(var _0x855dx7 in _0x855dx26){var _0x855dx27=_0x855dx26[_0x855dx7];_0x855dx3[_0xc7fb[74]](_0x855dx27,function(){console[_0xc7fb[72]](_0xc7fb[71])},function(){console[_0xc7fb[72]](_0xc7fb[73])});};;;};};$[_0xc7fb[39]](_0xc7fb[61],[_0x855dx25]);};};this[_0xc7fb[75]]=function(_0x855dxf,_0x855dx28){_0x855dx3[_0xc7fb[76]](_0x855dxf,function(_0x855dx16){if(_0x855dx16!=null){_0x855dx28(_0x855dx16[_0xc7fb[10]])}else {_0x855dx28(null)}})};this[_0xc7fb[1]]=function(){return _0x855dx3};this[_0xc7fb[77]]=function(){var _0x855dx29=[];for(var _0x855dx7 in _0x855dxd){var _0x855dxf=_0x855dxd[_0x855dx7][_0xc7fb[55]];var _0x855dx2a=false;for(var _0x855dx18 in _0x855dx29){if(_0x855dxf==_0x855dx29[_0x855dx18][_0xc7fb[55]]){_0x855dx2a=true}};if(!_0x855dx2a){_0x855dx29[_0xc7fb[12]](_0x855dxd[_0x855dx7])};};return _0x855dx29;};this[_0xc7fb[78]]=function(_0x855dx1e){var _0x855dxf=_0x855dx2[_0xc7fb[36]](_0x855dx1e)[_0xc7fb[10]];_0x855dx3[_0xc7fb[79]](_0x855dxf);};this[_0xc7fb[80]]=function(_0x855dx2b,_0x855dx2c){_0x855dx3[_0xc7fb[81]](_0x855dx2b,_0x855dx2c)};this[_0xc7fb[82]]=function(_0x855dx22){var _0x855dx2d=_0x855dx2[_0xc7fb[34]]();for(var _0x855dx7 in _0x855dx2d){if(_0x855dx2d[_0x855dx7][_0xc7fb[10]]==_0x855dx22){return true};var _0x855dx2e=_0x855dx2d[_0x855dx7][_0xc7fb[83]]();for(var _0x855dx18 in _0x855dx2e){if(_0x855dx22==_0x855dx2e[_0x855dx18][_0xc7fb[10]]){return true}};};return false;};this[_0xc7fb[84]]=function(_0x855dx22){var _0x855dx1f=_0x855dx2[_0xc7fb[62]](_0x855dx22);for(var _0x855dx7 in _0x855dxd){if(_0x855dx1f[_0xc7fb[55]]==_0x855dxd[_0x855dx7][_0xc7fb[55]]&&_0x855dxd[_0x855dx7][_0xc7fb[47]][_0xc7fb[85]]()){return _0x855dxd[_0x855dx7]}else {continue }};return null;};this[_0xc7fb[86]]=function(){return _0x855dxc};this[_0xc7fb[87]]=function(_0x855dx22){_0x855dxc= new Array();var _0x855dxf=this[_0xc7fb[62]](_0x855dx22)[_0xc7fb[55]];for(var _0x855dx7 in _0x855dxd){if(_0x855dxd[_0x855dx7][_0xc7fb[55]]==_0x855dxf){_0x855dxc[_0xc7fb[12]](_0x855dxd[_0x855dx7])}};};this[_0xc7fb[88]]=function(){var _0x855dx6=[];var _0x855dx2d=_0x855dx2[_0xc7fb[34]]();for(var _0x855dx7 in _0x855dx2d){_0x855dx6[_0xc7fb[12]](_0x855dx2d[_0x855dx7]);var _0x855dx2e=_0x855dx2d[_0x855dx7][_0xc7fb[83]]();for(var _0x855dx18 in _0x855dx2e){_0x855dx6[_0xc7fb[12]](_0x855dx2e[_0x855dx18])};};return _0x855dx6;};this[_0xc7fb[36]]=function(_0x855dx22){var _0x855dx2d=_0x855dx2[_0xc7fb[34]]();for(var _0x855dx7 in _0x855dx2d){if(_0x855dx2d[_0x855dx7][_0xc7fb[10]]==_0x855dx22){return _0x855dx2d[_0x855dx7]};var _0x855dx2e=_0x855dx2d[_0x855dx7][_0xc7fb[83]]();for(var _0x855dx18 in _0x855dx2e){if(_0x855dx2e[_0x855dx18][_0xc7fb[10]]==_0x855dx22){return _0x855dx2d[_0x855dx7]}};var _0x855dx11=_0x855dx2d[_0x855dx7][_0xc7fb[89]]();for(var _0x855dx19 in _0x855dx11){if(_0x855dx11[_0x855dx19][_0xc7fb[10]]==_0x855dx22){return _0x855dx2d[_0x855dx7]}};};alert(_0xc7fb[90]);return null;};this[_0xc7fb[43]]=function(){return uuid[_0xc7fb[91]]()};this[_0xc7fb[92]]=function(_0x855dx2f,_0x855dx5,_0x855dx30){_0x855dx3[_0xc7fb[93]](_0x855dx2f,function(_0x855dx27){_0x855dx5(_0x855dx27)},function(_0x855dx31){_0x855dx30(_0x855dx31)})};this[_0xc7fb[94]]=function(_0x855dx32,_0x855dx33,_0x855dx5,_0x855dx30){_0x855dx3[_0xc7fb[95]](_0x855dx32,_0x855dx33,function(_0x855dx27){_0x855dx5(_0x855dx27)},function(_0x855dx31){_0x855dx30(_0x855dx31)})};this[_0xc7fb[96]]=function(){var _0x855dx6=[];var _0x855dx2d=_0x855dx2[_0xc7fb[34]]();for(var _0x855dx7 in _0x855dx2d){var _0x855dx11=_0x855dx2d[_0x855dx7][_0xc7fb[89]]();for(var _0x855dx18 in _0x855dx11){_0x855dx6[_0xc7fb[12]](_0x855dx11[_0x855dx18])};};return _0x855dx6;};this[_0xc7fb[97]]=function(){_0x855dxb[_0xc7fb[98]](function(_0x855dx34,_0x855dx35){if(_0x855dx34[_0xc7fb[10]]>_0x855dx35[_0xc7fb[10]]){return 1}else {if(_0x855dx34[_0xc7fb[10]]==_0x855dx35[_0xc7fb[10]]){return 0}else {return -1}}});return _0x855dxb[_0x855dxb[_0xc7fb[29]]-1][_0xc7fb[10]];};this[_0xc7fb[99]]=function(_0x855dx22){var _0x855dx1f=this[_0xc7fb[62]](_0x855dx22);if(_0x855dx1f[_0xc7fb[47]][_0xc7fb[85]]()){alert(_0xc7fb[100]);return ;}else {for(var _0x855dx7 in _0x855dxd){if(_0x855dxd[_0x855dx7][_0xc7fb[10]]==_0x855dx22){_0x855dxd[_0xc7fb[31]](_0x855dx7,1)}};if(_0x855dxc[_0xc7fb[29]]!=0){for(var _0x855dx7 in _0x855dxc){if(_0x855dxc[_0x855dx7][_0xc7fb[10]]==_0x855dx22){_0x855dxc[_0xc7fb[31]](_0x855dx7,1)}}};$[_0xc7fb[39]](_0xc7fb[99],[_0x855dx22]);$[_0xc7fb[39]](_0xc7fb[40]);};};this[_0xc7fb[101]]=function(_0x855dxf,_0x855dx5){_0x855dx3[_0xc7fb[17]](function(_0x855dx13){_0x855dx3[_0xc7fb[102]](_0x855dx13,_0x855dxf,_0x855dx5)})};this[_0xc7fb[103]]=function(_0x855dx36,_0x855dx5){_0x855dxb= new Array();_0x855dx3[_0xc7fb[107]](_0x855dx36,function(_0x855dx37,_0x855dx38){if(_0x855dx37!=null){var _0x855dx39=JSON[_0xc7fb[104]](_0x855dx37);for(var _0x855dx7 in _0x855dx39){_0x855dx2[_0xc7fb[11]](_0x855dx39[_0x855dx7][_0xc7fb[10]],_0x855dx39[_0x855dx7])};for(var _0x855dx7 in _0x855dx39){var _0x855dx3a=_0x855dx39[_0x855dx7];for(var _0x855dx18 in _0x855dx3a[_0xc7fb[105]]){_0x855dx2[_0xc7fb[106]](_0x855dx3a[_0xc7fb[10]],_0x855dx3a[_0xc7fb[105]][_0x855dx18],0,0)};};};_0x855dx5(_0x855dx38);});};this[_0xc7fb[108]]=function(_0x855dxf,_0x855dx5){_0x855dxb= new Array();_0x855dx3[_0xc7fb[110]](_0x855dxf,function(_0x855dx37,_0x855dx3b,_0x855dx3c){if(_0x855dx3c!=null){var _0x855dx3d=JSON[_0xc7fb[104]](_0x855dx3c);for(var _0x855dx7 in _0x855dx3d){_0x855dx2[_0xc7fb[52]](_0x855dx3d[_0x855dx7][_0xc7fb[10]],_0x855dx3d[_0x855dx7])};};if(_0x855dx37!=null){var _0x855dx39=JSON[_0xc7fb[104]](_0x855dx37);for(var _0x855dx7 in _0x855dx39){_0x855dx2[_0xc7fb[11]](_0x855dx39[_0x855dx7][_0xc7fb[10]],_0x855dx39[_0x855dx7])};for(var _0x855dx7 in _0x855dx39){var _0x855dx3a=_0x855dx39[_0x855dx7];for(var _0x855dx18 in _0x855dx3a[_0xc7fb[105]]){_0x855dx2[_0xc7fb[106]](_0x855dx3a[_0xc7fb[10]],_0x855dx3a[_0xc7fb[105]][_0x855dx18],0,0)};};};console[_0xc7fb[72]](_0xc7fb[109]);_0x855dx5({routineName:_0x855dx3b});});};function _0x855dx3e(_0x855dx22){var _0x855dx3f=_0x855dxb[_0xc7fb[29]];for(var _0x855dx7=0;_0x855dx7<_0x855dx3f;_0x855dx7++){if(_0x855dxb[_0x855dx7][_0xc7fb[10]]==_0x855dx22){return _0x855dxb[_0x855dx7]}};return null;}this[_0xc7fb[62]]=function(_0x855dx22){var _0x855dx2d=_0x855dx2[_0xc7fb[34]]();for(var _0x855dx7 in _0x855dx2d){var _0x855dx1b=_0x855dx2d[_0x855dx7];if(_0x855dx1b[_0xc7fb[10]]==_0x855dx22){return _0x855dx1b};var _0x855dx2e=_0x855dx1b[_0xc7fb[83]]();for(var _0x855dx18 in _0x855dx2e){if(_0x855dx22==_0x855dx2e[_0x855dx18][_0xc7fb[10]]){return _0x855dx2e[_0x855dx18]}};var _0x855dx11=_0x855dx1b[_0xc7fb[89]]();for(var _0x855dx19 in _0x855dx11){if(_0x855dx22==_0x855dx11[_0x855dx19][_0xc7fb[10]]){return _0x855dx11[_0x855dx19]}};};alert(_0xc7fb[111]+_0x855dx22);return null;};this[_0xc7fb[112]]=function(_0x855dx22){var _0x855dx12=this[_0xc7fb[62]](_0x855dx22);if(_0x855dx12[_0xc7fb[57]]()!=null){return _0x855dx12[_0xc7fb[57]]()}else {return null};};this[_0xc7fb[113]]=function(_0x855dx40,_0x855dx41){var _0x855dx42=_0x855dx3e(_0x855dx40);var _0x855dx43=_0x855dx3e(_0x855dx41);_0x855dx42[_0xc7fb[114]](_0x855dx43);};this[_0xc7fb[106]]=function(_0x855dx40,_0x855dx41){console[_0xc7fb[72]](_0xc7fb[115]+_0x855dx40+_0xc7fb[116]+_0x855dx41);var _0x855dx42=_0x855dx3e(_0x855dx40);var _0x855dx43=_0x855dx3e(_0x855dx41);_0x855dx42[_0xc7fb[117]](_0x855dx43);};this[_0xc7fb[118]]=function(){var _0x855dx44= new Array();var _0x855dx3f=_0x855dxb[_0xc7fb[29]];for(var _0x855dx7=0;_0x855dx7<_0x855dx3f;_0x855dx7++){if(_0x855dxb[_0x855dx7] instanceof MapMarker){if(_0x855dxb[_0x855dx7][_0xc7fb[63]]==null&&!_0x855dxb[_0x855dx7][_0xc7fb[119]]()){_0x855dx44[_0xc7fb[12]](_0x855dxb[_0x855dx7])}}};return _0x855dx44;};this[_0xc7fb[120]]=function(_0x855dx2b){var _0x855dx25=this[_0xc7fb[62]](_0x855dx2b);if(_0x855dx25[_0xc7fb[63]]==null){var _0x855dx45=[];var _0x855dx46=_0x855dx25;do{_0x855dx45[_0xc7fb[12]](_0x855dx46[_0xc7fb[10]]);_0x855dx46=_0x855dx46[_0xc7fb[65]];}while(_0x855dx46!=null);;console[_0xc7fb[72]](_0xc7fb[121]+_0x855dx45);return _0x855dx45;}else {return this[_0xc7fb[120]](_0x855dx25[_0xc7fb[63]][_0xc7fb[10]])};};this[_0xc7fb[122]]=function(_0x855dx22){var _0x855dx12=_0x855dx3e(_0x855dx22);if(_0x855dx12[_0xc7fb[63]]!=null){_0x855dx47(_0x855dx12[_0xc7fb[63]])};_0x855dx47(_0x855dx12);if(_0x855dx12[_0xc7fb[66]]!=null){_0x855dx48(_0x855dx12[_0xc7fb[66]])};_0x855dx48(_0x855dx12);};function _0x855dx47(_0x855dx12){if(_0x855dx12[_0xc7fb[65]]==null){return }else {if(_0x855dx12[_0xc7fb[123]]!=null){view[_0xc7fb[124]](_0x855dx12[_0xc7fb[123]][_0xc7fb[10]])};_0x855dx12[_0xc7fb[123]]= new MainLine(view[_0xc7fb[125]](_0x855dx12[_0xc7fb[10]],_0x855dx12[_0xc7fb[65]][_0xc7fb[10]]));}}function _0x855dx48(_0x855dx12){for(var _0x855dx18 in _0x855dx12[_0xc7fb[126]]){view[_0xc7fb[124]](_0x855dx12[_0xc7fb[126]][_0x855dx18][_0xc7fb[127]][_0xc7fb[10]]);_0x855dx12[_0xc7fb[126]][_0x855dx18][_0xc7fb[127]]= new SubLine(view[_0xc7fb[129]](_0x855dx12[_0xc7fb[10]],_0x855dx12[_0xc7fb[126]][_0x855dx18][_0xc7fb[128]][_0xc7fb[10]]));}}}function BackendManager(){var _0x855dx4a=AV[_0xc7fb[132]][_0xc7fb[131]](_0xc7fb[130]);var _0x855dx4b=AV[_0xc7fb[132]][_0xc7fb[131]](_0xc7fb[133]);var _0x855dx4c=AV[_0xc7fb[132]][_0xc7fb[131]](_0xc7fb[134]);var _0x855dx23=null;var _0x855dx13=null;var _0x855dx4d=[];var _0x855dx4e=null;var _0x855dx4f=[];AV[_0xc7fb[137]](_0xc7fb[135],_0xc7fb[136]);function _0x855dx50(_0x855dx51){var _0x855dx52= new AV.Promise();var _0x855dx53= new AV.Query(_0x855dx4b);_0x855dx53[_0xc7fb[140]](_0xc7fb[55],_0x855dx51[_0xc7fb[139]](_0xc7fb[138]));_0x855dx53[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx54){_0x855dx52[_0xc7fb[141]](_0x855dx51,_0x855dx54)});return _0x855dx52;}function _0x855dx55(_0x855dx56){var _0x855dx52= new AV.Promise();var _0x855dx53= new AV.Query(_0x855dx4b);var _0x855dx45=[];for(var _0x855dx7 in _0x855dx56){_0x855dx45[_0xc7fb[12]](_0x855dx56[_0x855dx7][_0xc7fb[139]](_0xc7fb[138]))};_0x855dx53[_0xc7fb[144]](_0xc7fb[55],_0x855dx45);_0x855dx53[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx54){var _0x855dx6=[];for(var _0x855dx7 in _0x855dx56){_0x855dx6[_0xc7fb[12]]({avRoutine:_0x855dx56[_0x855dx7],avOvMarkers:_0x855dx57(_0x855dx54,_0x855dx56[_0x855dx7][_0xc7fb[139]](_0xc7fb[138]))})};_0x855dx52[_0xc7fb[141]](_0x855dx6);});return _0x855dx52;}function _0x855dx57(_0x855dx2e,_0x855dxf){var _0x855dx6=[];for(var _0x855dx7 in _0x855dx2e){if(_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[55])==_0x855dxf){_0x855dx6[_0xc7fb[12]](_0x855dx2e[_0x855dx7])}};return _0x855dx6;}function _0x855dx58(_0x855dx59){for(var _0x855dx7 in _0x855dx4f){if(_0x855dx59==_0x855dx4f[_0x855dx7][_0xc7fb[139]](_0xc7fb[138])){return _0x855dx4f[_0x855dx7]}};return null;}function _0x855dx5a(_0x855dx59){for(var _0x855dx7 in _0x855dx4d){if(_0x855dx59==_0x855dx4d[_0x855dx7][_0xc7fb[139]](_0xc7fb[138])){return _0x855dx4d[_0x855dx7]}};return null;}this[_0xc7fb[8]]=function(){_0x855dx4f=[]};this[_0xc7fb[26]]=function(_0x855dx5b){for(var _0x855dx7 in _0x855dx5b){var _0x855dx5c=_0x855dx5b[_0x855dx7];var _0x855dx5d=_0x855dx58(_0x855dx5c[_0xc7fb[138]]);if(_0x855dx5d!==null&&_0x855dx5c[_0xc7fb[145]]){_0x855dx5d[_0xc7fb[145]]=true;continue ;};if(_0x855dx5d==null&&_0x855dx5c[_0xc7fb[145]]){continue };if(_0x855dx5d==null){_0x855dx5d= new _0x855dx4c();_0x855dx4f[_0xc7fb[12]](_0x855dx5d);};_0x855dx5d[_0xc7fb[146]](_0xc7fb[138],_0x855dx5c[_0xc7fb[138]]);var _0x855dx5e= new AV.GeoPoint({latitude:_0x855dx5c[_0xc7fb[147]],longitude:_0x855dx5c[_0xc7fb[148]]});_0x855dx5d[_0xc7fb[146]](_0xc7fb[149],_0x855dx5e);_0x855dx5d[_0xc7fb[146]](_0xc7fb[150],_0x855dx5c[_0xc7fb[150]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[151],_0x855dx5c[_0xc7fb[151]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[152],_0x855dx5c[_0xc7fb[152]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[153],_0x855dx5c[_0xc7fb[153]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[154],JSON[_0xc7fb[155]](_0x855dx5c[_0xc7fb[154]]));_0x855dx5d[_0xc7fb[146]](_0xc7fb[44],_0x855dx5c[_0xc7fb[44]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[156],_0x855dx5c[_0xc7fb[156]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[105],JSON[_0xc7fb[155]](_0x855dx5c[_0xc7fb[105]]));_0x855dx5d[_0xc7fb[146]](_0xc7fb[48],_0x855dx5c[_0xc7fb[48]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[49],_0x855dx5c[_0xc7fb[49]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[55],_0x855dx5c[_0xc7fb[55]]);}};this[_0xc7fb[24]]=function(_0x855dx5b){for(var _0x855dx7 in _0x855dx5b){var _0x855dx5c=_0x855dx5b[_0x855dx7];var _0x855dx5d=_0x855dx58(_0x855dx5c[_0xc7fb[138]]);if(_0x855dx5d!==null&&_0x855dx5c[_0xc7fb[145]]){_0x855dx5d[_0xc7fb[145]]=true;continue ;};if(_0x855dx5d==null&&_0x855dx5c[_0xc7fb[145]]){continue };if(_0x855dx5d==null){_0x855dx5d= new _0x855dx4b();_0x855dx4f[_0xc7fb[12]](_0x855dx5d);};_0x855dx5d[_0xc7fb[146]](_0xc7fb[138],_0x855dx5c[_0xc7fb[138]]);var _0x855dx5e= new AV.GeoPoint({latitude:_0x855dx5c[_0xc7fb[147]],longitude:_0x855dx5c[_0xc7fb[148]]});_0x855dx5d[_0xc7fb[146]](_0xc7fb[149],_0x855dx5e);_0x855dx5d[_0xc7fb[146]](_0xc7fb[150],_0x855dx5c[_0xc7fb[150]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[151],_0x855dx5c[_0xc7fb[151]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[152],_0x855dx5c[_0xc7fb[152]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[153],_0x855dx5c[_0xc7fb[153]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[154],JSON[_0xc7fb[155]](_0x855dx5c[_0xc7fb[154]]));_0x855dx5d[_0xc7fb[146]](_0xc7fb[44],_0x855dx5c[_0xc7fb[44]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[156],_0x855dx5c[_0xc7fb[156]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[105],JSON[_0xc7fb[155]](_0x855dx5c[_0xc7fb[105]]));_0x855dx5d[_0xc7fb[146]](_0xc7fb[48],_0x855dx5c[_0xc7fb[48]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[49],_0x855dx5c[_0xc7fb[49]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[55],_0x855dx5c[_0xc7fb[55]]);}};this[_0xc7fb[27]]=function(_0x855dx17,_0x855dx16){for(var _0x855dx7 in _0x855dx17){var _0x855dx8=_0x855dx17[_0x855dx7];var _0x855dx51=_0x855dx58(_0x855dx8[_0xc7fb[138]]);if(_0x855dx51!==null&&_0x855dx8[_0xc7fb[145]]){_0x855dx51[_0xc7fb[145]]=true;continue ;};if(_0x855dx51==null&&_0x855dx8[_0xc7fb[145]]){continue };if(_0x855dx51==null){_0x855dx51= new _0x855dx4a();_0x855dx4f[_0xc7fb[12]](_0x855dx51);};_0x855dx51[_0xc7fb[146]](_0xc7fb[157],_0x855dx16);_0x855dx51[_0xc7fb[146]](_0xc7fb[138],_0x855dx8[_0xc7fb[138]]);_0x855dx51[_0xc7fb[146]](_0xc7fb[150],_0x855dx8[_0xc7fb[150]]);_0x855dx51[_0xc7fb[146]](_0xc7fb[158],_0x855dx8[_0xc7fb[152]]);var _0x855dx5e= new AV.GeoPoint({latitude:_0x855dx8[_0xc7fb[147]],longitude:_0x855dx8[_0xc7fb[148]]});_0x855dx51[_0xc7fb[146]](_0xc7fb[149],_0x855dx5e);}};this[_0xc7fb[28]]=function(_0x855dx5){var _0x855dx5f=[];for(var _0x855dx7=0;_0x855dx7<_0x855dx4f[_0xc7fb[29]];_0x855dx7++){if(_0x855dx4f[_0x855dx7][_0xc7fb[145]]==true){_0x855dx5f[_0xc7fb[12]](_0x855dx4f[_0x855dx7]);_0x855dx4f[_0xc7fb[31]](_0x855dx7,1);_0x855dx7--;}};for(var _0x855dx7 in _0x855dx5f){_0x855dx5f[_0x855dx7][_0xc7fb[159]]()};AV[_0xc7fb[132]][_0xc7fb[162]](_0x855dx4f)[_0xc7fb[142]](function(){alert(_0xc7fb[160]);_0x855dx5();},function(_0x855dx31){alert(_0x855dx31[_0xc7fb[161]])});};this[_0xc7fb[13]]=function(_0x855dxf,_0x855dx5){var _0x855dx53= new AV.Query(_0x855dx4c);_0x855dx53[_0xc7fb[140]](_0xc7fb[55],_0x855dxf);_0x855dx53[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx4d){var _0x855dx60=[];for(var _0x855dx7 in _0x855dx4d){var _0x855dx5d=_0x855dx4d[_0x855dx7];_0x855dx4f[_0xc7fb[12]](_0x855dx5d);var _0x855dx61={id:_0x855dx5d[_0xc7fb[139]](_0xc7fb[138]),title:_0x855dx5d[_0xc7fb[139]](_0xc7fb[150]),mycomment:_0x855dx5d[_0xc7fb[139]](_0xc7fb[152]),iconUrl:_0x855dx5d[_0xc7fb[139]](_0xc7fb[44]),lat:_0x855dx5d[_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[163]],lng:_0x855dx5d[_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[165]],slideNum:_0x855dx5d[_0xc7fb[139]](_0xc7fb[156]),imgUrls:JSON[_0xc7fb[104]](_0x855dx5d[_0xc7fb[139]](_0xc7fb[154])),category:_0x855dx5d[_0xc7fb[139]](_0xc7fb[153])};_0x855dx60[_0xc7fb[12]](_0x855dx61);};_0x855dx5(_0x855dx60);});};this[_0xc7fb[2]]=function(_0x855dx4,_0x855dx5){var _0x855dx62= new AV.GeoPoint({latitude:_0x855dx4[_0xc7fb[147]],longitude:_0x855dx4[_0xc7fb[148]]});var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[166]](_0xc7fb[157]);_0x855dx53[_0xc7fb[167]](_0xc7fb[149],_0x855dx62);_0x855dx53[_0xc7fb[168]](10);_0x855dx53[_0xc7fb[143]]({success:function(_0x855dx56){_0x855dx55(_0x855dx56)[_0xc7fb[142]](function(_0x855dx6){var _0x855dx14=[];for(var _0x855dx7 in _0x855dx6){var _0x855dx23=_0x855dx6[_0x855dx7][_0xc7fb[169]];var _0x855dx16=_0x855dx23[_0xc7fb[139]](_0xc7fb[157]);var _0x855dx2e=_0x855dx6[_0x855dx7][_0xc7fb[170]];_0x855dx4f[_0xc7fb[12]](_0x855dx23);var _0x855dx8={userId:_0x855dx16[_0xc7fb[10]],userName:_0x855dx16[_0xc7fb[139]](_0xc7fb[171]),id:_0x855dx23[_0xc7fb[139]](_0xc7fb[138]),title:_0x855dx23[_0xc7fb[139]](_0xc7fb[150]),mycomment:_0x855dx23[_0xc7fb[139]](_0xc7fb[172]),category:_0x855dx23[_0xc7fb[139]](_0xc7fb[153]),lat:_0x855dx23[_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[163]],lng:_0x855dx23[_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[165]]};var _0x855dx9=[];for(var _0x855dx7 in _0x855dx2e){_0x855dx4f[_0xc7fb[12]](_0x855dx2e[_0x855dx7]);_0x855dx9[_0xc7fb[12]]({id:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[138]),title:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[150]),mycomment:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[152]),iconUrl:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[44]),offsetX:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[48]),offsetY:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[49]),category:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[153]),lat:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[163]],lng:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[165]]});};_0x855dx14[_0xc7fb[12]]({routineJSON:_0x855dx8,ovMarkersJSON:_0x855dx9});};_0x855dx5(_0x855dx14);})}});};this[_0xc7fb[16]]=function(_0x855dx16,_0x855dx5){var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[140]](_0xc7fb[157],_0x855dx16);_0x855dx53[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx56){var _0x855dx14=[];for(var _0x855dx7 in _0x855dx56){_0x855dx14[_0xc7fb[12]]({routineId:_0x855dx56[_0x855dx7][_0xc7fb[139]](_0xc7fb[138]),routineName:_0x855dx56[_0x855dx7][_0xc7fb[139]](_0xc7fb[150])})};_0x855dx5(_0x855dx14);});};this[_0xc7fb[19]]=function(_0x855dx16,_0x855dx5){var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[140]](_0xc7fb[157],_0x855dx16);_0x855dx53[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx56){_0x855dx55(_0x855dx56)[_0xc7fb[142]](function(_0x855dx6){var _0x855dx14=[];for(var _0x855dx7 in _0x855dx6){var _0x855dx23=_0x855dx6[_0x855dx7][_0xc7fb[169]];var _0x855dx2e=_0x855dx6[_0x855dx7][_0xc7fb[170]];_0x855dx4f[_0xc7fb[12]](_0x855dx23);var _0x855dx8={userId:_0x855dx16[_0xc7fb[10]],userName:_0x855dx16[_0xc7fb[139]](_0xc7fb[171]),id:_0x855dx23[_0xc7fb[139]](_0xc7fb[138]),title:_0x855dx23[_0xc7fb[139]](_0xc7fb[150]),mycomment:_0x855dx23[_0xc7fb[139]](_0xc7fb[172]),lat:_0x855dx23[_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[163]],lng:_0x855dx23[_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[165]]};var _0x855dx9=[];for(var _0x855dx7 in _0x855dx2e){_0x855dx4f[_0xc7fb[12]](_0x855dx2e[_0x855dx7]);_0x855dx9[_0xc7fb[12]]({id:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[138]),title:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[150]),mycomment:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[152]),iconUrl:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[44]),offsetX:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[48]),offsetY:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[49]),lat:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[163]],lng:_0x855dx2e[_0x855dx7][_0xc7fb[139]](_0xc7fb[149])[_0xc7fb[164]]()[_0xc7fb[165]]});};_0x855dx14[_0xc7fb[12]]({routineJSON:_0x855dx8,ovMarkersJSON:_0x855dx9});};_0x855dx5(_0x855dx14);})});};this[_0xc7fb[79]]=function(_0x855dxf){var _0x855dx63=uuid[_0xc7fb[91]]();this[_0xc7fb[17]](function(_0x855dx16){if(_0x855dx16[_0xc7fb[139]](_0xc7fb[171])==_0xc7fb[173]){alert(_0xc7fb[174]);return ;};var _0x855dx64= new AV.Query(_0x855dx4a);_0x855dx64[_0xc7fb[140]](_0xc7fb[138],_0x855dxf);_0x855dx64[_0xc7fb[177]]()[_0xc7fb[142]](function(_0x855dx23){if(_0x855dx23!=null){var _0x855dx65=_0x855dx23[_0xc7fb[175]]();_0x855dx65[_0xc7fb[146]](_0xc7fb[138],_0x855dx63);_0x855dx65[_0xc7fb[146]](_0xc7fb[157],_0x855dx16);_0x855dx65[_0xc7fb[176]]();}});var _0x855dx66= new AV.Query(_0x855dx4b);_0x855dx66[_0xc7fb[140]](_0xc7fb[55],_0x855dxf);_0x855dx66[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx2e){var _0x855dx67=[];for(var _0x855dx7 in _0x855dx2e){var _0x855dx68=_0x855dx2e[_0x855dx7][_0xc7fb[175]]();_0x855dx68[_0xc7fb[146]](_0xc7fb[138],uuid[_0xc7fb[91]]());_0x855dx68[_0xc7fb[146]](_0xc7fb[55],_0x855dx63);_0x855dx67[_0xc7fb[12]](_0x855dx68);};AV[_0xc7fb[132]][_0xc7fb[162]](_0x855dx67);});var _0x855dx69= new AV.Query(_0x855dx4c);_0x855dx69[_0xc7fb[140]](_0xc7fb[55],_0x855dxf);_0x855dx69[_0xc7fb[143]]()[_0xc7fb[142]](function(_0x855dx2e){var _0x855dx67=[];for(var _0x855dx7 in _0x855dx2e){var _0x855dx68=_0x855dx2e[_0x855dx7][_0xc7fb[175]]();_0x855dx68[_0xc7fb[146]](_0xc7fb[138],uuid[_0xc7fb[91]]());_0x855dx68[_0xc7fb[146]](_0xc7fb[55],_0x855dx63);_0x855dx67[_0xc7fb[12]](_0x855dx68);};AV[_0xc7fb[132]][_0xc7fb[162]](_0x855dx67);});});};this[_0xc7fb[81]]=function(_0x855dx2b,_0x855dx2c){var _0x855dx53= new AV.Query(_0x855dx4c);_0x855dx53[_0xc7fb[140]](_0xc7fb[138],_0x855dx2b);_0x855dx53[_0xc7fb[177]]()[_0xc7fb[142]](function(_0x855dx12){var _0x855dx68=_0x855dx12[_0xc7fb[175]]();_0x855dx68[_0xc7fb[146]](_0xc7fb[138],uuid[_0xc7fb[91]]());_0x855dx68[_0xc7fb[146]](_0xc7fb[55],_0x855dx2c);_0x855dx68[_0xc7fb[176]]();});};this[_0xc7fb[178]]=function(){AV[_0xc7fb[181]][_0xc7fb[180]](_0xc7fb[179],{},{success:function(_0x855dx6a){alert(_0x855dx6a)},error:function(_0x855dx31){alert(_0x855dx31)}})};this[_0xc7fb[182]]=function(_0x855dxf){AV[_0xc7fb[181]][_0xc7fb[180]](_0xc7fb[179],{routineId:_0x855dxf},{success:function(_0x855dx6a){console[_0xc7fb[72]](_0x855dx6a)},error:function(_0x855dx31){alert(_0x855dx31)}})};this[_0xc7fb[183]]=function(_0x855dx11,_0x855dx2e){var _0x855dx6b=[];for(var _0x855dx7 in _0x855dx11){var _0x855dx12=_0x855dx11[_0x855dx7];var _0x855dx5d=_0x855dx5a(_0x855dx12[_0xc7fb[138]]);if(_0x855dx5d==null){_0x855dx5d= new _0x855dx4c();_0x855dx5d[_0xc7fb[146]](_0xc7fb[138],_0x855dx12[_0xc7fb[138]]);};var _0x855dx5e= new AV.GeoPoint({latitude:_0x855dx12[_0xc7fb[147]],longitude:_0x855dx12[_0xc7fb[148]]});_0x855dx5d[_0xc7fb[146]](_0xc7fb[149],_0x855dx5e);_0x855dx5d[_0xc7fb[146]](_0xc7fb[150],_0x855dx12[_0xc7fb[150]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[151],_0x855dx12[_0xc7fb[151]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[152],_0x855dx12[_0xc7fb[152]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[153],_0x855dx12[_0xc7fb[153]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[154],JSON[_0xc7fb[155]](_0x855dx12[_0xc7fb[154]]));_0x855dx5d[_0xc7fb[146]](_0xc7fb[44],_0x855dx12[_0xc7fb[184]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[156],_0x855dx12[_0xc7fb[156]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[105],JSON[_0xc7fb[155]](_0x855dx12[_0xc7fb[105]]));_0x855dx5d[_0xc7fb[146]](_0xc7fb[48],_0x855dx12[_0xc7fb[48]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[49],_0x855dx12[_0xc7fb[49]]);_0x855dx5d[_0xc7fb[146]](_0xc7fb[82],false);};};this[_0xc7fb[185]]=function(_0x855dx6c,_0x855dx6d,_0x855dx5){AV[_0xc7fb[188]][_0xc7fb[187]](_0x855dx6c,_0x855dx6d,{success:function(_0x855dx16){_0x855dx5(_0x855dx16)},error:function(_0x855dx16,_0x855dx31){alert(_0xc7fb[186])}})};this[_0xc7fb[17]]=function(_0x855dx5){_0x855dx13=AV[_0xc7fb[188]][_0xc7fb[189]]();if(_0x855dx13){console[_0xc7fb[72]](_0xc7fb[190]+_0x855dx13[_0xc7fb[139]](_0xc7fb[171]));_0x855dx5(_0x855dx13);}else {AV[_0xc7fb[188]][_0xc7fb[187]](_0xc7fb[173],_0xc7fb[173],{success:function(_0x855dx16){console[_0xc7fb[72]](_0xc7fb[191]+_0x855dx16[_0xc7fb[139]](_0xc7fb[171]));_0x855dx13=_0x855dx16;_0x855dx5(_0x855dx16);},error:function(_0x855dx16,_0x855dx31){alert(_0xc7fb[192]+_0x855dx31[_0xc7fb[193]]+_0xc7fb[194]+_0x855dx31[_0xc7fb[161]]);alert(_0xc7fb[195]);_0x855dx5(null);}})};};this[_0xc7fb[196]]=function(_0x855dx16,_0x855dx5){var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[140]](_0xc7fb[157],_0x855dx16);_0x855dx53[_0xc7fb[143]]({success:function(_0x855dx2d){console[_0xc7fb[72]](_0xc7fb[197]);_0x855dx5(_0x855dx2d);}});};this[_0xc7fb[20]]=function(_0x855dx15,_0x855dx5){console[_0xc7fb[72]](_0xc7fb[198]+_0x855dx15);var _0x855dx53= new AV.Query(AV.User);_0x855dx53[_0xc7fb[139]](_0x855dx15,{success:function(_0x855dx16){console[_0xc7fb[72]](_0xc7fb[199]+_0x855dx16[_0xc7fb[139]](_0xc7fb[171]));_0x855dx5(_0x855dx16);}});};this[_0xc7fb[200]]=function(_0x855dx1a,_0x855dx5){for(var _0x855dx7 in _0x855dx4e){var _0x855dx6e=_0x855dx4e[_0x855dx7][_0xc7fb[139]](_0xc7fb[201]);if(_0x855dx6e[_0xc7fb[202]](_0x855dx1a)!= -1){_0x855dx4e[_0x855dx7][_0xc7fb[159]]({success:function(){_0x855dx5()}})};}};this[_0xc7fb[107]]=function(_0x855dx1a,_0x855dx5){if(_0x855dx4e==null){return _0x855dx5(null)}else {for(var _0x855dx7 in _0x855dx4e){var _0x855dx6e=_0x855dx4e[_0x855dx7][_0xc7fb[139]](_0xc7fb[201]);if(_0x855dx6e[_0xc7fb[202]](_0x855dx1a)!= -1){_0x855dx23=_0x855dx4e[_0x855dx7];var _0x855dx6a=_0x855dx4e[_0x855dx7][_0xc7fb[139]](_0xc7fb[203]);var _0x855dx38=_0x855dx4e[_0x855dx7][_0xc7fb[139]](_0xc7fb[150]);if(_0x855dx6a!=null){return _0x855dx5(_0x855dx6a,_0x855dx38)}else {_0x855dx4e[_0x855dx7][_0xc7fb[204]]()[_0xc7fb[142]](function(_0x855dx6a){var _0x855dx6f=_0x855dx6a[_0xc7fb[139]](_0xc7fb[203]);_0x855dx5(_0x855dx6f,_0x855dx38);})};}else {continue };}}};this[_0xc7fb[76]]=function(_0x855dxf,_0x855dx5){var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[139]](_0x855dxf,{success:function(_0x855dx70){_0x855dx23=_0x855dx70;_0x855dx5(_0x855dx23[_0xc7fb[139]](_0xc7fb[157]));},error:function(_0x855dx71,_0x855dx31){alert(_0xc7fb[205]);console[_0xc7fb[72]](_0x855dx31);}});};this[_0xc7fb[102]]=function(_0x855dx16,_0x855dxf,_0x855dx5){var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[140]](_0xc7fb[157],_0x855dx16);_0x855dx53[_0xc7fb[139]](_0x855dxf,{success:function(){console[_0xc7fb[72]](_0xc7fb[206]);_0x855dx5(true);},error:function(_0x855dx71,_0x855dx31){console[_0xc7fb[72]](_0xc7fb[207]);_0x855dx5(false);}});};this[_0xc7fb[110]]=function(_0x855dx72,_0x855dx5){console[_0xc7fb[72]](_0xc7fb[208]+_0x855dx72);var _0x855dx53= new AV.Query(_0x855dx4a);_0x855dx53[_0xc7fb[139]](_0x855dx72,{success:function(_0x855dx70){_0x855dx23=_0x855dx70;_0x855dx5(_0x855dx23[_0xc7fb[139]](_0xc7fb[203]),_0x855dx23[_0xc7fb[139]](_0xc7fb[150]),_0x855dx23[_0xc7fb[139]](_0xc7fb[201]));},error:function(_0x855dx71,_0x855dx31){alert(_0xc7fb[205]);console[_0xc7fb[72]](_0x855dx31);}});};this[_0xc7fb[209]]=function(_0x855dx73,_0x855dx5){for(var _0x855dx74 in _0x855dx73){var _0x855dxf=_0x855dx74;if(_0x855dxf!=null){for(var _0x855dx18 in _0x855dx4e){if(_0x855dx4e[_0x855dx18][_0xc7fb[10]]==_0x855dxf){_0x855dx4e[_0x855dx18][_0xc7fb[146]](_0xc7fb[201],_0x855dx73[_0x855dx74])}}};};AV[_0xc7fb[132]][_0xc7fb[162]](_0x855dx4e,{success:function(_0x855dx75){console[_0xc7fb[72]](_0xc7fb[210]);_0x855dx5();},error:function(_0x855dx31){console[_0xc7fb[72]](_0xc7fb[211]+_0x855dx31)}});};this[_0xc7fb[212]]=function(_0x855dx38,_0x855dx76,_0x855dx3c,_0x855dx77){var _0x855dx23= new _0x855dx4a();this[_0xc7fb[17]](function(_0x855dx13){if(_0x855dx13[_0xc7fb[139]](_0xc7fb[171])!=_0xc7fb[173]){_0x855dx23[_0xc7fb[146]](_0xc7fb[150],_0x855dx38);_0x855dx23[_0xc7fb[146]](_0xc7fb[203],_0x855dx76);_0x855dx23[_0xc7fb[146]](_0xc7fb[157],_0x855dx13);_0x855dx23[_0xc7fb[146]](_0xc7fb[201],_0x855dx3c);_0x855dx23[_0xc7fb[176]](null,{success:function(_0x855dx78){_0x855dx77()},error:function(_0x855dx71,_0x855dx31){alert(_0xc7fb[213]);_0x855dx23=null;}});}else {alert(_0xc7fb[214])}});};this[_0xc7fb[215]]=function(_0x855dx38,_0x855dx76,_0x855dx3c,_0x855dx4,_0x855dx77){if(_0x855dx23==null){_0x855dx23= new _0x855dx4a()};this[_0xc7fb[17]](function(_0x855dx13){if(_0x855dx13[_0xc7fb[139]](_0xc7fb[171])!=_0xc7fb[173]){_0x855dx23[_0xc7fb[146]](_0xc7fb[150],_0x855dx38);_0x855dx23[_0xc7fb[146]](_0xc7fb[203],_0x855dx76);_0x855dx23[_0xc7fb[146]](_0xc7fb[157],_0x855dx13);_0x855dx23[_0xc7fb[146]](_0xc7fb[201],_0x855dx3c);var _0x855dx5e= new AV.GeoPoint({latitude:_0x855dx4[_0xc7fb[147]],longitude:_0x855dx4[_0xc7fb[148]]});_0x855dx23[_0xc7fb[146]](_0xc7fb[149],_0x855dx5e);_0x855dx23[_0xc7fb[176]](null,{success:function(_0x855dx78){_0x855dx23=_0x855dx78;_0x855dx77();},error:function(_0x855dx71,_0x855dx31){alert(_0xc7fb[213]);_0x855dx23=null;}});}else {alert(_0xc7fb[214])}});};this[_0xc7fb[93]]=function(_0x855dx79,_0x855dx28,_0x855dx30){var _0x855dx7a=_0x855dx79[_0xc7fb[216]];var _0x855dx7b= new AV.File(_0x855dx7a,_0x855dx79);_0x855dx7b[_0xc7fb[176]]()[_0xc7fb[142]](function(){_0x855dx28(_0x855dx7b[_0xc7fb[217]]())},function(_0x855dx31){_0x855dx30(_0x855dx31)});};this[_0xc7fb[95]]=function(_0x855dx32,_0x855dx33,_0x855dx28,_0x855dx30){var _0x855dx7b= new AV.File(_0x855dx33,{base64:_0x855dx32});_0x855dx7b[_0xc7fb[176]]()[_0xc7fb[142]](function(){_0x855dx28(_0x855dx7b[_0xc7fb[217]]())},function(_0x855dx31){_0x855dx30(_0x855dx31)});};this[_0xc7fb[74]]=function(_0x855dx27,_0x855dx28,_0x855dx30){console[_0xc7fb[72]](_0xc7fb[218]+_0x855dx27);var _0x855dx53= new AV.Query(AV[_0xc7fb[132]][_0xc7fb[131]](_0xc7fb[219]));_0x855dx53[_0xc7fb[140]](_0xc7fb[217],_0x855dx27);_0x855dx53[_0xc7fb[143]]({success:function(_0x855dx6){if(_0x855dx6[_0xc7fb[29]]>0){console[_0xc7fb[72]](_0xc7fb[220]+_0x855dx27);var _0x855dx79=_0x855dx6[0];_0x855dx79[_0xc7fb[159]]({success:function(_0x855dx79){_0x855dx28()},error:function(_0x855dx31){console[_0xc7fb[72]](_0xc7fb[192]+_0x855dx31[_0xc7fb[193]]+_0xc7fb[194]+_0x855dx31[_0xc7fb[161]]);_0x855dx30();}});}else {console[_0xc7fb[72]](_0xc7fb[221]+_0x855dx27+_0xc7fb[222])}},error:function(_0x855dx31){console[_0xc7fb[72]](_0xc7fb[192]+_0x855dx31[_0xc7fb[193]]+_0xc7fb[194]+_0x855dx31[_0xc7fb[161]]);_0x855dx30();}});};}function MarkerContent(_0x855dx22){this[_0xc7fb[10]]=_0x855dx22;var _0x855dx3b=_0xc7fb[223];var _0x855dx7d=_0xc7fb[224];var _0x855dx7e=0;var _0x855dx7f=0;var _0x855dx80=_0xc7fb[225];var _0x855dx81=2;var _0x855dx26= new Array();var _0x855dx82=true;var _0x855dx83=1;var _0x855dx84=false;var _0x855dx85=_0xc7fb[226];var _0x855dx86=_0xc7fb[227];var _0x855dx87=_0xc7fb[51];this[_0xc7fb[85]]=function(){return _0x855dx84};this[_0xc7fb[228]]=function(_0x855dx88){_0x855dx84=_0x855dx88};this[_0xc7fb[229]]=function(){return _0x855dx83};this[_0xc7fb[230]]=function(_0x855dx89){_0x855dx83=_0x855dx89};this[_0xc7fb[231]]=function(_0x855dx8a){_0x855dx82=_0x855dx8a;if(_0x855dx82){this[_0xc7fb[232]](_0x855dx85)}else {this[_0xc7fb[232]](_0x855dx86)};};this[_0xc7fb[233]]=function(){return _0x855dx82};this[_0xc7fb[46]]=function(_0x855dx8b){if(_0x855dx8b[_0xc7fb[156]]!=null){this[_0xc7fb[230]](_0x855dx8b[_0xc7fb[156]])};if(_0x855dx8b[_0xc7fb[150]]!=null){this[_0xc7fb[234]](_0x855dx8b[_0xc7fb[150]])};if(_0x855dx8b[_0xc7fb[151]]!=null){this[_0xc7fb[235]](_0x855dx8b[_0xc7fb[151]])};if(_0x855dx8b[_0xc7fb[152]]!=null){this[_0xc7fb[236]](_0x855dx8b[_0xc7fb[152]])};if(_0x855dx8b[_0xc7fb[153]]!=null){this[_0xc7fb[56]](_0x855dx8b[_0xc7fb[153]])};if(_0x855dx8b[_0xc7fb[147]]!=null&&_0x855dx8b[_0xc7fb[148]]!=null){this[_0xc7fb[237]](_0x855dx8b[_0xc7fb[147]],_0x855dx8b[_0xc7fb[148]])};if(_0x855dx8b[_0xc7fb[154]]!=null&&_0x855dx8b[_0xc7fb[154]][_0xc7fb[29]]!=0){this[_0xc7fb[238]](_0x855dx8b[_0xc7fb[154]])};if(_0x855dx8b[_0xc7fb[44]]!=null){this[_0xc7fb[232]](_0x855dx8b[_0xc7fb[44]])};if(_0x855dx8b[_0xc7fb[239]]!=null){this[_0xc7fb[228]](_0x855dx8b[_0xc7fb[239]])};};this[_0xc7fb[240]]=function(_0x855dx27){_0x855dx26[_0xc7fb[12]](_0x855dx27)};this[_0xc7fb[241]]=function(){return _0x855dx87};this[_0xc7fb[232]]=function(_0x855dx8a){_0x855dx87=_0x855dx8a;$[_0xc7fb[39]](_0xc7fb[242],[this]);};this[_0xc7fb[70]]=function(){return _0x855dx26};this[_0xc7fb[238]]=function(_0x855dx8c){_0x855dx26=[];for(var _0x855dx7 in _0x855dx8c){if(_0x855dx8c[_0x855dx7][_0xc7fb[243]](/\s+/g,_0xc7fb[225])!=_0xc7fb[225]){_0x855dx26[_0xc7fb[12]](_0x855dx8c[_0x855dx7])}};};this[_0xc7fb[244]]=function(){return _0x855dx81};this[_0xc7fb[245]]=function(){var _0x855dx7a=_0xc7fb[246];switch(this[_0xc7fb[244]]()){case 1:_0x855dx7a=_0xc7fb[247];break ;;case 2:_0x855dx7a=_0xc7fb[246];break ;;case 3:_0x855dx7a=_0xc7fb[248];break ;;case 4:_0x855dx7a=_0xc7fb[249];break ;;case 5:_0x855dx7a=_0xc7fb[250];break ;;case 6:_0x855dx7a=_0xc7fb[251];break ;;default:_0x855dx7a=_0xc7fb[246];;};return _0x855dx7a;};this[_0xc7fb[56]]=function(_0x855dx8d){_0x855dx81=_0x855dx8d};this[_0xc7fb[252]]=function(){return _0x855dx7e};this[_0xc7fb[237]]=function(_0x855dx8e,_0x855dx8f){_0x855dx7e=_0x855dx8e;_0x855dx7f=_0x855dx8f;$[_0xc7fb[39]](_0xc7fb[253],[this]);$[_0xc7fb[39]](_0xc7fb[41],[]);};this[_0xc7fb[254]]=function(){return _0x855dx7f};this[_0xc7fb[255]]=function(){return _0x855dx7d};this[_0xc7fb[235]]=function(_0x855dx90){_0x855dx7d=_0x855dx90};this[_0xc7fb[256]]=function(){return _0x855dx3b};this[_0xc7fb[234]]=function(_0x855dx91){_0x855dx3b=_0x855dx91};this[_0xc7fb[236]]=function(_0x855dx92){_0x855dx80=_0x855dx92};this[_0xc7fb[257]]=function(_0x855dx93){return _0x855dx80};}function ModelRoutine(_0x855dx22){extend(ModelRoutine,MapMarker,this,[_0x855dx22]);this[_0xc7fb[32]]=[];this[_0xc7fb[33]]=[];this[_0xc7fb[57]]()[_0xc7fb[56]](6);this[_0xc7fb[258]]=false;this[_0xc7fb[53]]=null;this[_0xc7fb[54]]=null;this[_0xc7fb[60]]=function(_0x855dx12){this[_0xc7fb[33]][_0xc7fb[12]](_0x855dx12);this[_0xc7fb[69]]();};this[_0xc7fb[69]]=function(){var _0x855dx95=[];var _0x855dx96=[];var _0x855dxb=this[_0xc7fb[89]]();for(var _0x855dx7=0;_0x855dx7<_0x855dxb[_0xc7fb[29]];_0x855dx7++){if(!_0x855dxb[_0x855dx7][_0xc7fb[119]]()){_0x855dx95[_0xc7fb[12]](_0x855dxb[_0x855dx7][_0xc7fb[57]]()[_0xc7fb[252]]());_0x855dx96[_0xc7fb[12]](_0x855dxb[_0x855dx7][_0xc7fb[57]]()[_0xc7fb[254]]());}};var _0x855dx97=_0x855dx99(_0x855dx95);var _0x855dx98=_0x855dx99(_0x855dx96);this[_0xc7fb[57]]()[_0xc7fb[46]]({lat:_0x855dx97,lng:_0x855dx98});};function _0x855dx99(_0x855dx9a){var _0x855dx9b=[];var _0x855dx9c=_0x855dx9e(_0x855dx9a);var _0x855dx9d=_0x855dxa0(_0x855dx9a);for(var _0x855dx7 in _0x855dx9a){if(Math[_0xc7fb[259]]((_0x855dx9a[_0x855dx7])-_0x855dx9c)<=_0x855dx9d){_0x855dx9b[_0xc7fb[12]](_0x855dx9a[_0x855dx7])}};return _0x855dx9e(_0x855dx9b);}function _0x855dx9e(_0x855dx9a){var _0x855dx6a=0;var _0x855dx3f=_0x855dx9a[_0xc7fb[29]];var _0x855dx9f=0.000000;if(_0x855dx3f!=0){for(var _0x855dx7 in _0x855dx9a){_0x855dx9f=_0x855dx9f+_0x855dx9a[_0x855dx7]};_0x855dx6a=_0x855dx9f/_0x855dx3f;};return _0x855dx6a;}function _0x855dxa0(_0x855dx9a){if(_0x855dx9a[_0xc7fb[29]]==0){return 0};var _0x855dx9c=_0x855dx9e(_0x855dx9a);var _0x855dx9f=0;for(var _0x855dx7 in _0x855dx9a){_0x855dx9f=_0x855dx9f+(_0x855dx9a[_0x855dx7]-_0x855dx9c)*(_0x855dx9a[_0x855dx7]-_0x855dx9c)};return Math[_0xc7fb[260]](_0x855dx9f/_0x855dx9a[_0xc7fb[29]]);}this[_0xc7fb[37]]=function(){this[_0xc7fb[30]]=true;var _0x855dx2e=this[_0xc7fb[83]]();for(var _0x855dx7 in _0x855dx2e){_0x855dx2e[_0x855dx7][_0xc7fb[30]]=true};var _0x855dx11=this[_0xc7fb[89]]();for(var _0x855dx18 in _0x855dx11){_0x855dx11[_0x855dx18][_0xc7fb[30]]=true};};this[_0xc7fb[23]]=function(){var _0x855dx6=[];for(var _0x855dx7 in this[_0xc7fb[32]]){var _0x855dx71=this[_0xc7fb[32]][_0x855dx7][_0xc7fb[22]]();_0x855dx71[_0xc7fb[55]]=this[_0xc7fb[10]];_0x855dx6[_0xc7fb[12]](_0x855dx71);};return _0x855dx6;};this[_0xc7fb[25]]=function(){var _0x855dx6=[];for(var _0x855dx7 in this[_0xc7fb[33]]){var _0x855dx71=this[_0xc7fb[33]][_0x855dx7][_0xc7fb[22]]();_0x855dx71[_0xc7fb[55]]=this[_0xc7fb[10]];_0x855dx6[_0xc7fb[12]](_0x855dx71);};return _0x855dx6;};this[_0xc7fb[83]]=function(){var _0x855dx6=[];for(var _0x855dx7 in this[_0xc7fb[32]]){if(!this[_0xc7fb[32]][_0x855dx7][_0xc7fb[30]]){_0x855dx6[_0xc7fb[12]](this[_0xc7fb[32]][_0x855dx7])}};return _0x855dx6;};this[_0xc7fb[89]]=function(){var _0x855dx6=[];for(var _0x855dx7 in this[_0xc7fb[33]]){if(!this[_0xc7fb[33]][_0x855dx7][_0xc7fb[30]]){_0x855dx6[_0xc7fb[12]](this[_0xc7fb[33]][_0x855dx7])}};return _0x855dx6;};}function MapMarker(_0x855dx22){this[_0xc7fb[10]]=_0x855dx22;this[_0xc7fb[47]]= new MarkerContent(_0x855dx22);this[_0xc7fb[261]]=false;this[_0xc7fb[262]]=false;this[_0xc7fb[65]]=null;this[_0xc7fb[123]]=null;this[_0xc7fb[263]]= new Array();this[_0xc7fb[63]]=null;this[_0xc7fb[126]]= new Array();this[_0xc7fb[66]]=null;this[_0xc7fb[264]]=false;this[_0xc7fb[48]]=0;this[_0xc7fb[49]]=0;this[_0xc7fb[30]]=false;this[_0xc7fb[119]]=function(){if(this[_0xc7fb[66]]!=null){return true}else {return false}};this[_0xc7fb[50]]=function(_0x855dxa2,_0x855dxa3){if(_0x855dxa2!=null&&_0x855dxa3!=null){this[_0xc7fb[48]]=_0x855dxa2;this[_0xc7fb[49]]=_0x855dxa3;}};this[_0xc7fb[265]]=function(_0x855dx12){var _0x855dx6a=true;if(_0x855dx12[_0xc7fb[66]]==null&&_0x855dx12[_0xc7fb[65]]==null&&_0x855dx12[_0xc7fb[63]]==null&&!this[_0xc7fb[119]]()){_0x855dx6a=true}else {_0x855dx6a=false};return _0x855dx6a;};this[_0xc7fb[114]]=function(_0x855dx12){if(!_0x855dx12[_0xc7fb[119]]()){if(this[_0xc7fb[65]]!=null){this[_0xc7fb[65]][_0xc7fb[63]]=null};this[_0xc7fb[65]]=_0x855dx12;_0x855dx12[_0xc7fb[63]]=this;$[_0xc7fb[39]](_0xc7fb[41],[]);}};this[_0xc7fb[64]]=function(){if(this[_0xc7fb[65]]!=null){this[_0xc7fb[65]][_0xc7fb[63]]=null;this[_0xc7fb[65]]=null;}};this[_0xc7fb[117]]=function(_0x855dxa4){if(this[_0xc7fb[265]](_0x855dxa4)){this[_0xc7fb[126]][_0xc7fb[12]](_0x855dxa4);_0x855dxa4[_0xc7fb[66]]=this;$[_0xc7fb[39]](_0xc7fb[41],[]);}};this[_0xc7fb[67]]=function(_0x855dxa5){if(this[_0xc7fb[126]][_0xc7fb[29]]!=0){for(var _0x855dx7 in this[_0xc7fb[126]]){if(this[_0xc7fb[126]][_0x855dx7][_0xc7fb[10]]==_0x855dxa5[_0xc7fb[10]]){this[_0xc7fb[126]][_0x855dx7][_0xc7fb[66]]=null;this[_0xc7fb[126]][_0xc7fb[31]](_0x855dx7,1);}};console[_0xc7fb[72]](this[_0xc7fb[126]]);}};this[_0xc7fb[68]]=function(){if(this[_0xc7fb[126]][_0xc7fb[29]]!=0){for(var _0x855dx7 in this[_0xc7fb[126]]){this[_0xc7fb[126]][_0x855dx7][_0xc7fb[66]]=null};this[_0xc7fb[126]]= new Array();}};this[_0xc7fb[22]]=function(){var _0x855dxa6= new Array();for(var _0x855dx7 in this[_0xc7fb[126]]){_0x855dxa6[_0xc7fb[12]](this[_0xc7fb[126]][_0x855dx7][_0xc7fb[10]])};var _0x855dx71={uuid:this[_0xc7fb[10]],lat:this[_0xc7fb[57]]()[_0xc7fb[252]](),lng:this[_0xc7fb[57]]()[_0xc7fb[254]](),title:this[_0xc7fb[57]]()[_0xc7fb[256]](),address:this[_0xc7fb[57]]()[_0xc7fb[255]](),mycomment:this[_0xc7fb[57]]()[_0xc7fb[257]](false),category:this[_0xc7fb[57]]()[_0xc7fb[244]](),imgUrls:this[_0xc7fb[57]]()[_0xc7fb[70]](),iconUrl:this[_0xc7fb[57]]()[_0xc7fb[241]](),slideNum:this[_0xc7fb[57]]()[_0xc7fb[229]](),nextMainMarkerId:this[_0xc7fb[65]]==null?null:this[_0xc7fb[65]][_0xc7fb[10]],subMarkerIds:_0x855dxa6,mainPaths:this[_0xc7fb[263]],offsetX:this[_0xc7fb[48]],offsetY:this[_0xc7fb[49]],needDelete:this[_0xc7fb[30]],isAverage:this[_0xc7fb[57]]()[_0xc7fb[85]]()};return _0x855dx71;};this[_0xc7fb[57]]=function(){return this[_0xc7fb[47]]};}function ExploreRange(_0x855dxa8,_0x855dx4){this[_0xc7fb[266]]=_0x855dxa8;this[_0xc7fb[149]]=_0x855dx4;this[_0xc7fb[267]]=[];}function MainLine(_0x855dx22){this[_0xc7fb[10]]=_0x855dx22}function SubLine(_0x855dx22){this[_0xc7fb[10]]=_0x855dx22}
+function ExploreMapMarkerModel(){
+	extend(ExploreMapMarkerModel,MapMarkerModel,this);
+	this.exploreRanges=[];
+	
+	var self=this;
+	
+	var backendManager=this.getBackendManager();
+	
+	this.fetchOverviewRoutinesByLatlng=function(location,successCallback){
+		backendManager.fetchOverviewRoutinesByLatlng(location, function(results){
+			for(var i in results){
+				var routineJSON=results[i].routineJSON;
+				var ovMarkersJSON=results[i].ovMarkersJSON;
+				self.createModelRoutineByGivenId(routineJSON, ovMarkersJSON);
+			}
+			successCallback(results);
+		});
+	};
+	
+}
+
+function MapMarkerModel() {
+	//current routine model markers
+	var marks = new Array();
+	//current routine ov markers
+	var currentOverviewMarkers = new Array();
+	
+	//all the user ov markers
+	//isAverage
+	var allOverviewMarkers = new Array();
+	
+	this.currentRoutineId=null;
+	
+	var modelRoutines=[];
+	
+	var self=this;
+
+	var backendManager = new BackendManager();
+	
+	this.resetModels = function() {
+		modelRoutines=[];
+		backendManager.reset();
+	};
+	
+	this.loadMarkersByRoutineId=function(routineId,successCallback){
+		backendManager.fetchMarkersByRoutineId(routineId, function(markerContents){
+			var markers=[];
+			for(var i in markerContents){
+				var marker= self.createOneMarker(markerContents[i].id, markerContents[i], routineId);
+				markers.push(marker);
+			}
+			successCallback(markers);
+		});
+	};
+	
+	this.handlefetchOverviewRoutinesByUserResults=function(results){
+		for(var i in results){
+			var routineJSON=results[i].routineJSON;
+			var ovMarkersJSON=results[i].ovMarkersJSON;
+			self.createModelRoutineByGivenId(routineJSON, ovMarkersJSON);
+		}
+	};
+	
+	this.fetchAllRoutineNameAndId=function(successCallback){
+		backendManager.getCurrentUser(function(currentUser){
+			backendManager.fetchAllRoutineNameAndIdByUser(currentUser, function(returnValue){
+				successCallback(returnValue);
+			});
+		});
+	};
+	
+	this.loadAllOverviewRoutine = function(userId,successCallback) {
+		allOverviewMarkers = new Array();
+
+		backendManager.getCurrentUser(function(currentUser){
+			if(userId==null){
+				backendManager.fetchOverviewRoutinesByUser(currentUser, function(results){
+					self.handlefetchOverviewRoutinesByUserResults(results);
+					successCallback(true);
+				});
+			}else{
+				backendManager.fetchUserByUserId(userId, function(user){
+					if(user!=null){
+						backendManager.fetchOverviewRoutinesByUser(user,function(results){
+							
+							self.handlefetchOverviewRoutinesByUserResults(results);
+							if(user.id==currentUser.id){
+								successCallback(true);
+							}else{
+								successCallback(false);
+							}
+						});
+					}else{
+						backendManager.fetchOverviewRoutinesByUser(currentUser,function(routineJSON,ovMarkersJSON){
+							self.handlefetchOverviewRoutinesByUserResults(results);
+							successCallback(true);
+						});
+					}
+				});
+			};
+		});
+	};
+	
+	this.sync2Cloud=function(successCallback){
+		
+		backendManager.getCurrentUser(function(user){
+			var routineJSONs=[];
+			for(var i in modelRoutines){
+				routineJSONs.push(modelRoutines[i].toJSONObject());
+				
+				backendManager.saveOvMarkers(modelRoutines[i].toOvMarkersJSONs());
+				backendManager.saveMarkers(modelRoutines[i].toMarkersJSONs());
+			}
+			backendManager.saveRoutines(routineJSONs,user);
+			
+			backendManager.sync(function(){
+				successCallback();
+			}); 
+			
+			for ( var i = 0; i < modelRoutines.length; i++) {
+				if (modelRoutines[i].isDelete==true) {
+					modelRoutines.splice(i, 1);
+					i--;
+					continue;
+				}
+				
+				for(var j=0;j<modelRoutines[i].ovMarkers.length;j++){
+					if(modelRoutines[i].ovMarkers[j].isDelete==true){
+						modelRoutines[i].ovMarkers.splice(j,1);
+						j--;
+					}
+				}
+				
+				for(var k=0;k<modelRoutines[i].markers.length;k++){
+					if(modelRoutines[i].markers[k].isDelete==true){
+						modelRoutines[i].markers.splice(k,1);
+						k--;
+					}
+				}
+			}
+		});
+		
+	};
+	
+	this.getModelRoutines=function(){
+		var results=[];
+		for(var i in modelRoutines){
+			if(!modelRoutines[i].isDelete){
+				results.push(modelRoutines[i]);
+			}
+		}
+		return results;
+	};
+	
+	this.deleteRoutineByOverviewId = function(overviewMarkerId, successCallback) {
+		var modelRoutine=self.getRoutineById(overviewMarkerId);
+		modelRoutine.setDelete();
+		if(self.currentRoutineId==modelRoutine.id){
+			self.currentRoutineId=null;
+		}
+		$.publish('deleteModelRoutine', [ modelRoutine ]);
+		$.publish('updateOvLines');
+		$.publish('updateUI');
+	};
+	
+	this.createModelRoutine=function(content){
+		var modelRoutineId=self.genUUID();
+		var marker = new ModelRoutine(modelRoutineId);
+		content.iconUrl='resource/icons/overview_point.png';
+		$.publish('createModelRoutine', [ marker,content ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		modelRoutines.push(marker);
+		
+		var ovMarkerId=self.genUUID();
+		content.iconUrl='resource/icons/default_default.png';
+		var ovMarker=self.createOverviewMarker(ovMarkerId, content, modelRoutineId);
+		marker.ovMarkers.push(ovMarker);
+		return modelRoutineId;
+	};
+	
+	this.createModelRoutineByGivenId=function(routineObject,ovMarkerObjects){
+		var modelRoutineId=routineObject.id;
+		var marker = new ModelRoutine(modelRoutineId);
+		marker.userId=routineObject.userId;
+		marker.userName=routineObject.userName;
+		routineObject.iconUrl='resource/icons/overview_point.png';
+		$.publish('createModelRoutine', [ marker,routineObject ]);
+
+		if (routineObject != null) {
+			marker.content.updateContent(routineObject);
+			marker.updateOffset(routineObject.offsetX, routineObject.offsetY);
+		}
+		modelRoutines.push(marker);
+		
+		for(var i in ovMarkerObjects){
+			var ovMarkerId=ovMarkerObjects[i].id;
+			var ovMarker=self.createOverviewMarker(ovMarkerId, ovMarkerObjects[i], modelRoutineId);
+			marker.ovMarkers.push(ovMarker);
+		}
+	};
+	
+	this.createOverviewMarker = function(id, content,routineId) {
+		var marker = new MapMarker(id);
+		marker.routineId=routineId;
+		marker.getContent().setCategory(6);
+		$.publish('createOverViewMarker', [ marker,content ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		return marker;
+	};
+	
+	this.createOneMarker = function(id, content,routineId) {
+		var routine=self.getRoutineById(routineId);
+		if(routine==null){
+			alert('no belong routine found');
+			return;
+		}
+		
+		var marker = new MapMarker(id);
+		$.publish('createOneMarker', [ marker ]);
+
+		if (content != null) {
+			marker.content.updateContent(content);
+			marker.updateOffset(content.offsetX, content.offsetY);
+		}
+		routine.addMarker(marker);
+		return marker;
+	};
+	
+	this.deleteOneMarker = function(id, needDeleteAttackedImg) {
+		var modelMarker = this.getMapMarkerById(id);
+		if (modelMarker != null) {
+
+			// unconnect pre main model marker
+			if (modelMarker.prevMainMarker != null) {
+				modelMarker.prevMainMarker.disconnectNextMarker();
+			}
+
+			// unconnect next main model marker
+			if (modelMarker.connectedMainMarker != null) {
+				modelMarker.disconnectNextMarker();
+			}
+
+			// unconnect parentSubMarker
+			if (modelMarker.parentSubMarker != null) {
+				modelMarker.parentSubMarker
+						.disconnectTreeChildMarker(modelMarker);
+			}
+
+			// unconnect all sub marker
+			modelMarker.disconnectAllTreeChildMarker();
+
+			var routine=self.getRoutineById(id);
+			
+			modelMarker.isDelete=true;
+				
+			routine.updateLocation();
+
+			if (needDeleteAttackedImg) {
+				var imgUrls = modelMarker.content.getImgUrls();
+				if (imgUrls != null && imgUrls.length > 0) {
+					for ( var i in imgUrls) {
+						var url = imgUrls[i];
+						backendManager.deleteFileByUrl(url, function() {
+							console.log('success deleted img ');
+						}, function() {
+							console.log('fail delete img');
+						});
+					}
+					;
+				}
+			}
+			$.publish('deleteOneMarker', [ modelMarker ]);
+		}
+	};
+
+	
+	
+	this.fetchUserIdByRoutineId=function(routineId,successCallBack){
+		backendManager.fetchUserByRoutineId(routineId, function(user){
+			if(user!=null){
+				successCallBack(user.id);
+			}else{
+				successCallBack(null);
+			}	
+		});
+	};
+	
+	this.getBackendManager=function(){
+		return backendManager;
+	};
+	
+	//one routine can have multi ovMarkers right now,they have the same title
+	//and description. this method will try to filter the repeat markers
+	this.fetchNonRepeatOvMarkers=function(){
+		var nonRepeatOvMarker=[];
+		for(var i in allOverviewMarkers){
+			var routineId=allOverviewMarkers[i].routineId;
+			var isExist=false;
+			for(var j in nonRepeatOvMarker){
+				if(routineId==nonRepeatOvMarker[j].routineId){
+					isExist=true;
+				}
+			}
+			if(!isExist){
+				nonRepeatOvMarker.push(allOverviewMarkers[i]);
+			}
+		}
+		return nonRepeatOvMarker;
+	};
+	
+	this.copyRoutine2CurrentUser=function(ovMarkerId){
+		var routineId=self.getRoutineById(ovMarkerId).id;
+		backendManager.copyRoutine(routineId);
+	};
+	
+	this.copyMarker2CurrentUser=function(markerId,toRoutineId){
+		backendManager.copyMarker(markerId, toRoutineId);
+	};
+	
+	this.isOvMarker=function(id){
+		var routines=self.getModelRoutines();
+		for(var i in routines){
+			if(routines[i].id==id){
+				return true;
+			}
+			
+			var ovMarkers=routines[i].getOvMarkers();
+			for(var j in ovMarkers){
+				if(id==ovMarkers[j].id){
+					return true;
+				}
+			}
+		}
+		return false;
+	};
+	
+	this.findAverageOvMarkerByOvId=function(id){
+		var ovMarker=self.getMapMarkerById(id);
+		for(var i in allOverviewMarkers){
+			if(ovMarker.routineId==allOverviewMarkers[i].routineId && 
+					allOverviewMarkers[i].content.isAvergeOverViewMarker()){
+				return allOverviewMarkers[i];
+			}else{
+				continue;
+			}
+		}
+		return null;
+	};
+
+	this.getCurrentOverviewMarkers = function() {
+		return currentOverviewMarkers;
+	};
+	
+	this.setCurrenOverviewMarkersByOverviewId=function(id){
+		currentOverviewMarkers=new Array();
+		var routineId=this.getMapMarkerById(id).routineId;
+		for(var i in allOverviewMarkers){
+			if(allOverviewMarkers[i].routineId==routineId){
+				currentOverviewMarkers.push(allOverviewMarkers[i]);
+			}
+		}
+	};
+
+	//all the markers need to show on custom style called allOverviewMarkers
+	this.getAllOverviewMarkers = function() {
+		var results=[];
+		var routines=self.getModelRoutines();
+		for(var i in routines){
+				results.push(routines[i]);
+				var ovMarkers=routines[i].getOvMarkers();
+				for(var j in ovMarkers){
+					results.push(ovMarkers[j]);
+				}
+		}
+		return results;
+	};
+	
+	this.getRoutineById=function(id){
+		var routines=self.getModelRoutines();
+		
+		for(var i in routines){
+			if(routines[i].id==id){
+				return routines[i];
+			}
+			var ovMarkers=routines[i].getOvMarkers();
+			for (var j in ovMarkers){
+				if(ovMarkers[j].id==id){
+					return routines[i];
+				}
+			}
+			var markers=routines[i].getMarkers();
+			for (var k in markers){
+				if(markers[k].id==id){
+					return routines[i];
+				}
+			}
+		}
+		alert('can not found routineId');
+		return null;
+	};
+
+	this.genUUID = function() {
+		return uuid.v4();
+	};
+
+	this.saveImage = function(imageFile, successCallback, failCallback) {
+		backendManager.saveFile(imageFile, function(url) {
+			successCallback(url);
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.saveImageByBase64 = function(base64String, fileName, successCallback,
+			failCallback) {
+		backendManager.saveBase64File(base64String, fileName, function(url) {
+			successCallback(url);
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	
+
+	this.getModelMarkers = function() {
+		var results=[];
+		var routines=self.getModelRoutines();
+		for(var i in routines){
+			var markers=routines[i].getMarkers();
+			for(var j in markers){
+				results.push(markers[j]);
+			}
+		}
+		return results
+	};
+
+	this.fetchMaxIdinMarks = function() {
+		marks.sort(function(mark1, mark2) {
+			if (mark1.id > mark2.id) {
+				return 1;
+			} else if (mark1.id == mark2.id) {
+				return 0;
+			} else {
+				return -1;
+			}
+		});
+
+		return marks[marks.length - 1].id;
+	};
+	
+	this.deleteOvMarker=function(id){
+		var ovMarker=this.getMapMarkerById(id);
+		if(ovMarker.content.isAvergeOverViewMarker()){
+			alert("this marker can not be deleted");
+			return;
+		}else{
+			for ( var i in allOverviewMarkers) {
+				if (allOverviewMarkers[i].id == id) {
+					allOverviewMarkers.splice(i, 1);
+				}
+			}
+			
+			if(currentOverviewMarkers.length!=0){
+				for ( var i in currentOverviewMarkers) {
+					if (currentOverviewMarkers[i].id == id) {
+						currentOverviewMarkers.splice(i, 1);
+					}
+				}
+			}
+			
+			$.publish('deleteOvMarker', [ id ]);
+			$.publish('updateOvLines');
+		}
+	};
+
+	this.isUserOwnRoutine = function(routineId, successCallback) {
+		backendManager.getCurrentUser(function(currentUser){
+			backendManager.isUserOwnRoutines(currentUser, routineId,
+					successCallback);
+		});
+	};
+
+	this.loadRoutineByOverviewMarkerId = function(overviewId, successCallback) {
+		marks = new Array();
+
+		backendManager.fetchRoutineJSONStringByOverviewMarkerId(overviewId,
+				function(marksJSONString, routineName) {
+					if (marksJSONString != null) {
+						// parse markers
+						var marksJSONArray = JSON.parse(marksJSONString);
+						for ( var i in marksJSONArray) {
+
+							self.createOneMarker(marksJSONArray[i].id,
+									marksJSONArray[i]);
+
+						}
+
+						for ( var i in marksJSONArray) {
+							var eachJSONObject = marksJSONArray[i];
+
+							for ( var j in eachJSONObject.subMarkerIds) {
+								self.addSubLine(eachJSONObject.id,
+										eachJSONObject.subMarkerIds[j], 0, 0);
+							}
+						}
+
+					}
+
+					successCallback(routineName);
+				});
+
+	};
+
+	this.loadRoutine = function(routineId, successCallback) {
+		marks = new Array();
+
+		backendManager.fetchRoutineJSONStringById(routineId, function(
+				marksJSONString, title, overViewJSONString) {
+			if (overViewJSONString != null) {
+				// parse overview markers
+				var overviewJSONArray = JSON.parse(overViewJSONString);
+				for ( var i in overviewJSONArray) {
+					self.createOverviewMarker(overviewJSONArray[i].id,
+							overviewJSONArray[i]);
+				}
+			}
+
+			if (marksJSONString != null) {
+				// parse markers
+				var marksJSONArray = JSON.parse(marksJSONString);
+				for ( var i in marksJSONArray) {
+					self.createOneMarker(marksJSONArray[i].id,
+							marksJSONArray[i]);
+				}
+
+				for ( var i in marksJSONArray) {
+					var eachJSONObject = marksJSONArray[i];
+					for ( var j in eachJSONObject.subMarkerIds) {
+						self.addSubLine(eachJSONObject.id,
+								eachJSONObject.subMarkerIds[j], 0, 0);
+					}
+				}
+
+			}
+			console.log('model.loadRoutine:fetch routine success');
+			successCallback({
+				routineName : title,
+			});
+		});
+
+	};
+
+	function getOverlayById(id) {
+		var length = marks.length;
+		for ( var i = 0; i < length; i++) {
+			if (marks[i].id == id) {
+				return marks[i];
+			}
+		}
+		return null;
+	}
+
+	this.getMapMarkerById = function(id) {
+		
+		var routines=self.getModelRoutines();
+		for(var i in routines){
+			var modelRoutine=routines[i];
+			if(modelRoutine.id==id){
+				return modelRoutine;
+			}
+			var ovMarkers=modelRoutine.getOvMarkers();
+			for(var j in ovMarkers){
+				if(id==ovMarkers[j].id){
+					return ovMarkers[j];
+				}
+			}
+			var markers=modelRoutine.getMarkers();
+			for(var k in markers){
+				if(id==markers[k].id){
+					return markers[k];
+				}
+			}
+		}
+		alert('can not find model marker :' + id);
+		return null;
+		/*
+		var marker = getOverlayById(id);
+		if (marker == null) {
+			var length = allOverviewMarkers.length;
+			for ( var i = 0; i < length; i++) {
+				if (allOverviewMarkers[i].id == id) {
+					return allOverviewMarkers[i];
+				}
+			}
+			alert('can not find model marker :' + id);
+			return null;
+		} else {
+			return marker;
+		}
+		*/
+
+	};
+
+	this.getMarkerContentById = function(id) {
+		var marker = this.getMapMarkerById(id);
+		if (marker.getContent() != null) {
+			return marker.getContent();
+		} else {
+			return null;
+		}
+	};
+
+	this.addMainLine = function(fromId, toId) {
+		var fromMarker = getOverlayById(fromId);
+		var toMarker = getOverlayById(toId);
+		fromMarker.addNextMarker(toMarker);
+
+	};
+
+	this.addSubLine = function(fromId, toId) {
+		console.log("model.addSubLine: fromId: " + fromId + " toId " + toId);
+		var fromMarker = getOverlayById(fromId);
+		var toMarker = getOverlayById(toId);
+		fromMarker.addTreeChildMarker(toMarker);
+	};
+
+	this.findHeadMarker = function() {
+		var heads = new Array();
+		var length = marks.length;
+		for ( var i = 0; i < length; i++) {
+			if (marks[i] instanceof MapMarker) {
+				if (marks[i].prevMainMarker == null && !marks[i].isSubMarker()) {
+					heads.push(marks[i]);
+				}
+			}
+		}
+		return heads;
+	};
+
+	this.belongWhichHeadIds = function(markerId) {
+		var modelMarker = this.getMapMarkerById(markerId);
+
+		if (modelMarker.prevMainMarker == null) {
+			var routineIds = [];
+			var headMarker = modelMarker;
+			do {
+				routineIds.push(headMarker.id);
+				headMarker = headMarker.connectedMainMarker;
+			} while (headMarker != null);
+			console.log("model.belongwhichHeadIds: return " + routineIds);
+			return routineIds;
+		} else {
+			return this.belongWhichHeadIds(modelMarker.prevMainMarker.id);
+		}
+	};
+
+	this.redrawConnectedLine = function(id) {
+		var marker = getOverlayById(id);
+		// redraw curveLine
+		if (marker.prevMainMarker != null) {
+			redrawOneMarker(marker.prevMainMarker);
+		}
+		redrawOneMarker(marker);
+
+		if (marker.parentSubMarker != null) {
+			redrawTreeNode(marker.parentSubMarker);
+		}
+		redrawTreeNode(marker);
+	};
+
+	function redrawOneMarker(marker) {
+		if (marker.connectedMainMarker == null) {
+			return;
+		} else {
+			// redraw Curve Line
+			if (marker.connectedMainLine != null) {
+				// marker.connectedMainLine.remove(map);
+				view.removeById(marker.connectedMainLine.id);
+			}
+			// addCurveLine(map,marker.getPosition(),marker.connectedMainMarker.getPosition());
+			marker.connectedMainLine = new MainLine(view.drawMainLine(
+					marker.id, marker.connectedMainMarker.id));
+
+		}
+	}
+
+	function redrawTreeNode(marker) {
+		for ( var j in marker.subMarkersArray) {
+			// map.removeOverlay(marker.subMarkersArray[j].line);
+			view.removeById(marker.subMarkersArray[j].line.id);
+			marker.subMarkersArray[j].line = new SubLine(view.drawSubLine(
+					marker.id, marker.subMarkersArray[j].entity.id));
+			/*
+			 * if(marker.areSubMarkersHide()){
+			 * marker.subMarkersArray[j].line.hide(); }
+			 */
+		}
+	}
+}
+
+function BackendManager() {
+	var Routine = AV.Object.extend("Routine");
+	var OvMarker= AV.Object.extend("OvMarker");
+	var AVMarker= AV.Object.extend("Marker");
+
+	//current Routine
+	var routine = null;
+	
+	//current User
+	var currentUser = null;
+	
+	// current Routine Markers
+	var avMarkers=[];
+	
+	//all user routines
+	var userRoutines = null;
+	
+	var avObjects=[];
+	
+	function iconNameToUrl(iconName){
+		var strArray=iconName.trim().split("/");
+		if(strArray.length>2){
+			return "resource/icons/"+strArray.pop();
+		}else{
+			return "resource/icons/"+iconName.trim();
+		}
+	}
+
+	AV.initialize("6pzfpf5wkg4m52owuwixt5vggrpjincr8xon3pd966fhgj3c",
+			"4wrzupru1m4m7gpafo4llinv7iepyapnycvxygup7uiui77x");
+
+	function fetchOvMarkersByRoutineId(avRoutine){
+		var promise=new AV.Promise();
+		var query=new AV.Query(OvMarker);
+		query.equalTo("routineId",avRoutine.get("uuid"));
+		query.find().then(function(avOvMarkers){
+			promise.resolve(avRoutine,avOvMarkers);
+		});
+		return promise;
+	};
+	
+	function fetchOvMarkersInRoutineIds(avRoutines){
+		var promise=new AV.Promise();
+		var query=new AV.Query(OvMarker);
+		var routineIds=[];
+		for(var i in avRoutines){
+			routineIds.push(avRoutines[i].get("uuid"));
+		}
+		query.containedIn("routineId",routineIds);
+		query.find().then(function(avOvMarkers){
+			var results=[];
+			for(var i in avRoutines){
+				results.push({
+					avRoutine:avRoutines[i],
+					avOvMarkers:findOvMarkersByRoutineId(avOvMarkers,avRoutines[i].get("uuid"))
+				});
+			}
+			
+			promise.resolve(results);
+		});
+		return promise;
+	};
+	
+	function findOvMarkersByRoutineId(ovMarkers,routineId){
+		var results=[];
+		for(var i in ovMarkers){
+			if(ovMarkers[i].get("routineId")==routineId){
+				results.push(ovMarkers[i]);
+			}
+		}
+		return results;
+	}
+	
+	function getAVObjectByUUID(uuid){
+		for(var i in avObjects){
+			if(uuid==avObjects[i].get('uuid')){
+				return avObjects[i];
+			}
+		}
+		return null;
+	};
+	
+	function getAvMarkerByUUID(uuid){
+		for(var i in avMarkers){
+			if(uuid==avMarkers[i].get('uuid')){
+				return avMarkers[i];
+			}
+		}
+		return null;
+	};
+	
+	this.reset=function(){
+		avObjects=[];
+	};
+	
+	this.saveMarkers=function(jsons){
+		for(var i in jsons){
+			
+			var markerJSON=jsons[i];
+			
+			var avMarker=getAVObjectByUUID(markerJSON.uuid);
+			if(avMarker!==null && markerJSON.needDelete){
+				avMarker.needDelete=true;
+				continue;
+			}
+			
+			if(avMarker==null && markerJSON.needDelete){
+				continue;
+			}
+			
+			if(avMarker==null){
+				avMarker=new AVMarker();
+				avObjects.push(avMarker);
+			}
+			avMarker.set('uuid',markerJSON.uuid);
+			var point = new AV.GeoPoint({latitude: markerJSON.lat, longitude: markerJSON.lng});
+			avMarker.set('location',point);
+			avMarker.set('title',markerJSON.title);
+			avMarker.set('address',markerJSON.address);
+			avMarker.set('mycomment',markerJSON.mycomment);
+			avMarker.set('category',markerJSON.category);
+			avMarker.set('imgUrls',JSON.stringify(markerJSON.imgUrls));
+			avMarker.set('iconUrl',markerJSON.iconUrl);
+			avMarker.set('slideNum',markerJSON.slideNum);
+			avMarker.set('subMarkerIds',JSON.stringify(markerJSON.subMarkerIds));
+			avMarker.set('offsetX',markerJSON.offsetX);
+			avMarker.set('offsetY',markerJSON.offsetY);
+			avMarker.set('routineId',markerJSON.routineId);
+		}
+	};
+	
+	this.saveOvMarkers=function(jsons){
+		for(var i in jsons){
+			
+			var markerJSON=jsons[i];
+			
+			var avMarker=getAVObjectByUUID(markerJSON.uuid);
+			if(avMarker!==null && markerJSON.needDelete){
+				avMarker.needDelete=true;
+				continue;
+			}
+			
+			if(avMarker==null && markerJSON.needDelete){
+				continue;
+			}
+			
+			if(avMarker==null){
+				avMarker=new OvMarker();
+				avObjects.push(avMarker);
+			}
+			avMarker.set('uuid',markerJSON.uuid);
+			var point = new AV.GeoPoint({latitude: markerJSON.lat, longitude: markerJSON.lng});
+			avMarker.set('location',point);
+			avMarker.set('title',markerJSON.title);
+			avMarker.set('address',markerJSON.address);
+			avMarker.set('mycomment',markerJSON.mycomment);
+			avMarker.set('category',markerJSON.category);
+			avMarker.set('imgUrls',JSON.stringify(markerJSON.imgUrls));
+			avMarker.set('iconUrl',markerJSON.iconUrl);
+			avMarker.set('slideNum',markerJSON.slideNum);
+			avMarker.set('subMarkerIds',JSON.stringify(markerJSON.subMarkerIds));
+			avMarker.set('offsetX',markerJSON.offsetX);
+			avMarker.set('offsetY',markerJSON.offsetY);
+			avMarker.set('routineId',markerJSON.routineId);
+		}
+	};
+	
+	this.saveRoutines=function(routineJSONs,user){
+		for(var i in routineJSONs){
+			
+			var routineJSON=routineJSONs[i];
+			
+			var avRoutine=getAVObjectByUUID(routineJSON.uuid);
+			if(avRoutine!==null && routineJSON.needDelete){
+				avRoutine.needDelete=true;
+				continue;
+			}
+			
+			if(avRoutine==null && routineJSON.needDelete){
+				continue;
+			}
+			
+			if(avRoutine==null){
+				avRoutine=new Routine();
+				avObjects.push(avRoutine);
+			}
+			avRoutine.set('user',user);
+			avRoutine.set('uuid',routineJSON.uuid);
+			avRoutine.set('title',routineJSON.title);
+			avRoutine.set('description',routineJSON.mycomment);
+			var point = new AV.GeoPoint({latitude: routineJSON.lat, longitude: routineJSON.lng});
+			avRoutine.set('location',point);
+		}
+	};
+	
+	this.sync=function(successCallback){
+		//delete
+		var avObjectsNeed2Delete=[];
+		for ( var i = 0; i < avObjects.length; i++) {
+			if (avObjects[i].needDelete==true) {
+				avObjectsNeed2Delete.push(avObjects[i]);
+				avObjects.splice(i, 1);
+				i--;
+			}
+		}
+		
+		for(var i in avObjectsNeed2Delete){
+			avObjectsNeed2Delete[i].destroy();
+		}
+		
+		//save new or update
+		AV.Object.saveAll(avObjects).then(function(){
+			alert('sync success');
+			successCallback();
+		},function(error){
+			alert(error.message);
+		});
+	};
+	
+	function gcjLocation(avLocation){
+		var lat=avLocation.toJSON().latitude;
+		var lng=avLocation.toJSON().longitude;
+		var gcj=wgs2gcj(lat,lng);
+		return gcj;
+	}
+	
+	this.fetchMarkersByRoutineId=function(routineId,successCallback){
+		var query=new AV.Query(AVMarker);
+		query.equalTo("routineId",routineId);
+		query.find().then(function(avMarkers){
+			var markersJSON=[];
+			for(var i in avMarkers){
+				var avMarker=avMarkers[i];
+				avObjects.push(avMarker);
+				var markerContent={
+					id: avMarker.get('uuid'),
+					title:avMarker.get('title'),
+					mycomment:avMarker.get('mycomment'),
+					iconUrl:iconNameToUrl(avMarker.get('iconUrl')),
+					lat:gcjLocation(avMarker.get('location')).lat,
+					lng:gcjLocation(avMarker.get('location')).lng,
+					slideNum:avMarker.get('slideNum'),
+					imgUrls:JSON.parse(avMarker.get('imgUrls')),
+					category:avMarker.get('category')
+				};
+				markersJSON.push(markerContent);
+			}
+			successCallback(markersJSON);
+		});
+	};
+	
+	this.fetchOverviewRoutinesByLatlng=function(location, successCallback){
+		var locationPoint=new AV.GeoPoint({latitude: location.lat, longitude: location.lng});
+		var query=new AV.Query(Routine);
+		query.include("user");
+		query.near('location',locationPoint);
+		query.limit(10);
+		query.find({
+			success : function(avRoutines) {
+				fetchOvMarkersInRoutineIds(avRoutines).then(function(results){
+					var returnValue=[];
+					
+					for(var i in results){
+						var routine=results[i].avRoutine;
+						var user=routine.get("user");
+						var ovMarkers=results[i].avOvMarkers;
+						avObjects.push(routine);
+						
+						var routineLat=gcjLocation(routine.get('location')).lat;
+						var routineLng=gcjLocation(routine.get('location')).lng;
+						
+						var routineJSON={
+								userId:user.id,
+								userName:user.get('username'),
+								id:routine.get('uuid'),
+								title:routine.get('title'),
+								mycomment:routine.get('description'),
+								category:routine.get('category'),
+								lat:routineLat,
+								lng:routineLng
+						};
+						
+						var ovMarkersJSON=[];
+						for(var i in ovMarkers){
+							avObjects.push(ovMarkers[i]);
+							ovMarkersJSON.push({
+								id:ovMarkers[i].get('uuid'),
+								title: ovMarkers[i].get('title'),
+								mycomment:ovMarkers[i].get('mycomment'),
+								iconUrl:iconNameToUrl(ovMarkers[i].get('iconUrl')),
+								offsetX:ovMarkers[i].get('offsetX'),
+								offsetY:ovMarkers[i].get('offsetY'),
+								category:ovMarkers[i].get('category'),
+								lat:ovMarkers[i].get('location')==null?routineLat:gcjLocation(ovMarkers[i].get('location')).lat,
+								lng:ovMarkers[i].get('location')==null?routineLng:gcjLocation(ovMarkers[i].get('location')).lng
+							});
+						}
+						returnValue.push({
+							routineJSON:routineJSON,
+							ovMarkersJSON:ovMarkersJSON
+						});
+						//successCallback(routineJSON,ovMarkersJSON);
+					}
+					successCallback(returnValue);
+				});
+				
+			}
+		});
+	};
+	
+	this.fetchAllRoutineNameAndIdByUser=function(user,successCallback){
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.find().then(function(avRoutines){
+			var returnValue=[];
+			for(var i in avRoutines){
+				returnValue.push({
+					routineId:avRoutines[i].get('uuid'),
+					routineName:avRoutines[i].get('title')
+				});
+			}
+			successCallback(returnValue);
+		});
+	};
+	
+	this.fetchOverviewRoutinesByUser = function(user, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.find().then(function(avRoutines){
+			fetchOvMarkersInRoutineIds(avRoutines).then(function(results){
+				var returnValue=[];
+				
+				for(var i in results){
+					var routine=results[i].avRoutine;
+					var ovMarkers=results[i].avOvMarkers;
+					avObjects.push(routine);
+					
+					var routineLat=gcjLocation(routine.get('location')).lat;
+					var routineLng=gcjLocation(routine.get('location')).lng;
+					
+					var routineJSON={
+							userId:user.id,
+							userName:user.get('username'),
+							id:routine.get('uuid'),
+							title:routine.get('title'),
+							mycomment:routine.get('description'),
+							lat:routineLat,
+							lng:routineLng
+					};
+					
+					var ovMarkersJSON=[];
+					for(var i in ovMarkers){
+						avObjects.push(ovMarkers[i]);
+						ovMarkersJSON.push({
+							id:ovMarkers[i].get('uuid'),
+							title: ovMarkers[i].get('title'),
+							mycomment:ovMarkers[i].get('mycomment'),
+							iconUrl:iconNameToUrl(ovMarkers[i].get('iconUrl')),
+							offsetX:ovMarkers[i].get('offsetX'),
+							offsetY:ovMarkers[i].get('offsetY'),
+							lat:ovMarkers[i].get('location')==null?routineLat:gcjLocation(ovMarkers[i].get('location')).lat,
+							lng:ovMarkers[i].get('location')==null?routineLng:gcjLocation(ovMarkers[i].get('location')).lng
+						});
+					}
+					returnValue.push({
+						routineJSON:routineJSON,
+						ovMarkersJSON:ovMarkersJSON
+					});
+					//successCallback(routineJSON,ovMarkersJSON);
+				}
+				successCallback(returnValue);
+			});
+		});
+	};
+	
+	this.copyRoutine=function(routineId){
+		var newRoutineId=uuid.v4();
+		this.getCurrentUser(function(user){
+			if(user.get("username")=="guest"){
+				alert("please login first");
+				return;
+			}
+			
+			var routineQuery = new AV.Query(Routine);
+			routineQuery.equalTo("uuid",routineId);
+			routineQuery.first().then(function(routine){
+				if(routine!=null){
+					var copyRoutine=routine.clone();
+					copyRoutine.set('uuid',newRoutineId);
+					copyRoutine.set('user',user);
+					copyRoutine.save();
+				}
+			});
+			
+			var ovMarkerQuery=new AV.Query(OvMarker);
+			ovMarkerQuery.equalTo("routineId",routineId);
+			ovMarkerQuery.find().then(function(ovMarkers){
+				var copyMarkers=[];
+				for(var i in ovMarkers){
+					var copyMarker=ovMarkers[i].clone();
+					copyMarker.set("uuid",uuid.v4());
+					copyMarker.set("routineId",newRoutineId);
+					copyMarkers.push(copyMarker);
+					
+				}
+				AV.Object.saveAll(copyMarkers);
+			});
+			
+			var markerQuery=new AV.Query(AVMarker);
+			markerQuery.equalTo("routineId",routineId);
+			markerQuery.find().then(function(ovMarkers){
+				var copyMarkers=[];
+				for(var i in ovMarkers){
+					var copyMarker=ovMarkers[i].clone();
+					copyMarker.set("uuid",uuid.v4());
+					copyMarker.set("routineId",newRoutineId);
+					copyMarkers.push(copyMarker);
+					
+				}
+				AV.Object.saveAll(copyMarkers);
+			});	
+		});
+	};
+	
+	this.copyMarker=function(markerId,toRoutineId){
+		var query=new AV.Query(AVMarker);
+		query.equalTo("uuid",markerId);
+		query.first().then(function(marker){
+			var copyMarker=marker.clone();
+			copyMarker.set("uuid",uuid.v4());
+			copyMarker.set("routineId",toRoutineId);
+			copyMarker.save();
+		});
+	};
+	
+	this.sayHello=function(){
+		AV.Cloud.run('hello', {}, {
+			success: function(result) {
+			    alert(result);
+			},
+			error: function(error) {
+				alert(error);
+			}
+		});
+	};
+	
+	this.cloudFetchMarkersByRoutineId=function(routineId){
+		AV.Cloud.run('hello', {routineId:routineId}, {
+			success: function(result) {
+			    console.log(result);
+			},
+			error: function(error) {
+				alert(error);
+			}
+		});
+	};
+	
+	//------------------------------------------------------------
+	this.saveCurrentRoutineMarkers=function(markers,ovMarkers){
+		
+		
+		var avMarkersNeed2Save=[];
+		for(var i in markers){
+			var marker=markers[i];
+			var avMarker=getAvMarkerByUUID(marker.uuid);
+			if(avMarker==null){
+				avMarker=new AVMarker();
+				avMarker.set('uuid',marker.uuid);
+			}
+			
+			var point = new AV.GeoPoint({latitude: marker.lat, longitude: marker.lng});
+			avMarker.set('location',point);
+			avMarker.set('title',marker.title);
+			avMarker.set('address',marker.address);
+			avMarker.set('mycomment',marker.mycomment);
+			avMarker.set('category',marker.category);
+			avMarker.set('imgUrls',JSON.stringify(marker.imgUrls));
+			avMarker.set('iconUrl',marker.iconUrl);
+			avMarker.set('slideNum',marker.slideNum);
+			avMarker.set('subMarkerIds',JSON.stringify(marker.subMarkerIds));
+			avMarker.set('offsetX',marker.offsetX);
+			avMarker.set('offsetY',marker.offsetY);
+			avMarker.set('isOvMarker',false);		
+		}
+	};
+	
+	this.login = function(userName, pwd, successCallback) {
+		AV.User.logIn(userName, pwd, {
+			success : function(user) {
+				successCallback(user);
+			},
+			error : function(user, error) {
+				alert('login failed');
+			}
+		});
+	};
+
+	this.getCurrentUser = function(successCallback) {
+		currentUser = AV.User.current();
+		if (currentUser) {
+			console.log("welcomse session user:" + currentUser.get('username'));
+
+			successCallback(currentUser);
+
+		} else {
+			AV.User.logIn("guest", "guest", {
+				success : function(user) {
+					console.log("login for user:" + user.get('username'));
+					currentUser = user;
+					successCallback(user);
+				},
+				error : function(user, error) {
+					alert("Error: " + error.code + " " + error.message);
+					alert("log failed. abort save routines");
+					successCallback(null);
+				}
+			});
+		}
+	};
+
+	this.fetchRoutinesByUser = function(user, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query.find({
+			success : function(routines) {
+				console.log("backendManager:fetch routine success");
+				successCallback(routines);
+			}
+		});
+	};
+	
+	this.fetchUserByUserId=function(userId,successCallback){
+		console.log('bM.fetchUserByUserId: userId:'+ userId);
+		var query = new AV.Query(AV.User);
+		query.get(userId,{
+		  success: function(user) {
+			  console.log('bM.fetchUserByUserId: found user, user name'+ user.get('username'));
+			  successCallback(user);
+		  }
+		});
+	};
+
+	
+	
+
+
+	this.deleteRoutineByOverviewMarkerId = function(overviewMarkerId,
+			successCallback) {
+		for ( var i in userRoutines) {
+			var overviewJSONString = userRoutines[i].get('overViewJSONString');
+			if (overviewJSONString.indexOf(overviewMarkerId) != -1) {
+				userRoutines[i].destroy({
+					success : function() {
+						successCallback();
+					}
+				});
+			}
+		}
+	};
+
+	this.fetchRoutineJSONStringByOverviewMarkerId = function(overviewMarkerId,
+			successCallback) {
+		if (userRoutines == null) {
+			return successCallback(null);
+		} else {
+			for ( var i in userRoutines) {
+				var overviewJSONString = userRoutines[i]
+						.get('overViewJSONString');
+				if (overviewJSONString.indexOf(overviewMarkerId) != -1) {
+					routine = userRoutines[i];
+					var result = userRoutines[i].get('RoutineJSONString');
+					var routineName = userRoutines[i].get('title');
+					if (result != null) {
+						return successCallback(result, routineName);
+					} else {
+						userRoutines[i].fetch().then(function(result) {
+							var r = result.get('RoutineJSONString');
+							successCallback(r, routineName);
+						});
+					}
+				} else {
+					continue;
+				}
+			}
+		}
+	};
+	
+	this.fetchUserByRoutineId=function(routineId,successCallback){
+		var query = new AV.Query(Routine);
+		query.get(routineId, {
+			success : function(fetchedRoutine) {
+				routine = fetchedRoutine;
+				successCallback(routine.get('user'));
+			},
+			error : function(object, error) {
+				alert("The object was not retrieved successfully.");
+				console.log(error);
+			}
+		});
+	};
+
+	this.isUserOwnRoutines = function(user, routineId, successCallback) {
+		var query = new AV.Query(Routine);
+		query.equalTo("user", user);
+		query
+				.get(
+						routineId,
+						{
+							success : function() {
+								console
+										.log('BackManager.isUserOwnRoutines: user own this routine');
+								successCallback(true);
+							},
+							error : function(object, error) {
+								console
+										.log('BackManager.isUserOwnRoutines: user not own this routine');
+								successCallback(false);
+							}
+						});
+	};
+
+	this.fetchRoutineJSONStringById = function(objectId, successCallback) {
+		console
+				.log('BackendManager.FetchRoutineJSONStringById-fetch routine id=:'
+						+ objectId);
+
+		var query = new AV.Query(Routine);
+		query.get(objectId, {
+			success : function(fetchedRoutine) {
+				routine = fetchedRoutine;
+				successCallback(routine.get('RoutineJSONString'), routine
+						.get('title'), routine.get('overViewJSONString'));
+			},
+			error : function(object, error) {
+				alert("The object was not retrieved successfully.");
+				console.log(error);
+			}
+		});
+	};
+	
+	this.updateAllOverviews=function(ovMarkerJSONMap,successCallback){
+		for(var key in ovMarkerJSONMap){
+			var routineId=key;
+			if(routineId!=null){
+				for(var j in userRoutines){
+					if(userRoutines[j].id==routineId){
+						userRoutines[j].set("overViewJSONString",ovMarkerJSONMap[key]);
+					}
+				}
+			}
+		}
+		
+		AV.Object.saveAll(userRoutines, {
+			    success: function(list) {
+			      console.log("update all overviews success");
+			      successCallback();
+			    },
+			    error: function(error) {
+			      console.log("error happenned when update all overview"+error);
+			    },
+		 });
+	};
+	
+	this.saveAsNewRoutine=function(routineName,routineJSONString,
+			overViewJSONString,callback){
+		var routine = new Routine();
+		
+		this.getCurrentUser(function(currentUser){
+			if(currentUser.get('username')!='guest'){
+				routine.set('title', routineName);
+				routine.set('RoutineJSONString', routineJSONString);
+				routine.set('user',currentUser );
+				routine.set('overViewJSONString', overViewJSONString);
+				routine.save(null, {
+					success : function(routineFoo) {
+						callback();
+					},
+					error : function(object, error) {
+						alert('save routine failed');
+						routine = null;
+					}
+
+				});
+			}else{
+				alert('Guest can not save routine. Please login first.');
+			}
+			
+		});
+	};
+
+	this.saveRoutine = function(routineName, routineJSONString,
+			overViewJSONString, location,callback) {
+		if (routine == null) {
+			routine = new Routine();
+		}
+		
+		this.getCurrentUser(function(currentUser){
+			if(currentUser.get('username')!='guest'){
+				routine.set('title', routineName);
+				routine.set('RoutineJSONString', routineJSONString);
+				routine.set('user',currentUser );
+				routine.set('overViewJSONString', overViewJSONString);
+				var point = new AV.GeoPoint({latitude: location.lat, longitude: location.lng});
+				routine.set('location',point);
+				routine.save(null, {
+					success : function(routineFoo) {
+						routine = routineFoo;
+						callback();
+					},
+					error : function(object, error) {
+						alert('save routine failed');
+						routine = null;
+					}
+
+				});
+			}else{
+				alert('Guest can not save routine. Please login first.');
+			}
+			
+		});
+	};
+
+	this.saveFile = function(file, successCallBack, failCallback) {
+
+		var name = file.name;
+		var avFile = new AV.File(name, file);
+		avFile.save().then(function() {
+			successCallBack(avFile.url());
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.saveBase64File = function(base64String, fileName, successCallBack,
+			failCallback) {
+		var avFile = new AV.File(fileName, {
+			base64 : base64String
+		});
+		avFile.save().then(function() {
+			successCallBack(avFile.url());
+		}, function(error) {
+			failCallback(error);
+		});
+	};
+
+	this.deleteFileByUrl = function(url, successCallBack, failCallback) {
+		console.log('BManager.deleteFileByUrl:' + url);
+		var query = new AV.Query(AV.Object.extend("_File"));
+		query.equalTo("url", url);
+		query.find({
+			success : function(results) {
+				if (results.length > 0) {
+					console.log('find url:' + url);
+
+					var file = results[0];
+					file.destroy({
+						success : function(file) {
+							successCallBack();
+						},
+						error : function(error) {
+							console.log("Error: " + error.code + " "
+									+ error.message);
+							failCallback();
+						}
+					});
+
+				} else {
+					console.log('url ' + url + ' not found');
+				}
+			},
+			error : function(error) {
+				console.log("Error: " + error.code + " " + error.message);
+				failCallback();
+			}
+		});
+	};
+
+	// getters and setters
+
+}
+
+function MarkerContent(id) {
+	this.id = id;
+
+	var title = "One Marker";
+	var address = "Unknown Address";
+	var lat = 0;
+	var lng = 0;
+	var mycomment = "";
+	var category = 2;
+	var imgUrls = new Array();
+	var isImgPositionDecided = true;
+	var slideNum = 1;
+
+	var isAvergeOverViewMarker = false;
+
+	var defaultImgIcon = "resource/icons/event_2.png";
+	var picNoPositionIconUrl = "resource/icons/pic_no_position.png";
+	var iconUrl = "resource/icons/default_default.png";
+	
+	this.isAvergeOverViewMarker = function() {
+		return isAvergeOverViewMarker;
+	};
+
+	this.setIsAvergeOverViewMarker = function(isAverage) {
+		isAvergeOverViewMarker = isAverage;
+	};
+
+	this.getSlideNum = function() {
+		return slideNum;
+	};
+	this.setSlideNum = function(num) {
+		slideNum = num;
+	};
+
+	this.setImgPositionDecided = function(arg) {
+		isImgPositionDecided = arg;
+		if (isImgPositionDecided) {
+			this.setIconUrl(defaultImgIcon);
+		} else {
+			this.setIconUrl(picNoPositionIconUrl);
+		}
+	};
+
+	this.isImgPositionDecided = function() {
+		return isImgPositionDecided;
+	};
+
+	this.updateContent = function(args) {
+		if (args.slideNum != null) {
+			this.setSlideNum(args.slideNum);
+		}
+
+		if (args.title != null) {
+			this.setTitle(args.title);
+		}
+
+		if (args.address != null) {
+			this.setAddress(args.address);
+		}
+
+		if (args.mycomment != null) {
+			this.setMycomment(args.mycomment);
+		}
+
+		if (args.category != null) {
+			this.setCategory(args.category);
+		}
+
+		if (args.lat != null && args.lng != null) {
+			this.setlatlng(args.lat, args.lng);
+
+		}
+
+		if (args.imgUrls != null && args.imgUrls.length != 0) {
+			this.setImgUrls(args.imgUrls);
+		}
+
+		if (args.iconUrl != null) {
+			this.setIconUrl(args.iconUrl);
+		}
+
+		if (args.isAverage != null) {
+			this.setIsAvergeOverViewMarker(args.isAverage);
+		}
+	};
+
+	this.addImgUrl = function(url) {
+		imgUrls.push(url);
+	};
+
+	this.getIconUrl = function() {
+		return iconUrl;
+	};
+
+	this.setIconUrl = function(arg) {
+		iconUrl = arg;
+		$.publish("iconUrlUpdated", [ this ]);
+	};
+
+	this.getImgUrls = function() {
+		return imgUrls;
+	};
+
+	this.setImgUrls = function(urlArray) {
+		imgUrls=[];
+		for(var i in urlArray){
+			if(urlArray[i].replace(/\s+/g,"")!=''){
+				imgUrls.push(urlArray[i]);
+			}
+		}
+	};
+
+	this.getCategory = function() {
+		return category;
+	};
+	
+	this.getCategoryName=function(){
+		var name="sight"
+		 switch(this.getCategory())
+		  {
+		  	case 1:
+		  		name="arrival & leave";
+				break;
+		  	case 2:
+		  		name="sight";
+				break;
+		  	case 3:
+		  		name="hotel";
+				break;
+		  	case 4:
+		  		name="food";
+				break;
+		  	case 5:
+		  		name="info";
+				break;
+		  	case 6:
+		  		name="overview";
+				break;
+		  	default:
+		  		name="sight";
+		  	}
+		return name;
+	};
+
+	this.setCategory = function(nameFoo) {
+		category = nameFoo;
+	};
+
+	this.setlatlng = function(latFoo, lngFoo) {
+		//var wgs=gcj2wgs(latFoo,lngFoo);
+		
+		//lat = wgs.lat;
+		//lng = wgs.lng;
+		
+		lat=latFoo;
+		lng=lngFoo;
+		
+		$.publish('latlngChanged', [ this ]);
+		$.publish('updateUI', []);
+	};
+
+	this.getLng = function() {
+		//var gcj=wgs2gcj(lat,lng);
+		//return gcj.lng;
+		return lng;
+	};
+	
+	this.getLat = function() {
+		//var gcj=wgs2gcj(lat,lng);
+		//return gcj.lat;
+		return lat;
+	};
+
+	this.getAddress = function() {
+		return address;
+	};
+
+	this.setAddress = function(addressFoo) {
+		address = addressFoo;
+	};
+
+	this.getTitle = function() {
+		return title;
+	};
+
+	this.setTitle = function(titleFoo) {
+		title = titleFoo;
+	};
+
+	this.setMycomment = function(comment) {
+		mycomment = comment;
+	};
+
+	this.getMycomment = function(needShort) {
+		return mycomment;
+	};
+}
+
+function ModelRoutine(id){
+	extend(ModelRoutine,MapMarker,this,[id]);
+	
+	this.ovMarkers=[];
+	this.markers=[];
+	
+	this.getContent().setCategory(6);
+	
+	this.isLoadMarkers=false;
+	
+	this.userId=null;
+	this.userName=null;
+	
+	this.addMarker=function(marker){
+		this.markers.push(marker);
+		this.updateLocation();
+	};
+	
+	this.updateLocation=function(){
+		var latArray=[];
+		var lngArray=[];
+		
+		var marks=this.getMarkers();
+		for ( var i = 0; i < marks.length; i++) {
+			if (!marks[i].isSubMarker()) {
+				latArray.push( marks[i].getContent().getLat());
+				lngArray.push( marks[i].getContent().getLng());
+			}
+		}
+		
+		var averageLat=refineAverage(latArray);
+		var averageLng=refineAverage(lngArray);
+		
+		this.getContent().updateContent({lat:averageLat,lng:averageLng});
+	};
+	
+	function refineAverage(nums){
+		var refineArray=[];
+		var e=average(nums);
+		var d=sDeviation(nums);
+		for(var i in nums){
+			if(Math.abs((nums[i])-e)<=d){
+				refineArray.push(nums[i]);
+			}
+		}
+		
+		return average(refineArray);
+	}
+	
+	
+	function average(nums){
+		var result=0;
+		var length=nums.length;
+		var sum=0.000000;
+		if(length!=0){
+			for(var i in nums){
+				sum=sum+nums[i];
+			}
+			result=sum/length;
+		}
+		return result;
+	}
+	
+	function sDeviation(nums){
+		if(nums.length==0){
+			return 0;
+		}	
+		var e=average(nums);
+		var sum=0;
+		for(var i in nums){
+			sum=sum+(nums[i]-e)*(nums[i]-e);
+		}
+		return Math.sqrt(sum/nums.length); 	
+	}
+	
+	this.setDelete=function(){
+		this.isDelete=true;
+		
+		var ovMarkers=this.getOvMarkers();
+		for(var i in ovMarkers){
+			ovMarkers[i].isDelete=true;
+		}
+		var markers=this.getMarkers();
+		for(var j in markers){
+			markers[j].isDelete=true;
+		}
+	};
+	
+	this.toOvMarkersJSONs=function(){
+		var results=[];
+		for(var i in this.ovMarkers){
+			var object=this.ovMarkers[i].toJSONObject();
+			object.routineId=this.id;
+			results.push(object);
+		}
+		return results;
+	};
+	
+	this.toMarkersJSONs=function(){
+		var results=[];
+		for(var i in this.markers){
+			var object=this.markers[i].toJSONObject();
+			object.routineId=this.id;
+			results.push(object);
+		}
+		return results;
+	};
+	
+	this.getOvMarkers=function(){
+		var results=[];
+		for(var i in this.ovMarkers){
+			if(!this.ovMarkers[i].isDelete){
+				results.push(this.ovMarkers[i]);
+			}
+		}
+		return results;
+	};
+	
+	this.getMarkers=function(){
+		var results=[];
+		for(var i in this.markers){
+			if(!this.markers[i].isDelete){
+				results.push(this.markers[i]);
+			}
+		}
+		return results;
+	};
+}
+
+function MapMarker(id) {
+	this.id = id;
+	this.content = new MarkerContent(id);
+
+	this.needMainLine = false;
+	this.needSubLine = false;
+	// next Marker and curveLine
+	this.connectedMainMarker = null;
+	this.connectedMainLine = null;
+
+	// main path
+	this.mainPaths = new Array();
+
+	// pre Marker and curveLine
+	this.prevMainMarker = null;
+
+	// of MapMarker array
+	this.subMarkersArray = new Array();
+	this.parentSubMarker = null;
+
+	this.isHideAllSubMarkers = false;
+
+	// if this marker is a submarker,
+	// then it has a relative value of pixel x and y cordinates compared to its
+	// parent marker
+	this.offsetX = 0;
+	this.offsetY = 0;
+
+	this.isDelete=false;
+	
+	this.isSubMarker = function() {
+		if (this.parentSubMarker != null) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+	this.updateOffset = function(x, y) {
+		if(x!=null && y!=null){
+			this.offsetX = x;
+			this.offsetY = y;
+		}
+	};
+
+	this.canAddSubMarker = function(marker) {
+		var result = true;
+		if (marker.parentSubMarker == null
+				&& marker.connectedMainMarker == null
+				&& marker.prevMainMarker == null && !this.isSubMarker()) {
+			result = true;
+		} else {
+			result = false;
+		}
+
+		return result;
+	};
+
+	// logic add
+	this.addNextMarker = function(marker) {
+		if (!marker.isSubMarker()) {
+			if (this.connectedMainMarker != null) {
+				this.connectedMainMarker.prevMainMarker = null;
+			}
+
+			this.connectedMainMarker = marker;
+			marker.prevMainMarker = this;
+			$.publish('updateUI', []);
+		}
+	};
+
+	// logic delete
+	this.disconnectNextMarker = function() {
+		if (this.connectedMainMarker != null) {
+			this.connectedMainMarker.prevMainMarker = null;
+			this.connectedMainMarker = null;
+		}
+	};
+
+	// logic add tree node
+	this.addTreeChildMarker = function(treeNodeMarker) {
+		if (this.canAddSubMarker(treeNodeMarker)) {
+			this.subMarkersArray.push(treeNodeMarker);
+			treeNodeMarker.parentSubMarker = this;
+			$.publish('updateUI', []);
+		}
+	};
+
+	// logic delete tree node
+	this.disconnectTreeChildMarker = function(mark) {
+		if (this.subMarkersArray.length != 0) {
+			for ( var i in this.subMarkersArray) {
+				if (this.subMarkersArray[i].id == mark.id) {
+					this.subMarkersArray[i].parentSubMarker = null;
+					this.subMarkersArray.splice(i, 1);
+				}
+			}
+			console.log(this.subMarkersArray);
+		}
+	};
+
+	this.disconnectAllTreeChildMarker = function() {
+		if (this.subMarkersArray.length != 0) {
+			for ( var i in this.subMarkersArray) {
+				this.subMarkersArray[i].parentSubMarker = null;
+			}
+			this.subMarkersArray = new Array();
+		}
+	};
+
+	this.toJSONObject = function() {
+		var subMarkerIdsArray = new Array();
+		for ( var i in this.subMarkersArray) {
+			subMarkerIdsArray.push(this.subMarkersArray[i].id);
+		}
+
+		var wgs=gcj2wgs(this.getContent().getLat(),this.getContent().getLng());
+		
+		
+		var object = {
+			uuid : this.id,
+			lat : wgs.lat,
+			lng : wgs.lng,
+			title : this.getContent().getTitle(),
+			address : this.getContent().getAddress(),
+			mycomment : this.getContent().getMycomment(false),
+			category : this.getContent().getCategory(),
+			imgUrls : this.getContent().getImgUrls(),
+			iconUrl : this.extractIconNameFromIconUrl(),
+			slideNum : this.getContent().getSlideNum(),
+			nextMainMarkerId : this.connectedMainMarker == null ? null
+					: this.connectedMainMarker.id,
+			subMarkerIds : subMarkerIdsArray,
+			mainPaths : this.mainPaths,
+			offsetX : this.offsetX,
+			offsetY : this.offsetY,
+			needDelete : this.isDelete,
+			isAverage : this.getContent().isAvergeOverViewMarker()
+		};
+
+		return object;
+	};
+	
+	this.extractIconNameFromIconUrl=function(){
+		var trimUrl=this.getContent().getIconUrl().trim();
+		var strArray=trimUrl.split("/");
+		var result=strArray.pop();
+		if(result==null || result.trim()==""){
+			result="default_default.png";
+		}
+		return result;
+	};
+
+	// getters and setters
+	this.getContent = function() {
+		return this.content;
+	};
+
+}
+
+function ExploreRange(zoomLevel,location){
+	this.zoomLevel=zoomLevel;
+	this.location=location;
+	this.cachedRoutineResults=[];
+}
+
+function MainLine(id) {
+	this.id = id;
+}
+
+function SubLine(id) {
+	this.id = id;
+}
