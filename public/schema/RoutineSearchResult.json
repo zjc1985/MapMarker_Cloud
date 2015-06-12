@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": true,
+    "description": "MapMarker cloud",
+    "properties": {
+        "searchedRoutine": {
+			"type":"SearchedRoutine.json"
+        },
+        
+        "searchedOvMarkers":{
+        	"items":{
+        		"$ref":SearchedOvMarker.json
+        	}
+        	"type":"array"
+        }
+        
+    },
+    "required": [
+    ],
+    "title": "RoutineSearchResult",
+    "type": "object"
+}

@@ -13,6 +13,106 @@ var Routine = AV.Object.extend("Routine");
 var OvMarker= AV.Object.extend("OvMarker");
 var AVMarker= AV.Object.extend("Marker");
 
+AV.Cloud.define("searchRoutinesByLatlng",function(request,response){
+	var lat=request.params.lat;
+	var lng=request.params.lng;
+	var limit=request.params.limit;
+	var page=request.params.page;
+	
+	//check params
+	if(lat==null||lng==null){
+		response.error("lat lng required");
+	}else if(limit==null||page==null){
+		response.error("limit or page required");
+	}
+	
+	var returnValue=[];
+	
+	var locationPoint=new AV.GeoPoint({latitude: lat, longitude: lng});
+	var query=new AV.Query(Routine);
+	query.include("user");
+	query.near('location',locationPoint);
+	query.limit(limit);
+	if(page>1){
+		var skipNum=(page-1)*limit;
+		query.skip(skipNum);
+	}
+	
+	query.find({
+		success : function(avRoutines) {
+			searchOvMarkersInRoutineIds(avRoutines).then(function(results){
+				
+				for(var i in results){
+					var routine=results[i].avRoutine;
+					var user=routine.get("user");
+					var ovMarkers=results[i].avOvMarkers;
+					
+					var routineLat=routine.get('location').latitude;
+					var routineLng=routine.get('location').longitude;
+					
+					var routineJSON={
+							userId:user.id,
+							userName:user.get('username'),
+							uuid:routine.get('uuid'),
+							title:routine.get('title'),
+							description:routine.get('description'),
+							lat:routineLat,
+							lng:routineLng
+					};
+					
+					var ovMarkersJSON=[];
+					for(var i in ovMarkers){ 
+						ovMarkersJSON.push({
+							uuid:ovMarkers[i].get('uuid'),
+							iconUrl:ovMarkers[i].get('iconUrl'),
+							offsetX:ovMarkers[i].get('offsetX'),
+							offsetY:ovMarkers[i].get('offsetY'),
+						});
+					}
+					returnValue.push({
+						searchedRoutine:routineJSON,
+						searchedOvMarkers:ovMarkersJSON
+					});
+				}
+				response.success(returnValue);
+			});
+			
+		}
+	});
+});
+
+function searchOvMarkersInRoutineIds(avRoutines){
+	var promise=new AV.Promise();
+	var query=new AV.Query(OvMarker);
+	var routineIds=[];
+	for(var i in avRoutines){
+		routineIds.push(avRoutines[i].get("uuid"));
+	}
+	query.containedIn("routineId",routineIds);
+	query.find().then(function(avOvMarkers){
+		var results=[];
+		for(var i in avRoutines){
+			results.push({
+				avRoutine:avRoutines[i],
+				avOvMarkers:findOvMarkersByRoutineId(avOvMarkers,avRoutines[i].get("uuid"))
+			});
+		}
+		
+		promise.resolve(results);
+	});
+	return promise;
+};
+
+function findOvMarkersByRoutineId(ovMarkers,routineId){
+	var results=[];
+	for(var i in ovMarkers){
+		if(ovMarkers[i].get("routineId")==routineId){
+			results.push(ovMarkers[i]);
+		}
+	}
+	return results;
+}
+
 AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 	var routineId=request.params.routineId;
 	var clientItems=request.params.syncMarkers;

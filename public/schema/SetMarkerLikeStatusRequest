@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": true,
+    "description": "MapMarker cloud",
+    "properties": {
+        "whetherLike": {
+        	"type": "boolean"
+        }
+        "markerId"{
+        	"type": "string"
+        }
+    },
+    "required": [
+    	"markerId","user","whetherLike"
+    ],
+    "title": "SetRoutineLikeStatusRequest",
+    "type": "object"
+}
