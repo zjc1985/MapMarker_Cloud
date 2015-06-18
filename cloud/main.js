@@ -13,6 +13,54 @@ var Routine = AV.Object.extend("Routine");
 var OvMarker= AV.Object.extend("OvMarker");
 var AVMarker= AV.Object.extend("Marker");
 
+AV.Cloud.define("searchRoutinesByUserId",function(request,response){
+	var userId=request.params.userId;
+	
+	var returnValue=[];
+	
+	var query=new AV.Query(AV.User);
+	query.get(userId, {
+		  success: function(user) {
+				var routineQuery=new AV.Query(Routine);
+				routineQuery.equalTo("user", user);
+				routineQuery.find().then(function(avRoutines){
+					return searchOvMarkersInRoutineIds(avRoutines);
+				}).then(function(results){
+					for(var i in results){
+						var routine=results[i].avRoutine;
+						var ovMarkers=results[i].avOvMarkers;
+						
+						var routineLat=routine.get('location').latitude;
+						var routineLng=routine.get('location').longitude;
+						
+						var routineJSON={
+								uuid:routine.get('uuid'),
+								title:routine.get('title'),
+								description:routine.get('description'),
+								lat:routineLat,
+								lng:routineLng
+						};
+						
+						var ovMarkersJSON=[];
+						for(var i in ovMarkers){ 
+							ovMarkersJSON.push({
+								uuid:ovMarkers[i].get('uuid'),
+								iconUrl:ovMarkers[i].get('iconUrl'),
+								offsetX:ovMarkers[i].get('offsetX'),
+								offsetY:ovMarkers[i].get('offsetY'),
+							});
+						}
+						returnValue.push({
+							searchedRoutine:routineJSON,
+							searchedOvMarkers:ovMarkersJSON
+						});
+					}
+					response.success(returnValue);
+				});
+		  }
+	});
+});
+
 AV.Cloud.define("searchRoutinesByLatlng",function(request,response){
 	var lat=request.params.lat;
 	var lng=request.params.lng;
