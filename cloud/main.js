@@ -12,6 +12,74 @@ function returnSomthing(){
 var Routine = AV.Object.extend("Routine");
 var OvMarker= AV.Object.extend("OvMarker");
 var AVMarker= AV.Object.extend("Marker");
+var LikedRoutine=AV.Object.extend("LikedRoutine");
+
+AV.Cloud.define("likeRoutine",function(request,response){
+	var user=request.user;
+	var routineId=request.params.routineId;
+	
+	if(user==null||routineId==null){
+		response.error('invalid parameter, user or routineId required');
+	}
+	
+	var query=new AV.Query(LikedRoutine);
+	query.equalTo("routineId", routineId);
+	query.equalTo("user",user);
+	query.find().then(function(likedRoutines){
+		if(likedRoutines.length==0){
+			var liked = new LikedRoutine();
+			liked.set("user",user);
+			liked.set("routineId",routineId);
+			liked.save();
+		}
+		response.success();
+	});
+});
+
+AV.Cloud.define("unlikeRoutine",function(request,response){
+	var user=request.user;
+	var routineId=request.params.routineId;
+	
+	if(user==null||routineId==null){
+		response.error('invalid parameter, user or routineId required');
+	}
+	
+	var query=new AV.Query(LikedRoutine);
+	query.equalTo("routineId", routineId);
+	query.equalTo("user",user);
+	query.find().then(function(likedRoutines){
+		if(likedRoutines.length>0){
+			AV.Object.destroyAll(likedRoutines);
+		}
+		response.success();
+	});
+});
+
+AV.Cloud.define("queryLikedRoutines",function(request,response){
+	var user=request.user;
+	
+	if(user==null){
+		response.error('invalid parameter, user required');
+	}
+	
+	var query=new AV.Query(LikedRoutine);
+	query.equalTo("user",user);
+	query.find().then(function(likedRoutines){
+		var routineIds=[];
+		for(var i in likedRoutines){
+			routineIds.push(likedRoutines[i].get("routineId"));
+		}
+		
+		var query=new AV.Query(Routine);
+		query.containedIn("uuid",routineIds);
+		return query.find();
+	}).then(function(avRoutines){
+		return searchOvMarkersInRoutineIds(avRoutines);
+	}).then(function(results){
+		var returnValue=parseSearchOvMarkersInRoutineIdsResult(results);
+		response.success(returnValue);
+	});
+});
 
 AV.Cloud.define("searchRoutinesByUserId",function(request,response){
 	var userId=request.params.userId;
@@ -26,35 +94,7 @@ AV.Cloud.define("searchRoutinesByUserId",function(request,response){
 				routineQuery.find().then(function(avRoutines){
 					return searchOvMarkersInRoutineIds(avRoutines);
 				}).then(function(results){
-					for(var i in results){
-						var routine=results[i].avRoutine;
-						var ovMarkers=results[i].avOvMarkers;
-						
-						var routineLat=routine.get('location').latitude;
-						var routineLng=routine.get('location').longitude;
-						
-						var routineJSON={
-								uuid:routine.get('uuid'),
-								title:routine.get('title'),
-								description:routine.get('description'),
-								lat:routineLat,
-								lng:routineLng
-						};
-						
-						var ovMarkersJSON=[];
-						for(var i in ovMarkers){ 
-							ovMarkersJSON.push({
-								uuid:ovMarkers[i].get('uuid'),
-								iconUrl:ovMarkers[i].get('iconUrl'),
-								offsetX:ovMarkers[i].get('offsetX'),
-								offsetY:ovMarkers[i].get('offsetY'),
-							});
-						}
-						returnValue.push({
-							searchedRoutine:routineJSON,
-							searchedOvMarkers:ovMarkersJSON
-						});
-					}
+					returnValue=parseSearchOvMarkersInRoutineIdsResult(results);
 					response.success(returnValue);
 				});
 		  }
@@ -89,45 +129,50 @@ AV.Cloud.define("searchRoutinesByLatlng",function(request,response){
 	query.find({
 		success : function(avRoutines) {
 			searchOvMarkersInRoutineIds(avRoutines).then(function(results){
-				
-				for(var i in results){
-					var routine=results[i].avRoutine;
-					var user=routine.get("user");
-					var ovMarkers=results[i].avOvMarkers;
-					
-					var routineLat=routine.get('location').latitude;
-					var routineLng=routine.get('location').longitude;
-					
-					var routineJSON={
-							userId:user.id,
-							userName:user.get('username'),
-							uuid:routine.get('uuid'),
-							title:routine.get('title'),
-							description:routine.get('description'),
-							lat:routineLat,
-							lng:routineLng
-					};
-					
-					var ovMarkersJSON=[];
-					for(var i in ovMarkers){ 
-						ovMarkersJSON.push({
-							uuid:ovMarkers[i].get('uuid'),
-							iconUrl:ovMarkers[i].get('iconUrl'),
-							offsetX:ovMarkers[i].get('offsetX'),
-							offsetY:ovMarkers[i].get('offsetY'),
-						});
-					}
-					returnValue.push({
-						searchedRoutine:routineJSON,
-						searchedOvMarkers:ovMarkersJSON
-					});
-				}
+				returnValue=parseSearchOvMarkersInRoutineIdsResult(results);
 				response.success(returnValue);
 			});
 			
 		}
 	});
 });
+
+function parseSearchOvMarkersInRoutineIdsResult(results){
+	var returnValue=[];
+	for(var i in results){
+		var routine=results[i].avRoutine;
+		var user=routine.get("user");
+		var ovMarkers=results[i].avOvMarkers;
+		
+		var routineLat=routine.get('location').latitude;
+		var routineLng=routine.get('location').longitude;
+		
+		var routineJSON={
+				userId:user.id,
+				userName:user.get('username'),
+				uuid:routine.get('uuid'),
+				title:routine.get('title'),
+				description:routine.get('description'),
+				lat:routineLat,
+				lng:routineLng
+		};
+		
+		var ovMarkersJSON=[];
+		for(var i in ovMarkers){ 
+			ovMarkersJSON.push({
+				uuid:ovMarkers[i].get('uuid'),
+				iconUrl:ovMarkers[i].get('iconUrl'),
+				offsetX:ovMarkers[i].get('offsetX'),
+				offsetY:ovMarkers[i].get('offsetY'),
+			});
+		}
+		returnValue.push({
+			searchedRoutine:routineJSON,
+			searchedOvMarkers:ovMarkersJSON
+		});
+	}
+	return returnValue;
+}
 
 function searchOvMarkersInRoutineIds(avRoutines){
 	var promise=new AV.Promise();
