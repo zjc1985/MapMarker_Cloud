@@ -72,6 +72,7 @@ AV.Cloud.define("queryLikedRoutines",function(request,response){
 		
 		var query=new AV.Query(Routine);
 		query.containedIn("uuid",routineIds);
+		query.include("user");
 		return query.find();
 	}).then(function(avRoutines){
 		return searchOvMarkersInRoutineIds(avRoutines);
