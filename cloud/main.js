@@ -25,13 +25,32 @@ AV.Cloud.define("likeRoutine",function(request,response){
 	var query=new AV.Query(LikedRoutine);
 	query.equalTo("routineId", routineId);
 	query.equalTo("user",user);
-	query.find().then(function(likedRoutines){
-		if(likedRoutines.length==0){
+	query.first().then(function(likedRoutines){
+		if(likedRoutines==null){
 			var liked = new LikedRoutine();
 			liked.set("user",user);
 			liked.set("routineId",routineId);
-			liked.save();
+			return liked.save();
+		}else{
+			return AV.Promise.error(user.id+" already liked routine "+routineId);
 		}
+	}).then(function(saveResult){
+		var routineQuery=new AV.Query(Routine);
+		routineQuery.equalTo('uuid',routineId);
+		return routineQuery.first();
+	}).then(function(routine){
+		if(routine!=null){
+			var likeNum=routine.get('likedNum');
+			likeNum++;
+			routine.set('likedNum',likeNum);
+			return routine.save();
+		}else{
+			return AV.Promise.error("not found related routine");
+		}
+	},	function(error){
+		console.log(error);
+		return AV.Promise.as("resolved error");
+	}).then(function(results){
 		response.success();
 	});
 });
@@ -49,8 +68,27 @@ AV.Cloud.define("unlikeRoutine",function(request,response){
 	query.equalTo("user",user);
 	query.find().then(function(likedRoutines){
 		if(likedRoutines.length>0){
-			AV.Object.destroyAll(likedRoutines);
+			return AV.Object.destroyAll(likedRoutines);
+		}else{
+			return AV.Promise.error("user id "+user.id+" routineId not found "+routineId);
 		}
+	}).then(function(results){
+		var routineQuery=new AV.Query(Routine);
+		routineQuery.equalTo('uuid',routineId);
+		return routineQuery.first();
+	}).then(function(routine){
+		if(routine!=null){
+			var likeNum=routine.get('likedNum');
+			likeNum--;
+			routine.set('likedNum',likeNum);
+			return routine.save();
+		}else{
+			return AV.Promise.error("not found related routine");
+		}
+	},	function(error){
+		console.log(error);
+		return AV.Promise.as("resolved error");
+	}).then(function(results){
 		response.success();
 	});
 });
@@ -121,6 +159,7 @@ AV.Cloud.define("searchRoutinesByLatlng",function(request,response){
 	var query=new AV.Query(Routine);
 	query.include("user");
 	query.near('location',locationPoint);
+	query.descending("likedNum");
 	query.limit(limit);
 	if(page>1){
 		var skipNum=(page-1)*limit;
