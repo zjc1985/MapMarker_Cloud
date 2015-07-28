@@ -511,7 +511,7 @@ AV.Cloud.define("syncRoutines",function(request,response){
 						serverAvOvMarker.set('iconUrl',clientOvMarker.iconUrl);
 						serverAvOvMarker.set('offsetX',clientOvMarker.offsetX);
 						serverAvOvMarker.set('offsetY',clientOvMarker.offsetY);
-						serverAVRoutine.save();
+						serverAvOvMarker.save();
 					}
 				}else{
 					console.log("do nothing");
