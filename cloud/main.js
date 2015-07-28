@@ -469,17 +469,22 @@ AV.Cloud.define("syncRoutines",function(request,response){
 		console.log('start to sync ovMarkers');
 		
 		for(var i in syncOvMarkers){
+			
 			var clientOvMarker=syncOvMarkers[i];
+			console.log("handle client markers:uuid"+clientOvMarker.uuid);
 			//find related routine in server side
 			var serverAvOvMarker=popAndDeletAVObjectsInArrayByGivenUUID(clientOvMarker.uuid,avOvMarkers);
 			
 			if(serverAvOvMarker==null){
+				console.log("related serverOvMarker not found");
 				//if can not found
 				if(clientOvMarker.isSynced){
 					//need to client delete
+					console.log("need to client delete ovMarker");
 					ovMarkersDelete.push({uuid:clientOvMarker.uuid});
 				}else{
 					//need to server save
+					console.log("need to client save new ovMarker");
 					var newOvMarker=new OvMarker();
 					newOvMarker.set('uuid',clientOvMarker.uuid);
 					newOvMarker.set('iconUrl',clientOvMarker.iconUrl);
@@ -490,12 +495,15 @@ AV.Cloud.define("syncRoutines",function(request,response){
 				}
 			}else{
 				//if found
+				console.log("related serverOvMarker found");
 				var serverTimestamp=toUTCTimeStamp(serverAvOvMarker.updatedAt);
 				if(serverTimestamp>clientOvMarker.updateTime){
 					//update client
+					console.log("update client ovMarker");
 					ovMarkersUpdate.push(toOvMarkerFromAVObjects(serverAvOvMarker));
 				}else if(serverTimestamp<clientOvMarker.updateTime){
 					//update server
+					console.log("update server ovMarker");
 					if(clientOvMarker.isDelete){
 						serverAvOvMarker.destroy();
 						ovMarkersDelete.push({uuid:clientOvMarker.uuid});
@@ -506,6 +514,7 @@ AV.Cloud.define("syncRoutines",function(request,response){
 						serverAVRoutine.save();
 					}
 				}else{
+					console.log("do nothing");
 					//do nothing
 				}
 			}
