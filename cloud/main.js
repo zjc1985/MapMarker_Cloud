@@ -159,7 +159,7 @@ AV.Cloud.define("searchRoutinesByLatlng",function(request,response){
 	var query=new AV.Query(Routine);
 	query.include("user");
 	query.near('location',locationPoint);
-	query.descending("likedNum");
+	//query.descending("likedNum");
 	query.limit(limit);
 	if(page>1){
 		var skipNum=(page-1)*limit;
