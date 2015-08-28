@@ -16,10 +16,14 @@ var LikedRoutine=AV.Object.extend("LikedRoutine");
 
 AV.Cloud.define("details",function(request,response){
 	var placeid=request.params.placeid;
+	var language=request.params.language;
 	if(placeid==null){
 		response.error('invalid params,placeid required');
 	}
 	var url="http://45.55.10.72:8080/gmaps/api/place/details?placeid=gs"+placeid;
+	if(language!=null){
+		url=url+"&language="+language;
+	}
 	AV.Cloud.httpRequest({
 		  url: url,
 		  timeout: 5000,
