@@ -14,6 +14,43 @@ var OvMarker= AV.Object.extend("OvMarker");
 var AVMarker= AV.Object.extend("Marker");
 var LikedRoutine=AV.Object.extend("LikedRoutine");
 
+AV.Cloud.define("details",function(request,response){
+	var placeid=request.params.placeid;
+	if(placeid==null){
+		response.error('invalid params,placeid required');
+	}
+	var url="http://45.55.10.72:8080/gmaps/api/place/details?placeid=gs"+placeid;
+	AV.Cloud.httpRequest({
+		  url: url,
+		  timeout: 5000,
+		  success: function(httpResponse) {
+			  response.success(JSON.parse(httpResponse.text));
+		  },
+		  error: function(httpResponse) {
+			  response.error('Request failed with response code ' + httpResponse.status);
+		  }
+	});
+});
+
+AV.Cloud.define("autocomplete",function(request,response){
+	var input=request.params.input;
+	if(input==null){
+		response.error('invalid params, input required');
+	}
+	
+	var url="http://45.55.10.72:8080/gmaps/api/place/queryautocomplete?input=gs"+input;
+	AV.Cloud.httpRequest({
+		  url: url,
+		  timeout: 5000,
+		  success: function(httpResponse) {
+			  response.success(JSON.parse(httpResponse.text));
+		  },
+		  error: function(httpResponse) {
+			  response.error('Request failed with response code ' + httpResponse.status);
+		  }
+	});
+});
+
 AV.Cloud.define("likeRoutine",function(request,response){
 	var user=request.user;
 	var routineId=request.params.routineId;
