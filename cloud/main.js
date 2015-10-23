@@ -339,6 +339,7 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 					newItem.set('offsetX',clientItem.offsetX);
 					newItem.set('offsetY',clientItem.offsetY);
 					newItem.set('routineId',clientItem.routineId);
+					newItem.set('parentMarkerUuid',clientItem.parentMarkerUuid);
 					newItem.save();
 				}
 			}else{
@@ -371,7 +372,7 @@ AV.Cloud.define("syncMarkersByRoutineId",function(request,response){
 						serverItem.set('address',clientItem.address);
 						serverItem.set('offsetX',clientItem.offsetX);
 						serverItem.set('offsetY',clientItem.offsetY);
-						
+						serverItem.set('parentMarkerUuid',clientItem.parentMarkerUuid);
 						serverItem.save();
 					}
 				}else{
@@ -411,10 +412,13 @@ function toMarkerFromAVObjects(serverAVItem){
 	result.mycomment=serverAVItem.get('mycomment');
 	result.imgUrls=serverAVItem.get('imgUrls');
 	result.address=serverAVItem.get('address');
+	result.parentMarkerUuid=serverAVItem.get('parentMarkerUuid');
 	
 	result.isDelete=false;
 	result.isSynced=true;
 	result.updateTime=toUTCTimeStamp(serverAVItem.updatedAt);
+	
+	
 	return result;
 }
 
