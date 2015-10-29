@@ -661,7 +661,8 @@ AV.Cloud.define("fetchMarkersByRoutineId", function(request, response) {
 					lng:avMarker.get('location').toJSON().longitude,
 					slideNum:avMarker.get('slideNum'),
 					imgUrls:JSON.parse(avMarker.get('imgUrls')),
-					category:avMarker.get('category')
+					category:avMarker.get('category'),
+					parentMarkerUuid:avMarker.get('parentMarkerUuid')
 				};
 				markersJSON.push(markerContent);
 			}
